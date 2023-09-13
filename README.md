@@ -1,11 +1,11 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/teYJD0R3)
-# Título do Projeto
+# PUCalm
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Pojeto: Desenvolvimento de Aplicação Web Front-end`
 
-`SEMESTRE`
+`2023-2`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
 
