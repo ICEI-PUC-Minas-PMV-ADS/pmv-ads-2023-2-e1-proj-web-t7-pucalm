@@ -29,5 +29,17 @@ Criar uma aplicação web simples e intuitiva que ofereça meditações guiadas 
 
 ## Público-Alvo
 
- Pessoas que buscam o alívio não medicamentoso para alterações neuropsicológicas, como ansiedade e estresse, para alívio dos sintomas causados pelas alterações supracitadas. Isso inclui pessoas com rotinas agitadas, desafios profissionais/acadêmicos e dificuldade de concentração.
+Pessoas que buscam o alívio não medicamentoso para alterações neuropsicológicas, como ansiedade e estresse, para alívio dos sintomas causados pelas alterações supracitadas. Isso inclui pessoas com rotinas agitadas, desafios profissionais/acadêmicos e dificuldade de concentração.
 
+## Trabalhos relacionados
+
+<i>Headspace</i>: Website e aplicação móvel de meditação para alívio de estresse e ansiedade. Possui uma abordagem bem estruturada e orientações específicas nas meditações, o que a torna acessível para usuários iniciantes. No entanto, a variedade de opções e recursos pode tornar navegação na aplicação menos intuitiva. Além disso, requer assinatura paga, o que a torna menos acessível. <https://www.headspace.com/>  
+
+
+<i>Free mindfullness project</i>: Website com orientações para meditações guiadas disponíveis para download. Website e aplicação móvel de meditação para alívio de estresse e ansiedade. Possui uma abordagem bem estruturada e orientações específicas nas meditações, o que a torna acessível para usuários iniciantes. No entanto, a variedade de opções e recursos pode tornar navegação na aplicação menos intuitiva. Além disso, requer assinatura paga, o que a torna menos acessível. <https://www.freemindfulness.org/welcome>  
+
+
+<i>Meditation Oasis® Podcast</i>: Website de podcast para meditação guiada, instruções para meditação solo e músicas para meditação. O site possui uma ampla gama de episódios de podcast gratuitos para meditação guiada, no entanto, caso o usuário queira acessar algo além dos episódios de podcast, a plataforma demanda um pagamento adicional por cada áudio.  <https://www.meditationoasis.com/podcast>  
+
+
+<i>Mind Ease</i>: Website e aplicação mobile com uma série de playlists e exercícios para gerenciamento de ansiedade, ataques de pânico, concentração para estudo, meditação e outros. O aplicativo tem uma grande variedade de atividades que podem ajudar a cuidar da saúde mental a longo prazo; No entanto, ele só oferece uma versão gratuita limitada, e para ter acesso a mais recursos, é preciso pagar pela versão Premium. <https://mindease.io/> 
