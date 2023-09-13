@@ -1,35 +1,33 @@
 # Introdução
 
-[Aqui a equipe deve criar um texto descritivo com a visão geral do problema abordado, apresentando o ambiente e as situações envolvidas no problema.]
+ A busca incessante por métodos não medicamentosos que possam contribuir para a melhoria da saúde mental tem sido um tema de relevância crescente na contemporaneidade. Nesse contexto, destaca-se a problemática relacionada ao estresse e à ansiedade. 
+
+ Segundo a pesquisa de Zeidan et al. (2015), a presença de altos níveis de estresse está associada a uma série de impactos negativos na saúde física e mental, aumentando a suscetibilidade a transtornos ansiosos e perturbações do sono. De acordo com a OMS (Organização Mundial da Saúde) (2022), no ano de 2019, cerca de 301 milhões de pessoas globalmente viviam acometidas por transtornos de ansiedade. 
+
+ Diante disso, surge a necessidade de explorar abordagens inovadoras e eficazes que possam oferecer alívio a esses problemas de forma acessível e livre de medicamentos. Estudos recentes como o de Teixeira et al. (2020) têm demonstrado a influência direta das vibrações sonoras na modulação das atividades cerebrais. 
+
+ Nesse contexto, os recursos terapêuticos em formato de áudio, como meditações guiadas e sons relaxantes, por meio de uma abordagem não medicamentosa podem ajudar essas pessoas. 
+
 
 ## Problema
-[Aqui a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.]
 
-Este link pode ajudar a equipe a entender mais sobre definição do problema: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+Baixa disponibilidade de métodos não medicamentosos para tratamentos neuropsicológicos. 
 
 
 ## Objetivos
 
-[Aqui a equipe deve realizar uma descrição detalhada dos objetivos do trabalho, ressaltando quais as questões principais do problema a serem resolvidas pelo projeto, não é a hora de apresentar requisitos detalhados.]
- 
-Este link pode ajudar a equipe a entender mais sobre definição dos objetivos: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+Criar uma aplicação web simples e intuitiva que ofereça meditações guiadas e sons que possibilitam a modulação das atividades cerebrais. 
+
 
 ## Justificativa
 
-[Aqui a equipe deve descrever a importância ou a motivação para trabalhar com o problema definido. Indique as razões pelas quais a equipe escolheu o problema e definiu os objetivos.
+ A maioria das soluções existentes se concentra em tratamentos medicamentosos, deixando uma lacuna para abordagens complementares que permitam aos indivíduos gerenciar seus sintomas de maneira não invasiva e eficaz (MENEZES; DELL’AGLIO, 2009).  
 
-Devem ser apresentados dados de fontes relevantes e confiáveis sobre o problema, inserindo-o como alvo de estudo. Sugere-se que a equipe utilize questionários, entrevistas e dados estatísticos, que devem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pela equipe.]
+ Dados de pesquisas, incluindo o estudo de Morais et al. (2021), e relatos de profissionais da saúde mental ressaltam a eficácia das terapias complementares, como meditação, relaxamento e até mesmo a música, na melhoria do estado emocional e cognitivo dos indivíduos. A música, por exemplo, pode ser inserida em repertórios terapêuticos, favorecendo a estabilidade emocional ao instigar sensações ligadas à serotonina, o hormônio da alegria.
 
-Este link pode ajudar a equipe a formular a justificativa: [Como montar a justificativa.](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+ De acordo com a ISMA-BR, 72% dos brasileiros enfrentam estresse, enquanto a OMS (2022) indica que o Brasil liderava globalmente em ansiedade em 2019, com 18,6 milhões de cidadãos afetados. 
 
 ## Público-Alvo
 
-[Aqui é necessário descrever os atores envolvidos no problema, destacando os diferentes perfis de usuários. O propósito é apresentar as características, necessidades, conhecimentos prévios e experiência com a tecnologia do público-alvo.
-
-Sugere-se que a equipe utilize questionários e/ou entrevistas a fim de conhecer os atores que compõem o público alvo.]
-
-Os links abaixo podem ajudar a equipe a conhecer um pouco mais sobre o público-alvo. 
-
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
+ Pessoas que buscam o alívio não medicamentoso para alterações neuropsicológicas, como ansiedade e estresse, para alívio dos sintomas causados pelas alterações supracitadas. Isso inclui pessoas com rotinas agitadas, desafios profissionais/acadêmicos e dificuldade de concentração.
 
