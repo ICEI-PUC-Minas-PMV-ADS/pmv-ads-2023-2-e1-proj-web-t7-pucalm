@@ -21,7 +21,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
 
 ## Orientador
 
-* Nome completo do professor
+* Marcos André Silveira Kutova
 
 # Documentação
 
