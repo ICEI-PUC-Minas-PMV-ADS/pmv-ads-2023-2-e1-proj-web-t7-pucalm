@@ -8,7 +8,7 @@
 
 `2023-2`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+Uma aplicação web simples e intuitiva que ofereça meditações guiadas e sons que possibilitam a modulação das atividades cerebrais. 
 
 ## Integrantes
 
