@@ -40,8 +40,8 @@
 
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
-| ...                | ...                       | ...                              |
-| ...                | ...                       | ...                              |
+| Estudante                | melhorar minha concentração/atenção e poder compartilhar os áudios que gosto com meus amigos                       | obter maior rendimento enquanto estudo e auxiliar meus amigos que também tem problemas de concentração.                               |
+| Trabalhador                | reduzir o estresse e poder ouvir áudios que eu possa encontrar e organizar facilmente                       | melhorar o rendimento no trabalho e qualidade de vida.                               |
 
 ## Requisitos do Projeto
 
@@ -53,8 +53,11 @@
 
 |ID    | Descrição                | Prioridade |
 |-------|---------------------------------|----|
-| RF-01 |  ...                    | ...   | 
-|  ...  |  ...                    | ...   |
+| RF-01 |  Os usuários devem ser capazes de explorar e escolher entre uma variedade de meditações guiadas e áudios disponíveis na plataforma.                     | Alta | 
+| RF-02 |  Os usuários devem ser capazes de reproduzir os áudios através de um player.                     | Alta |
+| RF-03 |  Os usuários devem ser capazes de fornecer feedback sobre os áudios e meditações guiadas e a plataforma em geral. | Baixa |
+| RF-04 |  Os usuários devem ter a opção de compartilhar as playlists que tenham se interessado. | Baixa |
+| RF-05 |  Os usuários devem ser capazes de reorganizar e filtrar os áudios. | Média |
 
 **Prioridade: Alta / Média / Baixa. 
 
