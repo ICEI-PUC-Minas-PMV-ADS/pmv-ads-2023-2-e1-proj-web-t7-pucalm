@@ -51,13 +51,13 @@
 
 [Utilize o modelo de tabela abaixo para apresentar os requisitos funcionais]
 
-|ID      | Descrição                | Prioridade |
-|--------|---------------------------------|----|
-|  RF-01 |  Os usuários devem ser capazes de explorar e escolher entre uma variedade de meditações guiadas e áudios disponíveis na plataforma.                     | Alta | 
-|  RF-02 |  Os usuários devem ser capazes de reproduzir os áudios através de um player.                     | Alta |
-|  RF-03 |  Os usuários devem ser capazes de fornecer feedback sobre os áudios e meditações guiadas e a plataforma em geral.                      | Baixa |
-|  RF-04 |  Os usuários devem ter a opção de compartilhar as playlists que tenham se interessado.                      | Baixa |
-|  RF-05 |  Os usuários devem ser capazes de reorganizar e filtrar os áudios.                     | Média |
+|ID         | Descrição               |Prioridade |
+|-----------|-------------------------|-------|
+| RF-01 |  Os usuários devem ser capazes de explorar e escolher entre uma variedade de meditações guiadas e áudios disponíveis na plataforma.                     | Alta   | 
+| RF-02 |  Os usuários devem ser capazes de reproduzir os áudios através de um player.                     | Alta |
+| RF-03 |  Os usuários devem ser capazes de fornecer feedback sobre os áudios e meditações guiadas e a plataforma em geral.                      | Baixa |
+| RF-04 |  Os usuários devem ter a opção de compartilhar as playlists que tenham se interessado.                      | Baixa |
+| RF-05 |  Os usuários devem ser capazes de reorganizar e filtrar os áudios.                     | Média |
 
 **Prioridade: Alta / Média / Baixa. 
 
@@ -67,8 +67,11 @@
 
 |ID      | Descrição               |Prioridade |
 |--------|-------------------------|----|
-| RNF-01 |  ...                    | ...   | 
-| ...    |  ...                    | ...   | 
+| RNF-01 |  A aplicação deve ser responsiva para se adaptar a qualquer tipo de dispositivo.                     | Alta   | 
+| RNF-02 |  A aplicação deve respeitar as regras da LGPD (Lei Geral de Proteção de Dados Pessoais).                     | Alta   | 
+| RNF-03 |  A aplicação deve permitir que o usuário a utilize sem necessidade de treinamento.                      | Média   | 
+| RNF-04 |  A aplicação deve seguir diretrizes de acessibilidade para torná-la utilizável por pessoas com diminuição da acuidade visual.                      | Baixa   | 
+| RNF-05 |  A aplicação deve ser projetada de forma escalável, permitindo a adição de novas meditações, recursos e melhorias conforme o crescimento e a evolução da plataforma.                      | Alta   | 
 
 **Prioridade: Alta / Média / Baixa. 
 
