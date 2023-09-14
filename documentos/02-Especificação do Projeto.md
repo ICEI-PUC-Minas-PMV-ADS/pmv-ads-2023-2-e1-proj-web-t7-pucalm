@@ -51,13 +51,13 @@
 
 [Utilize o modelo de tabela abaixo para apresentar os requisitos funcionais]
 
-|ID    | Descrição                | Prioridade |
-|-------|---------------------------------|----|
-| RF-01 |  Os usuários devem ser capazes de explorar e escolher entre uma variedade de meditações guiadas e áudios disponíveis na plataforma.                     | Alta | 
-| RF-02 |  Os usuários devem ser capazes de reproduzir os áudios através de um player.                     | Alta |
-| RF-03 |  Os usuários devem ser capazes de fornecer feedback sobre os áudios e meditações guiadas e a plataforma em geral. | Baixa |
-| RF-04 |  Os usuários devem ter a opção de compartilhar as playlists que tenham se interessado. | Baixa |
-| RF-05 |  Os usuários devem ser capazes de reorganizar e filtrar os áudios. | Média |
+|ID      | Descrição                | Prioridade |
+|--------|---------------------------------|----|
+|  RF-01 |  Os usuários devem ser capazes de explorar e escolher entre uma variedade de meditações guiadas e áudios disponíveis na plataforma.                     | Alta | 
+|  RF-02 |  Os usuários devem ser capazes de reproduzir os áudios através de um player.                     | Alta |
+|  RF-03 |  Os usuários devem ser capazes de fornecer feedback sobre os áudios e meditações guiadas e a plataforma em geral.                      | Baixa |
+|  RF-04 |  Os usuários devem ter a opção de compartilhar as playlists que tenham se interessado.                      | Baixa |
+|  RF-05 |  Os usuários devem ser capazes de reorganizar e filtrar os áudios.                     | Média |
 
 **Prioridade: Alta / Média / Baixa. 
 
