@@ -12,9 +12,9 @@ A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 [Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
 - Scrum Master: Willams Andrade Lima.
-- Product Owner: Lucas Abreu.
+- Product Owner: Lucas Campos de Abreu.
 - Equipe de Desenvolvimento: Camyla Gomes Soares Oliveira, Gabriel Coutinho Rolim, Gabriela Franklin Sá de Moura, Lucas Campos de Abreu, Otávio Martins Ferreira, Rafael Costa Souza e Willams Andrade Lima
-- Designer de UI/UX: Rafael Costa Souza.
+- Designer de UI/UX: Rafael Costa Souza
 - Testador de Qualidade (QA): Camyla Gomes Soares Oliveira.
 - Especialista em Documentação: ?
 - Gerente de Controle de Versão: ?
