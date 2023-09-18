@@ -66,7 +66,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 |-------------------------------------|------------------------------------|----------------------------------------|
 | Repositório de código fonte         | GitHub                             | http://....                            |
 | Documentos do projeto               | GitHub                             | http://....                            |
-| Projeto de Interface                | Figma                              | http://....                            |
+| Projeto de Interface                | Canva                              | [http://....](https://www.canva.com/design/DAFrj7eV12Y/bhel8OW8ptQrVjzEA0c3kw/view?utm_content=DAFrj7eV12Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)                            |
 | Gerenciamento do Projeto            | GitHub Projects                    | http://....                            |
 | Hospedagem                          | GitHub Pages                       | http://....                            |
 
