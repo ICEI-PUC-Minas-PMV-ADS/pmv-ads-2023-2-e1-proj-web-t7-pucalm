@@ -55,7 +55,7 @@ MENEZES, C. B.; DELL’AGLIO, D. D. **Os efeitos da meditação à luz da invest
 
 MORAIS, J. O. et al. A música como instrumento de controle da ansiedade no idoso em instituições de longa permanência. **Research, Society and Development**, v. 10, n. 7, p. e54610716780, 2 jul. 2021 
 
-Mental disorders. **World Health Organization**.  Disponível em: <https://www.who.int/news-room/fact-sheets/detail/mental-disorders>. Acesso em 19 ago. 2023 
+WORLD HEALTH ORGANIZATION. **Mental disorders**. News room, fact sheets.  8 jun. 2022. Disponível em: <https://www.who.int/news-room/fact-sheets/detail/mental-disorders>. Acesso em 19 ago. 2023
 
 ZANINI, C. R. DE O. et al. Music therapy effects on the quality of life and the blood pressure of hypertensive patients. **Arquivos Brasileiros De Cardiologia**, v. 93, n. 5, p. 534–540, 1 nov. 2009. Disponível em: <https://pubmed.ncbi.nlm.nih.gov/20084316/>. Acesso em 20 ago. 2023 
 
