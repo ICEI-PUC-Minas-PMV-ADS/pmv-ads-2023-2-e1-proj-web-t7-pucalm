@@ -20,15 +20,14 @@ Desenvolver um protótipo emerge como uma das maneiras mais ágeis e econômicas
 
 Protótipos de baixa fidelidade apresentam de forma simplificada o design da interface e o relacionamento entre suas páginas, permitindo evolução da proposta da solução. Neste projeto, os utilizaremos para apoiar a validação dos requisitos e efetuar mudanças dos mesmos, caso seja necessário, para menor impacto na codificação da aplicação.
 
-## Wireframes
-## Landing page:
+### Landing page:
 #### Nesta tela, o usuário visualizará as informações e benefícios da aplicação, e terá a opção de acessá-la em sequência.
 ![landing page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/144954961/64d08662-aeb1-427d-8ad6-daab0a3218e7)
 
-## Tela inicial:
+### Tela inicial:
 #### Tela inicial, onde o usuário poderá selecionar a playlist que deseja ouvir, assim como pesquisar pela playlist desejada através do campo de busca ou por meio dos filtros de categorias da aplicação.
 ![home](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/144954961/033c8dbb-2172-4b17-821d-0604ac7e7db3)
 
-## Tela de playlist:
+### Tela de playlist:
 #### Tela de playlists, onde o usuário poderá visualizar as músicas que estão dentro da playlist que ele selecionou na tela inicial.
 ![playlist](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/144954961/6061f64e-d52d-434f-93ac-27ecd8eea9e4)
