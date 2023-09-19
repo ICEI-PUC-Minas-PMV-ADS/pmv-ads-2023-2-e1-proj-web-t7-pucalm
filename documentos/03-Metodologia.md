@@ -46,7 +46,7 @@
 </ul>
 
 <figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/992ead003afd9338e3e0663fd3302aa026a75b6b/documentos/img/Kanban/Labels..png"
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/59f3464829b357c5c1a91b322a5003e685becec1/documentos/img/Kanban/Labels..png"
     <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
 </figure> 
   
