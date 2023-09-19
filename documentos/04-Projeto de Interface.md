@@ -22,9 +22,11 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 [Elabore as principais interfaces gráficas da aplicação de modo que os requisitos funcionais sejam contemplados nas telas propostas.]
 
-Wireframe landing page:
+## Wireframe landing page:
 ![landing page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/144954961/64d08662-aeb1-427d-8ad6-daab0a3218e7)
-Wireframe página inicial:
+
+## Wireframe página inicial:
 ![home](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/144954961/033c8dbb-2172-4b17-821d-0604ac7e7db3)
-Wireframe página playlist:
+
+## Wireframe página de playlists:
 ![playlist](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/144954961/6061f64e-d52d-434f-93ac-27ecd8eea9e4)
