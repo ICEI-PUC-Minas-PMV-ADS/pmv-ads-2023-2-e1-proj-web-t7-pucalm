@@ -33,12 +33,16 @@
 <p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
 
 <ul>
-  <li>Bug (Erro no código)</li>
-  <li>Desenvolvimento (Development)</li>
-  <li>Documentação (Documentation)</li>
-  <li>Gerência de Projetos (Project Management)</li>
-  <li>Infraestrutura (Infrastructure)</li>
-  <li>Testes (Tests)</li>
+  <li>Help (Ajuda necessária)</li>
+  <li>Bug (erros)</li>
+  <li>Design (Interface)</li>
+  <li>Documentação </li>
+  <li>Invalid (Inválido)</li>
+  <li>Enhancement (Aprimorar)</li> 
+  <li>Metodologia</li>
+  <li>Question (Questão)</li>
+  <li>Tests (Testes)</li>
+  <li>Wontfix (Não vai mais ser trabalhado)</li>
 </ul>
 
 <figure> 
