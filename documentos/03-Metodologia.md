@@ -34,16 +34,27 @@
 #### Sprint 1
 
 ##### Planejamento
+
 &emsp;Na _sprint 1_ foram desenvolvidas as atividades iniciais do projeto, como a produção inicial da documentação de contexto e as especificação do projeto. Os requisitos funcionais e não funcionais foram definidos nesta etapa, bem como o nome da aplicação web a ser desenvolvida.
 
+
 ##### Execução
-- Nome da aplicação: Definido por votação em videochamada de reunião;
-- 
+
+- Nome da aplicação: Definido por votação em videochamada de reunião. Foi definido o nome PUCalm.
+- Foi feita uma revisão bibiográfica em cima do problema, por todos os membros da equipe.
+
+  
 ##### Evidências
 [Aqui vamos colocar algumas capturas de tela do MS Teams, como por exemplo de algum dos chats]]
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/cfef6b87c4588ca04d02a1a1448d1986e59c6cfd/documentos/img/Kanban/Kanban%20etapa%201.png"
    <figcaption>Figura 1 - Kanban da primeira etapa do projeto</figcaption>
+</figure> 
+
+&emsp;Após a conclusão da _sprint 1_, a Milestone previamente definida como Etapa 1, e que foi definida uma para cada sprint/etapa, teve todos os issues encerrados.
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/Kanban/Etapa-1-Milestone.png"
+    <figcaption>Figura 2 - Encerramento da Etapa 1</figcaption>
 </figure> 
 
 
@@ -53,7 +64,7 @@
 ##### Execução
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/cfef6b87c4588ca04d02a1a1448d1986e59c6cfd/documentos/img/Kanban/Kanban%20etapa%202.png"
-    <figcaption>Figura 2 - Kanban da segunda etapa do projeto</figcaption>
+    <figcaption>Figura 3 - Kanban da segunda etapa do projeto</figcaption>
 </figure> 
 
 ### Etiquetas
@@ -65,7 +76,7 @@
   <li>Metodologia</li>
 </ul>
 
-[Adicionar captura de tela do nosso projeto]
+
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/59f3464829b357c5c1a91b322a5003e685becec1/documentos/img/Kanban/Labels..png"
     <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
