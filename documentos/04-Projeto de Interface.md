@@ -6,7 +6,7 @@
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de navegação do usuário na aplicação. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
 ### Fluxo de Usuário:
-![fluxo_usuario_etapa2_v1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/5f7c309f61684cfa6df8aae6a4296db996bfa38a/documentos/img/fluxo_usuario_etapa2_v1.png)
+![fluxo_usuario_etapa2_v2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/cfbed262c1e4bf6ffc2fcc14a439b830bc9a5484/documentos/img/fluxo_usuario_etapa2_v2.png)
 
 ## Protótipo
 
@@ -29,5 +29,5 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 ![Playlist](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/144954961/3f1e07ec-f877-49da-aa88-529ee9183dd2)
 
 ### Tela de feedbacks:
-#### Tela de feedbacks, na qual o usuário pode escrever comentários, reclamações e dar sugestões de melhorias para a aplicação coo um todo (RF-03).
+#### Tela de feedback, na qual o usuário pode deixar seus comentários a respeito da aplicação e do conteúdo (RF-03).
 ![Feedbacks](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/144954961/159b55a2-fc64-474e-88bb-4e9435932d1a)
