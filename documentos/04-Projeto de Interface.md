@@ -17,11 +17,11 @@ Desenvolver um protótipo emerge como uma das maneiras mais ágeis e econômicas
 Protótipos de baixa fidelidade apresentam de forma simplificada o design da interface e o relacionamento entre suas páginas, permitindo evolução da proposta da solução. Neste projeto, os utilizaremos para apoiar a validação dos requisitos e efetuar mudanças dos mesmos, caso seja necessário, para menor impacto na codificação da aplicação.
 
 ### Landing page:
-#### O usuário acessa a aplicação PUCALM e é recebido pela Landing Page, que fornece informações introdutórias sobre a aplicação, tais como sua finalidade e benefícios. Na Landing Page, existe um recurso que direciona o usuário para a Home do aplicativo, permitindo-o explorar as meditações e áudios relaxantes. O usuário tem a opção de deixar seu feedback sobre o site no campo de comentários (RF-03).
+#### O usuário acessa a aplicação PUCALM e é recebido pela Landing Page, que fornece informações introdutórias sobre a aplicação, tais como sua finalidade e benefícios. Na Landing Page, existe um recurso que direciona o usuário para a Home do aplicativo, permitindo-o explorar as meditações e áudios relaxantes.
 ![landing page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/144954961/64d08662-aeb1-427d-8ad6-daab0a3218e7)
 
 ### Tela inicial:
-#### Tela inicial (Home), na qual o usuário pode explorar todas as playlists disponíveis (RF-01), bem como pesquisar pela playlist desejada através do campo de busca ou utilizando os filtros de categorias da aplicação (RF-05).
+#### Tela inicial (Home), na qual o usuário pode explorar todas as playlists disponíveis (RF-01), bem como pesquisar pela playlist desejada através do campo de busca ou utilizando os filtros de categorias da aplicação (RF-05) e tem também, a opção de deixar seu feedback sobre o site no campo de comentários (RF-03).
 ![home](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/144954961/033c8dbb-2172-4b17-821d-0604ac7e7db3)
 
 ### Tela de playlist:
