@@ -78,8 +78,8 @@
 
 
 <figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/59f3464829b357c5c1a91b322a5003e685becec1/documentos/img/Kanban/Labels..png"
-    <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/Kanban/Labels-Kanban.png"
+    <figcaption>Figura 4 - Tela do esquema de cores e etiquetas</figcaption>
 </figure> 
   
 ### Ferramentas
