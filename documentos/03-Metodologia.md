@@ -90,8 +90,8 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 
 | AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | http://....                            |
-| Documentos do projeto               | GitHub                             | http://....                            |
+| Repositório de código fonte         | GitHub                             | [http://....](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/tree/main/codigo-fonte)                            |
+| Documentos do projeto               | GitHub                             | [http://....](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/tree/main/documentos)                            |
 | Projeto de Interface                | Canva                              | [http://....](https://www.canva.com/design/DAFrj7eV12Y/bhel8OW8ptQrVjzEA0c3kw/view?utm_content=DAFrj7eV12Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)                            |
 | Gerenciamento do Projeto            | GitHub Projects                    | http://....                            |
 | Hospedagem                          | GitHub Pages                       | http://....                            |
