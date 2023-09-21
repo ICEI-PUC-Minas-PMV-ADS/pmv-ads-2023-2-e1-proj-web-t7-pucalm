@@ -28,7 +28,7 @@
 
 #### Product Backlog
 
-&emsp;O Product Backlog é uma lista prioritária de tarefas e requisitos a serem realizados no projeto para geração do produto. O backlog é ajustado conforme o projeto progride, levando em consideração as mudanças no ambiente e as necessidades do cliente.
+&emsp;O Product Backlog é uma lista prioritária de tarefas e requisitos a serem realizados no projeto para geração do produto. O backlog é ajustado conforme o projeto progride, levando em consideração as mudanças no ambiente e as necessidades do cliente. Para fins de projeto de aprendizado, o product backlog deste projeto exibe os itens entregáveis.
 
 
 #### Sprint 1
@@ -40,31 +40,43 @@
 
 ##### Execução
 
-- Nome da aplicação: Definido por votação em videochamada de reunião. Foi definido o nome PUCalm.
+- Nome da aplicação: Definido por votação em videochamada de reunião. Foi definido o nome **PUCalm**.
 - Foi feita uma revisão bibiográfica em cima do problema, por todos os membros da equipe.
 
   
 ##### Evidências
-[Aqui vamos colocar algumas capturas de tela do MS Teams, como por exemplo de algum dos chats]]
+[Aqui vamos colocar algumas capturas de tela do MS Teams, como por exemplo de algum dos chats.]: #
+
+&emsp;O quadro Kanban para a _Spring 1_, Figura 1, mostra os itens na parte inicial do projeto. A Figura 2 trás todos os itens do Product Backlog que foram listados na etapa 01.
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/cfef6b87c4588ca04d02a1a1448d1986e59c6cfd/documentos/img/Kanban/Kanban%20etapa%201.png"
    <figcaption>Figura 1 - Kanban da primeira etapa do projeto</figcaption>
 </figure> 
 
-&emsp;Após a conclusão da _sprint 1_, a Milestone previamente definida como Etapa 1, e que foi definida uma para cada sprint/etapa, teve todos os issues encerrados.
+<figure> 
+  <img src="[https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/cfef6b87c4588ca04d02a1a1448d1986e59c6cfd/documentos/img/Kanban/Kanban%20etapa%201.png](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/Kanban/Kanban-Sprint 2.png)"
+   <figcaption>Figura 2 - Product backlog</figcaption>
+</figure> 
+
+
+&emsp;Após a conclusão da _sprint 1_, a Milestone previamente definida como Etapa 01, e que foi definida uma para cada sprint/etapa, teve todos os issues encerrados, exibida na Figura 3.
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/Kanban/Etapa-1-Milestone.png"
-    <figcaption>Figura 2 - Encerramento da Etapa 1</figcaption>
+    <figcaption>Figura 3 - Encerramento da Etapa 1</figcaption>
 </figure> 
 
 
 #### Sprint 2
-[Descrever aqui como fizemos na sprint 2]
+[Descrever aqui como fizemos na sprint 2]: #
+&emsp;Na _Sprint 2_ foram definidos os papeis 
+
+
+
 ##### Planejamento
 ##### Execução
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/cfef6b87c4588ca04d02a1a1448d1986e59c6cfd/documentos/img/Kanban/Kanban%20etapa%202.png"
-    <figcaption>Figura 3 - Kanban da segunda etapa do projeto</figcaption>
+    <figcaption>Figura 4 - Kanban da segunda etapa do projeto</figcaption>
 </figure> 
 
 ### Etiquetas
@@ -79,7 +91,7 @@
 
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/Kanban/Labels-Kanban.png"
-    <figcaption>Figura 4 - Tela do esquema de cores e etiquetas</figcaption>
+    <figcaption>Figura 5 - Tela do esquema de cores e etiquetas</figcaption>
 </figure> 
   
 ### Ferramentas
