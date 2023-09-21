@@ -17,7 +17,6 @@
 - Designer de UI/UX: Rafael Costa Souza
 - Kanban Manager: Gabriela Franklin Sá de Moura
 - Testador de Qualidade (QA): Camyla Gomes Soares Oliveira
-- Especialista em Documentação: ?
 - Gerente de Controle de Versão: Gabriel Coutinho Rolim
 
 
@@ -68,19 +67,32 @@
 
 #### Sprint 2
 [Descrever aqui como fizemos na sprint 2]: #
-&emsp;Na _Sprint 2_ foram definidos os papeis 
-
-
 
 ##### Planejamento
-##### Execução
+
+&emsp;Na _Sprint 2_ foram definidos os papeis do projeto e as ferramentas de construção. Foram desenhadas as wireframes de acordo com o fluxo de usuário, e vice-versa. Também foram ajustados pontos reabertos da _Sprnt 1_.
+
+&emsp;A Figura 4 trás o quadro Kanban nesta sprint.
 <figure>
   <figcaption>Figura 4 - Kanban da segunda etapa do projeto</figcaption>
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/cfef6b87c4588ca04d02a1a1448d1986e59c6cfd/documentos/img/Kanban/Kanban%20etapa%202.png"
 </figure> 
 
+
+##### Execução
+
+- Plataforma de comunicação principal para reuniões: Microsoft Teams
+- Plataforma de comunicação secundária e chat:  WhatsApp LLC
+- Quandro kanban foi criado e atualizado pela Kanban Master
+- Projeto de interface com a criação de Wireframes
+- Projeto de interface em concomitância com o fluxo de usuário; este com toda a equipe em reunião
+- Criação do etapa **Revisão** no quadro Kanban
+
+##### Evidências
+
 ### Etiquetas
-<p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
+
+&emsp;As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias que foi definido em reunião:
 
 <ul>
   <li>Design (Interface)</li>
@@ -88,17 +100,18 @@
   <li>Metodologia</li>
 </ul>
 
-
+&emsp;Novas etiquetas farão parte do projeto à medida em que seu uso seja demandado. A Figura 5 exibe as etiquetas adotada até a _Sprint 2_ e seu esquema de cores.
 <figure>
   <figcaption>Figura 5 - Tela do esquema de cores e etiquetas</figcaption>
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/Kanban/Labels-Kanban.png"
-</figure> 
-  
+</figure>
+
+
 ### Ferramentas
 
-[Descreva aqui as ferramentas empregadas no projeto e os ambiente de trabalho utilizados pela  equipe para desenvolvê-lo. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).]
+[Descreva aqui as ferramentas empregadas no projeto e os ambiente de trabalho utilizados pela  equipe para desenvolvê-lo. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).]: #
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
+&emsp;Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
 
 | AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
