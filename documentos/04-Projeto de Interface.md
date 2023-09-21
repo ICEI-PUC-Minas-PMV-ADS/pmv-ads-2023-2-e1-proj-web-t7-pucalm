@@ -6,7 +6,7 @@
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de navegação do usuário na aplicação. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
 ### Fluxo de Usuário:
-![fluxo_usuario_etapa2_v2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/cfbed262c1e4bf6ffc2fcc14a439b830bc9a5484/documentos/img/fluxo_usuario_etapa2_v2.png)
+![fluxo_usuario_etapa2_v3](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/3a60d4d373266fe065434c86c50b4448dec0da07/documentos/img/fluxo_usuario_etapa2_v3.png)
 
 ## Protótipo
 
@@ -28,6 +28,6 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 #### Tela da playlist selecionada pelo usuário, na qual ele pode visualizar todos os áudios que compõem a playlist e reorganizá-los através do recurso de classificação. O usuário é capaz de reproduzir imediatamente todos os áudios da playlist em sequência ou selecionar um áudio específico para reproduzir no player (RF-02). Além disso, ele tem a possibilidade de compartilhar tanto a playlist quanto um áudio específico através do recurso de compartilhamento (RF-04).
 ![Playlist](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/144954961/3f1e07ec-f877-49da-aa88-529ee9183dd2)
 
-### Tela de feedbacks:
+### Tela de feedback:
 #### Tela de feedback, na qual o usuário pode deixar seus comentários a respeito da aplicação e do conteúdo (RF-03).
 ![Feedbacks](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/144954961/159b55a2-fc64-474e-88bb-4e9435932d1a)
