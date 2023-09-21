@@ -13,8 +13,3 @@ WORLD HEALTH ORGANIZATION. **Mental disorders**. News room, fact sheets.  8 jun.
 ZANINI, C. R. DE O. et al. Music therapy effects on the quality of life and the blood pressure of hypertensive patients. **Arquivos Brasileiros De Cardiologia**, v. 93, n. 5, p. 534–540, 1 nov. 2009. Disponível em: <https://pubmed.ncbi.nlm.nih.gov/20084316/>. Acesso em 20 ago. 2023 
 
 ZEIDAN, Fadel et al. Mindfulness Meditation-Based Pain Relief Employs Different Neural Mechanisms Than Placebo and Sham Mindfulness Meditation-Induced Analgesia.  **The journal of neuroscience: The official journal of the society for neuroscience**, v. 35, n. 46, p. 15307-15325. Disponível em: <https://pubmed.ncbi.nlm.nih.gov/26586819/>. Acesso em 21 ago. 2023 
-
-
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
