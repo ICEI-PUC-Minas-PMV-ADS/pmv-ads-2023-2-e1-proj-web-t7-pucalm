@@ -15,10 +15,10 @@
 - Product Owner: Lucas Campos de Abreu
 - Equipe de Desenvolvimento: Camyla Gomes Soares Oliveira, Gabriel Coutinho Rolim, Gabriela Franklin Sá de Moura, Lucas Campos de Abreu, Otávio Martins Ferreira, Rafael Costa Souza e Willams Andrade Lima
 - Designer de UI/UX: Rafael Costa Souza
-- Kanban manager: Gabriela Franklin Sá de Moura
+- Kanban Manager: Gabriela Franklin Sá de Moura
 - Testador de Qualidade (QA): Camyla Gomes Soares Oliveira
 - Especialista em Documentação: ?
-- Gerente de Controle de Versão: ?
+- Gerente de Controle de Versão: Gabriel Coutinho Rolim
 
 
 ### Processo
