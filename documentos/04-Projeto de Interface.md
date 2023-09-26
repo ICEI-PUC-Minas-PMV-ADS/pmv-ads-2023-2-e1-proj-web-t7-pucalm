@@ -30,7 +30,7 @@
 
 ### Pop-up compartilhamento:
 
-&emsp;A opção de compartilhamento está disponível na barra de navegação da aplicação, e assim que selecionada, abre um pop-up, para que o usuário possa copiar o link e compartilhar com seus amigos.
+&emsp;A opção de compartilhamento está disponível na barra de navegação da aplicação, e assim que selecionada, abre um pop-up, para que o usuário possa copiar o link de compartilhamento (RF-04).
 ![InícioCompartilhar](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/144954961/827ea891-9cf2-4c87-8e65-faa9201583e7)
 
 
