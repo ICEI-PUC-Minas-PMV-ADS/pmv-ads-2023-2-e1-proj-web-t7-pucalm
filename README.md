@@ -16,7 +16,6 @@ Uma aplicação web simples e intuitiva que ofereça meditações guiadas e sons
 * Gabriel Coutinho Rolim 
 * Gabriela Franklin Sá de Moura 
 * Lucas Campos de Abreu
-* Otávio Martins Ferreira
 * Rafael Costa Souza
 * Willams Andrade Lima
 
