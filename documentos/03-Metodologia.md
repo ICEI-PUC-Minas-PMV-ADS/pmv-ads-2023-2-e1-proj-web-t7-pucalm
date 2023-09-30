@@ -13,7 +13,7 @@
 &emsp;A equipe utiliza o Scrum como base para definição do processo de desenvolvimento e foi dividida em:
 - Scrum Master: Willams Andrade Lima
 - Product Owner: Lucas Campos de Abreu
-- Equipe de Desenvolvimento: Camyla Gomes Soares Oliveira, Gabriel Coutinho Rolim, Gabriela Franklin Sá de Moura, Lucas Campos de Abreu, Otávio Martins Ferreira, Rafael Costa Souza e Willams Andrade Lima
+- Equipe de Desenvolvimento: Camyla Gomes Soares Oliveira, Gabriel Coutinho Rolim, Gabriela Franklin Sá de Moura, Lucas Campos de Abreu, Rafael Costa Souza e Willams Andrade Lima
 - Designer de UI/UX: Rafael Costa Souza
 - Kanban Manager: Gabriela Franklin Sá de Moura
 - Testador de Qualidade (QA): Camyla Gomes Soares Oliveira
