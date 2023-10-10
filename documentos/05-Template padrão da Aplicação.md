@@ -4,6 +4,9 @@ Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com
 
 [Apresente a estrutura padrão da sua aplicação.]
 
+## Link repositório do Template do HTML e CSS
+https://github.com/roberto-aq/clon-de-spotify-con-HTML-y-CSS.git
+
 > **Links Úteis**:
 >
 > - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
