@@ -88,6 +88,10 @@
 - Projeto de interface em concomitância com o fluxo de usuário; este com toda a equipe em reunião
 - Criação do etapa **Revisão** no quadro Kanban
 
+&emsp;As reuniões da equipe atuante foram realizadas regularmente na plataforma Microsoft Teams, geralmente agendadas para as segundas-feiras. Durante essas reuniões, foi realizado um monitoramento do progresso das tarefas da sprint, ocorreu a harmonização de ideias e foram feitos ajustes visando às entregas da semana. Embora as tarefas individuais tenham sido executadas quase simultaneamente, houve uma compatibilização entre os requisitos, wireframes e fluxos de usuário em cada sessão de reunião.
+
+&emsp;Entre os desafios inerentes ao conteúdo da sprint 2, também surgiram dificuldades na seleção de plataformas adequadas para o trabalho. Como ponto de partida, optou-se por utilizar a plataforma Canva para desenvolver os wireframes, devido à sua acessibilidade imediata aos membros da equipe que não estavam familiarizados com plataformas mais especializadas. A aplicação online LucidApp foi escolhida para criação do fluxo de usuários por ter fácil utilização e ser uma plataforma gratuita.
+
 ##### Evidências
 
 ### Etiquetas
