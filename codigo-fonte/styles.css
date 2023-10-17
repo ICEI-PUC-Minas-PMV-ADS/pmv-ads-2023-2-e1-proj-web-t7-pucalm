@@ -10,6 +10,10 @@ html {
 	font-size: 62.5%;
 }
 
+hr{
+	opacity: 10%;
+}
+
 body {
 	font-family: 'Rubik';
 }
@@ -18,7 +22,6 @@ body {
 	display: grid;
 	grid-template-columns: 30rem 1fr;
 	grid-template-rows: min-content 1fr min-content;
-	margin-bottom: 8rem;
 }
 
 /* ********************************** */
@@ -115,10 +118,10 @@ body {
 
 	position: fixed;
 	width: 30rem;
-	height: calc(100vh - 8rem);
+	height: 100%;
 }
 
-.logo-svg {
+.logo-png {
 	color: #fff;
 	width: 18rem;
 	padding: 0 2.4rem;
@@ -126,7 +129,6 @@ body {
 
 .nav-main {
 	padding: 0 2.4rem;
-
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
@@ -241,6 +243,94 @@ body {
 }
 
 /* ********************************** */
+/*               CAROUSEL              */
+/* ********************************** */
+
+.carousel-container {
+
+	display: flex;
+
+	overflow: hidden;
+
+	white-space: nowrap;
+
+	border: 1px solid #ccc;
+
+}
+
+
+
+.full-width-container {
+
+	flex: 1; /* Faz o contêiner ocupar todo o espaço disponível */
+
+	overflow: hidden; /* Impede a quebra de linha */
+
+}
+
+
+
+.playlist-card {
+
+	width: 300px;
+
+	height: 200px;
+
+	margin-right: 10px;
+
+	background-color: #f0f0f0;
+
+	border: 1px solid #ccc;
+
+	text-align: center;
+
+	display: inline-block;
+
+}
+
+
+
+.filter-button {
+
+	margin: 10px;
+
+	cursor: pointer;
+
+	padding: 5px 10px;
+
+	border: 1px solid #ccc;
+
+	background-color: #f0f0f0;
+
+}
+
+
+
+.carousel-navigation {
+
+	display: flex;
+
+	align-items: center;
+
+}
+
+
+
+.carousel-nav-button {
+
+	cursor: pointer;
+
+	padding: 5px;
+
+	background-color: #f0f0f0;
+
+	border: 1px solid #ccc;
+
+	margin: 0 5px;
+
+}
+
+/* ********************************** */
 /*         CONTENIDO PRINCIPAL        */
 /* ********************************** */
 .main-content {
@@ -274,18 +364,28 @@ body {
 	margin-bottom: 2rem;
 }
 
+.container-card-concentracion-navbar {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: 1.4rem;
+}
+
 .container-card-concentracion,
 .container-card-spotify-playlists {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-	gap: 2.4rem;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap: 1.4rem;
+}
+
+.card{
+	display: flex;
 }
 
 .card-concentracion,
 .card-spotify-playlists {
 	background-color: #181818;
 	border-radius: 0.5rem;
-	padding: 1.6rem;
+	/*padding: 1.6rem;*/
 	box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
 	transition: background-color 0.3s ease;
 	cursor: pointer;
@@ -304,11 +404,23 @@ body {
 
 .card-img {
 	overflow: hidden;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5%;
+}
+
+.card-txt{
+	width: 70%;
+	padding: 5%;
+	align-items: center;
+	display: grid;
 }
 
 .card h2 {
-	margin-top: 1.5rem;
-	margin-bottom: 1rem;
+	/*margin-top: 1rem;
+	margin-bottom: 1rem;*/
 	font-size: 1.6rem;
 	color: #fff;
 	font-weight: 600;
@@ -325,6 +437,13 @@ body {
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 }
+
+
+/* ********************************** */
+/*               BARRA LATERAL MÚSICAS               */
+/* ********************************** */
+
+
 
 /* ********************************** */
 /*               FOOTER               */
@@ -392,40 +511,6 @@ body {
 
 .copyright p {
 	color: #a7a7a7;
-	font-size: 1.6rem;
-}
-
-/* ********************************** */
-/*            BANNER FINAL            */
-/* ********************************** */
-.banner-bottom {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	padding: 1rem 2rem;
-	background-image: linear-gradient(90deg, #af2896, #509bf5);
-	color: #fff;
-
-	position: fixed;
-	bottom: 0;
-	z-index: 20;
-	width: 100%;
-	height: 8rem;
-}
-
-.banner-bottom .content {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-}
-
-.banner-bottom .content span {
-	font-size: 1.4rem;
-	text-transform: uppercase;
-}
-
-.banner-bottom .content p {
 	font-size: 1.6rem;
 }
 
