@@ -111,6 +111,12 @@
 </figure>
 
 
+#### Sprint 3
+
+##### Execução
+Houve uma primeira tentativa de código base, utilizando um clone do repositório https://github.com/roberto-aq/clon-de-spotify-con-HTML-y-CSS.git , porém chegamos a conclusão que estruturar nosso código do zero seria mais promissor, devido a dificuldade de entendimento de como foi pensando o código do programador em questão.
+Após isso, recorremos a recursos como Bootstrap, video aulas e ferramentas online de suporte, para estruturar nosso próprio código do zero.
+
 ### Ferramentas
 
 [Descreva aqui as ferramentas empregadas no projeto e os ambiente de trabalho utilizados pela  equipe para desenvolvê-lo. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).]: #
