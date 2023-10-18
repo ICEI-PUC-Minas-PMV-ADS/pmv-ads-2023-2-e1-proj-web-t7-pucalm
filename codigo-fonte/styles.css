@@ -60,6 +60,8 @@ header .container-menu-lateral .logo-png {
 
 header .container-menu-lateral .container-botoes{
     margin: 40px 0px 0px 20px;
+    box-shadow: 0px 1px 0px 0px var(--azul-sombra)
+
 }
 
 header .container-menu-lateral .container-botoes h4{
@@ -71,6 +73,7 @@ header .container-menu-lateral .container-botoes h4{
     display: flex;
     align-items: center;
     transition: .3s linear;
+    margin: 15px 0px 0px 0px;
 }
 
 header .container-menu-lateral .container-botoes h4:hover{
@@ -82,6 +85,7 @@ header .container-menu-lateral .container-botoes h4 span{
     margin-right: 35px;
 }
 
+/*Forma o ponto antes o texto do botão*/
 header .container-menu-lateral .container-botoes h4 span::before{
     content: '';
     position: absolute;
@@ -94,14 +98,7 @@ header .container-menu-lateral .container-botoes h4 span::before{
 }
 
 header .container-menu-lateral .container-botoes h4:hover span::before{
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 4px;
     border: 2px solid var(--branco);
-    border-radius: 50%;
-    top: -4px;
-    transition: .3s linear;
 }
 
 header .container-menu-lateral .container-botoes h4 .bi {
@@ -126,9 +123,12 @@ header .container-menu-lateral .container-destaques {
     height: 420px;
     /* border: 1px solid var(--branco); */
     margin-top: 40px;
-   /* 
+   
     overflow:scroll;
-    overflow-x:hidden;*/
+}
+
+header .container-menu-lateral .container-destaques::-webkit-scrollbar {
+    display: none;
 }
 
 header .container-menu-lateral .container-destaques li {
@@ -140,6 +140,8 @@ header .container-menu-lateral .container-destaques li {
     margin-bottom: 10px;
     cursor: pointer;
     transition: .3s linear;
+    box-shadow: 0px 1px 0px 0px var(--azul-sombra)
+
 }
 
 header .container-menu-lateral .container-destaques li:hover {
@@ -178,8 +180,11 @@ header .container-menu-lateral .container-destaques li .bi {
     right: 10px;
 }
 
+
 header .container-menu-lateral .container-destaques h3 {
+    font-size: 16px;
     padding: 5px 0px 5px 20px;
+    margin: 0px 0px 15px
 
 }
 
