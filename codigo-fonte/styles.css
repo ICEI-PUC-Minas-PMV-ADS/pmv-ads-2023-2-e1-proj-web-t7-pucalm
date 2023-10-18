@@ -127,8 +127,13 @@ header .container-menu-lateral .container-destaques {
     overflow:scroll;
 }
 
+/*Estilizar barra de rolagem em navegadores Chromium e WebKit*/
 header .container-menu-lateral .container-destaques::-webkit-scrollbar {
     display: none;
+}
+/*Estilizar barra de rolagem em navegadores Gecko-based*/
+header .container-menu-lateral .container-destaques {
+    scrollbar-width: none;
 }
 
 header .container-menu-lateral .container-destaques li {
