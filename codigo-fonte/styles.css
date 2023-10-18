@@ -123,8 +123,7 @@ header .container-menu-lateral .container-destaques {
     height: 420px;
     /* border: 1px solid var(--branco); */
     margin-top: 40px;
-   
-    overflow:scroll;
+    overflow:auto;
 }
 
 /*Estilizar barra de rolagem em navegadores Chromium e WebKit*/
@@ -245,8 +244,17 @@ header .container-conteudo {
 	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 	gap: 1.4rem;
     padding: 1.6rem;
-    overflow:scroll;
+    overflow:auto;
     overflow-x:hidden;
+}
+
+/*Estilizar barra de rolagem em navegadores Chromium e WebKit*/
+.cartoes-playlists::-webkit-scrollbar {
+    display: none;
+}
+/*Estilizar barra de rolagem em navegadores Gecko-based*/
+.cartoes-playlists {
+    scrollbar-width: none;
 }
 
 .cartao {
