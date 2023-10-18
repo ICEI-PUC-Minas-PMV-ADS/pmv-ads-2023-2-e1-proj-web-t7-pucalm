@@ -38,7 +38,7 @@ Uma aplicação web simples e intuitiva que ofereça meditações guiadas e sons
 </ol>
 
 # Hospedagem
-<li><a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/"> PUCalm</a></li>
+<li><a href="[https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/tree/fd29cd6455d804adae0234549ba6ca3b9f3c4962/codigo-fonte)"> PUCalm</a></li>
 
 
 # Código-Fonte
