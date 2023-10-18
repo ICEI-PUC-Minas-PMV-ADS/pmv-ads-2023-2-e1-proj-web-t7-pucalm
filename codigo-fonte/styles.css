@@ -13,6 +13,18 @@
     --azul-claro: #36e2ec;
   }
 
+  @keyframes efeito-onda {
+    0% {
+        height: 10px;
+    }
+    50% {
+        height: 15px;
+    }
+    100% {
+        height: 10px;
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -289,6 +301,14 @@ background-color: #282828;
     height: 0.1rem;
 }
 
+.texto-cartao h2{
+    font-size: 16px;
+}
+
+.texto-cartao p{
+    font-size: 14px;
+}
+
 /* ********************************** */
 /*          Container Player          */
 /* ********************************** */
@@ -336,14 +356,3 @@ header .container-player .container-onda-sonora .onda-sonora1:nth-child(3) {
 
 }
 
-@keyframes efeito-onda {
-    0% {
-        height: 10px;
-    }
-    50% {
-        height: 15px;
-    }
-    100% {
-        height: 10px;
-    }
-}
