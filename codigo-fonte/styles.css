@@ -207,6 +207,14 @@ header .container-menu-lateral h3 {
 /* ********************************** */
 /*         Container Conteúdo         */
 /* ********************************** */
+header .container-barra-superior{
+    width: 75%;
+    height: 10%;
+    position: fixed;
+    z-index: 10;
+    left: 25%;
+}
+
 header .container-conteudo {
     width: 75%;
     height: 90%;
@@ -300,7 +308,7 @@ header .container-conteudo {
     display: flex;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-top: 1rem;
+    padding-top: 4rem;
 	align-items: center;
 }
 
@@ -455,6 +463,14 @@ header .container-player .container-onda-sonora .onda-sonora1:nth-child(3) {
 
     header .container-player {
         bottom: 9% !important;
+    }
+
+    header .container-barra-superior{
+        width: 100%;
+        height: 10%;
+        position: fixed;
+        z-index: 10;
+        left: 0;
     }
 }
 
