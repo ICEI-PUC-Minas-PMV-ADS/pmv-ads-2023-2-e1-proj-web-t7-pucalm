@@ -232,7 +232,7 @@ header .container-conteudo {
 }
 
 .titulo-barra-superior h1{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #fff;
     cursor: pointer;
     font-weight: 600;
@@ -241,14 +241,64 @@ header .container-conteudo {
 .pesquisa-barra-superior{
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .pesquisa-barra-superior input{
-    width: 18rem;
-    height: 2.5rem;
+    width: 100%;
+    height: 2rem;
     border-radius: 4rem;
+    border: 0.1px;
     padding: 1rem;
+}
+
+.pesquisa-barra-superior button{
+    height: 2rem;
+    border-radius: 4rem;
+    border: 0.1px;
+    padding: 1rem;
+    height: 2rem;
+    align-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.botao-filtro{
+    margin: 10px;
+	cursor: pointer;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+    border-radius: 4rem;
+	background-color: #f0f0f0;
+    font-size: 14px;
+}
+
+.botao-filtro-playlists{
+    cursor: pointer;
+	padding: 5px;
+	background-color: #f0f0f0;
+    border-radius: 4rem;
+	border: 1px solid #ccc;
+	margin: 5px;
+}
+
+.filtro-playlists-navegacao{
+	display: flex;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.tamanho-total{
+    flex: 1; /* Faz o contêiner ocupar todo o espaço disponível */
+	overflow: hidden; /* Impede a quebra de linha */
+}
+
+.filtro-playlists{
+    display: flex;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+	align-items: center;
 }
 
 .cartoes-playlists{
@@ -258,6 +308,7 @@ header .container-conteudo {
     padding: 1.6rem;
     overflow:auto;
     overflow-x:hidden;
+    height: 33rem;
 }
 
 /*Estilizar barra de rolagem em navegadores Chromium e WebKit*/
