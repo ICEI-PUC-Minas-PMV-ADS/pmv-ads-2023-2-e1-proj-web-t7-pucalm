@@ -443,7 +443,7 @@ header .container-player .container-onda-sonora .onda-sonora1:nth-child(3) {
         height: 9%;
         background: var(--cinza-escuro);
         box-shadow: 0px 3px 8px var(--azul-sombra);
-        padding: 0px 30px;
+        padding: 0px 0px;
         left: 0;
         bottom: 0;
         display: flex;
@@ -453,12 +453,14 @@ header .container-player .container-onda-sonora .onda-sonora1:nth-child(3) {
     }
     
     .botoes-navbar-mobile{
+        width: 25%;
+        text-align: center;
     }
 
     .botao-navbar-mobile{
         padding: 5px 10px;
         margin: 0px 5px 0px 5px;
-
+        width: 70%;
     }
 
     header .container-player {
