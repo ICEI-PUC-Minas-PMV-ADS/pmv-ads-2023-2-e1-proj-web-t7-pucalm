@@ -229,6 +229,7 @@ header .container-conteudo {
 .titulo-barra-superior {
     display: flex;
     gap: 3rem;
+    padding-right: 1rem;
 }
 
 .titulo-barra-superior h1{
@@ -271,15 +272,17 @@ header .container-conteudo {
     border-radius: 4rem;
 	background-color: #f0f0f0;
     font-size: 14px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .botao-filtro-playlists{
     cursor: pointer;
-	padding: 5px;
+	padding: 1px 6px 1px 6px;
 	background-color: #f0f0f0;
     border-radius: 4rem;
 	border: 1px solid #ccc;
 	margin: 5px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .filtro-playlists-navegacao{
@@ -372,6 +375,9 @@ header .container-player {
     display: flex;
     align-items: center;
     padding: 0px 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 header .container-player .container-onda-sonora {
@@ -407,3 +413,11 @@ header .container-player .container-onda-sonora .onda-sonora1:nth-child(3) {
 
 }
 
+@media (max-width: 740px) {
+    .container-menu-lateral {
+        display: none !important;
+    }
+    .container-conteudo {
+        width: 100% !important;
+    }
+}
