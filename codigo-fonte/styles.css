@@ -34,9 +34,9 @@
 body {
     font-family: 'Nunito', sans-serif;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background:var(--cinza-escuro);
-    display: grid;
+    display: flex;
     place-items: center;
 }
 
@@ -44,8 +44,8 @@ body {
 /*         Container Global           */
 /* ********************************** */
 header {
-    width: 90%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     /* border: 1px solid var(--branco); */
     display: flex;
     flex-wrap: wrap; /*Para que o player desça*/
