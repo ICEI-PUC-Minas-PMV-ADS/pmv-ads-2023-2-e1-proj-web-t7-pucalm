@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+}
+
+.secao-flex{
+    display: flex;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.secao-grid{
+    display: grid;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.conteiner-50 {
+    width: 50%;
+}
+
+.conteiner-33 {
+    width: 33%;
+}
+
+.conteiner-100 {
+    width: 100%;
+}
+
+.imagem-width-90{
+    width: 90%;
+}
+
+/* Seção inicial CTA */
+.logo{
+    width: 30%;
+    background-color: black;
+    padding: 2%;
+}
+
+.centralizado{
+    text-align: center;
+}
+
+button{
+    border-radius: 4rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: black;
+    font-weight: 700;
+    color: white;
+}
+
+/* Seção integrantes */
+.conteiner-intergantes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+}
+.imagem-integrantes{
+    width: 90%;
+}
+
+/* ********************************** */
+/*            Versão Mobile           */
+/* ********************************** */
+@media (max-width: 720px) {
+    .conteiner-intergantes{
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+}
+
+@media (max-width: 1270px) and (min-width: 721px) {
+    .conteiner-intergantes{
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+}
