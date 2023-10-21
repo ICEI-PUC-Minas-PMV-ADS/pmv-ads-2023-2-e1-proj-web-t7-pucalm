@@ -1,6 +1,19 @@
 body{
     background-color: rgb(255, 255, 255);
     font-family: 'Nunito', sans-serif;
+    padding: 0% 2% 0% 2%;
+}
+
+p{
+    text-align: justify !important;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding: 2%;
 }
 
 .secao-flex{
@@ -15,29 +28,37 @@ body{
 
 .conteiner-50 {
     width: 50%;
+    padding: 1%;
 }
 
 .conteiner-33 {
     width: 33%;
+    padding: 1%;
 }
 
 .conteiner-100 {
     width: 100%;
+    padding: 1%;
 }
 
-.imagem-width-90{
-    width: 90%;
+.imagem-width-95{
+    width: 95%;
 }
 
 /* Seção inicial CTA */
 .logo{
-    width: 30%;
+    width: calc(30% + 2rem);
     background-color: black;
     padding: 2%;
 }
 
+.logo1{
+    margin-bottom: 5%;
+}
+
 .centralizado{
     text-align: center;
+    align-self: center
 }
 
 button{
@@ -55,7 +76,7 @@ button{
     gap: 1rem;
 }
 .imagem-integrantes{
-    width: 90%;
+    width: 95%;
 }
 
 /* ********************************** */
