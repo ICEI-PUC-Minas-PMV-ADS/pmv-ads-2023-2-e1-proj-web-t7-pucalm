@@ -1,27 +1,27 @@
-body{
+body {
     background-color: rgb(255, 255, 255);
     font-family: 'Nunito', sans-serif;
     padding: 0% 2% 0% 2%;
 }
 
-p{
+p {
     text-align: justify !important;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-li{
+li {
     padding: 2%;
 }
 
-.secao-flex{
+.secao-flex {
     display: flex;
     padding: 1rem 0rem 1rem 0rem;
 }
 
-.secao-grid{
+.secao-grid {
     display: grid;
     padding: 1rem 0rem 1rem 0rem;
 }
@@ -41,27 +41,27 @@ li{
     padding: 1%;
 }
 
-.imagem-width-95{
+.imagem-width-95 {
     width: 95%;
 }
 
 /* Seção inicial CTA */
-.logo{
+.logo {
     width: calc(30% + 2rem);
     background-color: black;
     padding: 2%;
 }
 
-.logo1{
+.logo1 {
     margin-bottom: 5%;
 }
 
-.centralizado{
+.centralizado {
     text-align: center;
     align-self: center
 }
 
-button{
+button {
     border-radius: 4rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: black;
@@ -70,26 +70,28 @@ button{
 }
 
 /* Seção integrantes */
-.conteiner-intergantes{
+.conteiner-intergantes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1rem;
+    margin: 1rem 1rem 1rem 1rem;
 }
-.imagem-integrantes{
-    width: 95%;
+
+.imagem-integrantes {
+    width: 100%;
 }
 
 /* ********************************** */
 /*            Versão Mobile           */
 /* ********************************** */
 @media (max-width: 720px) {
-    .conteiner-intergantes{
+    .conteiner-intergantes {
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
 }
 
 @media (max-width: 1270px) and (min-width: 721px) {
-    .conteiner-intergantes{
+    .conteiner-intergantes {
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     }
 }
