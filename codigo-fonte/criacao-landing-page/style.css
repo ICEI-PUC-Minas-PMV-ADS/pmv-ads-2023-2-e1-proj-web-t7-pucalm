@@ -62,7 +62,7 @@ li {
 }
 
 button {
-    border-radius: 4rem;
+    border-radius: 3rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: black;
     font-weight: 700;
@@ -79,6 +79,10 @@ button {
 
 .imagem-integrantes {
     width: 100%;
+}
+.paragrafo-inteiro {
+    text-align: center;
+    margin: 1rem;
 }
 
 /* ********************************** */
