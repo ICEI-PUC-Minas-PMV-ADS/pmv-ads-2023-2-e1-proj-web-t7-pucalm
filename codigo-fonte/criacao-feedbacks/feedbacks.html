@@ -6,29 +6,30 @@
 </head>
 <body>
 
-<h3>Contact Form</h3>
+  <div class="container-logo"> 
+    <img src="\codigo-fonte\assets\PUCalm.png" alt="PUCalm" class="logo">
+  </div>
 
-<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  <h3>Escreva seu Feedback</h3>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  <div class="container">
+    <form class="form">
+      <label for="tnome">Nome (Obrigatório)</label>
+      <input type="text" id="tnome" name="nome" placeholder="Nome...">
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
+      <label for="temail">E-mail (Opcional)</label>
+      <input type="text" id="temail" name="email" placeholder="email@exemplo.com.br">
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <label for="tmsg">Mensagem</label>
+      <textarea id="tmsg" name="msg" placeholder="Escreva seu comentário..." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
-  </form>
-</div>
+      <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <div class="rodape"> 
+      <!-- Copyright Grupo D - ADS - PUC-MG  -->
+    </div>
+  </div>
 
 </body>
 </html>
