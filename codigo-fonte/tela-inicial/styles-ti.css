@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+    padding: 0% 2% 0% 2%;
+}
+
+p {
+    text-align: justify !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 2%;
+}
+
+.secao-flex {
+    display: flex;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.secao-grid {
+    display: grid;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.conteiner-50 {
+    width: 50%;
+    padding: 1%;
+}
+
+.conteiner-33 {
+    width: 33%;
+    padding: 1%;
+}
+
+.conteiner-100 {
+    width: 100%;
+    padding: 1%;
+}
+
+.imagem-width-95 {
+    width: 95%;
+}
+
+/* Seção inicial CTA */
+.logo {
+    width: calc(30% + 2rem);
+    background-color: black;
+    padding: 2%;
+}
+
+.logo1 {
+    margin-bottom: 5%;
+}
+
+.centralizado {
+    text-align: center;
+    align-self: center
+}
+
+button {
+    border-radius: 3rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: black;
+    font-weight: 700;
+    color: white;
+}
+
+/* Seção integrantes */
+.conteiner-intergantes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.imagem-integrantes {
+    width: 100%;
+}
+
+.paragrafo-inteiro {
+    text-align: center;
+    margin: 1rem;
+}
+
+/* ********************************** */
+/*            Versão Mobile           */
+/* ********************************** */
+@media (max-width: 720px) {
+    .conteiner-intergantes {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+}
+
+@media (max-width: 1270px) and (min-width: 721px) {
+    .conteiner-intergantes {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+}
