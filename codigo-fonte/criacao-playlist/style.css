@@ -1,0 +1,33 @@
+.secao-flex{
+    display: flex;
+}
+.secao-grid{
+    display: grid;
+}
+.tamanho-30{
+    width: 30%;
+}
+.tamanho-50{
+    width: 50%;
+}
+.tamanho-20{
+    width: 20%;
+}
+.tamanho-10{
+    width: 10%
+}
+.tamanho-70{
+    width: 70%
+}
+.tamanho-100{
+    width: 100%;
+}
+.tamanho-15{
+    width: 15%
+}
+.centralizar{
+    align-items: center;
+}
+.bi-share {
+    padding: 0.5rem;
+}
