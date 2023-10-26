@@ -10,17 +10,22 @@
     </head>
     <body>
         <!--  Secao nome da playlist  -->
+        
+        <section class="section-mobile">
+            <img src="../assets/mix1.jpeg" alt="Imagem de Playlist" class="tamanho-30" style="text-align: center;">
+        </section> 
+
         <section class="secao-flex espacamento-section">
-            <div class="tamanho-20">
-                <img src="/codigo-fonte/assets/mix1.jpeg" alt="Imagem de Playlist" class="tamanho-100">
+            <div class="tamanho-20 imagem-playlist">
+                <img src="../assets/mix1.jpeg" alt="Imagem de Playlist" class="tamanho-100">
             </div>
             <div class="tamanho-60 informacoes-playlist">
                 <p>Playlist</p>
-                <h2 style="font-size: 2.5rem; margin: 0.5em 0em 0.5em 0em">Nome da playlist</h2>
+                <h2 class="titulo-playlist">Nome da playlist</h2>
                 <p>X áudios | PUCalm</p>
-                <img src="/codigo-fonte/assets/play_musicbar.png" alt="Logo Play" class="botao-play">
+                <img src="../assets/play_musicbar.png" alt="Logo Play" class="botao-play">
             </div>
-            <div class="secao-grid tamanho-20">
+            <div class="secao-grid tamanho-20 secao-filtro">
                 <div class="alinhar-direita">
                     <select name="ordenar_por" class="personalizacao-select"> 
                         <option value="1">Ordenar por</option>
@@ -39,75 +44,56 @@
         
         <!--  Secao audios da playlist  -->
         <section class="secao-grid espacamento-section rolagem-vertical">
-            <!--A numeracao foi removida porque a ferramenta necessaria sera trabalhada em uma sessao futura: JS -->
+            <!--A numeracao foi removida porque a ferramenta necessaria sera trabalhada em uma sessao futura: JS 
+            Descrever isso em detalhes na documentacao do GitHub//Will-->
             <div class="secao-flex espacamento-audios">  
-                <div class="tamanho-80 secao-flex centralizar">
-                    <img src="/codigo-fonte/assets/mix1.jpeg" class="tamanho-10">
+                <div class="secao-flex centralizar">
+                    <img src="../assets/mix1.jpeg" class="tamanho-10">
                     <p class="nome-audio">Nome do audio<p>
                 </div>
-                <div class="tamanho-20 secao-flex centralizar alinhar-direita">
+                <div class="secao-flex centralizar alinhar-direita">
                     <i class="bi bi-share"></i>
-                    <p>Compatilhar áudio</p>
+                    <p class="botao-compartilhar">Compatilhar áudio</p>
                 </div>
             </div>
             <div class="secao-flex espacamento-audios">  
-                <div class="tamanho-80 secao-flex centralizar">
-                    <img src="/codigo-fonte/assets/mix1.jpeg" class="tamanho-10">
+                <div class="secao-flex centralizar">
+                    <img src="../assets/mix1.jpeg" class="tamanho-10">
                     <p class="nome-audio">Nome do audio<p>
                 </div>
-                <div class="tamanho-20 secao-flex centralizar alinhar-direita">
+                <div class="secao-flex centralizar alinhar-direita">
                     <i class="bi bi-share"></i>
-                    <p>Compatilhar áudio</p>
+                    <p class="botao-compartilhar">Compatilhar áudio</p>
                 </div>
             </div>
             <div class="secao-flex espacamento-audios">  
-                <div class="tamanho-80 secao-flex centralizar">
-                    <img src="/codigo-fonte/assets/mix1.jpeg" class="tamanho-10">
+                <div class="secao-flex centralizar">
+                    <img src="../assets/mix1.jpeg" class="tamanho-10">
                     <p class="nome-audio">Nome do audio<p>
                 </div>
-                <div class="tamanho-20 secao-flex centralizar alinhar-direita">
+                <div class="secao-flex centralizar alinhar-direita">
                     <i class="bi bi-share"></i>
-                    <p>Compatilhar áudio</p>
+                    <p class="botao-compartilhar">Compatilhar áudio</p>
                 </div>
             </div>
             <div class="secao-flex espacamento-audios">  
-                <div class="tamanho-80 secao-flex centralizar">
-                    <img src="/codigo-fonte/assets/mix1.jpeg" class="tamanho-10">
+                <div class="secao-flex centralizar">
+                    <img src="../assets/mix1.jpeg" class="tamanho-10">
                     <p class="nome-audio">Nome do audio<p>
                 </div>
-                <div class="tamanho-20 secao-flex centralizar alinhar-direita">
+                <div class="secao-flex centralizar alinhar-direita">
                     <i class="bi bi-share"></i>
-                    <p>Compatilhar áudio</p>
+                    <p class="botao-compartilhar">Compatilhar áudio</p>
                 </div>
             </div>
             <div class="secao-flex espacamento-audios">  
-                <div class="tamanho-80 secao-flex centralizar">
-                    <img src="/codigo-fonte/assets/mix1.jpeg" class="tamanho-10">
+                <div class="secao-flex centralizar">
+                    <img src="../assets/mix1.jpeg" class="tamanho-10">
                     <p class="nome-audio">Nome do audio<p>
                 </div>
-                <div class="tamanho-20 secao-flex centralizar alinhar-direita">
+                <div class="secao-flex centralizar alinhar-direita">
                     <i class="bi bi-share"></i>
-                    <p>Compatilhar áudio</p>
-                </div>
-            </div>
-            <div class="secao-flex espacamento-audios">  
-                <div class="tamanho-80 secao-flex centralizar">
-                    <img src="/codigo-fonte/assets/mix1.jpeg" class="tamanho-10">
-                    <p class="nome-audio">Nome do audio<p>
-                </div>
-                <div class="tamanho-20 secao-flex centralizar alinhar-direita">
-                    <i class="bi bi-share"></i>
-                    <p>Compatilhar áudio</p>
-                </div>
-            </div>
-            <div class="secao-flex espacamento-audios">  
-                <div class="tamanho-80 secao-flex centralizar">
-                    <img src="/codigo-fonte/assets/mix1.jpeg" class="tamanho-10">
-                    <p class="nome-audio">Nome do audio<p>
-                </div>
-                <div class="tamanho-20 secao-flex centralizar alinhar-direita">
-                    <i class="bi bi-share"></i>
-                    <p>Compatilhar áudio</p>
+                    <p class="botao-compartilhar">Compatilhar áudio</p>
                 </div>
             </div>
         </section>
