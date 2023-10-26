@@ -46,37 +46,39 @@ body {
 header {
     width: 100%;
     height: 100%;
-    /* border: 1px solid var(--branco); */
+    border: 1px solid var(--branco);
     display: flex;
-    flex-wrap: wrap; /*Para que o player desça*/
+
+    /*Para que o player desça*/
+    /* flex-wrap: wrap;  */
 }
 
 /* ********************************** */
 /*         Container Lateral          */
 /* ********************************** */
-header .container-menu-lateral {
+.container-menu-lateral {
     width: 25%;
     height: 90%;
-    /* border: 1px solid var(--branco); */
+    border: 1px solid var(--branco);
     background: var(--azul-marinho);
     display: flex;
     flex-direction: column;
     color: var(--branco);
 }
 
-header .container-menu-lateral .logo-png {
+.container-menu-lateral .logo-png {
     height: 1.2rem;
     margin: 15px 0px 0px 20px;
 
 }
 
-header .container-menu-lateral .container-botoes{
+.container-menu-lateral .container-botoes{
     margin: 40px 0px 0px 20px;
     box-shadow: 0px 1px 0px 0px var(--azul-sombra)
 
 }
 
-header .container-menu-lateral .container-botoes h4{
+.container-menu-lateral .container-botoes h4{
     font-size: 14px;
     font-weight: 400;
     padding-bottom: 10px;
@@ -88,17 +90,17 @@ header .container-menu-lateral .container-botoes h4{
     margin: 15px 0px 0px 0px;
 }
 
-header .container-menu-lateral .container-botoes h4:hover{
+.container-menu-lateral .container-botoes h4:hover{
     color: var(--branco);
 }
 
-header .container-menu-lateral .container-botoes h4 span{
+.container-menu-lateral .container-botoes h4 span{
     position: relative;
     margin-right: 35px;
 }
 
 /*Forma o ponto antes o texto do botão*/
-header .container-menu-lateral .container-botoes h4 span::before{
+.container-menu-lateral .container-botoes h4 span::before{
     content: '';
     position: absolute;
     width: 4px;
@@ -109,28 +111,28 @@ header .container-menu-lateral .container-botoes h4 span::before{
     transition: .3s linear;
 }
 
-header .container-menu-lateral .container-botoes h4:hover span::before{
+.container-menu-lateral .container-botoes h4:hover span::before{
     border: 2px solid var(--branco);
 }
 
-header .container-menu-lateral .container-botoes h4 .bi {
+.container-menu-lateral .container-botoes h4 .bi {
     display: none;
 }
 
-header .container-menu-lateral .container-botoes .ativo {
+.container-menu-lateral .container-botoes .ativo {
     color: var(--azul-claro);
 }
 
-header .container-menu-lateral .container-botoes .ativo span {
+.container-menu-lateral .container-botoes .ativo span {
     display: none;
 }
 
-header .container-menu-lateral .container-botoes .ativo .bi {
+.container-menu-lateral .container-botoes .ativo .bi {
     display: flex;
     margin-right: 20px;
 }
 
-header .container-menu-lateral .container-destaques {
+.container-menu-lateral .container-destaques {
     width: 100%;
     height: 420px;
     /* border: 1px solid var(--branco); */
@@ -139,15 +141,15 @@ header .container-menu-lateral .container-destaques {
 }
 
 /*Estilizar barra de rolagem em navegadores Chromium e WebKit*/
-header .container-menu-lateral .container-destaques::-webkit-scrollbar {
+.container-menu-lateral .container-destaques::-webkit-scrollbar {
     display: none;
 }
 /*Estilizar barra de rolagem em navegadores Gecko-based*/
-header .container-menu-lateral .container-destaques {
+.container-menu-lateral .container-destaques {
     scrollbar-width: none;
 }
 
-header .container-menu-lateral .container-destaques li {
+.container-menu-lateral .container-destaques li {
     list-style-type: none;
     position: relative;
     padding: 5px 0px 5px 20px;
@@ -160,23 +162,23 @@ header .container-menu-lateral .container-destaques li {
 
 }
 
-header .container-menu-lateral .container-destaques li:hover {
+.container-menu-lateral .container-destaques li:hover {
     background: var(--cinza-transparente);
 }
 
-header .container-menu-lateral .container-destaques li span {
+.container-menu-lateral .container-destaques li span {
     font-size: 12px;
     font-weight: 600;
     color: var(--cinza-claro);
 }
 
-header .container-menu-lateral .container-destaques li img {
+.container-menu-lateral .container-destaques li img {
     width: 32px;
     height: 32px;
     margin-left: 25px;
 }
 
-header .container-menu-lateral .container-destaques li h5 {
+.container-menu-lateral .container-destaques li h5 {
     font-size: 11px;
     margin-left: 15px;
     width: 170px;
@@ -186,18 +188,18 @@ header .container-menu-lateral .container-destaques li h5 {
     white-space: nowrap;
 }
 
-header .container-menu-lateral .container-destaques li h5 .autor {
+.container-menu-lateral .container-destaques li h5 .autor {
     font-size: 9px;
     color: var(--cinza-claro);
 }
 
-header .container-menu-lateral .container-destaques li .bi {
+.container-menu-lateral .container-destaques li .bi {
     position: absolute;
     right: 10px;
 }
 
 
-header .container-menu-lateral h3 {
+.container-menu-lateral h3 {
     font-size: 16px;
     padding: 20px 0px 0px 20px;
     margin: 10px 0px 5px
@@ -207,7 +209,7 @@ header .container-menu-lateral h3 {
 /* ********************************** */
 /*         Container Conteúdo         */
 /* ********************************** */
-header .container-barra-superior{
+.container-barra-superior{
     width: 75%;
     height: 10%;
     position: fixed;
@@ -215,7 +217,7 @@ header .container-barra-superior{
     left: 25%;
 }
 
-header .container-conteudo {
+.container-conteudo {
     width: 75%;
     height: 90%;
     /* border: 1px solid var(--branco); */
@@ -374,10 +376,10 @@ background-color: #282828;
 /* ********************************** */
 /*          Container Player          */
 /* ********************************** */
-header .container-player {
+.container-player {
     width: 100%;
     height: 10%;
-    /* border: 1px solid var(--branco); */
+    border: 1px solid var(--branco);
     background: var(--azul-marinho);
     box-shadow: 0px 3px 8px var(--azul-sombra);
     display: flex;
@@ -388,7 +390,7 @@ header .container-player {
     bottom: 0;
 }
 
-header .container-player .container-onda-sonora {
+.container-player .container-onda-sonora {
     width: 30px;
     height: 30px;
     /* border: 1px solid var(--branco); */
@@ -398,7 +400,7 @@ header .container-player .container-onda-sonora {
     margin-right: 10px;
 }
 
-header .container-player .container-onda-sonora .onda-sonora1 {
+.container-player .container-onda-sonora .onda-sonora1 {
     width: 3px;
     height: 10px;
     background: var(--azul-claro);
@@ -409,17 +411,108 @@ header .container-player .container-onda-sonora .onda-sonora1 {
 
 }
 
-header .container-player .container-onda-sonora .onda-sonora1:nth-child(2) {
+.container-player .container-onda-sonora .onda-sonora1:nth-child(2) {
     height: 13px;
     margin-right: 3.5px;
     animation-delay: .4s;
 }
 
-header .container-player .container-onda-sonora .onda-sonora1:nth-child(3) {
+.container-player .container-onda-sonora .onda-sonora1:nth-child(3) {
     height: 8px;
     animation-delay: .8s;
 
 }
+
+.container-player .img-audio-player {
+    width: 35px;
+    height: 35px;
+}
+
+.container-player .titulo-audio {
+    padding-right: 10px;
+}
+
+.container-player h5 {
+    font-size: 13px;
+    margin-left: 15px;
+    width: 130px;
+    color: var(--branco);
+    line-height: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container-player h5 .autor-audio {
+    font-size: 11px;
+    width: 100%;
+    color: var(--cinza-claro);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container-player .icones-player {
+    font-size: 20px;
+    color: var(--branco);
+    margin: 0px 20px 0px 40px;
+    outline: none;
+    display: flex;
+    align-items: center;    
+}
+
+.container-player .icones-player .bi {
+    margin: 0px 20px 0px 40px;
+    outline: none;
+    cursor: pointer;    
+}
+
+.container-player span {
+    font-size: 11px;
+    font-weight: 400;
+    width: 32px;
+    color: var(--branco);
+}
+
+.container-player #temporizador-inicial {
+    margin: 0px 0px 0px 20px;
+}
+
+.container-player .container-barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container-player .barra-tempo{
+    position: relative;
+    width: 43%;
+    height: 2px;
+    background: var(--cinza-claro);
+    margin: 0px 15px 0px 10px;
+}
+
+.container-player .barra-tempo .barra-tempo-crescente {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: var(--azul-claro);
+    top: 0;
+    transition: 1s linear;
+}
+
+.container-player .barra-tempo input {
+    position: absolute;
+    width: 100%;
+    top: -7px;
+    left: 0;
+    cursor: pointer;
+    z-index: 99999999999999999999999999999999999999999;
+    /* transition: 3s linear; */
+    opacity: 0;
+}
+
 
 /* ********************************** */
 /*      Container Navbar Mobile       */

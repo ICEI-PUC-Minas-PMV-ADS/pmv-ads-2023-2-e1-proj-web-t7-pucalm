@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
 
 :root {
   --preto: #000;
@@ -15,7 +16,7 @@
 * {box-sizing: border-box;}
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: var(--branco);
   background-color: var(--azul-escuro);
   display: flex;
@@ -42,7 +43,7 @@ h2 {
     padding: 20px 12px ;
 }
 
-.container {
+.container-form {
   border-radius: 5px;
   background-color: var(--azul-marinho);
   padding: 20px;
@@ -70,6 +71,10 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+}
+
+textarea  {
+  height:150px;
 }
 
 input[type=submit] {
