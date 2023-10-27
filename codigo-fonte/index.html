@@ -10,304 +10,57 @@
 </head>
 
 <body>
-    <header>
-        <!--Menu Lateral-->
+    <!--Menu Lateral-->
+    <section class="secao-menu-lateral">
         <div class="container-menu-lateral">
             <div class="container-logo">
-                <img src="assets/PUCalm.png" alt="PUCalm" class="logo-png">
+                <img src="assets/PUCalm.png" alt="PUCalm" class="logo">
             </div>
 
             <div class="container-botoes">
-                <h4 class="ativo"><span></span><i class="bi bi-music-note-beamed"></i>Ínicio</h4>
-                <h4><span></span><i class="bi bi-music-note-beamed" id="feedack-button"></i>Feedback</h4>
+                <h4 id="btn-inicio"><i class="bi bi-music-note-beamed"></i>Início</h4>
+                <h4 id="btn-feedback"><i class="bi bi-music-note-beamed"></i>Feedback</h4>
             </div>
 
-            <h3>Destaques</h3>
+            <h3><i class="bi bi-music-note-beamed"></i>Destaques</h3>
             <div class="container-destaques">
                 <li class="playlist-item">
-                    <span>01</span>
+                        <img src="assets/mix1.jpeg" alt="mix1" class="">
+                        <h5>Nome da Playlist Gigante para Meditação Boladona<br>
+                        <p class="categoria">Categoria</p>
+                        </h5>
+                        <i class="bi playlist-play bi-play-circle-fill" id="1"></i>
+                </li>
+                <li class="playlist-item">
                     <img src="assets/mix1.jpeg" alt="mix1" class="">
-                    <h5>Nome da Playlist <br>
-                        <div class="autor">Nome do Autor</div>
+                    <h5>Nome da Playlist<br>
+                    <p class="categoria">Categoria</p>
                     </h5>
                     <i class="bi playlist-play bi-play-circle-fill" id="1"></i>
-                </li>
-                <li class="playlist-item">
-                    <span>02</span>
-                    <img src="assets/mix2.jpeg" alt="mix2" class="">
-                    <h5>Nome da Playlist <br>
-                        <div class="autor">Nome do Autor</div>
-                    </h5>
-                    <i class="bi playlist-play bi-play-circle-fill" id="2"></i>
-                </li>
-                <li class="playlist-item">
-                    <span>02</span>
-                    <img src="assets/mix2.jpeg" alt="mix2" class="">
-                    <h5>Nome da Playlist <br>
-                        <div class="autor">Nome do Autor</div>
-                    </h5>
-                    <i class="bi playlist-play bi-play-circle-fill" id="2"></i>
-                </li>
-                <li class="playlist-item">
-                    <span>02</span>
-                    <img src="assets/mix2.jpeg" alt="mix2" class="">
-                    <h5>Nome da Playlist <br>
-                        <div class="autor">Nome do Autor</div>
-                    </h5>
-                    <i class="bi playlist-play bi-play-circle-fill" id="2"></i>
-                </li>
-                <li class="playlist-item">
-                    <span>02</span>
-                    <img src="assets/mix2.jpeg" alt="mix2" class="">
-                    <h5>Nome da Playlist <br>
-                        <div class="autor">Nome do Autor</div>
-                    </h5>
-                    <i class="bi playlist-play bi-play-circle-fill" id="2"></i>
-                </li>
-                <li class="playlist-item">
-                    <span>02</span>
-                    <img src="assets/mix2.jpeg" alt="mix2" class="">
-                    <h5>Nome da Playlist <br>
-                        <div class="autor">Nome do Autor</div>
-                    </h5>
-                    <i class="bi playlist-play bi-play-circle-fill" id="2"></i>
-                </li>
-                <li class="playlist-item">
-                    <span>02</span>
-                    <img src="assets/mix2.jpeg" alt="mix2" class="">
-                    <h5>Nome da Playlist <br>
-                        <div class="autor">Nome do Autor</div>
-                    </h5>
-                    <i class="bi playlist-play bi-play-circle-fill" id="2"></i>
-                </li>
-                <li class="playlist-item">
-                    <span>02</span>
-                    <img src="assets/mix2.jpeg" alt="mix2" class="">
-                    <h5>Nome da Playlist <br>
-                        <div class="autor">Nome do Autor</div>
-                    </h5>
-                    <i class="bi playlist-play bi-play-circle-fill" id="2"></i>
-                </li>
-                <li class="playlist-item">
-                    <span>02</span>
-                    <img src="assets/mix2.jpeg" alt="mix2" class="">
-                    <h5>Nome da Playlist <br>
-                        <div class="autor">Nome do Autor</div>
-                    </h5>
-                    <i class="bi playlist-play bi-play-circle-fill" id="2"></i>
-                </li>
-                <li class="playlist-item">
-                    <span>02</span>
-                    <img src="assets/mix2.jpeg" alt="mix2" class="">
-                    <h5>Nome da Playlist <br>
-                        <div class="autor">Nome do Autor</div>
-                    </h5>
-                    <i class="bi playlist-play bi-play-circle-fill" id="2"></i>
-                </li>
-            </div>
-        </div>
-
-        <!--Conteúdo-->
-        <div class="container-barra-superior">
-            <section class="barra-superior">
-                <div class="titulo-barra-superior">
-                    <h1>Início</h1>
-                </div>
-                <div class="pesquisa-barra-superior">
-                    <input type="text" placeholder="Pesquisar..">
-                    <button><i class="bi bi-share-fill"></i></button>
-                </div>
-            </section>
-        </div>
-        <div class="container-conteudo">
-            <section class="filtro-playlists">
-                <div class="botao-filtro-playlists" id="prev-button">&lt;</div>
-                <div class="filtro-playlists-navegacao tamanho-total" id="playlist-carousel">
-                    <button class="botao-filtro" data-filter="rock">Rock</button>
-                    <button class="botao-filtro" data-filter="pop">Pop</button>
-                    <button class="botao-filtro" data-filter="hiphop">Hip Hop</button>
-                    <button class="botao-filtro" data-filter="jazz">Jazz</button>
-                    <button class="botao-filtro" data-filter="hiphop">Hip Hop</button>
-                    <button class="botao-filtro" data-filter="jazz">Jazz</button>
-                    <button class="botao-filtro" data-filter="rock">Rock</button>
-                    <button class="botao-filtro" data-filter="pop">Pop</button>
-                    <button class="botao-filtro" data-filter="hiphop">Hip Hop</button>
-                    <button class="botao-filtro" data-filter="jazz">Jazz</button>
-                    <button class="botao-filtro" data-filter="rock">Rock</button>
-                    <button class="botao-filtro" data-filter="pop">Pop</button>
-                </div>
-                <div class="botao-filtro-playlists" id="next-button">&gt;</div>
-            </section>
-
-            <section class="cartoes-playlists" id="playlist-section">
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <h2>Playlist 1</h2>
-                        <hr>
-                        <p>Ouvir agora</p>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <h2>Playlist 1</h2>
-                        <hr>
-                        <p>Ouvir agora</p>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <h2>Playlist 1</h2>
-                        <hr>
-                        <p>Ouvir agora</p>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <h2>Playlist 1</h2>
-                        <hr>
-                        <p>Ouvir agora</p>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <h2>Playlist 1</h2>
-                        <hr>
-                        <p>Ouvir agora</p>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <h2>Playlist 1</h2>
-                        <hr>
-                        <p>Ouvir agora</p>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <h2>Playlist 1</h2>
-                        <hr>
-                        <p>Ouvir agora</p>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <h2>Playlist 1</h2>
-                        <hr>
-                        <p>Ouvir agora</p>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <h2>Playlist 1</h2>
-                        <hr>
-                        <p>Ouvir agora</p>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <h2>Playlist 1</h2>
-                        <hr>
-                        <p>Ouvir agora</p>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <h2>Playlist 1</h2>
-                        <hr>
-                        <p>Ouvir agora</p>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <h2>Playlist 1</h2>
-                        <hr>
-                        <p>Ouvir agora</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!--Player-->
-        <div class="container-player">
-            <div class="container-onda-sonora">
-                <div class="onda-sonora1"></div>
-                <div class="onda-sonora1"></div>
-                <div class="onda-sonora1"></div>
-           
-            </div>
-                <img src="assets/mix1.jpeg" alt="img-audio" class="img-audio-player">
-                <h5 class="titulo-audio">Titulo do Áudio <br>
-                    <div class="autor-audio">Nome do Autor</div>
+            </li>
+            <li class="playlist-item">
+                <img src="assets/mix1.jpeg" alt="mix1" class="">
+                <h5>Nome da Playlist<br>
+                <p class="categoria">Categoria</p>
                 </h5>
-            <div class="icones-player">
-                <!-- <i class="bi bi-music-note-beamed"></i> -->
-                <i class="bi bi-skip-start-fill"></i>
-                <i class="bi bi-play-fill"></i>
-                <i class="bi bi-skip-end-fill"></i>
-            </div>
-            
-            <span id="temporizador-inicial">0:00</span>
-            <div class="barra-tempo">
-                <input type="range" id="barra-fixa" min="0" max="100">
-                <div class="barra-tempo-crescente" id="barra-crescente"></div>
-            </div>
-            <span id="temporizador-final">4:30</span>
-            
-        </div>
-
-        <!--Navbar mobile (No footer)-->
-        <div class="container-navbar-mobile">
-            <div class="botoes-navbar-mobile">
-                <button class="botao-navbar-mobile">Início</button>
-            </div>
-            <div class="botoes-navbar-mobile">
-                <button class="botao-navbar-mobile">Botão1</button>
-            </div>
-            <div class="botoes-navbar-mobile">
-                <button class="botao-navbar-mobile">Botão2</button>
-            </div>
-            <div class="botoes-navbar-mobile">
-                <button class="botao-navbar-mobile">Botão3</button>
+                <i class="bi playlist-play bi-play-circle-fill" id="1"></i>
+            </li>
             </div>
         </div>
+    </section>
 
-    </header>
+    <!--Conteúdo-->
+    <div class="container-barra-superior">
+        <section class="barra-superior">
+            <div class="titulo-barra-superior">
+                <h1>Início</h1>
+            </div>
+            <div class="pesquisa-barra-superior">
+                <input type="text" placeholder="Pesquisar..">
+                <button><i class="bi bi-share-fill"></i></button>
+            </div>
+        </section>
+    </div>
     <script src="./scripts.js"></script>
 </body>
 

@@ -2,15 +2,11 @@
 
 :root {
     --preto: #000;
-    --cinza-escuro: #121213;
-    --cinza-medio: #232323;
-    --cinza-claro: #4c5262;
-    --cinza-transparente: #6969691a;
     --branco: #fff;
-    --azul-marinho: #111727;
-    --azul-escuro: #0b1320;
-    --azul-sombra: #090f1f;
-    --azul-claro: #36e2ec;
+    --azul-escuro: #0C2847;
+    --azul-claro: #405E7A;
+    --azul-gelo: #9EB3CA;
+    --cinza-claro: #D3DAE4;
   }
 
   @keyframes efeito-onda {
@@ -25,32 +21,22 @@
     }
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Nunito', sans-serif;
-    width: 100%;
-    height: 100%;
-    background:var(--cinza-escuro);
-    display: flex;
-    place-items: center;
+    background:var(--preto);
 }
 
 /* ********************************** */
 /*         Container Global           */
 /* ********************************** */
-header {
-    width: 100%;
-    height: 100%;
-    border: 1px solid var(--branco);
-    display: flex;
 
-    /*Para que o player desça*/
-    /* flex-wrap: wrap;  */
+h5{
+    margin: 0px;    
+}
+
+.secao-flex{
+    display: flex;
+    align-items: center;
 }
 
 /* ********************************** */
@@ -58,138 +44,100 @@ header {
 /* ********************************** */
 .container-menu-lateral {
     width: 25%;
-    height: 90%;
-    border: 1px solid var(--branco);
-    background: var(--azul-marinho);
-    display: flex;
-    flex-direction: column;
+    /* border: 0.1rem solid var(--branco); */
+    background: var(--azul-escuro);
     color: var(--branco);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    overflow: hidden;
+    padding: 1rem 0rem 0.7rem 0.5rem;
+    box-shadow: 0rem 0.01rem 0.124rem 0rem var(--azul-claro);
+
 }
 
-.container-menu-lateral .logo-png {
-    height: 1.2rem;
-    margin: 15px 0px 0px 20px;
+.container-menu-lateral .logo {
+    width: 70%;
+}
 
+.container-logo{
+    text-align: center;
+    padding-right: 0.5rem;
 }
 
 .container-menu-lateral .container-botoes{
-    margin: 40px 0px 0px 20px;
-    box-shadow: 0px 1px 0px 0px var(--azul-sombra)
-
+    box-shadow: 0rem 0.01rem 0rem 0rem var(--azul-claro);
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.8rem;
+    margin-top: 2rem;
 }
 
+/* Botao Inicio e Feedback */
 .container-menu-lateral .container-botoes h4{
-    font-size: 14px;
+    font-size: 1.0rem;
     font-weight: 400;
-    padding-bottom: 10px;
     color: var(--cinza-claro);
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    transition: .3s linear;
-    margin: 15px 0px 0px 0px;
+    transition: .1s linear;
 }
 
+/* Label Destaques */
 .container-menu-lateral .container-botoes h4:hover{
-    color: var(--branco);
+    color: var(--cinza-claro);
 }
 
-.container-menu-lateral .container-botoes h4 span{
-    position: relative;
-    margin-right: 35px;
-}
-
-/*Forma o ponto antes o texto do botão*/
-.container-menu-lateral .container-botoes h4 span::before{
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    border: 2px solid var(--cinza-claro);
-    border-radius: 50%;
-    top: -4px;
-    transition: .3s linear;
-}
-
-.container-menu-lateral .container-botoes h4:hover span::before{
-    border: 2px solid var(--branco);
-}
-
+/* Icones dos Botoes e Label Destaques */
 .container-menu-lateral .container-botoes h4 .bi {
-    display: none;
+    padding-right: 1.0rem;
 }
 
-.container-menu-lateral .container-botoes .ativo {
-    color: var(--azul-claro);
+.container-menu-lateral  h3 .bi {
+    padding-right: 1.0rem;
 }
 
-.container-menu-lateral .container-botoes .ativo span {
-    display: none;
-}
-
-.container-menu-lateral .container-botoes .ativo .bi {
-    display: flex;
-    margin-right: 20px;
-}
-
+/* Playlists do Destaques */
 .container-menu-lateral .container-destaques {
-    width: 100%;
-    height: 420px;
-    /* border: 1px solid var(--branco); */
-    margin-top: 20px;
+    /* border: 0.1rem solid var(--branco); */
+    margin-top: 1.25rem;
     overflow:auto;
 }
 
-/*Estilizar barra de rolagem em navegadores Chromium e WebKit*/
-.container-menu-lateral .container-destaques::-webkit-scrollbar {
-    display: none;
-}
-/*Estilizar barra de rolagem em navegadores Gecko-based*/
-.container-menu-lateral .container-destaques {
-    scrollbar-width: none;
-}
-
+/* Cards Playlists Destaques */
 .container-menu-lateral .container-destaques li {
     list-style-type: none;
     position: relative;
-    padding: 5px 0px 5px 20px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.8rem;
     cursor: pointer;
-    transition: .3s linear;
-    box-shadow: 0px 1px 0px 0px var(--azul-sombra)
-
+    transition: .1s linear;
+    box-shadow: 0rem 0.01rem 0rem 0rem var(--azul-claro);
+    padding-bottom: 0.5rem;
 }
 
 .container-menu-lateral .container-destaques li:hover {
     background: var(--cinza-transparente);
 }
 
-.container-menu-lateral .container-destaques li span {
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--cinza-claro);
-}
-
 .container-menu-lateral .container-destaques li img {
-    width: 32px;
-    height: 32px;
-    margin-left: 25px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .container-menu-lateral .container-destaques li h5 {
-    font-size: 11px;
-    margin-left: 15px;
-    width: 170px;
-    /* border: 1px solid var(--branco); */
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    width: 60%;
+    /* border: 0.1rem solid var(--branco); */
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-.container-menu-lateral .container-destaques li h5 .autor {
-    font-size: 9px;
+.container-menu-lateral .container-destaques li h5 .categoria {
+    font-size: 0.6rem;
     color: var(--cinza-claro);
 }
 
@@ -201,14 +149,20 @@ header {
 
 .container-menu-lateral h3 {
     font-size: 16px;
-    padding: 20px 0px 0px 20px;
+    padding-top: 20px;
     margin: 10px 0px 5px
 
 }
 
-/* ********************************** */
-/*         Container Conteúdo         */
-/* ********************************** */
+/*Estilizar barra de rolagem em navegadores Chromium e WebKit*/
+.container-menu-lateral .container-destaques::-webkit-scrollbar {
+    display: none;
+}
+/*Estilizar barra de rolagem em navegadores Gecko-based*/
+.container-menu-lateral .container-destaques {
+    scrollbar-width: none;
+}
+
 .container-barra-superior{
     width: 75%;
     height: 10%;
@@ -273,299 +227,3 @@ header {
     display: flex;
     align-items: center;
 }
-
-.botao-filtro{
-    margin: 10px;
-	cursor: pointer;
-	padding: 5px 10px;
-	border: 1px solid #ccc;
-    border-radius: 4rem;
-	background-color: #f0f0f0;
-    font-size: 14px;
-    font-family: 'Nunito', sans-serif;
-}
-
-.botao-filtro-playlists{
-    cursor: pointer;
-	padding: 1px 6px 1px 6px;
-	background-color: #f0f0f0;
-    border-radius: 4rem;
-	border: 1px solid #ccc;
-	margin: 5px;
-    font-family: 'Nunito', sans-serif;
-}
-
-.filtro-playlists-navegacao{
-	display: flex;
-	overflow: hidden;
-	white-space: nowrap;
-}
-
-.tamanho-total{
-    flex: 1; /* Faz o contêiner ocupar todo o espaço disponível */
-	overflow: hidden; /* Impede a quebra de linha */
-}
-
-.filtro-playlists{
-    display: flex;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 4rem;
-	align-items: center;
-}
-
-.cartoes-playlists{
-    display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-	gap: 1.4rem;
-    padding: 1.6rem;
-    overflow:auto;
-    overflow-x:hidden;
-    height: 33rem;
-}
-
-/*Estilizar barra de rolagem em navegadores Chromium e WebKit*/
-.cartoes-playlists::-webkit-scrollbar {
-    display: none;
-}
-/*Estilizar barra de rolagem em navegadores Gecko-based*/
-.cartoes-playlists {
-    scrollbar-width: none;
-}
-
-.cartao {
-    background-color: #181818;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
-	transition: background-color 0.3s ease;
-    border-radius: 0.8rem;
-    cursor: pointer;
-	position: relative;
-    display: flex;
-}
-
-.cartao:hover{
-background-color: #282828;
-}
-
-.imagem-cartao img{
-    border-radius: 0.8rem 0rem 0rem 0.8rem;
-    width: 6rem;
-}
-
-.texto-cartao{
-    width: 70%;
-	padding: 5%;
-	align-items: center;
-	display: grid;
-    color: var(--branco);
-}
-
-.texto-cartao hr{
-    opacity: 50%;
-    height: 0.1rem;
-}
-
-.texto-cartao h2{
-    font-size: 16px;
-}
-
-.texto-cartao p{
-    font-size: 14px;
-}
-
-/* ********************************** */
-/*          Container Player          */
-/* ********************************** */
-.container-player {
-    width: 100%;
-    height: 10%;
-    border: 1px solid var(--branco);
-    background: var(--azul-marinho);
-    box-shadow: 0px 3px 8px var(--azul-sombra);
-    display: flex;
-    align-items: center;
-    padding: 0px 20px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-}
-
-.container-player .container-onda-sonora {
-    width: 30px;
-    height: 30px;
-    /* border: 1px solid var(--branco); */
-    padding-bottom: 5px;
-    display: flex;
-    align-items: flex-end;
-    margin-right: 10px;
-}
-
-.container-player .container-onda-sonora .onda-sonora1 {
-    width: 3px;
-    height: 10px;
-    background: var(--azul-claro);
-    display: flex;
-    margin-right: 3px;
-    border-radius: 10px 10px 0px 0px;
-    animation: efeito-onda .5s linear infinite;
-
-}
-
-.container-player .container-onda-sonora .onda-sonora1:nth-child(2) {
-    height: 13px;
-    margin-right: 3.5px;
-    animation-delay: .4s;
-}
-
-.container-player .container-onda-sonora .onda-sonora1:nth-child(3) {
-    height: 8px;
-    animation-delay: .8s;
-
-}
-
-.container-player .img-audio-player {
-    width: 35px;
-    height: 35px;
-}
-
-.container-player .titulo-audio {
-    padding-right: 10px;
-}
-
-.container-player h5 {
-    font-size: 13px;
-    margin-left: 15px;
-    width: 130px;
-    color: var(--branco);
-    line-height: 17px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.container-player h5 .autor-audio {
-    font-size: 11px;
-    width: 100%;
-    color: var(--cinza-claro);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.container-player .icones-player {
-    font-size: 20px;
-    color: var(--branco);
-    margin: 0px 20px 0px 40px;
-    outline: none;
-    display: flex;
-    align-items: center;    
-}
-
-.container-player .icones-player .bi {
-    margin: 0px 20px 0px 40px;
-    outline: none;
-    cursor: pointer;    
-}
-
-.container-player span {
-    font-size: 11px;
-    font-weight: 400;
-    width: 32px;
-    color: var(--branco);
-}
-
-.container-player #temporizador-inicial {
-    margin: 0px 0px 0px 20px;
-}
-
-.container-player .container-barra{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.container-player .barra-tempo{
-    position: relative;
-    width: 43%;
-    height: 2px;
-    background: var(--cinza-claro);
-    margin: 0px 15px 0px 10px;
-}
-
-.container-player .barra-tempo .barra-tempo-crescente {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background: var(--azul-claro);
-    top: 0;
-    transition: 1s linear;
-}
-
-.container-player .barra-tempo input {
-    position: absolute;
-    width: 100%;
-    top: -7px;
-    left: 0;
-    cursor: pointer;
-    z-index: 99999999999999999999999999999999999999999;
-    /* transition: 3s linear; */
-    opacity: 0;
-}
-
-
-/* ********************************** */
-/*      Container Navbar Mobile       */
-/* ********************************** */
-.container-navbar-mobile {
-    display: none;
-}
-
-/* ********************************** */
-/*            Versão Mobile           */
-/* ********************************** */
-@media (max-width: 740px) {
-    .container-menu-lateral {
-        display: none !important;
-    }
-    .container-conteudo {
-        width: 100% !important;
-    }
-    .container-navbar-mobile {
-        width: 100%;
-        height: 9%;
-        background: var(--cinza-escuro);
-        box-shadow: 0px 3px 8px var(--azul-sombra);
-        padding: 0px 0px;
-        left: 0;
-        bottom: 0;
-        display: flex;
-        position: fixed;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .botoes-navbar-mobile{
-        width: 25%;
-        text-align: center;
-    }
-
-    .botao-navbar-mobile{
-        padding: 5px 10px;
-        margin: 0px 5px 0px 5px;
-        width: 70%;
-    }
-
-    header .container-player {
-        bottom: 9% !important;
-    }
-
-    header .container-barra-superior{
-        width: 100%;
-        height: 10%;
-        position: fixed;
-        z-index: 10;
-        left: 0;
-    }
-}
-
