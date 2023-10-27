@@ -143,15 +143,12 @@ h5{
 
 .container-menu-lateral .container-destaques li .bi {
     position: absolute;
-    right: 10px;
+    right: 0.6rem;
 }
 
-
 .container-menu-lateral h3 {
-    font-size: 16px;
-    padding-top: 20px;
-    margin: 10px 0px 5px
-
+    font-size: 1rem;
+    padding-top: 1.2rem;
 }
 
 /*Estilizar barra de rolagem em navegadores Chromium e WebKit*/
@@ -163,6 +160,10 @@ h5{
     scrollbar-width: none;
 }
 
+
+/* ********************************** */
+/*         Container Conteúdo         */
+/* ********************************** */
 .container-barra-superior{
     width: 75%;
     height: 10%;
