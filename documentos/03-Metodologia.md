@@ -114,8 +114,13 @@
 #### Sprint 3
 
 ##### Execução
-Houve uma primeira tentativa de código base, utilizando um clone do repositório https://github.com/roberto-aq/clon-de-spotify-con-HTML-y-CSS.git , porém chegamos a conclusão que estruturar nosso código do zero seria mais promissor, devido a dificuldade de entendimento de como foi pensando o código do programador em questão.
-Após isso, recorremos a recursos como Bootstrap, video aulas e ferramentas online de suporte, para estruturar nosso próprio código do zero.
+&emsp;Houve uma primeira tentativa de código base, utilizando um clone do repositório https://github.com/roberto-aq/clon-de-spotify-con-HTML-y-CSS.git , porém chegamos a conclusão que estruturar nosso código do zero seria mais promissor, devido a dificuldade de entendimento de como foi pensando o código do programador em questão.nApós isso, recorremos a recursos como Bootstrap, video aulas e ferramentas online de suporte, para estruturar nosso próprio código do zero.
+
+&emsp;Inicialmente, tentou-se utilizar um código base por meio de um clone do repositório para o disponível em <https://github.com/roberto-aq/clon-de-spotify-con-HTML-y-CSS.git>. No entanto, chegou-se à conclusão de que seria mais promissor estruturar o próprio código para o projeto da aplicação web a partir do zero. Essa decisão foi tomada devido à dificuldade em compreender a lógica do programador por trás do código modelo, o que comprometia a capacidade de modificação e personalização requerida.
+
+&emsp;Após essa constatação, optou-se por utilizar recursos adicionais, como Bootstrap, videoaulas e ferramentas de suporte online. Tais recursos foram cruciais para a construção da estrutura do código a partir do zero. Recorrendo a essas fontes, adiquiriu-se o conhecimento necessário para desenvolver uma base sólida e funcional requerida pelo projeto. Isso forceneu uma implementação mais eficaz e compreensiva da aplicação.
+
+&emsp;O detalhamento da _Sprint 3_ encontra-se na seção 05 deste documento.
 
 ### Ferramentas
 
