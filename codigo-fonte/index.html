@@ -60,8 +60,35 @@
         </div>
     </section>
 
-    <section>
-        
+    <!--Player-->
+    <section class="player">
+            <div class="secao-flex tamanho-50">
+                <div class="container-onda-sonora">
+                    <div class="onda-sonora1"></div>
+                    <div class="onda-sonora1"></div>
+                    <div class="onda-sonora1"></div>
+                </div>
+                <img src="assets/mix1.jpeg" alt="img-audio" class="img-audio-player">
+                <h5>Titulo do Áudio
+                    <div class="autor-audio">Nome do Autor</div>
+                </h5>
+            </div>
+            <div class="container-player secao-grid tamanho-50">
+                <div class="icones-player">
+                    <!-- <i class="bi bi-music-note-beamed"></i> -->
+                    <i class="bi bi-skip-start-fill"></i>
+                    <i class="bi bi-play-fill"></i>
+                    <i class="bi bi-skip-end-fill"></i>
+                </div>
+                <div class="secao-flex container-temporizador">
+                    <span id="temporizador-inicial">0:00</span>
+                    <div class="barra-tempo">
+                        <input type="range" id="barra-fixa" min="0" max="100">
+                        <div class="barra-tempo-crescente" id="barra-crescente"></div>
+                    </div>
+                    <span id="temporizador-final">4:30</span>
+                </div>
+            </div>
     </section>
     
     <script src="./scripts.js"></script>
