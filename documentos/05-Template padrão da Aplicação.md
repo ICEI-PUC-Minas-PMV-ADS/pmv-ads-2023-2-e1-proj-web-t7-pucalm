@@ -17,6 +17,12 @@
 
 &emsp;Apesar de um início focado no plano inicial, a equipe decidiu, em última instância, iniciar a codificação do zero. Esta escolha proporcionou uma maior liberdade no processo de codificação. Além disso, quando os demais membros da equipe se juntaram ao projeto, puderam acompanhar de perto e de forma progressiva a a utilização dos elementos. Essa abordagem não apenas facilitou a compreensão do código para todos os membros, mas também permitiu uma colaboração mais eficaz e integrada na implementação da aplicação web.
 
+&emsp;O quadro Kanban para a _Sprint 3_, Figura **X**, mostra os itens em execução para esta etapa. Como a maior parte da execução deu-se na codificação, a lista de tarefas não foi extensa.
+<figure>
+  <figcaption>Figura X - Kanban na Sprint 3</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/Sprint%203.jpg"
+</figure>
+  
 ### Página Inicial
 &emsp; A página inicial, codificada do zero
 
