@@ -1,6 +1,42 @@
 # Template padrão da Aplicação
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+&emsp;Na _Sprint 3_ foi elaborado o template padrão da aplicação. Neste estágio, os códigos HTML e CSS de base para o projeto foram codificados e implementados. Inicialmente, optou-se por utilizar um código modelo existente como ponto de partida. No entanto, essa estratégia revelou-se contraproducente.
+
+## Planejamento
+&emsp; A equipe desenvolveu três blocos principais da aplicação web, informados na _Sprint 2_:
+
+- Página inicial
+- Landing Page
+- Playlists
+- Página de pop-up para feedbacks
+
+&emsp; Para otimizar o desenvolvimento do código e assegurar uma distribuição equitativa de tarefas, a equipe composta por seis membros foi dividida em duas subequipes. Durante a fase de planejamento, em uma reunião estratégica, foi decidido que a criação da Landing Page seria uma responsabilidade compartilhada por todos os integrantes do grupo.
+
+## Execução
+&emsp;Adotando uma abordagem metodológica centrada na equidade, os membros Rafael Souza e Lucas Abreu, ambos mais experientes em programação, realizaram uma reunião para deliberar sobre os caminhos a serem seguidos na criação das páginas web necessárias. Durante essa reunião, a decisão foi tomada em conjunto de utilizar um template padrão, cujo modelo base apresentava semelhanças com a proposta para esta aplicação web. Essa escolha foi feita visando à otimização do processo e à garantia de consistência no desenvolvimento das páginas.
+
+&emsp;Apesar de um início focado no plano inicial, a equipe decidiu, em última instância, iniciar a codificação do zero. Esta escolha proporcionou uma maior liberdade no processo de codificação. Além disso, quando os demais membros da equipe se juntaram ao projeto, puderam acompanhar de perto e de forma progressiva a a utilização dos elementos. Essa abordagem não apenas facilitou a compreensão do código para todos os membros, mas também permitiu uma colaboração mais eficaz e integrada na implementação da aplicação web.
+
+&emsp;O quadro Kanban para a _Sprint 3_, Figura **X**, mostra os itens em execução para esta etapa. Como a maior parte da execução deu-se na codificação, a lista de tarefas não foi extensa.
+<figure>
+  <figcaption>Figura X - Kanban na Sprint 3</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/Sprint%203.jpg"
+</figure>
+  
+### Página Inicial
+&emsp; A página inicial, codificada do zero
+
+### Landing Page
+
+
+### Página de playlists
+&emsp;
+
+### Página de pop-up para feedback
+&emsp;
+
+
+
 
 [Apresente a estrutura padrão da sua aplicação.]
 
