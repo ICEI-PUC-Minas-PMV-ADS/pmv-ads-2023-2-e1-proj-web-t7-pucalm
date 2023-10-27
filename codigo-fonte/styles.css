@@ -24,6 +24,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     background:var(--preto);
+    margin: 0;
 }
 
 /* ********************************** */
@@ -37,6 +38,10 @@ h5{
 .secao-flex{
     display: flex;
     align-items: center;
+}
+
+.espacamento-container{
+    padding: 1rem 0.5rem 0.7rem 0.5rem;
 }
 
 /* ********************************** */
@@ -53,9 +58,7 @@ h5{
     bottom: 0;
     z-index: 2;
     overflow: hidden;
-    padding: 1rem 0rem 0.7rem 0.5rem;
     box-shadow: 0rem 0.01rem 0.124rem 0rem var(--azul-claro);
-
 }
 
 .container-menu-lateral .logo {
@@ -64,7 +67,6 @@ h5{
 
 .container-logo{
     text-align: center;
-    padding-right: 0.5rem;
 }
 
 .container-menu-lateral .container-botoes{
@@ -161,6 +163,8 @@ h5{
 }
 
 
+
+
 /* ********************************** */
 /*         Container Conteúdo         */
 /* ********************************** */
@@ -168,8 +172,11 @@ h5{
     width: 75%;
     height: 10%;
     position: fixed;
-    z-index: 10;
-    left: 25%;
+    right: 0;
+    display: flex;
+    background-color: var(--azul-claro);
+    align-items: center;
+    justify-content: space-between;
 }
 
 .container-conteudo {
@@ -177,24 +184,14 @@ h5{
     height: 90%;
     /* border: 1px solid var(--branco); */
     background: var(--azul-escuro);
-    box-shadow: 5px 0px 2px var(--azul-sombra);
+    box-shadow: 0.1rem 0rem 0.1rem var(--azul-claro);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-.barra-superior {
-	display: flex;
-	padding: 1rem;
-    background-color: var(--azul-sombra);
-    align-items: center;
-    justify-content: space-between;
-}
-
 .titulo-barra-superior {
-    display: flex;
-    gap: 3rem;
-    padding-right: 1rem;
+    padding: 0rem 1rem 0rem 1rem;
 }
 
 .titulo-barra-superior h1{
@@ -211,20 +208,16 @@ h5{
 }
 
 .pesquisa-barra-superior input{
-    width: 100%;
-    height: 2rem;
     border-radius: 4rem;
-    border: 0.1px;
+    border: 0;
     padding: 1rem;
 }
 
 .pesquisa-barra-superior button{
-    height: 2rem;
+    margin-right: 1rem;
     border-radius: 4rem;
-    border: 0.1px;
+    border: 0;
     padding: 1rem;
-    height: 2rem;
-    align-content: center;
     display: flex;
     align-items: center;
 }

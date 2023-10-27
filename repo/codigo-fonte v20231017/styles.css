@@ -250,7 +250,7 @@ header {
 }
 
 .pesquisa-barra-superior{
-    display: flex;
+    display: flex; 
     align-items: center;
     gap: 1rem;
 }
