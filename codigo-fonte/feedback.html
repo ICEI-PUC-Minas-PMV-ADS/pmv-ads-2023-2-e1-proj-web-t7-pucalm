@@ -57,7 +57,7 @@
             <h1>Feedback</h1>
         </div>
         <div class="pesquisa-barra-superior">
-            <input type="text" placeholder="Pesquisar..">
+            <input type="text" name="pesquisar" id="tpesquisar" placeholder="Pesquisar.." maxlength="255">
             <button><i class="bi bi-share-fill"></i></button>
         </div>
     </section>
@@ -101,23 +101,35 @@
 
         <div class="container-titulo-subtitlo">  
             <h2>Escreva seu Feedback</h2>
-            <h5>Nos ajude a melhorar! Deixe seu comentário ou proposta de melhoria para que
+            <h5>Nos ajude a melhorar!<br> Deixe seu comentário ou proposta de melhoria para que
                 possamos atender suas necessidades cada vez melhor.</h5>
-        </div>    
+        </div>
         <div class="container-form">
-            <form class="form" id="form">
-                <label for="tnome">Nome (Obrigatório)</label>
-                <input type="text" id="tnome" name="nome" placeholder="Nome...">
-                <label for="temail">E-mail (Opcional)</label>
-                <input type="email" id="temail" name="email" placeholder="email@exemplo.com.br" autocomplete="email">
-                <label for="tmsg">Mensagem (Obrigatório)</label>
-                <textarea id="tmsg" name="msg" placeholder="Escreva seu comentário..." ></textarea>
+            <form class="form" id="form" action="https://formspree.io/f/mleyzvob" method="POST"> <!--verificar se é seguro manter endpoint no código-->
+
+                <div class="container-nome">
+                    <label for="tnome">Nome (Obrigatório)</label>
+                    <input type="text" id="tnome" name="nome" placeholder="Nome..." maxlength="255" required>
+                    <span class="icone-validacao"></span>
+                </div>
+                
+                <div class="container-email">
+                    <label for="temail">E-mail (Opcional)</label>
+                    <input type="email" id="temail" name="email" placeholder="email@exemplo.com.br" autocomplete="email" maxlength="255">
+                    <span class="icone-validacao"></span>
+                </div>
+                
+                <div class="container-msg">
+                    <label for="tmsg">Mensagem (Obrigatório)</label>
+                    <textarea id="tmsg" name="msg" placeholder="Escreva seu comentário..."  maxlength="255" required ></textarea>
+                    <span class="icone-validacao"></span>
+                </div>
+
                 <div class="container-btn-enviar">
-                    <!-- <input type="submit" value="Enviar" id="btn-enviar" onclick="swal('Obrigado por seu Feedback!');"> -->
                     <input type="submit" value="Enviar" id="btn-enviar">
                 </div>
             </form>
-        </div>
+
     </section>
 
     <script src="./scripts.js"></script>

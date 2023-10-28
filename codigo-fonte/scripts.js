@@ -25,7 +25,8 @@ function salvarObjLocalStorage(nome_obt, dados) {
 // Retornar objeto do Local Storage do Navegador
 function retornarObjLocalStorage(nome_obj) {
   obj_str = localStorage.getItem(nome_obj)
-  return JSON.parse(obj_str)
+  obj = JSON.parse(obj_str)
+  return obj
 }
 
 
@@ -35,7 +36,7 @@ function retornarObjLocalStorage(nome_obj) {
 
 //==> Envio do formulário de feedback
 document.getElementById("btn-enviar").addEventListener("click", function(event) {
-  event.preventDefault(); // Impede o envio do formulário padrão
+ // event.preventDefault(); // Impede o envio do formulário padrão
 
   // Validação dos campos do formulário
   const nome = document.querySelector("#tnome").value;
@@ -44,13 +45,13 @@ document.getElementById("btn-enviar").addEventListener("click", function(event) 
   
   if (nome === "" || mensagem === "") {
       // Exibe uma mensagem de erro se campos obrigatórios estiverem vazios
-      swal("Erro!", "Por favor, preencha todos os campos obrigatórios.", "error");
+      swal("Atenção!", "Por favor, preencha todos os campos obrigatórios.", "error");
   } else {
       // Se a validação for bem-sucedida, exibe o pop-up de agradecimento
-      swal("Obrigado por seu Feedback!");
+      swal("Mensagem Enviada!","Obrigado por seu Feedback!", "success");
   }
 
-  // Salvar Feedback no LocalStorage do navegador
+  //  Teste Salvar Feedback no LocalStorage do navegador
   const dados = {
     'nome': nome,
     'email': email,
@@ -59,11 +60,17 @@ document.getElementById("btn-enviar").addEventListener("click", function(event) 
   
   salvarObjLocalStorage('feedbacks', dados)
 
-  // Retornar Feedback do LocalStorage
-  dados = retornarObjLocalStorage('feedback1')
+  // Teste Retornar Feedback do LocalStorage
+  const dados_lidos = retornarObjLocalStorage('feedback1')
 
-  console.log(`nome: ${dados.nome}\nemail: ${dados.email}\nmensagem: ${dados.mensagem}\n`)  
+  console.log(`nome: ${dados_lidos.nome}\nemail: ${dados_lidos.email}\nmensagem: ${dados_lidos.mensagem}\n`)  
+
+  // Limpa os valores do form (verificar)
+  nome.value = "";
+  email.value = "";
+  mensagem.value = "";
 });
+
 
 
 
@@ -72,3 +79,36 @@ document.getElementById("btn-enviar").addEventListener("click", function(event) 
 /* ********************************** */
 // Deixar o carousel mostrando múltimos elementos de filtro
 
+const controls = document.querySelectorAll(".control");
+let currentItem = 0;
+const items = document.querySelectorAll(".item");
+const maxItems = items.length;
+
+controls.forEach((control) => {
+    control.addEventListener("click", (e) => {
+        isLeft = e.target.classList.contains("arrow-left");
+
+        if (isLeft) {
+            currentItem -= 1;
+        } else {
+            currentItem += 1;
+        }
+
+        if (currentItem >= maxItems) {
+            currentItem = 0;
+        }
+
+        if (currentItem < 0) {
+            currentItem = maxItems - 1;
+        }
+
+        items.forEach((item) => item.classList.remove("current-item"));
+
+        items[currentItem].scrollIntoView({
+            behavior: "smooth",
+            inline: "center"
+        });
+
+        items[currentItem].classList.add("current-item");
+    });
+});

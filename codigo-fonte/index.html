@@ -59,7 +59,7 @@
             <h1>Início</h1>
         </div>
         <div class="pesquisa-barra-superior">
-            <input type="text" name="pesquisar" id="tpesquisar" placeholder="Pesquisar.." >
+            <input type="text" name="pesquisar" id="tpesquisar" placeholder="Pesquisar.." maxlength="255">
             <button><i class="bi bi-share-fill"></i></button>
         </div>
     </section>
@@ -98,32 +98,25 @@
     <!-- Conteúdo playlists -->
     <section class="conteudo">
         <div class="container-conteudo">
-            <section class="container-filtro-playlist">
-                <button class="botao-voltar bi bi-arrow-left-square"></button>
-                <button class="botao-avancar bi bi-arrow-right-square"></button>
-                <div class="filtro-playlist">
-                    <div class="botao-filtro-playlist">
-                        <button class="botao-filtro botao-ativo" data-filter="rock">Rock</button>
-                        <button class="botao-filtro" data-filter="pop">Pop</button>
-                        <button class="botao-filtro" data-filter="hiphop">Hip Hop</button>
-                        <button class="botao-filtro" data-filter="jazz">Jazz</button><button class="botao-filtro botao-ativo" data-filter="rock">Rock</button>
-                        <button class="botao-filtro" data-filter="pop">Pop</button>
-                        <button class="botao-filtro" data-filter="hiphop">Hip Hop</button>
-                        <button class="botao-filtro" data-filter="jazz">Jazz</button><button class="botao-filtro botao-ativo" data-filter="rock">Rock</button>
-                        <button class="botao-filtro" data-filter="pop">Pop</button>
-                        <button class="botao-filtro" data-filter="hiphop">Hip Hop</button>
-                        <button class="botao-filtro" data-filter="jazz">Jazz</button>
+            <section class="container">
+                <button class="arrow-left control" aria-label="Voltar">◀</button>
+                <button class="arrow-right control" aria-label="Avançar">▶</button>
+                <div class="gallery-wrapper">
+                    <div class="gallery">
+                    <button class="item current-item" data-filter="pop">Rock</button>
+                    <button class="item current-item" data-filter="pop">Pop</button>
+                    <button class="item current-item" data-filter="pop">Funk</button>
+                    <button class="item current-item" data-filter="pop">Clássica</button>
+                    <button class="item current-item" data-filter="pop">Rock</button>
+                    <button class="item current-item" data-filter="pop">Pop</button>
+                    <button class="item current-item" data-filter="pop">Funk</button>
+                    <button class="item current-item" data-filter="pop">Clássica</button>
+                    <button class="item current-item" data-filter="pop">Rock</button>
+                    <button class="item current-item" data-filter="pop">Pop</button>
+                    <button class="item current-item" data-filter="pop">Funk</button>
+                    <button class="item current-item" data-filter="pop">Clássica</button>
                     </div>
                 </div>
-                    <!-- bootstrap card with row name myCarousel as row 1-->
-
-
-                <!-- <div class="botao-filtro-playlists" id="prev-button">&lt;</div>
-                <div class="filtro-playlists-navegacao tamanho-total" id="playlist-carousel">
-                    <button class="botao-filtro" data-filter="rock">Rock</button>
-                    <button class="botao-filtro" data-filter="pop">Pop</button>
-                </div>
-                <div class="botao-filtro-playlists" id="next-button">&gt;</div> -->
             </section>
 
             <section class="cartoes-playlists" id="playlist-section">

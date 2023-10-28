@@ -564,6 +564,10 @@ h5{
     flex-direction: column;
 }
 
+.container-nome, .container-email, .container-msg {
+    padding-top: 1rem;
+}
+
 .container-btn-enviar{
     display: flex;
     justify-content: center;
@@ -575,8 +579,6 @@ input[type=text], input[type=email], select, textarea {
     border: 1px solid var(--cinza-medio);
     box-shadow: 0px 1px 0px 0px rgb(192, 192, 192);
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
     resize: vertical;
 }
 
@@ -598,13 +600,35 @@ input[type=submit]:hover {
 
 }
 
-#fname {
-    color: rgb(214, 23, 135);
+/* Altera os ícones de preenchimento válido e inválido dos campos */
+.container-form input:invalid + span::after {
+    position: absolute;
+    content: "✖";
+    padding-left: 5px;
+  }
+  
+  .container-form input:valid + span::after {
+    position: absolute;
+    content: "✓";
+    padding-left: 5px;
+  }
+
+  .container-form textarea:required:invalid + span::after {
+    position: absolute;
+    content: "✖";
+    padding-left: 5px;
+  }
+  
+  .container-form textarea:required:valid + span::after {
+    position: absolute;
+    content: "✓";
+    padding-left: 5px;
+  }
+
+/* Fonte do título e texto do alerta */
+.swal-title, .swal-text {
+    font-family: 'Nunito', sans-serif;
 }
-
-
-
-
 
 
 /* ************************************ */
@@ -647,32 +671,70 @@ input[type=submit]:hover {
 	overflow: hidden; /* Impede a quebra de linha */
 }
 
-.container-filtro-playlist{
-    width: 100%;
+.container {
     position: relative;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.filtro-playlist{
-
-}
-
-.botao-filtro-playlist{
-    display: flex;
-    flex-flow: nowrap;
-    cursor: pointer;
-    padding: 1px 6px 1px 6px;
-    background-color: #f0f0f0;
-    color: black;
-    border-radius: 4rem;
-    border: 0;
-    font-family: 'Nunito', sans-serif;
+.gallery-wrapper {
     overflow-x: auto;
-    
 }
 
-.botao-filtro-playlist::-webkit-scrollbar{
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    width: 40px;
+    color: #fff;
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    cursor: pointer;
+    border: none;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    opacity: 1;
+}
+
+.arrow-right {
+    right: 0;
+    left: auto;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    }
+
+.item {
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+}
+
+.current-item {
+    opacity: 1;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
     display: none;
 }
+
+.gallery-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
 
 .cartoes-playlists{
     display: grid;
