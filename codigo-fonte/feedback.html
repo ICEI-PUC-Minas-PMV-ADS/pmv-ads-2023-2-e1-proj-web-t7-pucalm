@@ -7,6 +7,8 @@
     <title>PUCalm</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </head>
 
 <body>
@@ -14,7 +16,7 @@
     <section class="container-menu-lateral">
         <div class="espacamento-container">
             <div class="container-logo">
-                <img src="assets/PUCalm.png" alt="PUCalm" class="logo">
+                <a href="index.html"><img src="assets/PUCalm.png" alt="PUCalm" class="logo"></a>
             </div>
 
             <div class="container-botoes">
@@ -52,7 +54,7 @@
     <!--Menu superior-->
     <section class="container-barra-superior">
         <div class="titulo-barra-superior">
-            <h1>Início</h1>
+            <h1>Feedback</h1>
         </div>
         <div class="pesquisa-barra-superior">
             <input type="text" placeholder="Pesquisar..">
@@ -103,15 +105,16 @@
                 possamos atender suas necessidades cada vez melhor.</h5>
         </div>    
         <div class="container-form">
-            <form class="form">
+            <form class="form" id="form">
                 <label for="tnome">Nome (Obrigatório)</label>
                 <input type="text" id="tnome" name="nome" placeholder="Nome...">
                 <label for="temail">E-mail (Opcional)</label>
-                <input type="text" id="temail" name="email" placeholder="email@exemplo.com.br">
-                <label for="tmsg">Mensagem</label>
+                <input type="email" id="temail" name="email" placeholder="email@exemplo.com.br" autocomplete="email">
+                <label for="tmsg">Mensagem (Obrigatório)</label>
                 <textarea id="tmsg" name="msg" placeholder="Escreva seu comentário..." ></textarea>
-                <div class="botao-enviar">
-                    <input type="submit" value="Enviar">
+                <div class="container-btn-enviar">
+                    <!-- <input type="submit" value="Enviar" id="btn-enviar" onclick="swal('Obrigado por seu Feedback!');"> -->
+                    <input type="submit" value="Enviar" id="btn-enviar">
                 </div>
             </form>
         </div>

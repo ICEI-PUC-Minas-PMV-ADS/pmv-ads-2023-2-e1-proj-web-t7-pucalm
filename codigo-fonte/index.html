@@ -7,6 +7,10 @@
     <title>PUCalm</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>  
+    <link rel="stylesheet"type="text/css"href="/css/result-light.css">
 </head>
 
 <body>
@@ -14,12 +18,12 @@
     <section class="container-menu-lateral">
         <div class="espacamento-container">
             <div class="container-logo">
-                <img src="assets/PUCalm.png" alt="PUCalm" class="logo">
+                <a href="index.html"><img src="assets/PUCalm.png" alt="PUCalm" class="logo"></a>
             </div>
 
             <div class="container-botoes">
-                <h4 id="btn-inicio"><i class="bi bi-music-note-beamed"></i><a href="index.html">Início</a></h4>
-                <h4 id="btn-feedback"><i class="bi bi-music-note-beamed"></i><a href="feedback.html">Feedback</a></h4>
+                <h4 id="btn-inicio"><i class="bi bi-music-note-beamed"></i>Início</h4>
+                <h4 id="btn-feedback"><i class="bi bi-music-note-beamed"></i>Feedback</a></h4>
             </div>
 
             <h3><i class="bi bi-music-note-beamed"></i>Destaques</h3>
@@ -55,7 +59,7 @@
             <h1>Início</h1>
         </div>
         <div class="pesquisa-barra-superior">
-            <input type="text" placeholder="Pesquisar..">
+            <input type="text" name="pesquisar" id="tpesquisar" placeholder="Pesquisar.." >
             <button><i class="bi bi-share-fill"></i></button>
         </div>
     </section>
@@ -94,134 +98,178 @@
     <!-- Conteúdo playlists -->
     <section class="conteudo">
         <div class="container-conteudo">
-            <section class="filtro-playlists">
-                <div class="botao-filtro-playlists" id="prev-button">&lt;</div>
+            <section class="container-filtro-playlist">
+                <button class="botao-voltar bi bi-arrow-left-square"></button>
+                <button class="botao-avancar bi bi-arrow-right-square"></button>
+                <div class="filtro-playlist">
+                    <div class="botao-filtro-playlist">
+                        <button class="botao-filtro botao-ativo" data-filter="rock">Rock</button>
+                        <button class="botao-filtro" data-filter="pop">Pop</button>
+                        <button class="botao-filtro" data-filter="hiphop">Hip Hop</button>
+                        <button class="botao-filtro" data-filter="jazz">Jazz</button><button class="botao-filtro botao-ativo" data-filter="rock">Rock</button>
+                        <button class="botao-filtro" data-filter="pop">Pop</button>
+                        <button class="botao-filtro" data-filter="hiphop">Hip Hop</button>
+                        <button class="botao-filtro" data-filter="jazz">Jazz</button><button class="botao-filtro botao-ativo" data-filter="rock">Rock</button>
+                        <button class="botao-filtro" data-filter="pop">Pop</button>
+                        <button class="botao-filtro" data-filter="hiphop">Hip Hop</button>
+                        <button class="botao-filtro" data-filter="jazz">Jazz</button>
+                    </div>
+                </div>
+                    <!-- bootstrap card with row name myCarousel as row 1-->
+
+
+                <!-- <div class="botao-filtro-playlists" id="prev-button">&lt;</div>
                 <div class="filtro-playlists-navegacao tamanho-total" id="playlist-carousel">
                     <button class="botao-filtro" data-filter="rock">Rock</button>
                     <button class="botao-filtro" data-filter="pop">Pop</button>
-                    <button class="botao-filtro" data-filter="hiphop">Hip Hop</button>
-                    <button class="botao-filtro" data-filter="jazz">Jazz</button>
-                    <button class="botao-filtro" data-filter="hiphop">Hip Hop</button>
-                    <button class="botao-filtro" data-filter="jazz">Jazz</button>
-                    <button class="botao-filtro" data-filter="rock">Rock</button>
-                    <button class="botao-filtro" data-filter="pop">Pop</button>
-                    <button class="botao-filtro" data-filter="hiphop">Hip Hop</button>
-                    <button class="botao-filtro" data-filter="jazz">Jazz</button>
-                    <button class="botao-filtro" data-filter="rock">Rock</button>
-                    <button class="botao-filtro" data-filter="pop">Pop</button>
                 </div>
-                <div class="botao-filtro-playlists" id="next-button">&gt;</div>
+                <div class="botao-filtro-playlists" id="next-button">&gt;</div> -->
             </section>
 
             <section class="cartoes-playlists" id="playlist-section">
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
                     </div>
-                    <div class="texto-cartao">
-                        <a href="playlist.html"><h2>Playlist 1</h2>
-                        <p>Ouvir agora</p></a>
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
                     </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
                     </div>
-                    <div class="texto-cartao">
-                        <a href="playlist.html"><h2>Playlist 1</h2>
-                        <p>Ouvir agora</p></a>
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
                     </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
                     </div>
-                    <div class="texto-cartao">
-                        <a href="playlist.html"><h2>Playlist 1</h2>
-                        <p>Ouvir agora</p></a>
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
                     </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
                     </div>
-                    <div class="texto-cartao">
-                        <a href="playlist.html"><h2>Playlist 1</h2>
-                        <p>Ouvir agora</p></a>
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
                     </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
                     </div>
-                    <div class="texto-cartao">
-                        <a href="playlist.html"><h2>Playlist 1</h2>
-                        <p>Ouvir agora</p></a>
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
                     </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
                     </div>
-                    <div class="texto-cartao">
-                        <a href="playlist.html"><h2>Playlist 1</h2>
-                        <p>Ouvir agora</p></a>
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
                     </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
                     </div>
-                    <div class="texto-cartao">
-                        <a href="playlist.html"><h2>Playlist 1</h2>
-                        <p>Ouvir agora</p></a>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <a href="playlist.html"><h2>Playlist 1</h2>
-                        <p>Ouvir agora</p></a>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <a href="playlist.html"><h2>Playlist 1</h2>
-                        <p>Ouvir agora</p></a>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <a href="playlist.html"><h2>Playlist 1</h2>
-                        <p>Ouvir agora</p></a>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <a href="playlist.html"><h2>Playlist 1</h2>
-                        <p>Ouvir agora</p></a>
-                    </div>
-                </div>
-                <div class="cartao">
-                    <div class="imagem-cartao">
-                        <img src="assets/mix1.jpeg" />
-                    </div>
-                    <div class="texto-cartao">
-                        <a href="playlist.html"><h2>Playlist 1</h2>
-                        <p>Ouvir agora</p></a>
-                    </div>
-                </div>
+                </a>
             </section>
         </div>
     </section>

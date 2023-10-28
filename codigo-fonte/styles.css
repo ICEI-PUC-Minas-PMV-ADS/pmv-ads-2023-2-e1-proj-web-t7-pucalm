@@ -31,6 +31,11 @@ body {
 /*         Container Global           */
 /* ********************************** */
 
+a{
+    color: var(--branco);
+    text-decoration: none;
+}
+
 h5{
     margin: 0px;    
 }
@@ -559,12 +564,12 @@ h5{
     flex-direction: column;
 }
 
-.botao-enviar{
+.container-btn-enviar{
     display: flex;
     justify-content: center;
 }
 
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid var(--cinza-medio);
@@ -591,11 +596,6 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: var(--cinza-claro);
 
-}
-
-
-input[type=text]::placeholder {
-    color: var();
 }
 
 #fname {
@@ -636,17 +636,6 @@ input[type=text]::placeholder {
     font-family: 'Nunito', sans-serif;
 }
 
-.botao-filtro-playlists{
-    cursor: pointer;
-	padding: 1px 6px 1px 6px;
-	background-color: #f0f0f0;
-    color: #000;
-    border-radius: 4rem;
-	border: 1px solid #ccc;
-	margin: 5px;
-    font-family: 'Nunito', sans-serif;
-}
-
 .filtro-playlists-navegacao{
 	display: flex;
 	overflow: hidden;
@@ -658,11 +647,31 @@ input[type=text]::placeholder {
 	overflow: hidden; /* Impede a quebra de linha */
 }
 
-.filtro-playlists{
+.container-filtro-playlist{
+    width: 100%;
+    position: relative;
+}
+
+.filtro-playlist{
+
+}
+
+.botao-filtro-playlist{
     display: flex;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-	align-items: center;
+    flex-flow: nowrap;
+    cursor: pointer;
+    padding: 1px 6px 1px 6px;
+    background-color: #f0f0f0;
+    color: black;
+    border-radius: 4rem;
+    border: 0;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: auto;
+    
+}
+
+.botao-filtro-playlist::-webkit-scrollbar{
+    display: none;
 }
 
 .cartoes-playlists{
@@ -708,6 +717,7 @@ background-color: #282828;
 .imagem-cartao{
     align-self: center;
     padding: 0.5rem;
+    display: flex;
 }
 
 .texto-cartao{
