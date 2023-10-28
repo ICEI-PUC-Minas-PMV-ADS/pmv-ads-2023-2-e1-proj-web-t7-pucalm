@@ -53,29 +53,18 @@ li {
     width: 80%;
 }
 
-.imagem-width-95 {
-    width: 95%;
+.imagem-height-12 {
+    height: 12rem;
 }
 
-.imagem-width-80 {
-    width: 80%;
-}
-
-.imagem-width-60 {
-    width: 60%;
-}
-
-.imagem-width-50 {
-    width: 50%;
+.imagem-width-10 {
+    width: 10rem;
 }
 
 /* Seção inicial CTA */
 .logo {
-    width: calc(30% + 2rem);
-}
-
-.logo1 {
-    margin-bottom: 5%;
+    width: calc(20% + 2rem);
+    padding-bottom: 2rem;
 }
 
 .centralizado {
@@ -97,6 +86,7 @@ button {
 .container-intergantes {
     display: flex;
     gap: 1.4rem;
+    justify-content:space-around;
 }
 
 .cartao-integrantes{
