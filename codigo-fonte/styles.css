@@ -177,8 +177,6 @@ h5{
 }
 
 
-
-
 /* ********************************** */
 /*         Container Conteúdo         */
 /* ********************************** */
@@ -642,6 +640,7 @@ input[type=text]::placeholder {
     cursor: pointer;
 	padding: 1px 6px 1px 6px;
 	background-color: #f0f0f0;
+    color: #000;
     border-radius: 4rem;
 	border: 1px solid #ccc;
 	margin: 5px;

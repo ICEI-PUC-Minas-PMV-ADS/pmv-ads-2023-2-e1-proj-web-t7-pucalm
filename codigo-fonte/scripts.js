@@ -1,4 +1,4 @@
-document.getElementById("feedback-button").addEventListener("click", () => {
+document.getElementById("btn-feedback").addEventListener("click", () => {
     // Quando o botão "feedback" for clicado, atualize a seção de playlists
   
     // Selecione a seção de playlists
@@ -22,4 +22,5 @@ document.getElementById("feedback-button").addEventListener("click", () => {
     // Atualize o HTML da seção de playlists com o novo conteúdo
     playlistSection.innerHTML = novoConteúdo;
   });
+  
   
