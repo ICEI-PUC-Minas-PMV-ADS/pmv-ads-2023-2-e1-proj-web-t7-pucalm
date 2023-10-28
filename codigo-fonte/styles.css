@@ -671,43 +671,10 @@ input[type=submit]:hover {
 	overflow: hidden; /* Impede a quebra de linha */
 }
 
-.container {
+.container-filtros {
     position: relative;
     width: 100%;
     margin: 0 auto;
-}
-
-.gallery-wrapper {
-    overflow-x: auto;
-}
-
-.arrow-left,
-.arrow-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 20px;
-    width: 40px;
-    color: #fff;
-    transition: all 600ms ease-in-out;
-    background: linear-gradient(to left, transparent 0%, black 200%);
-    opacity: 0.1;
-    cursor: pointer;
-    border: none;
-}
-
-.arrow-left:hover,
-.arrow-right:hover {
-    opacity: 1;
-}
-
-.arrow-right {
-    right: 0;
-    left: auto;
-    text-align: right;
-    background: linear-gradient(to right, transparent 0%, black 200%);
 }
 
 .gallery {
@@ -716,25 +683,18 @@ input[type=submit]:hover {
     gap: 1rem;
     }
 
-.item {
-    flex-shrink: 0;
-    transition: all 600ms ease-in-out;
-    opacity: 0.5;
+.filtros{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 1rem;
 }
 
-.current-item {
-    opacity: 1;
+.item-filtro {
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 1rem;
 }
-
-.gallery-wrapper::-webkit-scrollbar {
-    display: none;
-}
-
-.gallery-wrapper {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
-
 
 .cartoes-playlists{
     display: grid;

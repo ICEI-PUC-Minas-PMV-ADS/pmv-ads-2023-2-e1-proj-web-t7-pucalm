@@ -1,7 +1,17 @@
+:root {
+    --preto: #000;
+    --branco: #fff;
+    --azul-escuro: #0C2847;
+    --azul-claro: #405E7A;
+    --azul-gelo: #9EB3CA;
+    --cinza-claro: #D3DAE4;
+}
+
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--azul-escuro);
+    color: var(--branco);
     font-family: 'Nunito', sans-serif;
-    padding: 0% 2% 0% 2%;
+    margin: 0;
 }
 
 p {
@@ -18,38 +28,50 @@ li {
 
 .secao-flex {
     display: flex;
-    padding: 1rem 0rem 1rem 0rem;
+    padding: 3rem 0rem 3rem 0rem;
+    place-content: center;
 }
 
 .secao-grid {
     display: grid;
-    padding: 1rem 0rem 1rem 0rem;
+    padding: 3rem 0rem 3rem 0rem;
 }
 
-.conteiner-50 {
+.container-50 {
     width: 50%;
-    padding: 1%;
 }
 
-.conteiner-33 {
-    width: 33%;
-    padding: 1%;
+.container-30 {
+    width: 30%;
 }
 
-.conteiner-100 {
-    width: 100%;
-    padding: 1%;
+.container-27 {
+    width: 27%;
+}
+
+.container-80 {
+    width: 80%;
 }
 
 .imagem-width-95 {
     width: 95%;
 }
 
+.imagem-width-80 {
+    width: 80%;
+}
+
+.imagem-width-60 {
+    width: 60%;
+}
+
+.imagem-width-50 {
+    width: 50%;
+}
+
 /* Seção inicial CTA */
 .logo {
     width: calc(30% + 2rem);
-    background-color: black;
-    padding: 2%;
 }
 
 .logo1 {
@@ -58,28 +80,32 @@ li {
 
 .centralizado {
     text-align: center;
-    align-self: center
+    align-self: center;
+    place-items: center;
 }
 
 button {
     border-radius: 3rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.7rem 2rem 0.7rem 2rem;
     background-color: black;
     font-weight: 700;
     color: white;
+    border: 0;
 }
 
 /* Seção integrantes */
-.conteiner-intergantes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1rem;
-    margin: 1rem 1rem 1rem 1rem;
+.container-intergantes {
+    display: flex;
+    gap: 1.4rem;
 }
 
-.imagem-integrantes {
-    width: 100%;
+.cartao-integrantes{
 }
+
+.texto-beneficios{
+    padding-right: 1.5rem;
+}
+
 .paragrafo-inteiro {
     text-align: center;
     margin: 1rem;
@@ -88,14 +114,14 @@ button {
 /* ********************************** */
 /*            Versão Mobile           */
 /* ********************************** */
-@media (max-width: 720px) {
-    .conteiner-intergantes {
+/* @media (max-width: 720px) {
+    .container-intergantes {
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
 }
 
 @media (max-width: 1270px) and (min-width: 721px) {
-    .conteiner-intergantes {
+    .container-intergantes {
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     }
-}
+} */
