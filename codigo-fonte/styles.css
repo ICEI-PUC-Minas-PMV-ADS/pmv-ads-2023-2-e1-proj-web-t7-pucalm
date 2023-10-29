@@ -430,7 +430,7 @@ h5{
     vertical-align: bottom;
 }
 .espacamento-section{
-    padding-bottom: 1rem;
+    padding: 1rem;
 }
 
 
@@ -456,6 +456,7 @@ h5{
     list-style-type: none;
     align-items: center;
     position: relative;
+    padding: 1rem;
 }
 
 
@@ -481,6 +482,7 @@ h5{
 .section-mobile{
     display: none;
     justify-content: center;
+    padding: 1rem;
 }
 
 .imagem-playlist{
