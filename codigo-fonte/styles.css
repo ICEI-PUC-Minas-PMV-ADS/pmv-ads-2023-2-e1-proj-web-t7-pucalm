@@ -450,7 +450,6 @@ h5{
     justify-content: space-between;
 }
 .rolagem-vertical{
-    height: 60%;
     overflow:auto;
     overflow-x:hidden;
     scrollbar-width: none;
