@@ -94,7 +94,7 @@ button {
 }
 
 .texto-beneficios {
-    padding-right: 1.5rem;
+    padding-right: 0rem;
 }
 
 .paragrafo-inteiro {
@@ -116,6 +116,8 @@ button {
         align-items: center;
         justify-content: center;
         width: 100%;
+        /*padding-left: 0.75rem;
+        padding-right: 0.75rem;*/
     }
 
     .imagem-mobile {
@@ -129,10 +131,21 @@ button {
         padding-bottom: 1rem;
     }
 
+    .container-mobile-in {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     .imagem-integrantes-mobile {
         width: 6rem;
         border-radius: 0.5rem;
 
+    }
+
+    .container-intergantes-mobile {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-around;
     }
 
 }
