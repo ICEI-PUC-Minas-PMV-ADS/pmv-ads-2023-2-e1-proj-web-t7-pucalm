@@ -35,42 +35,49 @@ function retornarObjLocalStorage(nome_obj) {
 /* ********************************** */
 
 //==> Envio do formulário de feedback
-document.getElementById("btn-enviar").addEventListener("click", function(event) {
- // event.preventDefault(); // Impede o envio do formulário padrão
 
-  // Validação dos campos do formulário
-  const nome = document.querySelector("#tnome").value;
-  const email = document.querySelector("#temail").value;
-  const mensagem = document.querySelector("#tmsg").value;
-  
-  if (nome === "" || mensagem === "") {
-      // Exibe uma mensagem de erro se campos obrigatórios estiverem vazios
-      swal("Atenção!", "Por favor, preencha todos os campos obrigatórios.", "error");
-  } else {
-      // Se a validação for bem-sucedida, exibe o pop-up de agradecimento
-      swal("Mensagem Enviada!","Obrigado por seu Feedback!", "success");
-  }
+// Verifique se o elemento "btn-enviar" existe antes de adicionar o ouvinte de eventos
+const btnEnviar = document.getElementById("btn-enviar");
 
-  //  Teste Salvar Feedback no LocalStorage do navegador
-  const dados = {
-    'nome': nome,
-    'email': email,
-    'mensagem': mensagem
-  }
-  
-  salvarObjLocalStorage('feedbacks', dados)
+if (btnEnviar){
+  document.addEventListener("DOMContentLoaded", function() {
+    btnEnviar.addEventListener("click", function(event) {
+    // event.preventDefault(); // Impede o envio do formulário padrão
 
-  // Teste Retornar Feedback do LocalStorage
-  const dados_lidos = retornarObjLocalStorage('feedback1')
+      // Validação dos campos do formulário
+      const nome = document.querySelector("#tnome").value;
+      const email = document.querySelector("#temail").value;
+      const mensagem = document.querySelector("#tmsg").value;
+      
+      if (nome === "" || mensagem === "") {
+          // Exibe uma mensagem de erro se campos obrigatórios estiverem vazios
+          swal("Atenção!", "Por favor, preencha todos os campos obrigatórios.", "error");
+      } else {
+          // Se a validação for bem-sucedida, exibe o pop-up de agradecimento
+          swal("Mensagem Enviada!","Obrigado por seu Feedback!", "success");
+      }
 
-  console.log(`nome: ${dados_lidos.nome}\nemail: ${dados_lidos.email}\nmensagem: ${dados_lidos.mensagem}\n`)  
+      //  Teste Salvar Feedback no LocalStorage do navegador
+      const dados = {
+        'nome': nome,
+        'email': email,
+        'mensagem': mensagem
+      }
+      
+      salvarObjLocalStorage('feedbacks', dados)
 
-  // Limpa os valores do form (verificar)
-  nome.value = "";
-  email.value = "";
-  mensagem.value = "";
-});
+      // Teste Retornar Feedback do LocalStorage
+      const dados_lidos = retornarObjLocalStorage('feedback1')
 
+      console.log(`nome: ${dados_lidos.nome}\nemail: ${dados_lidos.email}\nmensagem: ${dados_lidos.mensagem}\n`)  
+
+      // Limpa os valores do form (verificar)
+      nome.value = "";
+      email.value = "";
+      mensagem.value = "";
+    });
+  });
+};
 
 
 
@@ -112,3 +119,20 @@ controls.forEach((control) => {
         items[currentItem].classList.add("current-item");
     });
 });
+
+
+
+/* ********************************** */
+/*          Player                    */
+/* ********************************** */
+
+// Tocar audio ao clicar no play (do player)
+const audio = new Audio('audios/estudo/audio-bineural-1.mp3')
+
+btnPlay = document.getElementById("play-player").addEventListener("click", ()=> {
+  if (audio.paused || audio.currentTime <=0) {
+    audio.play()
+  } else {
+    audio.pause()
+  }
+})
