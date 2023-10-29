@@ -703,7 +703,6 @@ input[type=submit]:hover {
     padding: 1.6rem;
     overflow:auto;
     overflow-x:hidden;
-    height: 33rem;
 }
 
 /*Estilizar barra de rolagem em navegadores Chromium e WebKit*/
@@ -753,4 +752,68 @@ background-color: #282828;
 
 .texto-cartao p{
     font-size: 14px;
+}
+
+
+/*   Versão mobile   */
+@media (max-width: 750px) {
+    .filtros{
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .conteudo{
+        height: 72%;
+        bottom: 18%;
+    }
+
+    .container-menu-lateral {
+        display: none !important;
+    }
+    .container-conteudo {
+        width: 100% !important;
+    }
+    .container-navbar-mobile {
+        width: 100%;
+        height: 8%;
+        background: var(--azul-escuro);
+        left: 0;
+        bottom: 0;
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .botoes-navbar-mobile{
+        width: 33%;
+        text-align: center;
+    }
+
+    .botao-navbar-mobile{
+        padding: 5% 10% 5% 10%;
+        width: 80%;
+        border-radius: 2rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+        border: none;
+        color: var(--branco);
+        background-color: var(--azul-escuro);
+    }
+    .conteudo {
+        width: 100%;
+    }
+    .player {
+        bottom: 8% !important;
+        box-shadow: none;
+    }
+
+    .container-barra-superior{
+        width: 100%;
+        height: 10%;
+        position: fixed;
+        z-index: 10;
+        left: 0;
+    }
 }
