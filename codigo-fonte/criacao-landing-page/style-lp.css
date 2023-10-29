@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+
+/*Especificações Gerais*/
 :root {
     --preto: #000;
     --branco: #fff;
@@ -62,6 +65,7 @@ li {
 }
 
 /* Seção inicial CTA */
+
 .logo {
     width: calc(20% + 2rem);
     padding-bottom: 2rem;
@@ -86,32 +90,55 @@ button {
 .container-intergantes {
     display: flex;
     gap: 1.4rem;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-.cartao-integrantes{
-}
-
-.texto-beneficios{
+.texto-beneficios {
     padding-right: 1.5rem;
 }
 
 .paragrafo-inteiro {
     text-align: center;
-    margin: 1rem;
+    /*margin: 1rem;*/
 }
 
 /* ********************************** */
 /*            Versão Mobile           */
 /* ********************************** */
-/* @media (max-width: 720px) {
-    .container-intergantes {
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+@media (max-width: 700px) {
+    .section-pc {
+        display: none;
     }
+
+    .section-mobile-lp {
+        display: grid;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .imagem-mobile {
+        width: 10rem;
+        padding-top: 1rem;
+    }
+
+    .container-mobile {
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .imagem-integrantes-mobile {
+        width: 6rem;
+        border-radius: 0.5rem;
+
+    }
+
 }
 
-@media (max-width: 1270px) and (min-width: 721px) {
-    .container-intergantes {
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+@media (min-width: 701px) {
+    .section-mobile-lp {
+        display: none;
     }
-} */
+}
