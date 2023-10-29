@@ -756,12 +756,6 @@ background-color: #282828;
 
 
 /*   Versão mobile   */
-@media (max-width: 750px) {
-    .filtros{
-        gap: 0.5rem;
-    }
-}
-
 @media (max-width: 1000px) {
     .conteudo{
         height: 72%;
