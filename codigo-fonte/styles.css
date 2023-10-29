@@ -31,6 +31,10 @@ body {
 /*         Container Global           */
 /* ********************************** */
 
+.container-navbar-mobile{
+    display: none;
+}
+
 a{
     color: var(--branco);
     text-decoration: none;
