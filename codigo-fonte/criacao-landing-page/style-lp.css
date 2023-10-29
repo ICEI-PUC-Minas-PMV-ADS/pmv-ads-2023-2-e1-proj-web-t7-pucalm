@@ -60,8 +60,8 @@ li {
     height: 12rem;
 }
 
-.imagem-width-10 {
-    width: 10rem;
+.imagem-height-10 {
+    height: 10rem;
 }
 
 /* Seção inicial CTA */
@@ -94,7 +94,7 @@ button {
 }
 
 .texto-beneficios {
-    padding-right: 0rem;
+    padding-right: 1rem;
 }
 
 .paragrafo-inteiro {
@@ -137,7 +137,7 @@ button {
     }
 
     .imagem-integrantes-mobile {
-        width: 6rem;
+        width: 10rem;
         border-radius: 0.5rem;
 
     }
