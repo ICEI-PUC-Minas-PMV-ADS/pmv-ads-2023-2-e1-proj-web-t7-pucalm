@@ -29,13 +29,14 @@
 
 ### Landing Page
 &emsp;A landing page, página inicial de contato do usuário com a aplicação web aqui desenvolvida, traz os detalhes da aplicação, os benefícios e os desenvolvedores. As figuras 7 e 8 mostram a landing page na versão desktop e mobile, respectivamente.
+
 <figure>
-  <figcaption>Figura 7 - Landing Page versão desktop</figcaption>
-  <img src="https://https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/landingPage.jpg"
+  <figcaption>Figura 7 - Landing Page versão desktop </figcaption>
+  <img src="https://https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/landingPage.jpg
 </figure>
 
 <figure>
-  <figcaption>Figura 8 - Landing Page versão mobile</figcaption>
+  <figcaption>Figura 8 - Landing Page versão mobile </figcaption>
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/pagimaFeedbackMobile.png"
 </figure>
 
@@ -55,7 +56,7 @@
 </figure>
 
 ### Página de playlists
-&emsp; A p[agina inicial dá acesso direto à página de playlists, proprosta no fluxo de usuário e especificações do projeto. Os botões foram pensados para atender ao usuário de forma mais rápida para a reprodução dos áudios relaxantes. Os botões de compartilhar também ficam prontos para o fácil acesso e uso.
+&emsp;A página inicial dá acesso direto à página de playlists, proprosta no fluxo de usuário e especificações do projeto. Os botões foram pensados para atender ao usuário de forma mais rápida para a reprodução dos áudios relaxantes. Os botões de compartilhar também ficam prontos para o fácil acesso e uso.
 
 &emsp;As imagens 11 e 12 trazem a página de playlists para versão desktop e mobile, respectivamente.
 
@@ -66,21 +67,38 @@
 
 <figure>
   <figcaption>Figura 12 - Página de playlists versão mobile</figcaption>
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/playlistMobile.jpg"
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/paginaInicialMobile.jpg"
 </figure>
 
-### Página de pop-up para feedback
-&emsp;
 
+### Página para feedback
+&emsp;No planejamento da aplicação, em uma das reuniões de definição do fluxo de usuário, foi decidido pela equipe que uma página de feedback seria implantada na aplicação. O fornecimento de endereço de e-mail no feedback foi decidido como facultativo pelo usuário; nome e a mensagem de feedback são, embora, elementos obrigatórios e estas informações estão discriminadas para o usuário no momento de escrever a mensagem do feedback.
 
+&emsp;As imagens 13 e 14 mostram a página de feedback na sua versão desktop e mobile, respectivamente.
+
+<figure>
+  <figcaption>Figura 13 - Página de feedback versão desktop</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/paginaFeedback.png"
+</figure>
+
+<figure>
+  <figcaption>Figura 14 - Página de feedback versão mobile</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/pagimaFeedbackMobile.png"
+</figure>
+
+<!-- Adiconar o link repósit[orio do Template HTML e CSS-->
+
+<!--
 ## Link repositório do Template do HTML e CSS
 Código Base Form Feedback (passar para o local correto depois)
 https://getbootstrap.com/docs/4.3/components/forms/#custom-forms
 
 
 > **Links Úteis**:
->
+
 > - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
 > - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
 > - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
 > - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+> - 
+-->
