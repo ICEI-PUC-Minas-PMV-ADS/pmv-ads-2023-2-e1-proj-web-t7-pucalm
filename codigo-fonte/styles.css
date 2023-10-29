@@ -227,7 +227,7 @@ h5{
     margin-right: 1rem;
     border-radius: 4rem;
     border: 0;
-    padding: 1rem;
+    padding: 0.7rem;
     display: flex;
     align-items: center;
 }
@@ -430,7 +430,7 @@ h5{
     vertical-align: bottom;
 }
 .espacamento-section{
-    padding-bottom: 1rem;
+    padding: 1rem;
 }
 
 
@@ -481,6 +481,7 @@ h5{
 .section-mobile{
     display: none;
     justify-content: center;
+    padding: 1rem;
 }
 
 .imagem-playlist{
@@ -578,7 +579,7 @@ h5{
 
 input[type=text], input[type=email], select, textarea {
     width: 100%;
-    padding: 12px;
+    padding: 0.7rem;
     border: 1px solid var(--cinza-medio);
     box-shadow: 0px 1px 0px 0px rgb(192, 192, 192);
     box-sizing: border-box;
@@ -697,6 +698,7 @@ input[type=submit]:hover {
     border: 0;
     padding: 0.5rem;
     border-radius: 1rem;
+    min-width: 8rem;
 }
 
 .cartoes-playlists{

@@ -68,7 +68,7 @@ li {
 
 .logo {
     width: calc(20% + 2rem);
-    padding-bottom: 2rem;
+    padding: 2rem 0rem 2rem 0rem;
 }
 
 .centralizado {
