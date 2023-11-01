@@ -2,6 +2,8 @@
 
 &emsp;Na _Sprint 3_ foi elaborado o template padrão da aplicação. Neste estágio, os códigos HTML e CSS de base para o projeto foram codificados e implementados. Inicialmente, optou-se por utilizar um código modelo existente como ponto de partida. No entanto, essa estratégia revelou-se contraproducente.
 
+&emsp;O acesso pode ser feito por: <https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/>.
+
 ## Planejamento
 &emsp; A equipe desenvolveu três blocos principais da aplicação web, informados na _Sprint 2_:
 
