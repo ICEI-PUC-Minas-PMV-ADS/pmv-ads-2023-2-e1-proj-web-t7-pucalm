@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PUCalm</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script type="module" src="./playlist.js"></script>
 </head>
 
 <body>
@@ -127,57 +129,12 @@
         
         <!--  Secao audios da playlist  -->
         <section class="secao-grid espacamento-section rolagem-vertical">
-            <!--A numeracao foi removida porque a ferramenta necessaria sera trabalhada em uma sessao futura: JS 
-            Descrever isso em detalhes na documentacao do GitHub//Will-->
-            <div class="secao-flex espacamento-audios">  
-                <div class="secao-flex centralizar">
-                    <img src="assets/mix1.jpeg" class="tamanho-10">
-                    <p class="nome-audio">Nome do audio<p>
+            <div class="container">
+                <div class="main-audio-content">
+                    <audio src="" controls autoplay></audio>
+                    <label class="main-info"></label>
                 </div>
-                <div class="secao-flex centralizar alinhar-direita">
-                    <i class="bi bi-share"></i>
-                    <p class="botao-compartilhar">Compatilhar áudio</p>
-                </div>
-            </div>
-            <div class="secao-flex espacamento-audios">  
-                <div class="secao-flex centralizar">
-                    <img src="assets/mix1.jpeg" class="tamanho-10">
-                    <p class="nome-audio">Nome do audio<p>
-                </div>
-                <div class="secao-flex centralizar alinhar-direita">
-                    <i class="bi bi-share"></i>
-                    <p class="botao-compartilhar">Compatilhar áudio</p>
-                </div>
-            </div>
-            <div class="secao-flex espacamento-audios">  
-                <div class="secao-flex centralizar">
-                    <img src="assets/mix1.jpeg" class="tamanho-10">
-                    <p class="nome-audio">Nome do audio<p>
-                </div>
-                <div class="secao-flex centralizar alinhar-direita">
-                    <i class="bi bi-share"></i>
-                    <p class="botao-compartilhar">Compatilhar áudio</p>
-                </div>
-            </div>
-            <div class="secao-flex espacamento-audios">  
-                <div class="secao-flex centralizar">
-                    <img src="assets/mix1.jpeg" class="tamanho-10">
-                    <p class="nome-audio">Nome do audio<p>
-                </div>
-                <div class="secao-flex centralizar alinhar-direita">
-                    <i class="bi bi-share"></i>
-                    <p class="botao-compartilhar">Compatilhar áudio</p>
-                </div>
-            </div>
-            <div class="secao-flex espacamento-audios">  
-                <div class="secao-flex centralizar">
-                    <img src="assets/mix1.jpeg" class="tamanho-10">
-                    <p class="nome-audio">Nome do audio<p>
-                </div>
-                <div class="secao-flex centralizar alinhar-direita">
-                    <i class="bi bi-share"></i>
-                    <p class="botao-compartilhar">Compatilhar áudio</p>
-                </div>
+                <div class="playlist"></div>
             </div>
             <!--Navbar mobile (No footer)-->
             <div class="container-navbar-mobile">
@@ -193,7 +150,7 @@
             </div>
         </section>
     </section>
-    <script src="./scripts.js"></script>
+    <script type="module" src="./scripts.js"></script>
 </body>
 
 </html>

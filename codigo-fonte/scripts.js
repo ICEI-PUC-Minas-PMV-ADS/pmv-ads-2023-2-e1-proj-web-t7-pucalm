@@ -82,52 +82,68 @@ if (btnEnviar){
 
 
 /* ********************************** */
-/*          Página inicial            */
+/*            Playlist              */
 /* ********************************** */
-// Deixar o carousel mostrando múltimos elementos de filtro
+// Organizar audios da playlist em listas
+import audios from "./audios.js";
 
-const controls = document.querySelectorAll(".control");
-let currentItem = 0;
-const items = document.querySelectorAll(".item");
-const maxItems = items.length;
+function loadAudios() {
+    const playlist_area = document.querySelector(".playlist");
 
-controls.forEach((control) => {
-    control.addEventListener("click", (e) => {
-        isLeft = e.target.classList.contains("arrow-left");
+    audios.forEach((audio, index) => {
+        const div = document.createElement("div");
 
-        if (isLeft) {
-            currentItem -= 1;
-        } else {
-            currentItem += 1;
-        }
+        div.innerHTML = `
+          
+          <div class="playlist-audio ${index + 1 === 1 && "active"}">
+            <audio src=${audio.src} muted></audio>
+            <div class="playlist-info-bloco1">
+              <img class="playlist-img-info" src="${audio.img}"></img>
+              <label class="playlist-audio-info">${audio.title}</label>
+            </div>
+            <div class="playlist-info-bloco2">
+              <i class="bi playlist-play bi-play-circle-fill" id="1"></i>
+            </div>
+          </div>
+        `;
 
-        if (currentItem >= maxItems) {
-            currentItem = 0;
-        }
-
-        if (currentItem < 0) {
-            currentItem = maxItems - 1;
-        }
-
-        items.forEach((item) => item.classList.remove("current-item"));
-
-        items[currentItem].scrollIntoView({
-            behavior: "smooth",
-            inline: "center"
-        });
-
-        items[currentItem].classList.add("current-item");
+        playlist_area.appendChild(div);
     });
-});
 
+    addOnClick();
+}
 
+function addOnClick() {
+    const audio_main = document.querySelector(".main-audio-content");
+    const playlist_audio = document.querySelectorAll(".playlist-audio");
+
+    playlist_audio.forEach((item, i) => {
+    if (!i) {
+        setaudio(audio_main, item);
+    }
+
+    item.onclick = () => {
+        playlist_audio.forEach((audio) => audio.classList.remove("active"));
+        item.classList.add("active");
+
+        setaudio(audio_main, item);
+    };
+    });
+}
+
+function setaudio(audio_main, item) {
+    audio_main.children[0].src = item.children[0].getAttribute("src");
+    audio_main.children[1].innerHTML = item.children[1].innerHTML;
+}
+
+loadAudios();
 
 /* ********************************** */
 /*          Player                    */
 /* ********************************** */
 
 // Tocar audio ao clicar no play (do player)
-const audio = new Audio('audios/estudo/audio-bineural-1.mp3')
+const audio = new Audio('./audios/01.mp3')
 
 btnPlay = document.getElementById("play-player").addEventListener("click", ()=> {
   if (audio.paused || audio.currentTime <=0) {

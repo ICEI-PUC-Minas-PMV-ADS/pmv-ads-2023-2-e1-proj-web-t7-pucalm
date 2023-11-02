@@ -392,6 +392,10 @@ h5{
     background-color: var(--azul-escuro);
 }
 
+.audios-playlist{
+    list-style: none;
+}
+
 .secao-flex{
     display: flex;
 }
@@ -437,6 +441,27 @@ h5{
 /* ------------------------- */
 /*  Secao audios da playlist */
 /* ------------------------- */
+
+.playlist{
+    display: grid;
+    gap: 1rem;
+}
+
+.playlist-audio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.playlist-audio-info{
+    padding-left: 1rem;
+}
+
+.playlist-info-bloco1{
+    align-items: center;
+    display:flex
+}
+
 .informacoes-playlist{
     padding: 0.5rem 0.6rem 0.5rem 2.5rem;
 }
@@ -459,6 +484,9 @@ h5{
     padding: 1rem;
 }
 
+.playlist-img-info{
+    width: 5rem;
+}
 
 /* ------------------------ */
 /*  Secao nome da playlist  */
@@ -817,3 +845,7 @@ background-color: #282828;
         left: 0;
     }
 }
+
+
+
+
