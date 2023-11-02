@@ -2,7 +2,8 @@ export default [
     {
         src: "./audios/01.mp3",
         title: "Áudio 1",
-        img: "./assets/mix1.jpeg"
+        img: "./assets/mix1.jpeg",
+        classe: "estudo, foco",
     },
     {
         src: "./audios/02.mp3",

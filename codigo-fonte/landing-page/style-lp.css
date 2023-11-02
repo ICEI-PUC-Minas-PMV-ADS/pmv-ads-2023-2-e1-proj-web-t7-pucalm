@@ -94,7 +94,7 @@ button {
 }
 
 .texto-beneficios {
-    padding-right: 4rem;
+    padding-right: 3rem;
 }
 
 .paragrafo-inteiro {
@@ -147,7 +147,9 @@ button {
         gap: 2rem;
         justify-content: space-around;
     }
-
+    .texto-beneficios{
+        padding-right: 0;
+    }
 }
 
 @media (min-width: 701px) {
