@@ -3,7 +3,49 @@
 
 &emsp;O acesso pode ser feito por: [<https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/landing-page>](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/landing-page/landing-page.html).
 
+<figure>
+  <figcaption>Landing page versão desktop</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/landingPage.jpg"
+</figure>
 
+<figure>
+  <figcaption>Landing page versão mobile</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/landingPageMobile.jpg"
+</figure>
+
+
+<figure>
+  <figcaption>Página inicial versão desktop</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/paginaInicial.jpg"
+</figure>
+
+<figure>
+  <figcaption>Página inicial versão mobile</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/paginaInicialMobile.jpg"
+</figure>
+
+
+<figure>
+  <figcaption>Página de playlists versão desktop</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/playlist.jpg"
+</figure>
+
+<figure>
+  <figcaption>Página de playlists versão mobile</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/paginaInicialMobile.jpg"
+</figure>
+
+
+<figure>
+  <figcaption>Página de feedback versão desktop</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/paginaFeedback.png"
+</figure>
+
+<figure>
+  <figcaption>Página de feedback versão mobile</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/pagimaFeedbackMobile.png"
+</figure>
+  
 <!-- Adiconar o link repósitório do Template HTML e CSS-->
 
 <!--
