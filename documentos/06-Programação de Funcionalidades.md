@@ -119,7 +119,9 @@ styles.css
 
 #### Estrutura de Dados
 
-<form class="form" id="form" action="https://formspree.io/f/mleyzvob" method="POST"> 
+<figure>
+    <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/funcionalidade-feedback-et-3.png"
+</figure>
 
 #### Instruções de acesso
 
