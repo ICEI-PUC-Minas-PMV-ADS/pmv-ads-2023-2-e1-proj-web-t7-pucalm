@@ -71,7 +71,9 @@ styles.css
 
 #### Estrutura de Dados
 
-<script type="module" src="./playlist.js"></script>
+<figure>
+    <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/estrutura-pag-inicial.png"
+</figure>
 
 
 #### Instruções de acesso
