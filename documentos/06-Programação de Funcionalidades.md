@@ -7,24 +7,29 @@
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/landingPage.jpg"
 </figure>
 
-&emsp;Página inicial de contato do usuário como apresentação ao usuário.
+&emsp;Página inicial de contato do usuário como apresentação ao usuário, o convidando a explorar o conteúdo, sem necessidade de registro ou casastro
 
 #### Requisito não funcional 
 
+|ID      | Descrição              
+|--------|------------------------
+| RNF-01 |  A aplicação deve ser responsiva para se adaptar a qualquer tipo de dispositivo.                     
+| RNF-03 |  A aplicação deve permitir que o usuário a utilize sem necessidade de treinamento.                   
 
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+&emsp;landing-page.html
+&emsp;landing-page.html
 
 
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
+<a href="../index.html"><button>EXPLORAR</button></a>
 
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
+&emsp; O usuário somente necessida clicar no botão "explorar" para ter acesso às playlists
 
 
 #### Responsável
