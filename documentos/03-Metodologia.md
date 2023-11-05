@@ -205,6 +205,8 @@
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/pagimaFeedbackMobile.png"
 </figure>
 
+&emsp; O usuário, ao preencher os boxes com os dados obrigatórios, que são Nome e Mensagem, em seguida destinar clicando no botão de envio, imediatamente esses dados são enviados ao e-mail registrado pela equipe no momento do desenvolvimento da página em questão, com o conteúdo submetido pelo usuário.
+
 #### Sprint 4
 
 
