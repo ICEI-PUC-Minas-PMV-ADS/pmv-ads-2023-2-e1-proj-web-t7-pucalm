@@ -18,13 +18,13 @@
 
 #### Artefatos da funcionalidade
 
-&emsp;landing-page.html
-&emsp;landing-page.html
+landing-page.html
+&emsp;style-lp.css
 
 
 #### Estrutura de Dados
 
-<a href="../index.html"><button>EXPLORAR</button></a>
+"<a href="../index.html"><button>EXPLORAR</button></a>"
 
 
 #### Instruções de acesso
