@@ -6,7 +6,10 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 ### Título da funcionalidade
 
-[Adicione imagem da funcionalidade/tela]
+<figure>
+  <figcaption>Figura 7 - Landing page versão desktop</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/landingPage.jpg"
+</figure>
 
 
 #### Requisito atendido
