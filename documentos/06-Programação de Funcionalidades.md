@@ -26,11 +26,11 @@ style-lp.css
 
 #### Instruções de acesso
 
-&emsp; O usuário somente necessita clicar no botão "explorar" para ter acesso às playlists
+&emsp;O usuário somente necessita clicar no botão "explorar" para ter acesso às playlists
 
 
 #### Responsáveis
-Rafael Costa Souza, Gabriela Franklin Sá de Moura e Willams Andrade Lima
+&emsp;Rafael Costa Souza, Gabriela Franklin Sá de Moura e Willams Andrade Lima
 
 ### Página inicial
 
@@ -59,9 +59,13 @@ Rafael Costa Souza, Gabriela Franklin Sá de Moura e Willams Andrade Lima
 #### Artefatos da funcionalidade
 
 audios.js
+
 index.html
+
 playlist.html
+
 scripts.js
+
 styles.css
 
 
@@ -76,7 +80,7 @@ styles.css
 
 
 #### Responsáveis
-Lucas Campos de Abreu , Rafael Costa Souza, Camyla Gomes Soares Oliveira, Gabriel Coutinho Rolim, Gabriela Franklin Sá de Moura e Willams Andrade Lima
+&emsp;Lucas Campos de Abreu , Rafael Costa Souza, Camyla Gomes Soares Oliveira, Gabriel Coutinho Rolim, Gabriela Franklin Sá de Moura e Willams Andrade Lima
 
 ### Feedback
 
@@ -105,8 +109,11 @@ Lucas Campos de Abreu , Rafael Costa Souza, Camyla Gomes Soares Oliveira, Gabrie
 #### Artefatos da funcionalidade
 
 feedback.html
+
 index.html
+
 scripts.js
+
 styles.css
 
 
@@ -120,4 +127,4 @@ styles.css
 
 
 #### Responsáveis
-Lucas Campos de Abreu , Camyla Gomes Soares Oliveira, Gabriel Coutinho Rolim
+&emsp;Lucas Campos de Abreu , Camyla Gomes Soares Oliveira, Gabriel Coutinho Rolim
