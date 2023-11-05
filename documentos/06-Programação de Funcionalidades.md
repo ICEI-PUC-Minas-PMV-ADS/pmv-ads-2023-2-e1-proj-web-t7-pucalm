@@ -3,7 +3,7 @@
 ### Landing Page
 
 <figure>
-  <figcaption>Figura 7 - Landing page versão desktop</figcaption>
+  <figcaption>Figura 7 - Landing page</figcaption>
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/landingPage.jpg"
 </figure>
 
@@ -39,7 +39,7 @@ Rafael Costa Souza, Gabriela Franklin Sá de Moura e Willams Andrade Lima
 ### Página inicial
 
 <figure>
-  <figcaption>Figura 9 - Página inicial versão desktop</figcaption>
+  <figcaption>Figura 9 - Página inicial</figcaption>
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/paginaInicial.jpg"
 </figure>
 
@@ -85,7 +85,7 @@ Lucas Campos de Abreu , Rafael Costa Souza, Camyla Gomes Soares Oliveira, Gabrie
 ### Feedback
 
 <figure>
-  <figcaption>Figura 13 - Página de feedback versão desktop</figcaption>
+  <figcaption>Figura 13 - Página de feedback </figcaption>
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/paginaFeedback.png"
 </figure>
 
