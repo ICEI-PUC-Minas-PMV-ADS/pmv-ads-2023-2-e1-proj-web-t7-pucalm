@@ -7,10 +7,9 @@
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/documentos/img/landingPage.jpg"
 </figure>
 
+&emsp;Página inicial de contato do usuário como apresentação ao usuário.
 
-#### Requisito atendido
-
-&emsp;Página inicial de contato do usuário com a aplicação web aqui desenvolvida, traz os detalhes da aplicação, os benefícios e os desenvolvedores.
+#### Requisito não funcional 
 
 
 #### Artefatos da funcionalidade
