@@ -24,11 +24,6 @@ landing-page.html
 style-lp.css
 
 
-#### Estrutura de Dados
-
-="../ index.html " > <button> EXPLORAR </button> </a> 
-
-
 #### Instruções de acesso
 
 &emsp; O usuário somente necessita clicar no botão "explorar" para ter acesso às playlists
