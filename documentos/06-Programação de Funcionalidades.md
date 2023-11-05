@@ -20,6 +20,7 @@
 #### Artefatos da funcionalidade
 
 landing-page.html
+
 style-lp.css
 
 
