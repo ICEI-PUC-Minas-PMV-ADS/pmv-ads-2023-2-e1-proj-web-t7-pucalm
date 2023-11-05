@@ -1,10 +1,6 @@
 # Programação de Funcionalidades
 
-Implementação da aplicação descritas por meio dos requisitos codificados. 
-
-[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
-
-### Título da funcionalidade
+### Landing Page
 
 <figure>
   <figcaption>Figura 7 - Landing page versão desktop</figcaption>
@@ -14,7 +10,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+&emsp;Página inicial de contato do usuário com a aplicação web aqui desenvolvida, traz os detalhes da aplicação, os benefícios e os desenvolvedores.
 
 
 #### Artefatos da funcionalidade
