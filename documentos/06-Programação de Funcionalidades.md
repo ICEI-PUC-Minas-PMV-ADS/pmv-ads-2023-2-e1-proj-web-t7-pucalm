@@ -26,7 +26,7 @@ style-lp.css
 
 #### Estrutura de Dados
 
-&emsp; <a href="../index.html" > <button> EXPLORAR </button> </a> 
+&emsp; <a href ="../ index.html " > <button> EXPLORAR </button> </a> 
 
 
 #### Instruções de acesso
