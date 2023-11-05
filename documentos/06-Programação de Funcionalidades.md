@@ -108,7 +108,7 @@ styles.css
 
 #### Artefatos da funcionalidade
 
-feedback.html
+feedbacks.html
 
 index.html
 
