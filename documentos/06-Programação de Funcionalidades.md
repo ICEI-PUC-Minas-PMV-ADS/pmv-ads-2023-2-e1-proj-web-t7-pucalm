@@ -19,9 +19,9 @@
 
 #### Artefatos da funcionalidade
 
-[landing-page.html] (https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/codigo-fonte/landing-page/landing-page.html)
+landing-page
 
-[style-lp.css] (https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/blob/main/codigo-fonte/landing-page/style-lp.css) 
+style-lp.css
 
 
 #### Instruções de acesso
