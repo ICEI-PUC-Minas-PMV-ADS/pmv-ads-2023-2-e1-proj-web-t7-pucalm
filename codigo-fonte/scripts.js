@@ -119,22 +119,23 @@ function addOnClick() {
 
     playlist_audio.forEach((item, i) => {
     if (!i) {
-        setaudio(audio_main, item);
+      setaudio(item);
     }
 
     item.onclick = () => {
         playlist_audio.forEach((audio) => audio.classList.remove("active"));
         item.classList.add("active");
 
-        setaudio(audio_main, item);
+        setaudio(item);
     };
     });
 }
 
-function setaudio(audio_main, item) {
-    audio_main.children[0].src = item.children[0].getAttribute("src");
-    audio_main.children[1].innerHTML = item.children[1].innerHTML;
+function setaudio(item) {
+  document.getElementById("audio-main").src = item.querySelector("audio").getAttribute("src");
+  document.getElementById("label-audio-main").innerHTML = item.querySelector(".playlist-info-bloco1").innerHTML;
 }
+
 
 loadAudios();
 
@@ -142,10 +143,10 @@ loadAudios();
 /*          Player                    */
 /* ********************************** */
 
-// Tocar audio ao clicar no play (do player)
+// Teste Tocar audio ao clicar no play (do player)
 const audio = new Audio('./audios/01.mp3')
 
-btnPlay = document.getElementById("play-player").addEventListener("click", ()=> {
+const btnPlay = document.getElementById("play-player").addEventListener("click", ()=> {
   if (audio.paused || audio.currentTime <=0) {
     audio.play()
   } else {
