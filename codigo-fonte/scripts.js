@@ -96,7 +96,7 @@ function loadAudios() {
         div.innerHTML = `
           
           <div class="playlist-audio ${index + 1 === 1 && "active"}">
-            <audio src=${audio.src} muted></audio>
+            <audio src=${audio.src} autoplay muted></audio>
             <div class="playlist-info-bloco1">
               <img class="playlist-img-info" src="${audio.img}"></img>
               <label class="playlist-audio-info">${audio.title}</label>
@@ -113,43 +113,70 @@ function loadAudios() {
     addOnClick();
 }
 
+// function addOnClick() {
+//     const audio_main = document.querySelector(".main-audio-content");
+//     const playlist_audio = document.querySelectorAll(".playlist-audio");
+
+//     playlist_audio.forEach((item, i) => {
+//     if (!i) {
+//       setaudio(item);
+//     }
+
+//     item.onclick = () => {
+//         playlist_audio.forEach((audio) => audio.classList.remove("active"));
+//         item.classList.add("active");
+
+//         setaudio(item);
+//     };
+//     });
+// }
+
 function addOnClick() {
-    const audio_main = document.querySelector(".main-audio-content");
-    const playlist_audio = document.querySelectorAll(".playlist-audio");
+  const audio_main = document.querySelector(".main-audio-content");
+  const playlist_audio = document.querySelectorAll(".playlist-audio");
 
-    playlist_audio.forEach((item, i) => {
-    if (!i) {
-      setaudio(item);
-    }
+  playlist_audio.forEach((item) => {
+      item.addEventListener("click", () => {
+          // Remover a classe "active" de todos os itens da playlist
+          playlist_audio.forEach((audio) => audio.classList.remove("active"));
 
-    item.onclick = () => {
-        playlist_audio.forEach((audio) => audio.classList.remove("active"));
-        item.classList.add("active");
+          // Adicionar informações do audio no player (ajustar)
+          document.getElementById("info-audio-main").innerHTML = item.querySelector(".playlist-info-bloco1").innerHTML;
 
-        setaudio(item);
-    };
-    });
+          // Adicionar a classe "active" ao item clicado
+          item.classList.add("active");
+
+          // Obter a URL da música associada ao item
+          document.getElementById("audio-main").src = item.querySelector("audio").getAttribute("src");
+          
+          // Iniciar a reprodução do áudio
+          audio_main.querySelector("audio").play();
+      });
+  });
 }
 
+
 function setaudio(item) {
-  document.getElementById("audio-main").src = item.querySelector("audio").getAttribute("src");
-  document.getElementById("label-audio-main").innerHTML = item.querySelector(".playlist-info-bloco1").innerHTML;
+  // document.getElementById("audio-main").src = item.querySelector("audio").getAttribute("src");
+  document.getElementById("info-audio-main").innerHTML = item.querySelector(".playlist-info-bloco1").innerHTML;
+
 }
 
 
 loadAudios();
+
 
 /* ********************************** */
 /*          Player                    */
 /* ********************************** */
 
 // Teste Tocar audio ao clicar no play (do player)
-const audio = new Audio('./audios/01.mp3')
+// const audio = new Audio('./audios/01.mp3')
 
-const btnPlay = document.getElementById("play-player").addEventListener("click", ()=> {
-  if (audio.paused || audio.currentTime <=0) {
-    audio.play()
-  } else {
-    audio.pause()
-  }
-})
+// const btnPlay = document.getElementById("play-player").addEventListener("click", ()=> {
+//   if (audio.paused || audio.currentTime <=0) {
+//     audio.play()
+//   } else {
+//     audio.pause()
+//   }
+// })
