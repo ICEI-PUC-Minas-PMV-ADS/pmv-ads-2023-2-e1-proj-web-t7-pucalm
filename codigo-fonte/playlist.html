@@ -70,27 +70,13 @@
                 <div class="onda-sonora1"></div>
                 <div class="onda-sonora1"></div>
             </div>
-            <img src="assets/mix1.jpeg" alt="img-audio" class="img-audio-player">
-            <h5>Titulo do Áudio
-                <div class="autor-audio">Nome do Autor</div>
+            <img id="img-audio-player" src="assets/mix1.jpeg" alt="img-audio" class="img-audio-player">
+            <h5 id="titulo-audio-player">
+                <div id="autor-audio-player" class="autor-audio">Nome do Autor</div>
             </h5>
         </div>
         <div class="container-player secao-grid tamanho-40">
             <audio id="audio-main" src="" autoplay controls></audio>
-            
-            <!-- <div class="icones-player">
-                <i class="bi bi-skip-start-fill"></i>
-                <i class="bi bi-play-fill" id="play-player"></i>
-                <i class="bi bi-skip-end-fill"></i>                
-            </div> -->
-            <!-- <div class="secao-flex container-temporizador">
-                <span id="temporizador-inicial">0:00</span>
-                <div class="barra-tempo">
-                    <input type="range" id="barra-fixa" min="0" max="100">
-                    <div class="barra-tempo-crescente" id="barra-crescente"></div>
-                </div>
-                <span id="temporizador-final">4:30</span>
-            </div> -->
         </div>
     </section>
 
@@ -109,7 +95,7 @@
                 <p>Playlist</p>
                 <h2 class="titulo-playlist">Nome da playlist</h2>
                 <p>X áudios | PUCalm</p>
-                <img src="assets/play_musicbar.png" alt="Logo Play" class="botao-play">
+                <img id="play-playlist-toda" src="assets/play_musicbar.png" alt="Logo Play" class="botao-play">
             </div>
             <div class="secao-grid tamanho-20 secao-filtro">
                 <div class="alinhar-direita">
@@ -132,15 +118,12 @@
         <section class="secao-grid espacamento-section rolagem-vertical">
             <div class="container">
                 <div class="main-audio-content">
-                    <!-- <audio id="audio-main" src="" controls></audio> -->
                     <label id="info-audio-main" class="main-info"></label>
                 </div>
                 <div class="playlist"></div>
             </div>
 
 
-
-            
             <!--Navbar mobile (No footer)-->
             <div class="container-navbar-mobile">
                 <a href="index.html" class="botoes-navbar-mobile">
