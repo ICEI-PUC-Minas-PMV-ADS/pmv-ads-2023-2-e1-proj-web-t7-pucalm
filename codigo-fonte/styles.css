@@ -7,9 +7,9 @@
     --azul-claro: #405E7A;
     --azul-gelo: #9EB3CA;
     --cinza-claro: #D3DAE4;
-  }
+}
 
-  @keyframes efeito-onda {
+@keyframes efeito-onda {
     0% {
         height: 10px;
     }
@@ -443,6 +443,10 @@ h5{
 /*  Secao audios da playlist */
 /* ------------------------- */
 
+audio::-webkit-media-controls-panel {
+    /*  background-color: var(--azul-escuro); */
+}
+
 .playlist{
     display: grid;
     gap: 1rem;
@@ -452,6 +456,13 @@ h5{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+
+.playlist-audio:hover{
+    background-color: var(--azul-claro);
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .playlist-audio-info{
