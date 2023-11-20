@@ -5,10 +5,6 @@ audio= new Audio();
 
 
 var containerPrincipal = document.querySelector("#container-principal");
-/*var modalSong = document.querySelector("#popupModalSong"); 
-var modalGenre = document.querySelector("#popupModalGenre");
-var btnAddPlaylist = document.querySelector("#addPlaylistButton");
-var btnAddSong = document.querySelector("#addPlaylistButton"); */
 
 function getMusicasDaPlaylist(genero)
 {
@@ -78,11 +74,6 @@ function init(param)
     seekInput = document.querySelector("#input-seeker");
 
     containerPrincipal = document.querySelector("#container-principal");
-    document.querySelector("#searchBar");
-    modalSong = document.querySelector("#popupModalSong");
-    modalGenre = document.querySelector("#popupModalGenre");
-    btnAddPlaylist = document.querySelector("#addPlaylistButton");
-    btnAddSong = document.querySelector("#addPlaylistButton"); 
 
     if(!document.getElementsByTagName("BODY")[0].classList.contains("body-index"))
     {
@@ -133,12 +124,6 @@ function init(param)
     }
     
 }
-
-
-
-
-
-
 
 
 /* INICIAR MUSICA CLICANDO NO TÍTULO DELA */
@@ -240,5 +225,4 @@ function addQueue(param)
     audio = new Audio();
     iniciarMusica();
     //initAudioPlayer();
-
 }

@@ -208,43 +208,6 @@ function closeModal()
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 btnPlay = document.querySelector("#controle-play");
 seekSlider= document.querySelector("#progresso-barra");
 currentTime = document.querySelector("#current");
