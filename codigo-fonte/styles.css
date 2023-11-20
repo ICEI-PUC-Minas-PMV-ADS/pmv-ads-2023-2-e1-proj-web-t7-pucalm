@@ -23,7 +23,8 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    background:var(--preto);
+    background : -webkit-gradient(linear, 0% 0%, 0% 100%, from(var(--azul-escuro)), to(var(--azul-claro)));
+    background-attachment: fixed;
     margin: 0;
 }
 
@@ -81,7 +82,7 @@ h5{
     bottom: 0;
     z-index: 2;
     overflow: hidden;
-    box-shadow: 0rem 0.01rem 0.124rem 0rem var(--azul-claro);
+    /*box-shadow: 0rem 0.01rem 0.124rem 0rem var(--azul-claro);*/
 }
 
 .container-menu-lateral .logo {
@@ -93,7 +94,7 @@ h5{
 }
 
 .container-menu-lateral .container-botoes{
-    box-shadow: 0rem 0.01rem 0rem 0rem var(--azul-claro);
+    /*box-shadow: 0rem 0.01rem 0rem 0rem var(--azul-claro);*/
     padding-bottom: 0.4rem;
     margin-bottom: 0.8rem;
     margin-top: 2rem;
@@ -138,7 +139,7 @@ h5{
     margin-bottom: 0.8rem;
     cursor: pointer;
     transition: .1s linear;
-    box-shadow: 0rem 0.01rem 0rem 0rem var(--azul-claro);
+    /*box-shadow: 0rem 0.01rem 0rem 0rem var(--azul-claro);*/
     padding-bottom: 0.5rem;
 }
 
@@ -241,7 +242,7 @@ h5{
     height: 10%;
     /* border: 1px solid var(--branco); */
     background: var(--azul-claro);
-    box-shadow: 0px 3px 8px var(--azul-claro);
+    /*box-shadow: 0px 3px 8px var(--azul-claro);*/
     display: flex;
     align-items: center;
     position: fixed;
@@ -390,7 +391,6 @@ h5{
     right: 0;
     bottom: 10%;
     color: var(--branco);
-    background-color: var(--azul-escuro);
 }
 
 .audios-playlist{
@@ -622,7 +622,7 @@ input[type=text], input[type=email], select, textarea {
     width: 100%;
     padding: 0.7rem;
     border: 1px solid var(--cinza-medio);
-    box-shadow: 0px 1px 0px 0px rgb(192, 192, 192);
+    /*box-shadow: 0px 1px 0px 0px rgb(192, 192, 192);*/
     box-sizing: border-box;
     resize: vertical;
 }
@@ -688,8 +688,6 @@ input[type=submit]:hover {
 
 .container-conteudo {
     /* border: 1px solid var(--branco); */
-    background: var(--azul-escuro);
-    box-shadow: 0.1rem 0rem 0.1rem var(--azul-claro);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -762,7 +760,7 @@ input[type=submit]:hover {
 
 .cartao {
     background-color: #181818;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);*/
 	transition: background-color 0.3s ease;
     border-radius: 0.8rem;
     cursor: pointer;

@@ -11,11 +11,11 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script> 
     </head>
     <body>
-        <div id="navBarContainer">
-            <div id="navbar">
+        <div id="container-menu-lateral">
+            <div id="menu-lateral">
                 <div id="logo"> <img src="assets/imgs/PUCalm.png" alt=""> </div>
-                <div class="section session">
-                    <div class="section-item middle" class="navbar-home" onclick="backtoHome()">
+                <div class="secao-itens-menu-lateral">
+                    <div class="item-menu-lateral" class="menu-lateral-inicio" onclick="acessarInicio()">
                         <div>
                             Início 
                             <svg class="icon" viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
@@ -23,7 +23,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="section-item middle" class="navbar-library" onclick="gotoLibrary()">
+                    <div class="item-menu-lateral" class="menu-lateral-feedback" onclick="acessarFeedback()">
                         Feedback 
                         <svg class="icon" viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path>
@@ -33,27 +33,27 @@
             </div>
         </div>
 
-        <div id="playerContainer" style="z-index: 50;">
-            <div class="section-2">
-                <div class="thumbContainer">
-                    <img id="now-thumb" src="/assets/imgs/mix1.jpeg" alt="" >
+        <div id="container-player">
+            <div class="secao-player">
+                <div class="container-capa">
+                    <img id="capa-atual" src="/assets/imgs/mix1.jpeg" alt="" >
                 </div>
-                <span id="now-detail">
-                    <span id="now-title">Título</span>
-                    <span id="now-artist">Artistas responsáveis</span>
+                <span id="detalhe-atual">
+                    <span id="titulo-atual">Título</span>
+                    <span id="artista-atual">Artistas responsáveis</span>
                 </span>  
             </div>
-        <div class="section-2" id="player">
-            <div id="controls">  <img id="control-previous" class="control-item" src="assets/icons/previous.png" alt=""> <img id="control-play" class="control-item-special" src="assets/icons/play.png" alt=""> <img id="control-next" class="control-item" src="assets/icons/next.png" alt=""> </div>
+        <div class="secao-player" id="player">
+            <div id="controles">  <img id="controle-voltar" class="controle-item" src="assets/icons/previous.png" alt=""> <img id="controle-play" class="controle-item-especial" src="assets/icons/play.png" alt=""> <img id="controle-avancar" class="controle-item" src="assets/icons/next.png" alt=""> </div>
                 <div id="seeker">
-                    <span id="current" class="progressTime ">0.00</span> 
-                    <div id="progressBar">
+                    <span id="current" class="progresso-tempo ">0.00</span> 
+                    <div id="progresso-barra">
                         <div id="progressBarBg-seeker">
-                            <div class="progress" id="progress-song"></div>
+                            <div class="progresso" id="progresso-musica"></div>
                         </div>
                         <input id="input-seeker" type="range" min="0" max="100" value="0" step="1"> 
                     </div>
-                    <span id="remaining" class="progressTime ">0.00</span> 
+                    <span id="remaining" class="progresso-tempo ">0.00</span> 
                 </div>
             </div>
         </div>
@@ -68,11 +68,11 @@
             </div>
         </div>
 
-        <div id="mainContainer" class="t-landing">
-            <div id="title">
+        <div id="container-principal" class="t-inicio">
+            <div id="titulo-pagina-atual">
                 <h1>Início</h1>
             </div>
-            <div id="cardContainer"> </div>
+            <div id="container-playlists"> </div>
         </div>
 
         <script src="script.js"></script>  
