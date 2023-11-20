@@ -1,11 +1,11 @@
-var dadosMusicas = [["Foco","Desconhecido","Verde","Audio 01","03:27"],["Foco","Desconhecido","Azul","Audio 02","04:50"],["Estudo","Desconhecido","Verde","Audio 03","06:02"],["Ansiedade","Desconhecido","Azul","Audio 04","05:17"]]
+var dadosMusicas = [["foco","Desconhecido","Verde","Audio 01","03:27"],["foco","Desconhecido","Azul","Audio 02","04:50"],["Estudo","Desconhecido","Verde","Audio 03","06:02"],["Ansiedade","Desconhecido","Azul","Audio 04","05:17"]]
 var playlists = ["Foco","Relaxamento","Estresse","Ansiedade","Estudo"]
 
 audio= new Audio();
 
 
 var containerPrincipal = document.querySelector("#container-principal");
-/*var modalSong = document.querySelector("#popupModalSong");
+/*var modalSong = document.querySelector("#popupModalSong"); 
 var modalGenre = document.querySelector("#popupModalGenre");
 var btnAddPlaylist = document.querySelector("#addPlaylistButton");
 var btnAddSong = document.querySelector("#addPlaylistButton"); */
