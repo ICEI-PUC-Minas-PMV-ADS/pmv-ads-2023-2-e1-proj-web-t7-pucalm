@@ -370,7 +370,7 @@ body
     text-align: initial;
 }
 
-.musicas
+.audios
 {
     min-width: 95% !important;
 }
@@ -430,28 +430,20 @@ body
     cursor: pointer;
 }
 
-
-.songArtist ,.songAlbum
+.songArtist
 {
     display: inline-block;
     margin-left: 20px;
     font-weight: lighter;
     color: #a0a0a0;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-.songArtist:hover, .songAlbum:hover
-{
-    text-decoration: underline;
+    font-size: 12px
 }
 
 .songRight
 {
     float: right;
     font-weight: lighter;
-    color: #a0a0a0;
-
+    color: #a0a0a0
 }
 
 .songLeft, .songRight
@@ -875,10 +867,6 @@ input[type=submit]:hover {
 /* ------------------------- */
 /*  Secao audios da playlist */
 /* ------------------------- */
-
-audio::-webkit-media-controls-panel {
-    /*  background-color: var(--azul-escuro); */
-}
 
 .playlist{
     display: grid;

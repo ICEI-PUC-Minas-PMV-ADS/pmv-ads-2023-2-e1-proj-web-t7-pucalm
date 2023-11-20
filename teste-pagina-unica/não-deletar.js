@@ -1,44 +1,17 @@
 
 var search_query = "";
 var begin = true;
-audio= new Audio();
 var song_queue = dadosMusicas;
 var first_time = true;
 
 var result_genero = "";
 var result_artist = "";
 var result_album = "";
-var musicas = [];
+var audios = [];
 var result_song = [];
 var backup_queue = [];
 
-var selected_user = 0;
-var user_data = [["Cheesie",[["KPop","WJSN","From WJSN","I Wish","01:00"],["KPop","WJSN","The Secret","Secret","01:00"]]]];
 
-
-function acessarMusica(param)
-{
-    btnPlay.src="assets/icons/pause.png";
-    containerPrincipal = document.querySelector("#container-principal");
-    console.log("song : "+param);
-    playlist_index = 0;
-    song_queue = [];
-    dadosMusicas.forEach(function(elem){
-        if(elem[3].toLowerCase()===param.toLowerCase())
-        {
-            console.log("masukkk");
-            if(song_queue.indexOf(elem) <0)
-            {
-                song_queue.push(elem);
-            }
-            
-        }
-    })
-    audio.pause();
-    audio.currentTime = 0;
-    audio = new Audio();
-    initSound();
-}
 
 function initChange()
 {
@@ -48,7 +21,7 @@ function initChange()
         result_genero = "";
         result_artist = "";
         result_album = "";
-        musicas = [];
+        audios = [];
         result_song = [];
         console.log(sb.value);
         playlists.forEach(function(elem){
@@ -77,10 +50,10 @@ function initChange()
             }
 
             console.log("Result Genre : "+result_genero);
-            musicas = getAllSongGenre(result_genero);
-            lcontainer.innerHTML = '<img class="capa-album" src="assets/playlists/genero-'+result_genero+'.jpg" alt="" style="margin-top: 15px;"><div id="albumTitle"><h1>'+result_genero+'</h1></div><div id="albumSongs">'+musicas[2]+'</div><button id="tocar-playlist-toda" onclick="addQueue(\''+result_genero+'\')">Play</button>';
+            audios = getMusicasDaPlaylist(result_genero);
+            lcontainer.innerHTML = '<img class="capa-album" src="assets/playlists/genero-'+result_genero+'.jpg" alt="" style="margin-top: 15px;"><div id="albumTitle"><h1>'+result_genero+'</h1></div><div id="albumSongs">'+audios[2]+'</div><button id="tocar-playlist-toda" onclick="addQueue(\''+result_genero+'\')">Play</button>';
             scontainer.innerHTML = "";
-            musicas[1].forEach(function(elem){
+            audios[1].forEach(function(elem){
                 
                 scontainer.innerHTML+='<div class="songCard" oncontextMenu="showContext(\''+elem[3]+'\');return false;"><div class="songLeft"><img class="icon-sm"src="assets/icons/music-player-grey.png"><div class="songTitle" onclick="acessarMusica(\''+elem[3]+'\')">'+elem[3]+'</div><div class="songDetail"><span class="songArtist" onclick="gotoArtist(\''+elem[1]+'\')">'+elem[1]+'</span> <span class="songAlbum" style="margin-left: 0;" onclick="gotoAlbum(\''+elem[2]+'\')">'+elem[2]+'</span></div></div><div class="songRight">'+elem[4]+'</div></div>';    
             })
@@ -107,11 +80,11 @@ function initChange()
                     recent_search.unshift(["Artist",sb.value.toString()]);
                 }
                 console.log("Result Artist : "+result_artist);
-                musicas = getAllSongArtist(result_artist);
-                lcontainer.innerHTML = '<img class="capa-album" src="assets/banners/banner-'+result_artist+'.jpg" alt="" style="margin-top: 15px; cursor:pointer;" onclick="gotoArtist(\''+result_artist+'\')"><div id="albumTitle" style="cursor:pointer;" onclick="gotoArtist(\''+result_artist+'\')"><h1>'+result_artist+'</h1></div><div id="albumSongs">'+musicas[2]+'</div><button id="tocar-playlist-toda" onclick="addQueueArtist(\''+result_artist+'\')">Play</button>';
-                console.log(musicas);
+                audios = getAllSongArtist(result_artist);
+                lcontainer.innerHTML = '<img class="capa-album" src="assets/banners/banner-'+result_artist+'.jpg" alt="" style="margin-top: 15px; cursor:pointer;" onclick="gotoArtist(\''+result_artist+'\')"><div id="albumTitle" style="cursor:pointer;" onclick="gotoArtist(\''+result_artist+'\')"><h1>'+result_artist+'</h1></div><div id="albumSongs">'+audios[2]+'</div><button id="tocar-playlist-toda" onclick="addQueueArtist(\''+result_artist+'\')">Play</button>';
+                console.log(audios);
                 scontainer.innerHTML = "";
-                musicas[1].forEach(function(elem){
+                audios[1].forEach(function(elem){
                     console.log("elems");
                     console.log(elem);
                     scontainer.innerHTML+='<div class="songCard" oncontextMenu="showContext(\''+elem[3]+'\');return false;"><div class="songLeft"><img class="icon-sm"src="assets/icons/music-player-grey.png"><div class="songTitle" onclick="acessarMusica(\''+elem[3]+'\')">'+elem[3]+'</div><div class="songDetail"><span class="songArtist" onclick="gotoArtist(\''+elem[1]+'\')">'+elem[1]+'</span> <span class="songAlbum" style="margin-left: 0;" onclick="gotoAlbum(\''+elem[2]+'\')">'+elem[2]+'</span></div></div><div class="songRight">'+elem[4]+'</div></div>';    
@@ -140,10 +113,10 @@ function initChange()
                         recent_search.unshift(["Album",sb.value.toString()]);
                     }
                     console.log("Result Album : "+result_album);
-                    musicas = getAllSongAlbum(result_album);
-                    lcontainer.innerHTML = '<img class="capa-album" src="assets/albums/album-'+result_album+'.jpg" alt="" style="margin-top: 15px; cursor:pointer;" onclick="gotoAlbum(\''+result_album+'\')"><div id="albumTitle" style="cursor:pointer;" onclick="gotoAlbum(\''+result_album+'\')"><h1>'+result_album+'</h1></div><div id="albumSongs">'+musicas[2]+'</div><button id="tocar-playlist-toda" onclick="addQueueAlbum(\''+result_album+'\')">Play</button>';
+                    audios = getAllSongAlbum(result_album);
+                    lcontainer.innerHTML = '<img class="capa-album" src="assets/albums/album-'+result_album+'.jpg" alt="" style="margin-top: 15px; cursor:pointer;" onclick="gotoAlbum(\''+result_album+'\')"><div id="albumTitle" style="cursor:pointer;" onclick="gotoAlbum(\''+result_album+'\')"><h1>'+result_album+'</h1></div><div id="albumSongs">'+audios[2]+'</div><button id="tocar-playlist-toda" onclick="addQueueAlbum(\''+result_album+'\')">Play</button>';
                     scontainer.innerHTML = "";
-                    musicas[1].forEach(function(elem){
+                    audios[1].forEach(function(elem){
                         scontainer.innerHTML+='<div class="songCard" oncontextMenu="showContext(\''+elem[3]+'\');return false;"><div class="songLeft"><img class="icon-sm"src="assets/icons/music-player-grey.png"><div class="songTitle" onclick="acessarMusica(\''+elem[3]+'\')">'+elem[3]+'</div><div class="songDetail"><span class="songArtist" onclick="gotoArtist(\''+elem[1]+'\')">'+elem[1]+'</span> <span class="songAlbum" style="margin-left: 0;" onclick="gotoAlbum(\''+elem[2]+'\')">'+elem[2]+'</span></div></div><div class="songRight">'+elem[4]+'</div></div>';    
                     })
                     animateSongList();
@@ -217,75 +190,7 @@ function initInput()
     }
 }
 
-function addQueueSong(param)
-{
-    btnPlay.src="assets/icons/pause.png";
-    playlist_index = 0;
-    song_queue = [];
-    dadosMusicas.forEach(function(elem){
-        if(elem[3].toLowerCase().indexOf(param) !== -1)
-        {
-            if(song_queue.indexOf(elem) <0)
-            {
-                song_queue.push(elem);
-            }
-            
-        }
-    })
 
-    
-    audio.pause();
-    audio.currentTime = 0;
-    audio = new Audio();
-    initSound();
-}
-
-function addQueue(param)
-{
-    btnPlay.src="assets/icons/pause.png";
-    playlist_index = 0;
-    var musicas =  getAllSongGenre(param);
-    song_queue=[]
-    musicas[1].forEach(function(elem){
-        song_queue.push(elem);
-    })
-    audio.pause();
-    audio.currentTime = 0;
-    audio = new Audio();
-    initSound();
-    //initAudioPlayer();
-
-}
-
-function addQueueAlbum(param)
-{
-    btnPlay.src="assets/icons/pause.png";
-    playlist_index = 0;
-    var musicas = getAllSongAlbum(param);
-    song_queue=[]
-    musicas[1].forEach(function(elem){
-        song_queue.push(elem);
-    })
-    audio.pause();
-    audio.currentTime = 0;
-    audio = new Audio();
-    initSound();
-}
-
-function addQueueArtist(param)
-{
-    btnPlay.src="assets/icons/pause.png";
-    playlist_index = 0;
-    var musicas = getAllSongArtist(param);
-    song_queue=[]
-    musicas[1].forEach(function(elem){
-        song_queue.push(elem);
-    })
-    audio.pause();
-    audio.currentTime = 0;
-    audio = new Audio();
-    initSound();
-}
 
 function openGenreModal()
 {
@@ -301,56 +206,6 @@ function closeModal()
     modalGenre.style.display = "none";
     modalSong.style.display = "none";
 }
-
-
-function getUserSong()
-{
-    var musicas = [];
-    var length = 0;
-    user_data[selected_user][1].forEach(function(elem){
-        length = musicas.push(elem);
-    });
-    return [musicas,length];
-}
-
-function playUserSong()
-{
-    btnPlay.src="assets/icons/pause.png";
-    playlist_index = 0;
-    var musicas = getUserSong();
-    song_queue=[]
-    musicas[0].forEach(function(elem){
-        song_queue.push(elem);
-    })
-    audio.pause();
-    audio.currentTime = 0;
-    audio = new Audio();
-    initSound();
-    
-}
-
-function animateGenreList()
-{
-    var animate = document.getElementsByClassName("card");
-    var anim = 1;
-    Array.prototype.forEach.call(animate,function(elem){
-    elem.style.webkitAnimation = "floatup "+anim+"s ease-in";
-    anim += 0.1;
-    
-    })
-}
-
-function animateSongList()
-{
-    var animate = document.getElementsByClassName("songCard");
-    var anim = 0;
-    Array.prototype.forEach.call(animate,function(elem){
-    elem.style.webkitAnimation = "floatleft "+anim+"s ease-in";
-    anim += 0.5;
-    
-    })
-}
-
 
 
 
@@ -421,62 +276,7 @@ function getOffset(elem) {
     return Math.round(left);
 }
 
-function timeUpdate()
-{
-    var tm = audio.currentTime * (100/audio.duration);
-    var tmperc = tm+"%";
-    progressoMusica.style.width = ""+tmperc+"";
-    var curmins = Math.floor(audio.currentTime / 60);
-    var cursecs = Math.floor(audio.currentTime - curmins * 60);
-    var dursecs = 0;
-    if(!Number.isNaN(audio.duration))
-    {
-        var durmins = Math.floor(audio.duration / 60);
-        var dursecs = Math.floor(audio.duration - durmins * 60);
-    }
-    else
-    {
-        durmins = 0;
-    }
-    if(cursecs < 10){ cursecs = "0"+cursecs; }
-    if(dursecs < 10){ dursecs = "0"+dursecs; }
-    if(curmins < 10){ curmins = "0"+curmins; }
-    if(durmins < 10){ durmins = "0"+durmins; }
-    currentTime.innerHTML = curmins+":"+cursecs;
-    durationTime.innerHTML = durmins+":"+dursecs;
 
-}
-function switchSong()
-{
-    playlist_index++;
-    audio.src = "assets/musicas/"+song_queue[playlist_index][1]+"-"+song_queue[playlist_index][2]+"-"+song_queue[playlist_index][3]+ext;
-    currentTitle.innerHTML = song_queue[playlist_index][3];
-    currentArtist.innerHTML = song_queue[playlist_index][1];
-    currentThumb.src = "assets/albums/album-"+song_queue[playlist_index][2]+".jpg";
-    if(song_queue.length !=1)
-    {
-        audio.play();
-    }
-    
-}
-
-
-function initSound(_callback)
-{
-    ext = ".mp3";
-    agent = navigator.userAgent.toLowerCase();
-    audio.src = "assets/musicas/"+song_queue[0][1]+"-"+song_queue[0][2]+"-"+song_queue[0][3]+ext;
-    audio.loop = false;
-    audio.volume = 1;
-    audio.play();
-    currentTitle.innerHTML = song_queue[0][3];
-    currentArtist.innerHTML = song_queue[0][1];
-    currentThumb.src = "assets/albums/album-"+song_queue[0][2]+".jpg";
-    audio.addEventListener("timeupdate",timeUpdate);
-    audio.addEventListener("ended",switchSong);
-
-    _callback && _callback();
-}
 
 function initAudioPlayer()
 {
@@ -507,7 +307,7 @@ function initAudioPlayer()
     
     if(!first_time)
     {
-        audio.src = "assets/musicas/"+song_queue[0][1]+"-"+song_queue[0][2]+"-"+song_queue[0][3]+ext;
+        audio.src = "assets/audios/"+song_queue[0][1]+"-"+song_queue[0][2]+"-"+song_queue[0][3]+ext;
     audio.loop = false;
     audio.volume = 1;
 
@@ -534,8 +334,8 @@ function initAudioPlayer()
         })
         seekInput.addEventListener("mouseup",function(){seeking = false})
         seekInput.addEventListener("mousemove",function(event){seek(event)});
-        audio.addEventListener("timeupdate",timeUpdate);
-        audio.addEventListener("ended",switchSong);
+        audio.addEventListener("atualizartempo",atualizarTempo);
+        audio.addEventListener("ended",mudarMusica);
         prevSong.addEventListener("click",pSong);
         nextSong.addEventListener("click",nSong);
 
@@ -582,14 +382,13 @@ function initAudioPlayer()
 
         function pSong()
         {
-            initSound(function(){
+            iniciarMusica(function(){
                 if(!onrepeat){playlist_index--;}
                 if(playlist_index == (song_queue.length-1) || playlist_index < 0){
-                    console.log("masuk");
                     playlist_index = 0;	
                 }
                 
-                audio.src = "assets/musicas/"+song_queue[playlist_index][1]+"-"+song_queue[playlist_index][2]+"-"+song_queue[playlist_index][3]+ext;
+                audio.src = "assets/audios/"+song_queue[playlist_index][1]+"-"+song_queue[playlist_index][2]+"-"+song_queue[playlist_index][3]+ext;
                 currentTitle.innerHTML = song_queue[playlist_index][3];
                 currentArtist.innerHTML = song_queue[playlist_index][1];
                 currentThumb.src = "assets/albums/album-"+song_queue[playlist_index][2]+".jpg";
@@ -599,14 +398,13 @@ function initAudioPlayer()
         }
         function nSong()
         {
-            initSound(function(){
+            iniciarMusica(function(){
                 if(!onrepeat){playlist_index++;}
                 if(playlist_index == song_queue.length || playlist_index < 0){
-                    console.log("masuk");
                     playlist_index = 0;
                 }
                 
-                audio.src = "assets/musicas/"+song_queue[playlist_index][1]+"-"+song_queue[playlist_index][2]+"-"+song_queue[playlist_index][3]+ext;
+                audio.src = "assets/audios/"+song_queue[playlist_index][1]+"-"+song_queue[playlist_index][2]+"-"+song_queue[playlist_index][3]+ext;
                 currentTitle.innerHTML = song_queue[playlist_index][3];
                 currentArtist.innerHTML = song_queue[playlist_index][1];
                 currentThumb.src = "assets/albums/album-"+song_queue[playlist_index][2]+".jpg";
