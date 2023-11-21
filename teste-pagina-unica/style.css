@@ -177,20 +177,30 @@ body
 
 .card
 {
-    width: 150px;
+    background-color: #181818;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    border-radius: 0.8rem;
     cursor: pointer;
-
+    position: relative;
+    display: flex;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
 }
 
 .img-thumb, .description
 {
-    width: 150px;
+    border-radius: 0.5rem;
+    /* border-radius: 0.8rem 0rem 0rem 0.8rem; */
+    width: 7rem;
+    align-self: center;
 }
 
 .description
 {
-    text-align: center;
-    font-size: 13px;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 0.7rem;
+    font-weight: 600;
 }
 
 #container-player > div
@@ -405,11 +415,18 @@ body
 .songCard
 {
     margin-bottom: 20px;
+    padding: 0.7rem 0rem 0.7rem 0rem;
+}
+
+.songCard:hover{
+    background-color: var(--azul-claro);
+    padding: 1rem;
+    border-radius: 20px;
 }
 
 .thumbnail
 {
-    display: inline-block;
+    display: flex;
 }
 
 .icon-sm
@@ -571,7 +588,7 @@ body
 
 #container-central
 {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
     display: block;
     min-width: 30%;
 }
@@ -952,7 +969,11 @@ input[type=submit]:hover {
     align-items: center;
 }
 
-@media (max-width: 700px) {
+.container-navbar-mobile{
+    display: none;
+}
+
+/* @media (max-width: 700px) {
     .section-mobile{
         display: flex;
     }
@@ -975,9 +996,25 @@ input[type=submit]:hover {
     .secao-filtro{
         width: 30%;
     }
-}
+}*/
 
-@media (max-width: 900px) and (min-width: 701px){
+@media (max-width: 900px){
+    #container-principal
+    {
+        position: relative;
+        top: 10%;
+        left:0%;
+        width: 100%;
+        height: 68%;
+        color: white;
+        text-align: center;
+        margin-bottom: 100px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    #container-menu-lateral{
+        display: none;
+    }
     .titulo-playlist{
         font-size: 2rem;
     }
@@ -992,5 +1029,58 @@ input[type=submit]:hover {
     }
     .informacoes-playlist{
         width: 80%;
+    }
+    .conteudo{
+        height: 72%;
+        bottom: 18%;
+    }
+
+    .container-menu-lateral {
+        display: none !important;
+    }
+    .container-conteudo {
+        width: 100% !important;
+    }
+    .container-navbar-mobile {
+        width: 100%;
+        height: 8%;
+        background: var(--azul-escuro);
+        left: 0;
+        bottom: 12%;
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .botoes-navbar-mobile{
+        width: 33%;
+        text-align: center;
+    }
+
+    .botao-navbar-mobile{
+        padding: 5% 10% 5% 10%;
+        width: 80%;
+        border-radius: 2rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+        border: none;
+        color: var(--branco);
+        background-color: var(--azul-escuro);
+    }
+    .conteudo {
+        width: 100%;
+    }
+    .player {
+        bottom: 8% !important;
+        box-shadow: none;
+    }
+
+    .container-barra-superior{
+        width: 100%;
+        height: 10%;
+        position: fixed;
+        z-index: 10;
+        left: 0;
     }
 }

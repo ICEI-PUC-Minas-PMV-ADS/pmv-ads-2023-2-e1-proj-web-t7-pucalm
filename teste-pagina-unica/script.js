@@ -1,5 +1,5 @@
 var dadosMusicas = [["foco","Desconhecido","Verde","Audio 01","07:14"],["foco","Desconhecido","Azul","Audio 02","05:47"],["Estudo","Desconhecido","Verde","Audio 03","06:02"],["Ansiedade","Desconhecido","Azul","Audio 04","05:17"]]
-var playlists = ["Foco","Relaxamento","Estresse","Ansiedade","Estudo"]
+var playlists = ["Foco","Relaxamento","Sono","Ansiedade","Estudo"]
 
 var audio= new Audio();
 
@@ -24,7 +24,7 @@ function getMusicasDaPlaylist(genero)
 function criarCardPlaylist(elem) {
     return `<div class='card' onclick='acessarPlaylist("${elem}")'>
                 <div class='thumbnail'><img src='assets/playlists/genero-${elem}.jpg' alt='' class='img-thumb'></div>
-                <div class='description'><p>${elem}</p></div>
+                <div><p class='description'>${elem}</p><p style="font-size:14px; padding-left: 0.7rem; text-align: left;">Ouvir agora</p></div>
             </div>`;
 }
 
@@ -134,11 +134,11 @@ function init(param)
         else if(containerPrincipal.classList.contains("t-playlist"))
         {
             var audios =  getMusicasDaPlaylist(param);
-            containerPrincipal.innerHTML='<div id="container-central"><div class="secao-flex espacamento-section"><div class="tamanho-20 imagem-playlist"><img class="capa-album" src="assets/playlists/genero-'+audios[0]+'.jpg" alt=""></div><div class="tamanho-60 informacoes-playlist"><div id="albumTitle"><h1>'+audios[0]+'</h1></div><div id="albumSongs">'+audios[2]+' Músicas'+'</div><img id="tocar-playlist-toda" src="assets/imgs/play_musicbar.png" alt="Play" onclick="addQueue(\''+param+'\')"></div><div class="secao-grid tamanho-20 secao-filtro"><div class="alinhar-direita"><select name="ordenar_por" class="personalizacao-select"><option value="1">Ordenar por</option><option value="2">Nome</option><option value="3">Data</option><option value="4">Favorito</option><option value="5">Mais tocadas</option></select></div><div class="secao-flex centralizar alinhar-direita" style="padding-top:70%"><i class="bi bi-share"></i><p style="font-weight:600">Compartilhar</p></div></div></div></div><div id="containerMusica"></div>';
+            containerPrincipal.innerHTML='<div id="container-central"><div class="secao-flex espacamento-section"><div class="tamanho-20 imagem-playlist"><img class="capa-album" src="assets/playlists/genero-'+audios[0]+'.jpg" alt=""></div><div class="tamanho-60 informacoes-playlist"><div id="albumTitle"><h1>'+audios[0]+'</h1></div><div id="albumSongs">'+audios[2]+' Músicas'+'</div><img id="tocar-playlist-toda" src="assets/imgs/play_musicbar.png" alt="Play" onclick="addQueue(\''+param+'\')"></div><div class="secao-grid tamanho-20 secao-filtro"><div class="alinhar-direita"><select name="ordenar_por" class="personalizacao-select"><option value="1">Ordenar por</option><option value="2">Nome</option><option value="3">Data</option><option value="4">Favorito</option><option value="5">Mais tocadas</option></select></div><div class="secao-flex centralizar alinhar-direita" style="padding-top:70%"></div></div></div></div><div id="containerMusica"></div>';
             btnAddSong = document.querySelector("#addSongButton");;
             var containerMusica = document.querySelector("#containerMusica");
             audios[1].forEach(function(elem){
-                containerMusica.innerHTML +='<div class="songCard" oncontextmenu="showContext(\''+elem[3]+'\' );return false;"><div class="songLeft"><img class="icon-sm" src="assets/icons/music-player-grey.png"><div class="songTitle" onclick="acessarMusica(\''+elem[3]+'\')">'+elem[3]+'</div><div class="songDetail"><span class="songArtist">'+elem[1]+'</span></div></div><div class="songRight">'+elem[4]+'</div></div>';
+                containerMusica.innerHTML +='<div class="songCard" onclick="acessarMusica(\''+elem[3]+'\')" oncontextmenu="showContext(\''+elem[3]+'\' );return false;"><div class="songLeft"><img class="icon-sm" src="assets/icons/music-player-grey.png"><div class="songTitle">'+elem[3]+'</div><div class="songDetail"><span class="songArtist">'+elem[1]+'</span></div></div><div class="songRight">'+elem[4]+'</div></div>';
             })
         }
 
