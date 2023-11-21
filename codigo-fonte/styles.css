@@ -859,3 +859,27 @@ background-color: #282828;
 
 
 
+/* Estilo para o elemento <audio> */
+#audio-main {
+    width: 100%; /* Define a largura como 100% do contêiner pai */
+    outline: none; /* Remove a borda padrão ao focar */
+  
+    /* Oculta os controles padrão */
+    -webkit-appearance: none;
+    appearance: none;
+  
+    /* Estiliza o fundo e a borda */
+    background-color: transparent;
+    border: none;
+  }
+  
+  /* Estiliza o controle de reprodução */
+  #audio-main::-webkit-media-controls-play-button,
+  #audio-main::-webkit-media-controls-panel {
+    font-size: 24px; /* Tamanho dos ícones */
+    color: var(--branco); /* Cor dos ícones */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    background-color:var(--azul-claro);
+  }
+  
+  

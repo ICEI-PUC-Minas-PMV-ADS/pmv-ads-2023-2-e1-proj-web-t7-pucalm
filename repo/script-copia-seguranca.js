@@ -4,6 +4,8 @@ var playlists = ["Foco","Relaxamento","Estresse","Ansiedade","Estudo"]
 var audio= new Audio();
 
 
+
+
 // Selecionar as músicas com base no gênero fornecido como argumento, criar uma cópia de backup dessa lista e retornar um array contendo o gênero, a lista de músicas filtradas e o número de músicas nessa lista.
 function getMusicasDaPlaylist(genero)
 {
@@ -20,42 +22,19 @@ function getMusicasDaPlaylist(genero)
     return data;
 }
 
-
-function criarCardPlaylist(elem) {
-    return `<div class='card' onclick='acessarPlaylist("${elem}")'>
-                <div class='thumbnail'><img src='assets/playlists/genero-${elem}.jpg' alt='' class='img-thumb'></div>
-                <div class='description'><p>${elem}</p></div>
-            </div>`;
-}
-
 // Configuração da página inicial do site, exibindo uma lista de playlists e permitindo que o usuário acesse cada uma clicando nos cards correspondentes. 
-function iniciarCodigo() {
-    containerPrincipal.innerHTML = '';  // Limpa o conteúdo existente
-
-    const tituloPagina = document.createElement('div');
-    tituloPagina.id = 'titulo-pagina';
-    tituloPagina.innerHTML = '<h1>Playlists</h1>';
-    containerPrincipal.appendChild(tituloPagina);
-
+function iniciarCodigo()
+{   
+    const containerPrincipal = document.querySelector("#container-principal");
+    containerPrincipal.innerHTML = '<div id="titulo-pagina"><h1>Playlists</h1></div><div id="container-playlists"></div>';
     btnAddPlaylist = document.querySelector("#addPlaylistButton");
-    document.querySelector("#titulo-pagina").innerHTML = "Início";
+    document.querySelector("#titulo-pagina").innerHTML ="Início";
     var containerPlaylists = document.querySelector("#container-playlists");
-
-    playlists.forEach(function (elem) {
-        const cardPlaylist = document.createElement('div');
-        cardPlaylist.className = 'card';
-        cardPlaylist.setAttribute('onclick', `acessarPlaylist("${elem}")`);
-
-        cardPlaylist.innerHTML = `
-            <div class='thumbnail'><img src='assets/playlists/genero-${elem}.jpg' alt='' class='img-thumb'></div>
-            <div class='description'><p>${elem}</p></div>`;
-
-        containerPlaylists.appendChild(cardPlaylist);
-    });
+    playlists.forEach(function(elem){
+    containerPlaylists.innerHTML +="<div class='card' onclick='acessarPlaylist(\""+elem+"\")'><div class='thumbnail'><img src='assets/playlists/genero-"+elem+".jpg' alt='' class='img-thumb'></div><div class='description'><p>"+elem+"</p></div></div>";
+    })
 }
-
 init(iniciarCodigo)
-
 
 // Configura e exibe a página Inicio
 function acessarInicio()
@@ -85,6 +64,7 @@ function acessarPlaylist(name)
     init(name);
 }
 
+
 // Responsável por configurar e inicializar dinamicamente o conteúdo da página com base em algumas condições, classes e dados fornecidos.
 function init(param)
 {
@@ -105,11 +85,11 @@ function init(param)
     if(!document.getElementsByTagName("BODY")[0].classList.contains("body-index"))
     {
         window.onclick = function(event){
-            // if(event.target == modalGenre || event.target == modalSong)
-            // {
-            //     modalGenre.style.display = "none";
-            //     modalSong.style.display = "none";
-            // }
+            if(event.target == modalGenre || event.target == modalSong)
+            {
+                modalGenre.style.display = "none";
+                modalSong.style.display = "none";
+            }
             if(event.target !=  document.querySelector("#context") )
             {
                 if(document.querySelector("#context"))
@@ -123,12 +103,12 @@ function init(param)
         if(containerPrincipal.classList.contains("t-inicio"))
         {            
             containerPrincipal.innerHTML = '<div id="titulo-pagina"><h1>Playlists</h1></div><div id="container-playlists"></div>';
-            // btnAddPlaylist = document.querySelector("#addPlaylistButton");
+            btnAddPlaylist = document.querySelector("#addPlaylistButton");
             document.querySelector("#titulo-pagina").innerHTML ="Início";
             var containerPlaylists = document.querySelector("#container-playlists");
-            playlists.forEach(function (elem) {
-                containerPlaylists.innerHTML += criarCardPlaylist(elem);
-            });
+            playlists.forEach(function(elem){
+                containerPlaylists.innerHTML +="<div class='card' onclick='acessarPlaylist(\""+elem+"\")'><div class='thumbnail'><img src='assets/playlists/genero-"+elem+".jpg' alt='' class='img-thumb'></div><div class='description'><p>"+elem+"</p></div></div>";
+            })
         }
 
         else if(containerPrincipal.classList.contains("t-playlist"))
@@ -156,8 +136,9 @@ function init(param)
 // Iniciar música clicando no título dela
 function acessarMusica(param)
 {
+    btnPlay.src="assets/icons/pause.png";
     containerPrincipal = document.querySelector("#container-principal");
-    console.log("song : "+param); // imprimir nome do audio
+    console.log("song : "+param);
     playlist_index = 0;
     song_queue = [];
     dadosMusicas.forEach(function(elem){
@@ -170,37 +151,30 @@ function acessarMusica(param)
             
         }
     })
-    
-    // audio.currentTime = 0;
+    audio.pause();
+    audio.currentTime = 0;
+    audio = new Audio();
     iniciarMusica();
 }
 
 // Configura e inicia a reprodução de uma música, atualiza elementos na página com informações da música e associa event listeners para atualização de tempo e mudança de música ao término da reprodução.
 function iniciarMusica(_callback)
-{   
-    // audio.pause();
-    // audio = new Audio();
+{
     ext = ".mp3";
-    // agent = navigator.userAgent.toLowerCase();
+    agent = navigator.userAgent.toLowerCase();
     audio.src = "assets/audios/"+song_queue[0][1]+"-"+song_queue[0][2]+"-"+song_queue[0][3]+ext;
-    console.log("audio.src : "+audio.src);
     audio.loop = false;
     audio.volume = 1;
+    audio.play();
     currentTitle.innerHTML = song_queue[0][3];
     currentArtist.innerHTML = song_queue[0][1];
     currentThumb.src = "assets/albums/album-"+song_queue[0][2]+".jpg";
     //audio.addEventListener("atualizartempo",atualizarTempo);
     audio.addEventListener("timeupdate",atualizarTempo);
     audio.addEventListener("ended",mudarMusica);
-    
 
     _callback && _callback();
-    
-    btnPlay.src="assets/icons/pause.png";
-    audio.play();
-
 }
-
 
 function atualizarTempo()
 {
@@ -246,6 +220,7 @@ function mudarMusica()
 // Iniciar música clicando no botão Play da playlist
 function addQueue(param)
 {
+    btnPlay.src="assets/icons/pause.png";
     playlist_index = 0;
     var audios =  getMusicasDaPlaylist(param);
     song_queue=[]
@@ -258,21 +233,3 @@ function addQueue(param)
     iniciarMusica();
     //initAudioPlayer();
 }
-
-// Reprodução/Pausa do Audio, através do botão Play/Pause do Player
-btnPlay.addEventListener("click", function () {
-    // Verifica se o áudio está tocando
-    if (audio.paused) {
-        // Se estiver pausado, retoma a reprodução
-        audio.play().catch(error => {
-            console.error("Erro ao iniciar a reprodução:", error);
-        });
-        // Atualiza a imagem do botão para o ícone de pausa
-        btnPlay.src = "assets/icons/pause.png";
-    } else {
-        // Se estiver tocando, pausa a reprodução
-        audio.pause();
-        // Atualiza a imagem do botão para o ícone de play
-        btnPlay.src = "assets/icons/play.png";
-    }
-});
