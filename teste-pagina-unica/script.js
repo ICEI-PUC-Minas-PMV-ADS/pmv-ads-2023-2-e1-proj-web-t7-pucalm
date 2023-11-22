@@ -41,7 +41,6 @@ function gerarPagina(genero) {
       if (containerPrincipal.classList.contains("t-inicio")) {
         containerPrincipal.innerHTML =
           '<div id="titulo-pagina"><h1>Playlists</h1></div><div id="container-playlists"></div>';
-        // btnAddPlaylist = document.querySelector("#addPlaylistButton");
         document.querySelector("#titulo-pagina").innerHTML = "Início";
         var containerPlaylists = document.querySelector("#container-playlists");
         playlists.forEach(function (elem) {
@@ -166,17 +165,18 @@ var playlists = ["Foco", "Relaxamento", "Sono", "Ansiedade", "Estudo"];
 // Selecionar as músicas com base no gênero fornecido como argumento, criar uma cópia de backup dessa lista e retornar um array contendo o gênero, a lista de músicas filtradas e o número de músicas nessa lista.
 function retornarAudiosDaPlaylist(genero) {
   let audiosDoGenero = [];
-  let length = 0;
+  let qtdAudios = 0;
   dadosAudios.forEach(function (audio) {
     if (audio[0].toLowerCase() === genero.toLowerCase()) {
-      length = audiosDoGenero.push(audio);
+      qtdAudios = audiosDoGenero.push(audio);
     }
   });
 
-  let data = [genero, audiosDoGenero, length];
-  return data;
+  let dadosPlaylist = [genero, audiosDoGenero, qtdAudios];
+  return dadosPlaylist;
 }
 
+// ***Verificar se o style é realmente necessário dentro do HTML desta função***
 function criarCardPlaylist(elem) {
   return `<div class='card' onclick='acessarPlaylist("${elem}")'>
                 <div class='thumbnail'><img src='assets/playlists/genero-${elem}.jpg' alt='' class='img-thumb'></div>
@@ -193,7 +193,6 @@ function iniciarCodigo() {
   tituloPagina.innerHTML = "<h1>Playlists</h1>";
   containerPrincipal.appendChild(tituloPagina);
 
-  btnAddPlaylist = document.querySelector("#addPlaylistButton");
   document.querySelector("#titulo-pagina").innerHTML = "Início";
   var containerPlaylists = document.querySelector("#container-playlists");
 
