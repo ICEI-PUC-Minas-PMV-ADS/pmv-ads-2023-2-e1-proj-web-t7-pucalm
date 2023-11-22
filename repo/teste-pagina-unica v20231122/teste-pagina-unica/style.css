@@ -1,0 +1,997 @@
+:root {
+  --preto: #000;
+  --branco: #fff;
+  --azul-escuro: #0c2847;
+  --azul-claro: #405e7a;
+  --azul-gelo: #9eb3ca;
+  --cinza-claro: #d3dae4;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+  background: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(var(--azul-escuro)),
+    to(var(--azul-claro))
+  );
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+#logo {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+  align-self: center;
+}
+
+#logo img {
+  width: 8rem;
+  cursor: pointer;
+}
+
+#container-menu-lateral {
+  position: fixed;
+  width: 20vw;
+  height: 88%;
+  background-color: var(--azul-escuro);
+  top: 0;
+  left: 0;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+#container-player {
+  position: fixed;
+  width: 100vw;
+  height: 12%;
+  bottom: 0;
+  left: 0;
+  background-color: #282828;
+  color: hsla(0, 0%, 100%, 0.6);
+  z-index: 50;
+  background-color: var(--azul-claro);
+}
+
+#menu-lateral {
+  display: flex;
+  flex-direction: column;
+
+  height: inherit;
+}
+
+.secao-itens-menu-lateral {
+  padding: 10px 0;
+  margin: 0 20px;
+  font-size: 14px;
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+.icon {
+  margin-right: 10px;
+  width: 25px;
+  top: -2px;
+  float: left;
+  position: relative;
+}
+
+.item-menu-lateral {
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.last {
+  border-top: 1px solid #eaeaea;
+  margin-bottom: 15px;
+}
+
+.container-barra-superior {
+  left: 20%;
+  height: 10%;
+  position: fixed;
+  right: 0;
+  display: flex;
+  background-color: var(--azul-claro);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titulo-barra-superior {
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+.titulo-barra-superior h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.pesquisa-barra-superior {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pesquisa-barra-superior input {
+  border-radius: 4rem;
+  border: 0;
+  padding: 0.7rem;
+}
+
+.pesquisa-barra-superior button {
+  margin-right: 1rem;
+  border-radius: 4rem;
+  border: 0;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+#container-principal {
+  position: relative;
+  top: 10%;
+  left: 20%;
+  width: 80%;
+  height: 78%;
+  color: white;
+  text-align: center;
+  margin-bottom: 100px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#titulo-pagina-atual {
+  font-weight: bold;
+}
+
+#container-playlists {
+  /* width: inherit; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #181818;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+.img-thumb,
+.description {
+  border-radius: 0.5rem;
+  /* border-radius: 0.8rem 0rem 0rem 0.8rem; */
+  width: 7rem;
+  align-self: center;
+}
+
+.description {
+  font-size: 15px;
+  text-align: left;
+  padding-left: 0.7rem;
+  font-weight: 600;
+}
+
+#container-player > div {
+  padding: 1% 1%;
+}
+
+#capa-atual {
+  width: 100%;
+  /* float: left; */
+  position: relative;
+  padding-top: 8px;
+}
+
+#detalhe-atual {
+  max-width: 45%;
+  padding: 1% 1%;
+  display: inline-block;
+  position: relative;
+  top: -12px;
+}
+
+.container-capa {
+  max-width: 50px;
+  display: inline-block;
+}
+
+#titulo-atual,
+#artista-atual {
+  display: block;
+}
+#titulo-atual {
+  font-size: 12px;
+  color: white;
+}
+#artista-atual {
+  font-size: 10px;
+  font-weight: lighter;
+}
+#now-plus {
+  width: 20px;
+  cursor: pointer;
+}
+
+#controles {
+  justify-items: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  min-width: auto;
+  display: grid;
+  grid-template-columns: 5rem 5rem 5rem;
+}
+
+.controle-item {
+  width: 20px;
+  cursor: pointer;
+}
+
+.controle-item-especial {
+  width: 25px;
+  cursor: pointer;
+}
+
+#player {
+  /* flex-grow: 2; */
+  display: inline-block;
+  width: 76%;
+}
+
+.secao-player {
+  flex-grow: 1;
+  position: relative;
+  display: inline-block;
+  width: 19%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#seeker {
+  display: flex;
+  margin-top: 10px;
+}
+
+.progresso-tempo {
+  color: #a0a0a0;
+  font-size: 11px;
+  min-width: 40px;
+  text-align: center;
+  position: relative;
+  top: -4px;
+}
+
+#progresso-barra {
+  width: 100%;
+  height: 12px;
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+#input-seeker,
+#input-volume {
+  width: 100%;
+  height: 12px;
+  display: inline-flex;
+  position: absolute;
+  cursor: pointer;
+  top: -10;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+}
+
+#progressBarBg-seeker,
+#progressBarBg-volume {
+  background-color: #404040;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.progress {
+  background-color: #a0a0a0;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+#progressBarVolume {
+  position: relative;
+  top: -6px;
+  width: 75%;
+  display: inline-block;
+}
+.lastControl {
+  margin-top: 15px;
+  display: inline-block;
+  width: 15%;
+  position: relative;
+  top: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.test {
+  float: right;
+  padding-right: 10px;
+  width: 100%;
+}
+
+#containerMusica {
+  min-width: 90%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0px;
+  text-align: initial;
+}
+
+.audios {
+  min-width: 95% !important;
+}
+
+.capa-album {
+  width: 100%;
+}
+
+#container-feedback {
+  color: var(--branco);
+  font-weight: lighter;
+  font-size: 14px;
+  text-align: left;
+}
+
+#tocar-playlist-toda {
+  border: none;
+  color: var(--branco);
+  display: block;
+  margin-top: 2rem;
+  width: 3rem;
+  cursor: pointer;
+  outline: none;
+  z-index: 10;
+}
+
+.songCard {
+  margin-bottom: 20px;
+  padding: 0.7rem 0rem 0.7rem 0rem;
+}
+
+.songCard:hover {
+  background-color: var(--azul-claro);
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.thumbnail {
+  display: flex;
+}
+
+.icon-sm {
+  width: 15px;
+  margin-right: 10px;
+}
+
+.songDetail {
+  margin-left: 5px;
+}
+
+.songTitle {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.songArtist {
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: lighter;
+  color: #a0a0a0;
+  font-size: 12px;
+}
+
+.songRight {
+  float: right;
+  font-weight: lighter;
+  color: #a0a0a0;
+}
+
+.songLeft,
+.songRight {
+  display: inline-block;
+}
+
+#topContainer {
+  height: 20%;
+  background-color: #282828;
+  width: 100%;
+  text-align: initial;
+  font-size: 12px;
+  position: relative;
+}
+
+#search {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+#searchBar {
+  width: 100%;
+  background: transparent;
+  height: 50px;
+  border: 0;
+  font-weight: bolder;
+  font-size: 35px;
+  color: white;
+}
+
+#searchBar:focus {
+  outline: none;
+}
+
+#leftContainer {
+  min-width: 30%;
+  display: inline-block;
+}
+#rightContainer {
+  min-width: 69%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+}
+
+#banner {
+  min-width: 100%;
+  height: 300px;
+  position: relative;
+  background-image: url("banners/banner-gfriend.jpg");
+  background-size: 85% 440px;
+  background-position: right top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  /* z-index: -10; */
+}
+
+#banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#removeButton,
+#logoutButton {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 250px;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 20px auto;
+  height: 41px;
+  width: 300px;
+}
+
+#logoutBottom {
+  bottom: 0;
+}
+
+#artist-title {
+  margin-top: 100px;
+  font-size: 75px;
+  font-weight: bolder;
+  text-shadow: 1px 0px 2px #000;
+}
+
+#content h3 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+#container-central {
+  margin-bottom: 60px;
+  display: block;
+  min-width: 30%;
+}
+
+#recent p {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+#recent {
+  width: 100%;
+  margin-left: 20px;
+  margin-bottom: 100px;
+}
+
+.recent-title {
+  font-weight: bolder;
+  font-size: 35px;
+  color: hsla(0, 0%, 100%, 0.6);
+  text-align: left;
+}
+
+.recent-type {
+  font-weight: lighter;
+  font-size: 10px;
+  color: hsla(0, 0%, 100%, 0.6);
+  text-align: left;
+}
+
+#errormsg {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 5%;
+}
+
+.recent-items {
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: #282828;
+  margin: auto;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 150px;
+}
+
+.modal-content input[type="text"] {
+  width: 80%;
+  height: 3em;
+  background-color: #282828;
+  border: 0;
+  color: white;
+  font-weight: bolder;
+  font-size: 35px;
+  border-bottom: 3px solid #07d159;
+  outline: none;
+}
+
+.modal-content h1 {
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.validation-error {
+  color: #07d159;
+  display: none;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#context {
+  background-color: #282828;
+  color: white;
+  text-align: center;
+  width: 200px;
+  display: none;
+}
+
+#context p {
+  cursor: pointer;
+}
+
+#settingContainer h1 {
+  text-align: center;
+}
+
+/* ************************************ */
+/* ************************************ */
+/* ************************************ */
+/*         Container feedback           */
+/* ************************************ */
+/* ************************************ */
+/* ************************************ */
+
+.logo-feedback {
+  height: 1.2rem;
+  margin: 15px 0px 0px 20px;
+}
+
+.container-titulo-subtitlo {
+  text-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 12px 0px 12px;
+  font-size: 18px;
+}
+
+.container-form {
+  border-radius: 5px;
+  background-color: var(--azul-marinho);
+  padding: 20px;
+}
+
+.form {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-nome,
+.container-email,
+.container-msg {
+  padding-top: 1rem;
+}
+
+.container-btn-enviar {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid var(--cinza-medio);
+  box-shadow: 0px 1px 0px 0px rgb(192, 192, 192);
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="submit"] {
+  background-color: var(--branco);
+  /* color: white; */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--cinza-claro);
+}
+
+/* Altera os ícones de preenchimento válido e inválido dos campos */
+.container-form input:invalid + span::after {
+  position: absolute;
+  content: "✖";
+  padding-left: 5px;
+}
+
+.container-form input:valid + span::after {
+  position: absolute;
+  content: "✓";
+  padding-left: 5px;
+}
+
+.container-form textarea:required:invalid + span::after {
+  position: absolute;
+  content: "✖";
+  padding-left: 5px;
+}
+
+.container-form textarea:required:valid + span::after {
+  position: absolute;
+  content: "✓";
+  padding-left: 5px;
+}
+
+/* Fonte do título e texto do alerta */
+.swal-title,
+.swal-text {
+  font-family: "Nunito", sans-serif;
+}
+
+/* ************************************ */
+/* ************************************ */
+/* ************************************ */
+/*          Container Playlist          */
+/* ************************************ */
+/* ************************************ */
+/* ************************************ */
+
+.audios-playlist {
+  list-style: none;
+}
+
+.secao-flex {
+  display: flex;
+}
+.secao-grid {
+  display: grid;
+}
+.tamanho-30 {
+  width: 30%;
+}
+.tamanho-60 {
+  width: 60%;
+}
+.tamanho-20 {
+  width: 20%;
+}
+.tamanho-10 {
+  width: 5rem;
+}
+.tamanho-80 {
+  width: 80%;
+}
+.tamanho-100 {
+  width: 100%;
+}
+.centralizar {
+  align-items: center;
+}
+.alinhar-direita {
+  justify-content: right;
+  text-align: right;
+}
+.alinhar-vertical {
+  vertical-align: bottom;
+}
+.espacamento-section {
+  padding: 1rem;
+}
+
+/* ------------------------- */
+/*  Secao audios da playlist */
+/* ------------------------- */
+
+.playlist {
+  display: grid;
+  gap: 1rem;
+}
+
+.playlist-audio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.playlist-audio:hover {
+  background-color: var(--azul-claro);
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.playlist-audio-info {
+  padding-left: 1rem;
+}
+
+.playlist-info-bloco1 {
+  align-items: center;
+  display: flex;
+}
+
+.informacoes-playlist {
+  padding: 0.5rem 0.6rem 0.5rem 2.5rem;
+  text-align: left;
+}
+.nome-audio {
+  font-size: 1.3rem;
+  padding: 0rem 0.5rem 0rem 0.8rem;
+}
+.espacamento-audios {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  justify-content: space-between;
+}
+.rolagem-vertical {
+  overflow: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  list-style-type: none;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+}
+
+.playlist-img-info {
+  width: 5rem;
+}
+
+/* ------------------------ */
+/*  Secao nome da playlist  */
+/* ------------------------ */
+.bi-share {
+  padding: 0.5rem;
+}
+
+.titulo-playlist {
+  font-size: 2.5rem;
+  margin: 0.5em 0em 0.5em 0em;
+}
+
+.personalizacao-select {
+  border-radius: 3rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.section-mobile {
+  display: none;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.imagem-playlist {
+  display: flex;
+  align-items: center;
+}
+
+.container-navbar-mobile {
+  display: none;
+}
+
+/* @media (max-width: 700px) {
+    .section-mobile{
+        display: flex;
+    }
+    .informacoes-playlist{
+        width: 70%;
+        padding: 0.5rem 0.6rem 0.5rem 0rem;
+    }
+    .imagem-playlist{
+        display: none;
+    }
+    .titulo-playlist {
+        font-size: 1.9rem;
+    }
+    .nome-audio {
+        font-size: 1rem;
+    }
+    .botao-compartilhar{
+        display: none;
+    }
+    .secao-filtro{
+        width: 30%;
+    }
+}*/
+
+@media (max-width: 900px) {
+  #container-principal {
+    position: relative;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+    height: 68%;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  #container-menu-lateral {
+    display: none;
+  }
+  .titulo-playlist {
+    font-size: 2rem;
+  }
+  .botao-play {
+    width: 3rem;
+  }
+  .nome-audio {
+    font-size: 1.2rem;
+  }
+  .botao-compartilhar {
+    display: none;
+  }
+  .informacoes-playlist {
+    width: 80%;
+  }
+  .conteudo {
+    height: 72%;
+    bottom: 18%;
+  }
+
+  .container-menu-lateral {
+    display: none !important;
+  }
+  .container-conteudo {
+    width: 100% !important;
+  }
+  .container-navbar-mobile {
+    width: 100%;
+    height: 8%;
+    background: var(--azul-escuro);
+    left: 0;
+    bottom: 12%;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .botoes-navbar-mobile {
+    width: 33%;
+    text-align: center;
+  }
+
+  .botao-navbar-mobile {
+    padding: 5% 10% 5% 10%;
+    width: 80%;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    color: var(--branco);
+    background-color: var(--azul-escuro);
+  }
+  .conteudo {
+    width: 100%;
+  }
+  .player {
+    bottom: 8% !important;
+    box-shadow: none;
+  }
+
+  .container-barra-superior {
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+  }
+}
