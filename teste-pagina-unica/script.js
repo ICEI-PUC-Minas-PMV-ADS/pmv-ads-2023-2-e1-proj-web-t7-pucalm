@@ -7,7 +7,7 @@ function redirecionarParaPagina(pagina) {
 }
 
 // Responsável por configurar e inicializar dinamicamente o conteúdo da página com base em algumas condições, classes e dados fornecidos.
-function gerarPagina(param) {
+function gerarPagina(genero) {
     btnPlay = document.querySelector("#controle-play");
     seekSlider = document.querySelector("#progresso-barra");
     currentTime = document.querySelector("#current");
@@ -48,7 +48,7 @@ function gerarPagina(param) {
           containerPlaylists.innerHTML += criarCardPlaylist(elem);
         });
       } else if (containerPrincipal.classList.contains("t-playlist")) {
-        var audios = getMusicasDaPlaylist(param);
+        var audios = retornarAudiosDaPlaylist(genero);
         containerPrincipal.innerHTML =
           '<div id="container-central"><div class="secao-flex espacamento-section"><div class="tamanho-20 imagem-playlist"><img class="capa-album" src="assets/playlists/genero-' +
           audios[0] +
@@ -58,7 +58,7 @@ function gerarPagina(param) {
           audios[2] +
           " Músicas" +
           '</div><img id="tocar-playlist-toda" src="assets/imgs/play_musicbar.png" alt="Play" onclick="addQueue(\'' +
-          param +
+          genero +
           '\')"></div><div class="secao-grid tamanho-20 secao-filtro"><div class="alinhar-direita"><select name="ordenar_por" class="personalizacao-select"><option value="1">Ordenar por</option><option value="2">Nome</option><option value="3">Data</option><option value="4">Favorito</option><option value="5">Mais tocadas</option></select></div><div class="secao-flex centralizar alinhar-direita" style="padding-top:70%"></div></div></div></div><div id="containerMusica"></div>';
         btnAddSong = document.querySelector("#addSongButton");
         var containerMusica = document.querySelector("#containerMusica");
@@ -106,16 +106,14 @@ function acessarInicio() {
 function acessarPlaylist(name) {
     acessarPagina("t-playlist", name);
   }
-  
 
   // Configura e exibe a página Feedback
   function acessarFeedback() {
     acessarPagina("t-feedback");
   }
   
-
 /* ********************************** */
-/*          Redirecionar Páginas      */
+/*    Redirecionamento das Páginas    */
 /* ********************************** */
 // Redirecionar para página Landing Page
 document.getElementById("logo").addEventListener("click", function () {
@@ -147,32 +145,35 @@ document.getElementById("btLandingPageMobile").addEventListener("click", functio
     redirecionarParaPagina("landing-page.html");
   });
 
-
 /* ********************************** */
 /*          Regras de Negocio         */
 /* ********************************** */
 
-var dadosMusicas = [
+// Variáveis Globais
+var audio = new Audio();
+
+// Dados dos Audios
+var dadosAudios = [
   ["foco", "Desconhecido", "Verde", "Audio 01", "07:14"],
   ["foco", "Desconhecido", "Azul", "Audio 02", "05:47"],
   ["Estudo", "Desconhecido", "Verde", "Audio 03", "06:02"],
   ["Ansiedade", "Desconhecido", "Azul", "Audio 04", "05:17"],
 ];
+
+// Lista de Playlists
 var playlists = ["Foco", "Relaxamento", "Sono", "Ansiedade", "Estudo"];
 
-var audio = new Audio();
-
 // Selecionar as músicas com base no gênero fornecido como argumento, criar uma cópia de backup dessa lista e retornar um array contendo o gênero, a lista de músicas filtradas e o número de músicas nessa lista.
-function getMusicasDaPlaylist(genero) {
-  var audios = [];
-  var length = 0;
-  dadosMusicas.forEach(function (elem) {
-    if (elem[0].toLowerCase() === genero.toLowerCase()) {
-      length = audios.push(elem);
+function retornarAudiosDaPlaylist(genero) {
+  let audiosDoGenero = [];
+  let length = 0;
+  dadosAudios.forEach(function (audio) {
+    if (audio[0].toLowerCase() === genero.toLowerCase()) {
+      length = audiosDoGenero.push(audio);
     }
   });
-  backup_queue = audios;
-  var data = [genero, audios, length];
+
+  let data = [genero, audiosDoGenero, length];
   return data;
 }
 
@@ -212,17 +213,16 @@ function iniciarCodigo() {
 gerarPagina(iniciarCodigo);
 
 
-
 // Iniciar música clicando no título dela
-function acessarMusica(param) {
+function acessarMusica(nome_audio) {
   containerPrincipal = document.querySelector("#container-principal");
-  console.log("song : " + param); // imprimir nome do audio
+  console.log("song : " + nome_audio); // imprimir nome do audio
   playlist_index = 0;
   song_queue = [];
-  dadosMusicas.forEach(function (elem) {
-    if (elem[3].toLowerCase() === param.toLowerCase()) {
-      if (song_queue.indexOf(elem) < 0) {
-        song_queue.push(elem);
+  dadosAudios.forEach(function (audio) {
+    if (audio[3].toLowerCase() === nome_audio.toLowerCase()) {
+      if (song_queue.indexOf(audio) < 0) {
+        song_queue.push(audio);
       }
     }
   });
@@ -312,7 +312,7 @@ function mudarMusica() {
 // Iniciar música clicando no botão Play da playlist
 function addQueue(param) {
   playlist_index = 0;
-  var audios = getMusicasDaPlaylist(param);
+  var audios = retornarAudiosDaPlaylist(param);
   song_queue = [];
   audios[1].forEach(function (elem) {
     song_queue.push(elem);
