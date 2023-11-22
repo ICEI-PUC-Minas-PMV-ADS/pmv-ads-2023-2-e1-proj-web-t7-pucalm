@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUCalm</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script type="module" src="./audios.js"></script>
+</head>
+
+<body>
+    <!--Menu Lateral-->
+    <section class="container-menu-lateral">
+        <div class="espacamento-container">
+            <div class="container-logo">
+                <a href="index.html"><img src="assets/PUCalm.png" alt="PUCalm" class="logo"></a>
+            </div>
+
+            <div class="container-botoes">
+                <h4 id="btn-inicio"><i class="bi bi-music-note-beamed"></i><a href="index.html">Início</a></h4>
+                <h4 id="btn-feedback"><i class="bi bi-music-note-beamed"></i><a href="feedback.html">Feedback</a></h4>
+            </div>
+
+            <h3><i class="bi bi-music-note-beamed"></i>Destaques</h3>
+            <div class="container-destaques">
+                <li class="playlist-item">
+                        <img src="assets/mix1.jpeg" alt="mix1" class="">
+                        <h5>Nome da Playlist Gigante para Meditação Boladona<br>
+                        <p class="categoria">Categoria</p>
+                        </h5>
+                        <i class="bi playlist-play bi-play-circle-fill" id="1"></i>
+                </li>
+                <li class="playlist-item">
+                    <img src="assets/mix1.jpeg" alt="mix1" class="">
+                    <h5>Nome da Playlist<br>
+                    <p class="categoria">Categoria</p>
+                    </h5>
+                    <i class="bi playlist-play bi-play-circle-fill" id="1"></i>
+            </li>
+            <li class="playlist-item">
+                <img src="assets/mix1.jpeg" alt="mix1" class="">
+                <h5>Nome da Playlist<br>
+                <p class="categoria">Categoria</p>
+                </h5>
+                <i class="bi playlist-play bi-play-circle-fill" id="1"></i>
+            </li>
+            </div>
+        </div>
+    </section>
+
+    <!--Menu superior-->
+    <section class="container-barra-superior">
+        <div class="titulo-barra-superior">
+            <h1>Playlist</h1>
+        </div>
+        <div class="pesquisa-barra-superior">
+            <input type="text" name="pesquisar" id="tpesquisar" placeholder="Pesquisar.." maxlength="255">
+            <button><i class="bi bi-share-fill"></i></button>
+        </div>
+    </section>
+
+    <!--Player-->
+    <section class="player">
+        <div class="secao-flex tamanho-60">
+            <div class="container-onda-sonora">
+                <div class="onda-sonora1"></div>
+                <div class="onda-sonora1"></div>
+                <div class="onda-sonora1"></div>
+            </div>
+            <img id="img-audio-player" src="assets/mix1.jpeg" alt="img-audio" class="img-audio-player">
+            <h5 id="titulo-audio-player">
+                <div id="autor-audio-player" class="autor-audio">Nome do Autor</div>
+            </h5>
+        </div>
+        <div class="container-player secao-grid tamanho-40">
+            <audio id="audio-main" src="" autoplay controls></audio>
+        </div>
+    </section>
+
+    <!--Conteúdo playlist-->
+    <section class="conteudo">
+        <!--  Secao nome da playlist  -->
+        <section class="section-mobile">
+            <img src="assets/mix1.jpeg" alt="Imagem de Playlist" class="tamanho-30" style="text-align: center;">
+        </section> 
+
+        <section class="secao-flex espacamento-section">
+            <div class="tamanho-20 imagem-playlist">
+                <img src="assets/mix1.jpeg" alt="Imagem de Playlist" class="tamanho-100">
+            </div>
+            <div class="tamanho-60 informacoes-playlist">
+                <p>Playlist</p>
+                <h2 class="titulo-playlist">Nome da playlist</h2>
+                <p>X áudios | PUCalm</p>
+                <img id="play-playlist-toda" src="assets/play_musicbar.png" alt="Logo Play" class="botao-play">
+            </div>
+            <div class="secao-grid tamanho-20 secao-filtro">
+                <div class="alinhar-direita">
+                    <select name="ordenar_por" class="personalizacao-select"> 
+                        <option value="1">Ordenar por</option>
+                        <option value="2">Nome</option>
+                        <option value="3">Data</option>
+                        <option value="4">Favorito</option>
+                        <option value="5">Mais tocadas</option>
+                    </select>
+                </div>
+                <div class="secao-flex centralizar alinhar-direita" style="padding-top: 70%;"> 
+                    <i class="bi bi-share"></i>
+                    <p style="font-weight: 600;">Compartilhar playlist</p>
+                </div>
+            </div>
+        </section>
+        
+        <!--  Secao audios da playlist  -->
+        <section class="secao-grid espacamento-section rolagem-vertical">
+            <div class="container">
+                <div class="main-audio-content">
+                    <label id="info-audio-main" class="main-info"></label>
+                </div>
+                <div class="playlist"></div>
+            </div>
+
+
+            <!--Navbar mobile (No footer)-->
+            <div class="container-navbar-mobile">
+                <a href="index.html" class="botoes-navbar-mobile">
+                    <button class="botao-navbar-mobile">Início</button>
+                </a>
+                <a href="feedback.html" class="botoes-navbar-mobile">
+                    <button class="botao-navbar-mobile">Feedback</button>
+                </a>
+                <a href="landing-page/landing-page.html" class="botoes-navbar-mobile">
+                    <button class="botao-navbar-mobile">Landingpage</button>
+                </a>
+            </div>
+        </section>
+    </section>
+    <script type="module" src="./scripts.js"></script>
+    <script type="module" src="./audios.js"></script>
+</body>
+
+</html>

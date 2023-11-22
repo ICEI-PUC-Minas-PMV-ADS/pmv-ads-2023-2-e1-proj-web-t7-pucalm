@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUCalm</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script> 
+    <!-- <link rel="stylesheet"type="text/css"href="/css/result-light.css"> -->
+</head>
+
+<body>
+    <!--Menu Lateral-->
+    <section class="container-menu-lateral">
+        <div class="espacamento-container">
+            <div class="container-logo">
+                <a href="landing-page/landing-page.html"><img src="assets/PUCalm.png" alt="PUCalm" class="logo"></a>
+            </div>
+
+            <div class="container-botoes">
+                <h4 id="btn-inicio"><i class="bi bi-music-note-beamed"></i>Início</h4>
+                <h4 id="btn-feedback"><i class="bi bi-music-note-beamed"></i>Feedback</h4>
+            </div>
+
+            <h3><i class="bi bi-music-note-beamed"></i>Destaques</h3>
+            <div class="container-destaques">
+                <li class="playlist-item">
+                        <img src="assets/mix1.jpeg" alt="mix1" class="">
+                        <h5>Nome da Playlist Gigante para Meditação Boladona<br>
+                        <p class="categoria">Categoria</p>
+                        </h5>
+                        <i class="bi playlist-play bi-play-circle-fill" id="1"></i>
+                </li>
+                <li class="playlist-item">
+                    <img src="assets/mix1.jpeg" alt="mix1" class="">
+                    <h5>Nome da Playlist<br>
+                    <p class="categoria">Categoria</p>
+                    </h5>
+                    <i class="bi playlist-play bi-play-circle-fill" id="1"></i>
+            </li>
+            <li class="playlist-item">
+                <img src="assets/mix1.jpeg" alt="mix1" class="">
+                <h5>Nome da Playlist<br>
+                <p class="categoria">Categoria</p>
+                </h5>
+                <i class="bi playlist-play bi-play-circle-fill" id="1"></i>
+            </li>
+            </div>
+        </div>
+    </section>
+
+    <!--Menu superior-->
+    <section class="container-barra-superior">
+        <div class="titulo-barra-superior">
+            <h1>Início</h1>
+        </div>
+        <div class="pesquisa-barra-superior">
+            <input type="text" name="pesquisar" id="tpesquisar" placeholder="Pesquisar.." maxlength="255">
+            <button><i class="bi bi-share-fill"></i></button>
+        </div>
+    </section>
+
+    <!--Player-->
+    <section class="player">
+        <div class="secao-flex tamanho-60">
+            <div class="container-onda-sonora">
+                <div class="onda-sonora1"></div>
+                <div class="onda-sonora1"></div>
+                <div class="onda-sonora1"></div>
+            </div>
+            <img src="assets/mix1.jpeg" alt="img-audio" class="img-audio-player">
+            <h5>Titulo do Áudio
+                <div class="autor-audio">Nome do Autor</div>
+            </h5>
+        </div>
+        <div class="container-player secao-grid tamanho-40">
+            <div class="icones-player">
+                <!-- <i class="bi bi-music-note-beamed"></i> -->
+                <i class="bi bi-skip-start-fill"></i>
+                <i class="bi bi-play-fill" id="play-player"></i>
+                <i class="bi bi-skip-end-fill"></i>
+            </div>
+            <div class="secao-flex container-temporizador">
+                <span id="temporizador-inicial">0:00</span>
+                <div class="barra-tempo">
+                    <input type="range" id="barra-fixa" min="0" max="100">
+                    <div class="barra-tempo-crescente" id="barra-crescente"></div>
+                </div>
+                <span id="temporizador-final">4:30</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Conteúdo playlists -->
+    <section class="conteudo">
+        <div class="container-conteudo">
+            <!-- <section class="container-filtros">
+                <div class="filtros">
+                    <button class="item-filtro" data-filter="pop">Foco</button>
+                    <button class="item-filtro" data-filter="pop">Estresse</button>
+                    <button class="item-filtro" data-filter="pop">Ansiedade</button>
+                    <button class="item-filtro" data-filter="pop">Estudo</button>
+                    <button class="item-filtro" data-filter="pop">Sono</button>
+                </div>
+            </section> -->
+            <section class="cartoes-playlists" id="playlist-section">
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="playlist.html">
+                    <div class="cartao">
+                        <div class="imagem-cartao">
+                            <img src="assets/mix1.jpeg" />
+                        </div>
+                        <div class="texto-cartao">
+                            <h2>Playlist 1</h2>
+                            <p>Ouvir agora</p>
+                        </div>
+                    </div>
+                </a>
+            </section>
+        </div>
+    </section>
+
+    <!--Navbar mobile (No footer)-->
+    <div class="container-navbar-mobile">
+        <a href="index.html" class="botoes-navbar-mobile">
+            <button class="botao-navbar-mobile">Início</button>
+        </a>
+        <a href="feedback.html" class="botoes-navbar-mobile">
+            <button class="botao-navbar-mobile">Feedback</button>
+        </a>
+        <a href="landing-page/landing-page.html" class="botoes-navbar-mobile">
+            <button class="botao-navbar-mobile">Landingpage</button>
+        </a>
+    </div>
+</body>
+<script src="./scripts.js"></script>
+</html>

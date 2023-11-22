@@ -1,89 +1,33 @@
-var dadosMusicas = [
-  ["foco", "Desconhecido", "Verde", "Audio 01", "07:14"],
-  ["foco", "Desconhecido", "Azul", "Audio 02", "05:47"],
-  ["Estudo", "Desconhecido", "Verde", "Audio 03", "06:02"],
-  ["Ansiedade", "Desconhecido", "Azul", "Audio 04", "05:17"],
-];
-var playlists = ["Foco", "Relaxamento", "Sono", "Ansiedade", "Estudo"];
+/* ********************************** */
+/*          Funções Globais           */
+/* ********************************** */
 
-var audio = new Audio();
+function redirecionarParaPagina(pagina) {
+  window.location.href = pagina;
+}
 
-// Selecionar as músicas com base no gênero fornecido como argumento, criar uma cópia de backup dessa lista e retornar um array contendo o gênero, a lista de músicas filtradas e o número de músicas nessa lista.
-function getMusicasDaPlaylist(genero) {
-  var audios = [];
-  var length = 0;
-  dadosMusicas.forEach(function (elem) {
-    if (elem[0].toLowerCase() === genero.toLowerCase()) {
-      length = audios.push(elem);
-    }
+// Redirecionar para página Landing Page
+document.getElementById("logo").addEventListener("click", function () {
+  redirecionarParaPagina("landing-page.html");
+});
+
+// Redirecionar para página Inicio Mobile
+document.getElementById("btInicioMobile").addEventListener("click", function () {
+    acessarInicio();
   });
-  backup_queue = audios;
-  var data = [genero, audios, length];
-  return data;
-}
 
-function criarCardPlaylist(elem) {
-  return `<div class='card' onclick='acessarPlaylist("${elem}")'>
-                <div class='thumbnail'><img src='assets/playlists/genero-${elem}.jpg' alt='' class='img-thumb'></div>
-                <div><p class='description'>${elem}</p><p style="font-size:14px; padding-left: 0.7rem; text-align: left;">Ouvir agora</p></div>
-            </div>`;
-}
-
-// Configuração da página inicial do site, exibindo uma lista de playlists e permitindo que o usuário acesse cada uma clicando nos cards correspondentes.
-function iniciarCodigo() {
-  containerPrincipal.innerHTML = ""; // Limpa o conteúdo existente
-
-  const tituloPagina = document.createElement("div");
-  tituloPagina.id = "titulo-pagina";
-  tituloPagina.innerHTML = "<h1>Playlists</h1>";
-  containerPrincipal.appendChild(tituloPagina);
-
-  btnAddPlaylist = document.querySelector("#addPlaylistButton");
-  document.querySelector("#titulo-pagina").innerHTML = "Início";
-  var containerPlaylists = document.querySelector("#container-playlists");
-
-  playlists.forEach(function (elem) {
-    const cardPlaylist = document.createElement("div");
-    cardPlaylist.className = "card";
-    cardPlaylist.setAttribute("onclick", `acessarPlaylist("${elem}")`);
-
-    cardPlaylist.innerHTML = `
-            <div class='thumbnail'><img src='assets/playlists/genero-${elem}.jpg' alt='' class='img-thumb'></div>
-            <div class='description'><p>${elem}</p></div>`;
-
-    containerPlaylists.appendChild(cardPlaylist);
+// Redirecionar para página Feedback Mobile
+document.getElementById("btFeedbackMobile").addEventListener("click", function () {
+    acessarFeedback();
   });
-}
 
-init(iniciarCodigo);
-
-// Configura e exibe a página Inicio
-function acessarInicio() {
-  containerPrincipal = document.querySelector("#container-principal");
-  containerPrincipal.removeAttribute("class");
-  containerPrincipal.classList.toggle("t-inicio");
-  init("empty");
-}
-
-// Configura e exibe a página Feedback
-function acessarFeedback() {
-  containerPrincipal = document.querySelector("#container-principal");
-  containerPrincipal.removeAttribute("class");
-  containerPrincipal.classList.toggle("t-feedback");
-  init("empty");
-}
-
-// Configura e exibe a página da Playlist
-function acessarPlaylist(name) {
-  containerPrincipal = document.querySelector("#container-principal");
-  console.log("Genre : " + name);
-  containerPrincipal.removeAttribute("class");
-  containerPrincipal.classList.toggle("t-playlist");
-  init(name);
-}
+// Redirecionar para página Landing Page Mobile
+document.getElementById("btLandingPageMobile").addEventListener("click", function () {
+  redirecionarParaPagina("landing-page.html");
+});
 
 // Responsável por configurar e inicializar dinamicamente o conteúdo da página com base em algumas condições, classes e dados fornecidos.
-function init(param) {
+function gerarPagina(param) {
   btnPlay = document.querySelector("#controle-play");
   seekSlider = document.querySelector("#progresso-barra");
   currentTime = document.querySelector("#current");
@@ -160,6 +104,94 @@ function init(param) {
         '<div><div class="container-logo"></div><div class="container-titulo-subtitlo"><h5>Nos ajude a melhorar! Deixe seu comentário ou proposta de melhoria para que possamos atender suas necessidades cada vez melhor.</h5></div><div class="container-form"><form class="form" id="form" action="https://formspree.io/f/mleyzvob" method="POST"><div class="container-nome"><label for="tnome">Nome (Obrigatório)</label><input type="text" id="tnome" name="nome" placeholder="Nome..." maxlength="255" required><span class="icone-validacao"></span></div><div class="container-email"><label for="temail">E-mail (Opcional)</label><input type="email" id="temail" name="email" placeholder="email@exemplo.com.br" autocomplete="email" maxlength="255"><span class="icone-validacao"></span></div><div class="container-msg"><label for="tmsg">Mensagem (Obrigatório)</label><textarea id="tmsg" name="msg" placeholder="Escreva seu comentário..." maxlength="255" required></textarea><span class="icone-validacao"></span></div><div class="container-btn-enviar"><input type="submit" value="Enviar" id="btn-enviar"></div></form></div>';
     }
   }
+}
+
+/* ********************************** */
+/*          Regras de Negocio         */
+/* ********************************** */
+
+var dadosMusicas = [
+  ["foco", "Desconhecido", "Verde", "Audio 01", "07:14"],
+  ["foco", "Desconhecido", "Azul", "Audio 02", "05:47"],
+  ["Estudo", "Desconhecido", "Verde", "Audio 03", "06:02"],
+  ["Ansiedade", "Desconhecido", "Azul", "Audio 04", "05:17"],
+];
+var playlists = ["Foco", "Relaxamento", "Sono", "Ansiedade", "Estudo"];
+
+var audio = new Audio();
+
+// Selecionar as músicas com base no gênero fornecido como argumento, criar uma cópia de backup dessa lista e retornar um array contendo o gênero, a lista de músicas filtradas e o número de músicas nessa lista.
+function getMusicasDaPlaylist(genero) {
+  var audios = [];
+  var length = 0;
+  dadosMusicas.forEach(function (elem) {
+    if (elem[0].toLowerCase() === genero.toLowerCase()) {
+      length = audios.push(elem);
+    }
+  });
+  backup_queue = audios;
+  var data = [genero, audios, length];
+  return data;
+}
+
+function criarCardPlaylist(elem) {
+  return `<div class='card' onclick='acessarPlaylist("${elem}")'>
+                <div class='thumbnail'><img src='assets/playlists/genero-${elem}.jpg' alt='' class='img-thumb'></div>
+                <div><p class='description'>${elem}</p><p style="font-size:14px; padding-left: 0.7rem; text-align: left;">Ouvir agora</p></div>
+            </div>`;
+}
+
+// Configuração da página inicial do site, exibindo uma lista de playlists e permitindo que o usuário acesse cada uma clicando nos cards correspondentes.
+function iniciarCodigo() {
+  containerPrincipal.innerHTML = ""; // Limpa o conteúdo existente
+
+  const tituloPagina = document.createElement("div");
+  tituloPagina.id = "titulo-pagina";
+  tituloPagina.innerHTML = "<h1>Playlists</h1>";
+  containerPrincipal.appendChild(tituloPagina);
+
+  btnAddPlaylist = document.querySelector("#addPlaylistButton");
+  document.querySelector("#titulo-pagina").innerHTML = "Início";
+  var containerPlaylists = document.querySelector("#container-playlists");
+
+  playlists.forEach(function (elem) {
+    const cardPlaylist = document.createElement("div");
+    cardPlaylist.className = "card";
+    cardPlaylist.setAttribute("onclick", `acessarPlaylist("${elem}")`);
+
+    cardPlaylist.innerHTML = `
+            <div class='thumbnail'><img src='assets/playlists/genero-${elem}.jpg' alt='' class='img-thumb'></div>
+            <div class='description'><p>${elem}</p></div>`;
+
+    containerPlaylists.appendChild(cardPlaylist);
+  });
+}
+
+gerarPagina(iniciarCodigo);
+
+// Configura e exibe a página Inicio
+function acessarInicio() {
+  containerPrincipal = document.querySelector("#container-principal");
+  containerPrincipal.removeAttribute("class");
+  containerPrincipal.classList.toggle("t-inicio");
+  gerarPagina("empty");
+}
+
+// Configura e exibe a página Feedback
+function acessarFeedback() {
+  containerPrincipal = document.querySelector("#container-principal");
+  containerPrincipal.removeAttribute("class");
+  containerPrincipal.classList.toggle("t-feedback");
+  gerarPagina("empty");
+}
+
+// Configura e exibe a página da Playlist
+function acessarPlaylist(name) {
+  containerPrincipal = document.querySelector("#container-principal");
+  console.log("Genre : " + name);
+  containerPrincipal.removeAttribute("class");
+  containerPrincipal.classList.toggle("t-playlist");
+  gerarPagina(name);
 }
 
 // Iniciar música clicando no título dela

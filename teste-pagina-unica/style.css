@@ -641,112 +641,6 @@ body {
 /* ************************************ */
 /* ************************************ */
 /* ************************************ */
-/*         Container feedback           */
-/* ************************************ */
-/* ************************************ */
-/* ************************************ */
-
-.logo-feedback {
-  height: 1.2rem;
-  margin: 15px 0px 0px 20px;
-}
-
-.container-titulo-subtitlo {
-  text-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px 12px 0px 12px;
-  font-size: 18px;
-}
-
-.container-form {
-  border-radius: 5px;
-  background-color: var(--azul-marinho);
-  padding: 20px;
-}
-
-.form {
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.container-nome,
-.container-email,
-.container-msg {
-  padding-top: 1rem;
-}
-
-.container-btn-enviar {
-  display: flex;
-  justify-content: center;
-}
-
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-  width: 100%;
-  padding: 0.7rem;
-  border: 1px solid var(--cinza-medio);
-  box-shadow: 0px 1px 0px 0px rgb(192, 192, 192);
-  box-sizing: border-box;
-  resize: vertical;
-}
-
-textarea {
-  height: 150px;
-}
-
-input[type="submit"] {
-  background-color: var(--branco);
-  /* color: white; */
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: var(--cinza-claro);
-}
-
-/* Altera os ícones de preenchimento válido e inválido dos campos */
-.container-form input:invalid + span::after {
-  position: absolute;
-  content: "✖";
-  padding-left: 5px;
-}
-
-.container-form input:valid + span::after {
-  position: absolute;
-  content: "✓";
-  padding-left: 5px;
-}
-
-.container-form textarea:required:invalid + span::after {
-  position: absolute;
-  content: "✖";
-  padding-left: 5px;
-}
-
-.container-form textarea:required:valid + span::after {
-  position: absolute;
-  content: "✓";
-  padding-left: 5px;
-}
-
-/* Fonte do título e texto do alerta */
-.swal-title,
-.swal-text {
-  font-family: "Nunito", sans-serif;
-}
-
-/* ************************************ */
-/* ************************************ */
-/* ************************************ */
 /*          Container Playlist          */
 /* ************************************ */
 /* ************************************ */
@@ -967,6 +861,7 @@ input[type="submit"]:hover {
   .botoes-navbar-mobile {
     width: 33%;
     text-align: center;
+    color: red;
   }
 
   .botao-navbar-mobile {

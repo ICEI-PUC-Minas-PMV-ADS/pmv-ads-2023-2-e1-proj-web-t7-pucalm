@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+
+/*Especificações Gerais*/
+:root {
+    --preto: #000;
+    --branco: #fff;
+    --azul-escuro: #0C2847;
+    --azul-claro: #405E7A;
+    --azul-gelo: #9EB3CA;
+    --cinza-claro: #D3DAE4;
+}
+
+body {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+p {
+    text-align: justify !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 2%;
+}
+
+.secao-flex {
+    display: flex;
+    padding: 3rem 0rem 3rem 0rem;
+    place-content: center;
+}
+
+.secao-grid {
+    display: grid;
+    padding: 3rem 0rem 3rem 0rem;
+}
+
+.container-50 {
+    width: 50%;
+}
+
+.container-30 {
+    width: 30%;
+}
+
+.container-27 {
+    width: 27%;
+}
+
+.container-80 {
+    width: 80%;
+}
+
+.imagem-height-12 {
+    height: 12rem;
+}
+
+.imagem-height-10 {
+    height: 10rem;
+}
+
+/* Seção inicial CTA */
+
+.logo {
+    width: calc(20% + 2rem);
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+.centralizado {
+    text-align: center;
+    align-self: center;
+    place-items: center;
+}
+
+button {
+    border-radius: 3rem;
+    padding: 0.7rem 2rem 0.7rem 2rem;
+    background-color: black;
+    font-weight: 700;
+    color: white;
+    border: 0;
+}
+
+/* Seção integrantes */
+.container-intergantes {
+    display: flex;
+    gap: 1.4rem;
+    justify-content: space-around;
+}
+
+.texto-beneficios {
+    padding-right: 3rem;
+}
+
+.paragrafo-inteiro {
+    text-align: center;
+    /*margin: 1rem;*/
+}
+
+/* ********************************** */
+/*            Versão Mobile           */
+/* ********************************** */
+@media (max-width: 700px) {
+    .section-pc {
+        display: none;
+    }
+
+    .section-mobile-lp {
+        display: grid;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        /*padding-left: 0.75rem;
+        padding-right: 0.75rem;*/
+    }
+
+    .imagem-mobile {
+        width: 10rem;
+        padding-top: 1rem;
+    }
+
+    .container-mobile {
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .container-mobile-in {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .imagem-integrantes-mobile {
+        width: 10rem;
+        border-radius: 0.5rem;
+
+    }
+
+    .container-intergantes-mobile {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-around;
+    }
+    .texto-beneficios{
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 701px) {
+    .section-mobile-lp {
+        display: none;
+    }
+}
