@@ -11,6 +11,16 @@ document.getElementById("logo").addEventListener("click", function () {
   redirecionarParaPagina("landing-page.html");
 });
 
+// Redirecionar para página Inicio
+document.getElementById("menu-lateral-inicio").addEventListener("click", function () {
+    acessarInicio();
+  });
+
+// Redirecionar para página Feedback
+document.getElementById("menu-lateral-feedback").addEventListener("click", function () {
+    acessarFeedback();
+  });
+
 // Redirecionar para página Inicio Mobile
 document.getElementById("btInicioMobile").addEventListener("click", function () {
     acessarInicio();
@@ -23,8 +33,8 @@ document.getElementById("btFeedbackMobile").addEventListener("click", function (
 
 // Redirecionar para página Landing Page Mobile
 document.getElementById("btLandingPageMobile").addEventListener("click", function () {
-  redirecionarParaPagina("landing-page.html");
-});
+    redirecionarParaPagina("landing-page.html");
+  });
 
 // Responsável por configurar e inicializar dinamicamente o conteúdo da página com base em algumas condições, classes e dados fornecidos.
 function gerarPagina(param) {
