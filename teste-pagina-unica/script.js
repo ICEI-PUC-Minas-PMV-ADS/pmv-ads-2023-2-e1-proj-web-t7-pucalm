@@ -1,10 +1,31 @@
 /* ********************************** */
+/*          Variáveis Globais           */
+/* ********************************** */
+
+// Variáveis Globais
+var audio = new Audio();
+var containerPrincipal = document.querySelector("#containerPrincipal");
+
+
+// Dados dos Audios
+var dadosAudios = [
+  ["foco", "Desconhecido", "Verde", "Audio 01", "07:14"],
+  ["foco", "Desconhecido", "Azul", "Audio 02", "05:47"],
+  ["Estudo", "Desconhecido", "Verde", "Audio 03", "06:02"],
+  ["Ansiedade", "Desconhecido", "Azul", "Audio 04", "05:17"],
+];
+
+// Lista de Playlists
+var playlists = ["Foco", "Relaxamento", "Sono", "Ansiedade", "Estudo"];
+
+
+/* ********************************** */
 /*          Funções Globais           */
 /* ********************************** */
 
 function redirecionarParaPagina(pagina) {
   window.location.href = pagina;
-}
+};
 
 // Responsável por configurar e inicializar dinamicamente o conteúdo da página com base em algumas condições, classes e dados fornecidos.
 function gerarPagina(genero) {
@@ -19,9 +40,7 @@ function gerarPagina(genero) {
     nextSong = document.querySelector("#controle-avancar");
     progressoMusica = document.querySelector("#progresso-musica");
     seekInput = document.querySelector("#input-seeker");
-  
-    containerPrincipal = document.querySelector("#container-principal");
-  
+    
     if (
       !document.getElementsByTagName("BODY")[0].classList.contains("body-index")
     ) {
@@ -34,8 +53,8 @@ function gerarPagina(genero) {
         if (event.target != document.querySelector("#context")) {
           if (document.querySelector("#context")) {
             document.querySelector("#context").style.display = "none";
-          }
-        }
+          };
+        };
       };
   
       if (containerPrincipal.classList.contains("t-inicio")) {
@@ -47,7 +66,7 @@ function gerarPagina(genero) {
           containerPlaylists.innerHTML += criarCardPlaylist(elem);
         });
       } else if (containerPrincipal.classList.contains("t-playlist")) {
-        var audios = retornarAudiosDaPlaylist(genero);
+        let audios = retornarAudiosDaPlaylist(genero);
         containerPrincipal.innerHTML =
           '<div id="container-central"><div class="secao-flex espacamento-section"><div class="tamanho-20 imagem-playlist"><img class="capa-album" src="assets/playlists/genero-' +
           audios[0] +
@@ -56,7 +75,7 @@ function gerarPagina(genero) {
           '</h1></div><div id="albumSongs">' +
           audios[2] +
           " Músicas" +
-          '</div><img id="tocar-playlist-toda" src="assets/imgs/play_musicbar.png" alt="Play" onclick="addQueue(\'' +
+          '</div><img id="tocar-playlist-toda" src="assets/imgs/play_musicbar.png" alt="Play" onclick="tocarTodaPlaylist(\'' +
           genero +
           '\')"></div><div class="secao-grid tamanho-20 secao-filtro"><div class="alinhar-direita"><select name="ordenar_por" class="personalizacao-select"><option value="1">Ordenar por</option><option value="2">Nome</option><option value="3">Data</option><option value="4">Favorito</option><option value="5">Mais tocadas</option></select></div><div class="secao-flex centralizar alinhar-direita" style="padding-top:70%"></div></div></div></div><div id="containerMusica"></div>';
         btnAddSong = document.querySelector("#addSongButton");
@@ -81,35 +100,34 @@ function gerarPagina(genero) {
         document.querySelector("#titulo-pagina").innerHTML = "Feedback";
         document.querySelector("#container-feedback").innerHTML =
           '<div><div class="container-logo"></div><div class="container-titulo-subtitlo"><h5>Nos ajude a melhorar! Deixe seu comentário ou proposta de melhoria para que possamos atender suas necessidades cada vez melhor.</h5></div><div class="container-form"><form class="form" id="form" action="https://formspree.io/f/mleyzvob" method="POST"><div class="container-nome"><label for="tnome">Nome (Obrigatório)</label><input type="text" id="tnome" name="nome" placeholder="Nome..." maxlength="255" required><span class="icone-validacao"></span></div><div class="container-email"><label for="temail">E-mail (Opcional)</label><input type="email" id="temail" name="email" placeholder="email@exemplo.com.br" autocomplete="email" maxlength="255"><span class="icone-validacao"></span></div><div class="container-msg"><label for="tmsg">Mensagem (Obrigatório)</label><textarea id="tmsg" name="msg" placeholder="Escreva seu comentário..." maxlength="255" required></textarea><span class="icone-validacao"></span></div><div class="container-btn-enviar"><input type="submit" value="Enviar" id="btn-enviar"></div></form></div>';
-      }
-    }
-  }
+      };
+    };
+  };
   
   function acessarPagina(classe, name) {
-    containerPrincipal = document.querySelector("#container-principal");
     containerPrincipal.removeAttribute("class");
     containerPrincipal.classList.toggle(classe);
     if(name){
         gerarPagina(name);
     }else{
         gerarPagina();
-    }
-  }
+    };
+  };
 
 // Configura e exibe a página Inicio
 function acessarInicio() {
     acessarPagina("t-inicio");
-  }
+  };
   
 // Configura e exibe a página da Playlist
 function acessarPlaylist(name) {
     acessarPagina("t-playlist", name);
-  }
+  };
 
   // Configura e exibe a página Feedback
   function acessarFeedback() {
     acessarPagina("t-feedback");
-  }
+  };
   
 /* ********************************** */
 /*    Redirecionamento das Páginas    */
@@ -148,21 +166,34 @@ document.getElementById("btLandingPageMobile").addEventListener("click", functio
 /*          Regras de Negocio         */
 /* ********************************** */
 
-// Variáveis Globais
-var audio = new Audio();
+// Configuração da página inicial do site, exibindo uma lista de playlists e permitindo que o usuário acesse cada uma clicando nos cards correspondentes.
+function iniciarCodigo() {
+    containerPrincipal.innerHTML = ""; // Limpa o conteúdo existente
+  
+    const tituloPagina = document.createElement("div");
+    tituloPagina.id = "titulo-pagina";
+    tituloPagina.innerHTML = "<h1>Playlists</h1>";
+    containerPrincipal.appendChild(tituloPagina);
+  
+    document.querySelector("#titulo-pagina").innerHTML = "Início";
+    var containerPlaylists = document.querySelector("#container-playlists");
+  
+    playlists.forEach(function (elem) {
+      const cardPlaylist = document.createElement("div");
+      cardPlaylist.className = "card";
+      cardPlaylist.setAttribute("onclick", `acessarPlaylist("${elem}")`);
+  
+      cardPlaylist.innerHTML = `
+              <div class='thumbnail'><img src='assets/playlists/genero-${elem}.jpg' alt='' class='img-thumb'></div>
+              <div class='description'><p>${elem}</p></div>`;
+  
+      containerPlaylists.appendChild(cardPlaylist);
+    });
+  }
+  
+  gerarPagina(iniciarCodigo);
 
-// Dados dos Audios
-var dadosAudios = [
-  ["foco", "Desconhecido", "Verde", "Audio 01", "07:14"],
-  ["foco", "Desconhecido", "Azul", "Audio 02", "05:47"],
-  ["Estudo", "Desconhecido", "Verde", "Audio 03", "06:02"],
-  ["Ansiedade", "Desconhecido", "Azul", "Audio 04", "05:17"],
-];
-
-// Lista de Playlists
-var playlists = ["Foco", "Relaxamento", "Sono", "Ansiedade", "Estudo"];
-
-// Selecionar as músicas com base no gênero fornecido como argumento, criar uma cópia de backup dessa lista e retornar um array contendo o gênero, a lista de músicas filtradas e o número de músicas nessa lista.
+// Selecionar as músicas com base no gênero fornecido como argumento e retornar um array contendo o gênero, a lista de audios filtrados e o quantidade de áudios dessa lista.
 function retornarAudiosDaPlaylist(genero) {
   let audiosDoGenero = [];
   let qtdAudios = 0;
@@ -184,38 +215,10 @@ function criarCardPlaylist(elem) {
             </div>`;
 }
 
-// Configuração da página inicial do site, exibindo uma lista de playlists e permitindo que o usuário acesse cada uma clicando nos cards correspondentes.
-function iniciarCodigo() {
-  containerPrincipal.innerHTML = ""; // Limpa o conteúdo existente
 
-  const tituloPagina = document.createElement("div");
-  tituloPagina.id = "titulo-pagina";
-  tituloPagina.innerHTML = "<h1>Playlists</h1>";
-  containerPrincipal.appendChild(tituloPagina);
-
-  document.querySelector("#titulo-pagina").innerHTML = "Início";
-  var containerPlaylists = document.querySelector("#container-playlists");
-
-  playlists.forEach(function (elem) {
-    const cardPlaylist = document.createElement("div");
-    cardPlaylist.className = "card";
-    cardPlaylist.setAttribute("onclick", `acessarPlaylist("${elem}")`);
-
-    cardPlaylist.innerHTML = `
-            <div class='thumbnail'><img src='assets/playlists/genero-${elem}.jpg' alt='' class='img-thumb'></div>
-            <div class='description'><p>${elem}</p></div>`;
-
-    containerPlaylists.appendChild(cardPlaylist);
-  });
-}
-
-gerarPagina(iniciarCodigo);
-
-
-// Iniciar música clicando no título dela
+// Iniciar audio clicando no título dele
 function acessarMusica(nome_audio) {
-  containerPrincipal = document.querySelector("#container-principal");
-  console.log("song : " + nome_audio); // imprimir nome do audio
+  console.log("audio : " + nome_audio); // imprimir nome do audio
   playlist_index = 0;
   song_queue = [];
   dadosAudios.forEach(function (audio) {
@@ -227,11 +230,11 @@ function acessarMusica(nome_audio) {
   });
 
   // audio.currentTime = 0;
-  iniciarMusica();
+  iniciarAudio();
 }
 
-// Configura e inicia a reprodução de uma música, atualiza elementos na página com informações da música e associa event listeners para atualização de tempo e mudança de música ao término da reprodução.
-function iniciarMusica(_callback) {
+// Configura e inicia a reprodução de uma audio, atualiza elementos na página com informações da audio e associa event listeners para atualização de tempo e mudança de audio ao término da reprodução.
+function iniciarAudio(_callback) {
   // audio.pause();
   // audio = new Audio();
   ext = ".mp3";
@@ -292,7 +295,7 @@ function atualizarTempo() {
 function mudarMusica() {
   playlist_index++;
   audio.src =
-    "assets/audios/" +
+    "assets/audios/" +iniciarAudio
     song_queue[playlist_index][1] +
     "-" +
     song_queue[playlist_index][2] +
@@ -308,10 +311,10 @@ function mudarMusica() {
   }
 }
 
-// Iniciar música clicando no botão Play da playlist
-function addQueue(param) {
-  playlist_index = 0;
-  var audios = retornarAudiosDaPlaylist(param);
+// Iniciar audio clicando no botão Play da playlist
+function tocarTodaPlaylist(genero) {
+//   playlist_index = 0;
+  let audios = retornarAudiosDaPlaylist(genero);
   song_queue = [];
   audios[1].forEach(function (elem) {
     song_queue.push(elem);
@@ -319,7 +322,7 @@ function addQueue(param) {
   audio.pause();
   audio.currentTime = 0;
   audio = new Audio();
-  iniciarMusica();
+  iniciarAudio();
   //initAudioPlayer();
 }
 
