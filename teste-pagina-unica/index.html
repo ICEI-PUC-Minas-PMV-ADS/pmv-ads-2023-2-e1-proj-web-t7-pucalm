@@ -73,7 +73,28 @@
                 <h1 id="titulo-pagina">Início</h1>
             </div>
             <div class="pesquisa-barra-superior">
-                <button><i class="bi bi-share-fill"></i></button>
+                <button data-toggle="modal" data-target="#exampleModal"><i class="bi bi-share-fill"></i></button>
+            </div>
+        </div>
+
+        <!-- Popup botão compartilhar -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h3 class="modal-title" id="exampleModalLabel">Compartilhe a PUCalm!</h3>
+                
+                </div>
+                <div class="modal-body">
+                    <input type="text" value="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/teste-pagina-unica/index.html" id="input-compartilhar">
+                </div>
+                <div class="modal-footer">
+                <button type="button" id="botao-popup" class="btn btn-primary botao-copiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
             </div>
         </div>
 

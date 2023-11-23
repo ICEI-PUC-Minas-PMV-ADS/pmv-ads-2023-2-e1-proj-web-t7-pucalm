@@ -779,30 +779,28 @@ body {
   display: none;
 }
 
-/* @media (max-width: 700px) {
-    .section-mobile{
-        display: flex;
-    }
-    .informacoes-playlist{
-        width: 70%;
-        padding: 0.5rem 0.6rem 0.5rem 0rem;
-    }
-    .imagem-playlist{
-        display: none;
-    }
-    .titulo-playlist {
-        font-size: 1.9rem;
-    }
-    .nome-audio {
-        font-size: 1rem;
-    }
-    .botao-compartilhar{
-        display: none;
-    }
-    .secao-filtro{
-        width: 30%;
-    }
-}*/
+
+/* popup */
+
+.modal-title{
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 1.5rem !important;
+}
+
+#input-compartilhar{
+    font-size: 15px !important;
+    border-bottom: 3px solid var(--azul-claro) !important;
+}
+
+.modal-footer{
+    padding-top: 1.5rem;
+}
+
+.botao-copiar{
+    padding: 0.5rem;
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 1rem !important;
+}
 
 @media (max-width: 900px) {
   #containerPrincipal {

@@ -307,3 +307,14 @@ function tocarTodaPlaylist(genero) {
 }
 
 
+/* ********************************** */
+/*           Função Popup             */
+/* ********************************** */
+
+function copiarTexto() {
+    var copiarTexto = document.getElementById("input-compartilhar");
+    copiarTexto.select();
+    copiarTexto.setSelectionRange(0, 99999); // Versão mobile
+    navigator.clipboard.writeText(copiarTexto.value);
+    alert("Link copiado com sucesso!")
+}
