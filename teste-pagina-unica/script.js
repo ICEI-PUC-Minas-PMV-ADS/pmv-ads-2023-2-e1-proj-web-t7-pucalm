@@ -27,7 +27,7 @@ function redirecionarParaPagina(pagina) {
   window.location.href = pagina;
 };
 
-// Responsável por configurar e inicializar dinamicamente o conteúdo da página com base em algumas condições, classes e dados fornecidos.
+// Configurar e inicializar dinamicamente o conteúdo da página com base em algumas condições, classes e dados fornecidos.
 function gerarPagina(genero) {
     btnPlay = document.querySelector("#controle-play");
     seekSlider = document.querySelector("#progresso-barra");
@@ -206,43 +206,6 @@ function criarCardPlaylist(genero) {
             </div>`;
 }
 
-
-// Configura e inicia a reprodução de uma audio, atualiza elementos na página com informações da audio e associa event listeners para atualização de tempo e mudança de audio ao término da reprodução.
-function reproduzirAudio(nome_audio) {
-    console.log("audio : " + nome_audio);
-    playlist_index = 0;
-    song_queue = [];
-    dadosAudios.forEach(function (audio) {
-      if (audio[3].toLowerCase() === nome_audio.toLowerCase()) {
-        if (song_queue.indexOf(audio) < 0) {
-          song_queue.push(audio);
-        }
-      }
-    });
-
-  ext = ".mp3";
-  audio.src =
-    "assets/audios/" +
-    song_queue[0][1] +
-    "-" +
-    song_queue[0][2] +
-    "-" +
-    song_queue[0][3] +
-    ext;
-  console.log("audio.src : " + audio.src);
-  audio.loop = false;
-  audio.volume = 1;
-  currentTitle.innerHTML = song_queue[0][3];
-  currentArtist.innerHTML = song_queue[0][1];
-  currentThumb.src = "assets/albums/album-" + song_queue[0][2] + ".jpg";
-  //audio.addEventListener("atualizartempo",atualizarTempo);
-  audio.addEventListener("timeupdate", atualizarTempo);
-  audio.addEventListener("ended", mudarMusica);
-
-  btnPlay.src = "assets/icons/pause.png";
-  audio.play();
-}
-
 function atualizarTempo() {
   var tm = audio.currentTime * (100 / audio.duration);
   var tmperc = tm + "%";
@@ -289,6 +252,42 @@ function mudarMusica() {
   if (song_queue.length != 1) {
     audio.play();
   }
+}
+
+// Configura e inicia a reprodução de uma audio, atualiza elementos na página com informações da audio e associa event listeners para atualização de tempo e mudança de audio ao término da reprodução.
+function reproduzirAudio(nome_audio) {
+    console.log("audio : " + nome_audio);
+    playlist_index = 0;
+    song_queue = [];
+    dadosAudios.forEach(function (audio) {
+      if (audio[3].toLowerCase() === nome_audio.toLowerCase()) {
+        if (song_queue.indexOf(audio) < 0) {
+          song_queue.push(audio);
+        }
+      }
+    });
+
+  ext = ".mp3";
+  audio.src =
+    "assets/audios/" +
+    song_queue[0][1] +
+    "-" +
+    song_queue[0][2] +
+    "-" +
+    song_queue[0][3] +
+    ext;
+  console.log("audio.src : " + audio.src);
+  audio.loop = false;
+  audio.volume = 1;
+  currentTitle.innerHTML = song_queue[0][3];
+  currentArtist.innerHTML = song_queue[0][1];
+  currentThumb.src = "assets/albums/album-" + song_queue[0][2] + ".jpg";
+
+  audio.addEventListener("timeupdate", atualizarTempo);
+  audio.addEventListener("ended", mudarMusica);
+
+  btnPlay.src = "assets/icons/pause.png";
+  audio.play();
 }
 
 // Iniciar audio clicando no botão Play da playlist
