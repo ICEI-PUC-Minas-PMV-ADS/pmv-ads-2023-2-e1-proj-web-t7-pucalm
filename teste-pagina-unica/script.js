@@ -124,42 +124,6 @@ function acessarPlaylist(name) {
     acessarPagina("t-feedback");
   };
   
-/* ********************************** */
-/*    Redirecionamento das Páginas    */
-/* ********************************** */
-// Redirecionar para página Landing Page
-document.getElementById("logo").addEventListener("click", function () {
-  redirecionarParaPagina("landing-page.html");
-});
-
-// Redirecionar para página Inicio
-document.getElementById("menu-lateral-inicio").addEventListener("click", function () {
-    acessarInicio();
-  });
-
-// Redirecionar para página Feedback
-document.getElementById("menu-lateral-feedback").addEventListener("click", function () {
-    acessarFeedback();
-  });
-
-// Redirecionar para página Inicio Mobile
-document.getElementById("btInicioMobile").addEventListener("click", function () {
-    acessarInicio();
-  });
-
-// Redirecionar para página Feedback Mobile
-document.getElementById("btFeedbackMobile").addEventListener("click", function () {
-    acessarFeedback();
-  });
-
-// Redirecionar para página Landing Page Mobile
-document.getElementById("btLandingPageMobile").addEventListener("click", function () {
-    redirecionarParaPagina("landing-page.html");
-  });
-
-/* ********************************** */
-/*          Regras de Negocio         */
-/* ********************************** */
 
 // Configurações iniciais da aplicação
 function configurarApp() {
@@ -179,11 +143,45 @@ function configurarApp() {
         btnPlay.src = "assets/icons/play.png";
     }
     });
+
+    // Redirecionar para página Landing Page
+    document.getElementById("logo").addEventListener("click", function () {
+    redirecionarParaPagina("landing-page.html");
+  });
+  
+  // Redirecionar para página Inicio
+  document.getElementById("menu-lateral-inicio").addEventListener("click", function () {
+      acessarInicio();
+    });
+  
+  // Redirecionar para página Feedback
+  document.getElementById("menu-lateral-feedback").addEventListener("click", function () {
+      acessarFeedback();
+    });
+  
+  // Redirecionar para página Inicio Mobile
+  document.getElementById("btInicioMobile").addEventListener("click", function () {
+      acessarInicio();
+    });
+  
+  // Redirecionar para página Feedback Mobile
+  document.getElementById("btFeedbackMobile").addEventListener("click", function () {
+      acessarFeedback();
+    });
+  
+  // Redirecionar para página Landing Page Mobile
+  document.getElementById("btLandingPageMobile").addEventListener("click", function () {
+      redirecionarParaPagina("landing-page.html");
+    });
 };
 
 configurarApp()
 
-  
+
+/* ********************************** */
+/*          Regras de Negocio         */
+/* ********************************** */
+
 // Selecionar as músicas com base no gênero fornecido como argumento e retornar um array contendo o gênero, a lista de audios filtrados e o quantidade de áudios dessa lista.
 function retornarAudiosDaPlaylist(genero) {
   let audiosDoGenero = [];
@@ -301,8 +299,10 @@ function tocarTodaPlaylist(genero) {
   audio.pause();
   audio.currentTime = 0;
   audio = new Audio();
-  reproduzirAudio(song_queue[0][3]);
-  //initAudioPlayer();
+
+  if(song_queue.length > 0){
+    reproduzirAudio(song_queue[0][3]);
+  }
 }
 
 
