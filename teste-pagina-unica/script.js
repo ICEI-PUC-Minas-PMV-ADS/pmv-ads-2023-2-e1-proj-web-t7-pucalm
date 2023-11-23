@@ -5,7 +5,7 @@
 // Variáveis Globais
 var audio = new Audio();
 var containerPrincipal = document.querySelector("#containerPrincipal");
-
+var song_queue = []
 
 // Dados dos Audios
 var dadosAudios = [
@@ -77,7 +77,7 @@ function gerarPagina(genero) {
         var containerMusica = document.querySelector("#containerMusica");
         audios[1].forEach(function (elem) {
           containerMusica.innerHTML +=
-            '<div class="songCard" onclick="acessarMusica(\'' +
+            '<div class="songCard" onclick="reproduzirAudio(\'' +
             elem[3] +
             "')\" oncontextmenu=\"showContext('" +
             elem[3] +
@@ -161,10 +161,29 @@ document.getElementById("btLandingPageMobile").addEventListener("click", functio
 /*          Regras de Negocio         */
 /* ********************************** */
 
-// Configuração Inicial da página do site (mostra a página Inicio)
-gerarPagina()
-  
+// Configurações iniciais da aplicação
+function configurarApp() {
 
+    // Configuração Inicial da página do site (mostra a página Inicio)
+    gerarPagina();
+
+  // Reprodução/Pausa do Audio, através do botão Play/Pause do Player
+  btnPlay.addEventListener("click", function () {
+    if (audio.paused) {
+        audio.play().catch((error) => {
+        console.error("Erro ao iniciar a reprodução:", error);
+        });
+        btnPlay.src = "assets/icons/pause.png";
+    } else {
+        audio.pause();
+        btnPlay.src = "assets/icons/play.png";
+    }
+    });
+};
+
+configurarApp()
+
+  
 // Selecionar as músicas com base no gênero fornecido como argumento e retornar um array contendo o gênero, a lista de audios filtrados e o quantidade de áudios dessa lista.
 function retornarAudiosDaPlaylist(genero) {
   let audiosDoGenero = [];
@@ -180,37 +199,28 @@ function retornarAudiosDaPlaylist(genero) {
 }
 
 // ***Verificar se o style é realmente necessário dentro do HTML desta função***
-function criarCardPlaylist(elem) {
-  return `<div class='card' onclick='acessarPlaylist("${elem}")'>
-                <div class='thumbnail'><img src='assets/playlists/genero-${elem}.jpg' alt='' class='img-thumb'></div>
-                <div><p class='description'>${elem}</p><p style="font-size:14px; padding-left: 0.7rem; text-align: left;">Ouvir agora</p></div>
+function criarCardPlaylist(genero) {
+  return `<div class='card' onclick='acessarPlaylist("${genero}")'>
+                <div class='thumbnail'><img src='assets/playlists/genero-${genero}.jpg' alt='' class='img-thumb'></div>
+                <div><p class='description'>${genero}</p><p style="font-size:14px; padding-left: 0.7rem; text-align: left;">Ouvir agora</p></div>
             </div>`;
 }
 
 
-// Iniciar audio clicando no título dele
-function acessarMusica(nome_audio) {
-  console.log("audio : " + nome_audio); // imprimir nome do audio
-  playlist_index = 0;
-  song_queue = [];
-  dadosAudios.forEach(function (audio) {
-    if (audio[3].toLowerCase() === nome_audio.toLowerCase()) {
-      if (song_queue.indexOf(audio) < 0) {
-        song_queue.push(audio);
-      }
-    }
-  });
-
-  // audio.currentTime = 0;
-  iniciarAudio();
-}
-
 // Configura e inicia a reprodução de uma audio, atualiza elementos na página com informações da audio e associa event listeners para atualização de tempo e mudança de audio ao término da reprodução.
-function iniciarAudio(_callback) {
-  // audio.pause();
-  // audio = new Audio();
+function reproduzirAudio(nome_audio) {
+    console.log("audio : " + nome_audio);
+    playlist_index = 0;
+    song_queue = [];
+    dadosAudios.forEach(function (audio) {
+      if (audio[3].toLowerCase() === nome_audio.toLowerCase()) {
+        if (song_queue.indexOf(audio) < 0) {
+          song_queue.push(audio);
+        }
+      }
+    });
+
   ext = ".mp3";
-  // agent = navigator.userAgent.toLowerCase();
   audio.src =
     "assets/audios/" +
     song_queue[0][1] +
@@ -228,8 +238,6 @@ function iniciarAudio(_callback) {
   //audio.addEventListener("atualizartempo",atualizarTempo);
   audio.addEventListener("timeupdate", atualizarTempo);
   audio.addEventListener("ended", mudarMusica);
-
-  _callback && _callback();
 
   btnPlay.src = "assets/icons/pause.png";
   audio.play();
@@ -267,7 +275,7 @@ function atualizarTempo() {
 function mudarMusica() {
   playlist_index++;
   audio.src =
-    "assets/audios/" +iniciarAudio
+    "assets/audios/" +reproduzirAudio
     song_queue[playlist_index][1] +
     "-" +
     song_queue[playlist_index][2] +
@@ -294,24 +302,8 @@ function tocarTodaPlaylist(genero) {
   audio.pause();
   audio.currentTime = 0;
   audio = new Audio();
-  iniciarAudio();
+  reproduzirAudio(song_queue[0][3]);
   //initAudioPlayer();
 }
 
-// Reprodução/Pausa do Audio, através do botão Play/Pause do Player
-btnPlay.addEventListener("click", function () {
-  // Verifica se o áudio está tocando
-  if (audio.paused) {
-    // Se estiver pausado, retoma a reprodução
-    audio.play().catch((error) => {
-      console.error("Erro ao iniciar a reprodução:", error);
-    });
-    // Atualiza a imagem do botão para o ícone de pausa
-    btnPlay.src = "assets/icons/pause.png";
-  } else {
-    // Se estiver tocando, pausa a reprodução
-    audio.pause();
-    // Atualiza a imagem do botão para o ícone de play
-    btnPlay.src = "assets/icons/play.png";
-  }
-});
+
