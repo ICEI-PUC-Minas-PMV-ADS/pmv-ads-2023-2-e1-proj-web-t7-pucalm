@@ -45,6 +45,12 @@ body {
   left: 0;
   color: hsla(0, 0%, 100%, 0.6);
 }
+
+a{
+    color: hsla(0, 0%, 100%, 0.6);
+    text-decoration: none;
+}
+
 #container-player {
   position: fixed;
   width: 100vw;
@@ -78,6 +84,7 @@ body {
   top: -2px;
   float: left;
   position: relative;
+  fill: hsla(0, 0%, 100%, 0.6);
 }
 
 .item-menu-lateral {
@@ -865,7 +872,6 @@ body {
   .botao-navbar-mobile {
     padding: 5% 10% 5% 10%;
     width: 80%;
-    border-radius: 2rem;
     font-size: 0.9rem;
     font-weight: 600;
     border: none;
