@@ -45,11 +45,6 @@ function gerarPagina(genero) {
       !document.getElementsByTagName("BODY")[0].classList.contains("body-index")
     ) {
       window.onclick = function (event) {
-        // if(event.target == modalGenre || event.target == modalSong)
-        // {
-        //     modalGenre.style.display = "none";
-        //     modalSong.style.display = "none";
-        // }
         if (event.target != document.querySelector("#context")) {
           if (document.querySelector("#context")) {
             document.querySelector("#context").style.display = "none";
@@ -166,32 +161,9 @@ document.getElementById("btLandingPageMobile").addEventListener("click", functio
 /*          Regras de Negocio         */
 /* ********************************** */
 
-// Configuração da página inicial do site, exibindo uma lista de playlists e permitindo que o usuário acesse cada uma clicando nos cards correspondentes.
-function iniciarCodigo() {
-    containerPrincipal.innerHTML = ""; // Limpa o conteúdo existente
+// Configuração Inicial da página do site (mostra a página Inicio)
+gerarPagina()
   
-    const tituloPagina = document.createElement("div");
-    tituloPagina.id = "titulo-pagina";
-    tituloPagina.innerHTML = "<h1>Playlists</h1>";
-    containerPrincipal.appendChild(tituloPagina);
-  
-    document.querySelector("#titulo-pagina").innerHTML = "Início";
-    var containerPlaylists = document.querySelector("#container-playlists");
-  
-    playlists.forEach(function (elem) {
-      const cardPlaylist = document.createElement("div");
-      cardPlaylist.className = "card";
-      cardPlaylist.setAttribute("onclick", `acessarPlaylist("${elem}")`);
-  
-      cardPlaylist.innerHTML = `
-              <div class='thumbnail'><img src='assets/playlists/genero-${elem}.jpg' alt='' class='img-thumb'></div>
-              <div class='description'><p>${elem}</p></div>`;
-  
-      containerPlaylists.appendChild(cardPlaylist);
-    });
-  }
-  
-  gerarPagina(iniciarCodigo);
 
 // Selecionar as músicas com base no gênero fornecido como argumento e retornar um array contendo o gênero, a lista de audios filtrados e o quantidade de áudios dessa lista.
 function retornarAudiosDaPlaylist(genero) {
