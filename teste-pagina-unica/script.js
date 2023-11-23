@@ -99,11 +99,12 @@ function gerarPagina(genero) {
     };
   };
   
-  function acessarPagina(classe, name) {
+  // Gera uma página com base no nome
+  function acessarPagina(classe, nome_playlist) {
     containerPrincipal.removeAttribute("class");
     containerPrincipal.classList.toggle(classe);
-    if(name){
-        gerarPagina(name);
+    if(nome_playlist){
+        gerarPagina(nome_playlist);
     }else{
         gerarPagina();
     };
@@ -115,8 +116,8 @@ function acessarInicio() {
   };
   
 // Configura e exibe a página da Playlist
-function acessarPlaylist(name) {
-    acessarPagina("t-playlist", name);
+function acessarPlaylist(nome_playlist) {
+    acessarPagina("t-playlist", nome_playlist);
   };
 
   // Configura e exibe a página Feedback
