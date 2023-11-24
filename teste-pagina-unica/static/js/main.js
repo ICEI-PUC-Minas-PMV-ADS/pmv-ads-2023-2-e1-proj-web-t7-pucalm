@@ -1,3 +1,3 @@
-import Audios from "Audios.js";
+import Playlists from "./ClassePlaylists";
 
-const instanciaDeAudios = new Audios();
+const playlists = new Playlists();

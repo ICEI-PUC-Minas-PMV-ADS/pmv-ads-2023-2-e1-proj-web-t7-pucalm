@@ -1,5 +1,5 @@
 // Importar a classe Audios
-import Audios from "Audios.js";
+import Audios from "./ClasseAudios.js";
 
 class Playlists {
   constructor() {
@@ -12,8 +12,16 @@ class Playlists {
 
   // Método para gerar automaticamente a lista de playlists com base nos gêneros disponíveis
   gerarPlaylists() {
+    // Obter a lista de gêneros disponíveis através da instância da classe Audios
     const generos = this.audios.retornarGeneros();
-    return generos.map((genero) => genero.charAt(0).toUpperCase() + genero.slice(1));
+
+    // Mapear cada gênero para formatar a primeira letra em maiúscula (transformar "foco" em "Fcco", por exemplo)
+    const playlistsFormatadas = generos.map((genero) =>
+      genero.charAt(0).toUpperCase()
+    );
+
+    // Retornar a lista de playlists formatadas
+    return playlistsFormatadas;
   }
 
   // Retorna os áudios de uma playlist específica
@@ -29,12 +37,11 @@ class Playlists {
             </div>`;
   }
 
-  // Método para acessar a página de uma playlist específica
-  acessarPlaylist(nomePlaylist) {
-    // Implemente conforme necessário
-  }
-
-  // Outros métodos relacionados às playlists podem ser adicionados conforme necessário
 }
 
 export default Playlists;
+
+// Exemplo de uso da classe Playlists
+const playlists = new Playlists();
+const audiosFoco = playlists.retornarAudiosDaPlaylist("Foco");
+console.log(audiosFoco);

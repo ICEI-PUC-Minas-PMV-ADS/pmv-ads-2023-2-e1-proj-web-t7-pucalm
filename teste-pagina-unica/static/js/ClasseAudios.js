@@ -14,6 +14,7 @@ class Audios {
   carregarListaAudios() {
     // Preencher a lista de áudios com objetos importados
     this.listaDeAudios = dadosAudios.map((audio) => ({
+      id: audio.id,
       genero: audio.genero,
       artista: audio.artista,
       titulo: audio.titulo,
@@ -28,14 +29,21 @@ class Audios {
     );
   }
 
-  // Outros métodos relacionados aos áudios podem ser adicionados conforme necessário
+  // Método para retornar array com os gêneros disponíveis
+  retornarGeneros() {
+    // Mapear os gêneros únicos a partir da lista de áudios
+    const generosUnicos = [...new Set(this.listaDeAudios.map((audio) => audio.genero))];
+    return generosUnicos;
+  }
 }
 
 export default Audios;
 
 // Exemplo de uso da classe Audios
-var audios = new Audios();
-var audiosFoco = audios.retornarAudiosPorGenero("foco");
-console.log(audiosFoco, '\n', '---------');
-console.log(audios.listaDeAudios, '\n', '---------')
+// var audios = new Audios();
+// var audiosFoco = audios.retornarAudiosPorGenero("foco");
+// console.log(audiosFoco, '\n\n');
+
+// var generos = audios.retornarGeneros()
+// console.log(generos, '\n\n');
 
