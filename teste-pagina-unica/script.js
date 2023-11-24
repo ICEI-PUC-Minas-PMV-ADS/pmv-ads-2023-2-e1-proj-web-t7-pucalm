@@ -236,22 +236,26 @@ function atualizarTempo() {
 
 function mudarMusica() {
   playlist_index++;
-  audio.src =
-    "assets/audios/" +reproduzirAudio
-    song_queue[playlist_index][1] +
-    "-" +
-    song_queue[playlist_index][2] +
-    "-" +
-    song_queue[playlist_index][3] +
-    ext;
-  currentTitle.innerHTML = song_queue[playlist_index][3];
-  currentArtist.innerHTML = song_queue[playlist_index][1];
-  currentThumb.src =
-    "assets/albums/album-" + song_queue[playlist_index][2] + ".jpg";
-  if (song_queue.length != 1) {
+  if (playlist_index < song_queue.length) {
+    audio.src =
+      "assets/audios/" +
+      song_queue[playlist_index][1] +
+      "-" +
+      song_queue[playlist_index][2] +
+      "-" +
+      song_queue[playlist_index][3] +
+      ext;
+    currentTitle.innerHTML = song_queue[playlist_index][3];
+    currentArtist.innerHTML = song_queue[playlist_index][1];
+    currentThumb.src =
+      "assets/albums/album-" + song_queue[playlist_index][2] + ".jpg";
     audio.play();
+  } else {
+    audio.pause()
+    btnPlay.src = "assets/icons/pause.png";
   }
 }
+
 
 // Configura e inicia a reprodução de uma audio, atualiza elementos na página com informações da audio e associa event listeners para atualização de tempo e mudança de audio ao término da reprodução.
 function reproduzirAudio(nome_audio) {
