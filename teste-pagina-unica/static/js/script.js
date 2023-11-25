@@ -147,7 +147,7 @@ function configurarApp() {
 
     // Redirecionar para página Landing Page
     document.getElementById("logo").addEventListener("click", function () {
-    redirecionarParaPagina("landing-page.html");
+    redirecionarParaPagina("./static/html/landing-page.html");
   });
   
   // Redirecionar para página Inicio
@@ -172,7 +172,7 @@ function configurarApp() {
   
   // Redirecionar para página Landing Page Mobile
   document.getElementById("btLandingPageMobile").addEventListener("click", function () {
-      redirecionarParaPagina("landing-page.html");
+      redirecionarParaPagina("../html/landing-page.html");
     });
 };
 
