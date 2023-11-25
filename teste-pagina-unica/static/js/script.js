@@ -335,7 +335,6 @@ function filtrar() {
   ul,
   li,
   i,
-  div,
   txtValue,
   count = 0
 

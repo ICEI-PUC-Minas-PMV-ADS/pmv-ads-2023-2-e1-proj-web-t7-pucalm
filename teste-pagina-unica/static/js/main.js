@@ -28,7 +28,7 @@ function inicializar() {
 document.addEventListener('DOMContentLoaded', inicializar);
 
 /* ********************************** */
-/*           Função Popup             */
+/*           Função Compartilhar      */
 /* ********************************** */
 
 function copiarTexto() {
@@ -38,3 +38,41 @@ function copiarTexto() {
     navigator.clipboard.writeText(copiarTexto.value);
     alert("Link copiado com sucesso!")
 }
+
+
+/* ********************************** */
+/*           Função Filtrar      */
+/* ********************************** */
+function filtrar() {
+    var input,
+    filter,
+    ul,
+    li,
+    i,
+    txtValue,
+    count = 0
+  
+    input = document.getElementById("barraFiltro");
+    ul = document.getElementById("containerMusica");
+  
+    filter = input.value.toUpperCase();
+  
+    li = ul.getElementsByTagName("li");
+  
+    for (i = 0; i < li.length; i++) {
+      textoFiltrado = li[i].getElementsByClassName("songTitle")[0];
+      txtValue = textoFiltrado.textContent || textoFiltrado.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+        count++
+        nomeTitulo = li[i].querySelector(".songTitle");
+        if (nomeTitulo) {
+          nomeTitulo.innerHTML = txtValue.replace(new RegExp(filter, "gi"), (match) => {
+            return "<strong>" + match + "</strong>";
+          })
+        }
+      } else {
+          li[i].style.display = "none";
+      }
+    } 
+  }

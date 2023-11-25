@@ -62,6 +62,7 @@ class Paginas {
 
     // Página Playlist
     else if (this.containerPrincipal.classList.contains("t-playlist")) {
+          
       this.tituloPagina.innerHTML = "Playlist";
       const playlistAtual = this.playlists.playlists.find((playlist) => playlist.nome === genero);
       
@@ -69,6 +70,10 @@ class Paginas {
         await this.carregarConteudoPagina('./static/html/playlists.html');
         this.inserirValoresPlaylist(playlistAtual);
       }
+
+      // Adiciona evento da barra de busca
+      document.getElementById('barraFiltro').addEventListener('keyup', () => this.filtrar());
+    
     }
 
     // Página Feedback
@@ -109,7 +114,7 @@ class Paginas {
 
     // Adicione dinamicamente as músicas ao containerMusica
     playlist.audios.forEach((audio) => {
-      const musicaElemento = document.createElement('div');
+      const musicaElemento = document.createElement('li');
       musicaElemento.className = 'songCard';
       musicaElemento.innerHTML = `
         <div class="songLeft">
@@ -161,6 +166,46 @@ class Paginas {
   acessarFeedback() {
     this.acessarPagina("t-feedback");
   }
+
+  /* ********************************** */
+/*           Função Filtrar      */
+/* ********************************** */
+filtrar() {
+  var input,
+  filter,
+  ul,
+  li,
+  i,
+  txtValue,
+  textoFiltrado,
+  nomeTitulo,
+  count = 0
+
+  input = document.getElementById("barraFiltro");
+  ul = document.getElementById("containerMusica");
+
+  filter = input.value.toUpperCase();
+
+  li = ul.getElementsByTagName("li");
+
+  for (i = 0; i < li.length; i++) {
+    textoFiltrado = li[i].getElementsByClassName("songTitle")[0];
+    txtValue = textoFiltrado.textContent || textoFiltrado.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+      count++
+      nomeTitulo = li[i].querySelector(".songTitle");
+      if (nomeTitulo) {
+        nomeTitulo.innerHTML = txtValue.replace(new RegExp(filter, "gi"), (match) => {
+          return "<strong>" + match + "</strong>";
+        })
+      }
+    } else {
+        li[i].style.display = "none";
+    }
+  } 
+}
+
 }
 
 export default Paginas;
