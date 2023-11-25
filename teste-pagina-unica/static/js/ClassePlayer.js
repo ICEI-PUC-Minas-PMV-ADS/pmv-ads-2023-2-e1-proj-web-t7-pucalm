@@ -101,7 +101,9 @@ class Player {
       this.audio.src = `assets/audios/${audio.genero}/${audio.titulo}.mp3`;
       
       this.atualizarInformacoesAudio(audio)
+     
       this.play()
+    
     }
   }
 
