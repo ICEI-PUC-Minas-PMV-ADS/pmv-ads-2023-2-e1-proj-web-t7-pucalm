@@ -91,6 +91,7 @@ class Player {
 
   carregarFilaDeMusicas(playlistNome) {
     this.song_queue = this.playlists.retornarAudiosDaPlaylist(playlistNome);
+    this.playlist_index = 0
     this.carregarMusica(this.playlist_index);
   }
 
@@ -98,9 +99,8 @@ class Player {
     if (index < this.song_queue.length) {
       const audio = this.song_queue[index];
       this.audio.src = `assets/audios/${audio.genero}/${audio.titulo}.mp3`;
-      this.currentTitle.innerHTML = audio.titulo;
-      this.currentArtist.innerHTML = audio.artista;
-      this.currentThumb.src = `assets/playlists/genero-${audio.genero}.jpg`;
+      
+      this.atualizarInformacoesAudio(audio)
       this.play()
     }
   }
