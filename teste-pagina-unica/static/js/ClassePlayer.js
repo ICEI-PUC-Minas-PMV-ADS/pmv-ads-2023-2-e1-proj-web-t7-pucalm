@@ -51,15 +51,15 @@ class Player {
   }
 
   atualizarTempo() {
-    var tm = audio.currentTime * (100 / audio.duration);
+    var tm = this.audio.currentTime * (100 / this.audio.duration);
     var tmperc = tm + "%";
-    progressoMusica.style.width = "" + tmperc + "";
-    var curmins = Math.floor(audio.currentTime / 60);
-    var cursecs = Math.floor(audio.currentTime - curmins * 60);
+    this.progressoMusica.style.width = "" + tmperc + "";
+    var curmins = Math.floor(this.audio.currentTime / 60);
+    var cursecs = Math.floor(this.audio.currentTime - curmins * 60);
     var dursecs = 0;
-    if (!Number.isNaN(audio.duration)) {
-      var durmins = Math.floor(audio.duration / 60);
-      var dursecs = Math.floor(audio.duration - durmins * 60);
+    if (!Number.isNaN(this.audio.duration)) {
+      var durmins = Math.floor(this.audio.duration / 60);
+      var dursecs = Math.floor(this.audio.duration - durmins * 60);
     } else {
       durmins = 0;
     }
@@ -75,8 +75,8 @@ class Player {
     if (durmins < 10) {
       durmins = "0" + durmins;
     }
-    currentTime.innerHTML = curmins + ":" + cursecs;
-    durationTime.innerHTML = durmins + ":" + dursecs;
+    this.currentTime.innerHTML = curmins + ":" + cursecs;
+    this.durationTime.innerHTML = durmins + ":" + dursecs;
   }
 
   mudarMusica() {
@@ -101,8 +101,28 @@ class Player {
       this.currentTitle.innerHTML = audio.titulo;
       this.currentArtist.innerHTML = audio.artista;
       this.currentThumb.src = `assets/playlists/genero-${audio.genero}.jpg`;
-      this.audio.play();
+      this.play()
     }
+  }
+
+  reproduzirAudio(audio) {
+    this.playlist_index = 0;
+    this.song_queue = this.playlists.retornarAudiosDaPlaylist(audio.genero);
+
+    // Encontrar o índice da música na fila de reprodução
+    const index = this.song_queue.findIndex((a) => a.titulo === audio.titulo);
+
+    if (index !== -1) {
+      this.playlist_index = index;
+      this.carregarMusica(this.playlist_index);
+    }
+  }
+
+  // Método para atualizar as informações do player com base no áudio atual
+  atualizarInformacoesAudio(audio) {
+    this.currentTitle.innerHTML = audio.titulo;
+    this.currentArtist.innerHTML = audio.artista;
+    this.currentThumb.src = `assets/playlists/genero-${audio.genero}.jpg`;
   }
 
   tocarTodaPlaylist(playlistNome) {
