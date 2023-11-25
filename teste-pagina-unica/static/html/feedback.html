@@ -1,9 +1,34 @@
 <div id="container-central">
-    <div>
-      <h1 id="titulo-pagina">Escreva seu feedback</h1>
-    </div>
-    <div>
-      <span id="container-feedback"></span>
-    </div>
+  <div>
+    <h1 id="titulo-pagina">Escreva seu feedback</h1>
   </div>
-  
+  <div>
+    <span id="container-feedback">
+      <div>
+        <div class="container-logo">
+        </div>
+        <div class="container-titulo-subtitlo">
+          <h5>Nos ajude a melhorar! Deixe seu comentário ou proposta de melhoria para que possamos atender suas necessidades cada vez melhor.</h5>
+        </div>
+        <div class="container-form">
+          <form class="form" id="form" action="https://formspree.io/f/mleyzvob" method="POST">
+            <div class="container-nome">
+              <label for="tnome">Nome (Obrigatório)</label>
+              <input type="text" id="tnome" name="nome" placeholder="Nome..." maxlength="255" required><span class="icone-validacao"></span>
+            </div>
+            <div class="container-email">
+              <label for="temail">E-mail (Opcional)</label>
+              <input type="email" id="temail" name="email" placeholder="email@exemplo.com.br" autocomplete="email" maxlength="255"><span class="icone-validacao"></span>
+            </div>
+            <div class="container-msg">
+              <label for="tmsg">Mensagem (Obrigatório)</label>
+              <textarea id="tmsg" name="msg" placeholder="Escreva seu comentário..." maxlength="255" required></textarea><span class="icone-validacao"></span>
+            </div>
+            <div class="container-btn-enviar">
+              <input type="submit" value="Enviar" id="btn-enviar">
+            </div>
+          </form>
+        </div>
+    </span>
+  </div>
+</div>
