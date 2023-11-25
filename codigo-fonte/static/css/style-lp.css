@@ -84,6 +84,7 @@ button {
     font-weight: 700;
     color: white;
     border: 0;
+    cursor: pointer;
 }
 
 /* Seção integrantes */

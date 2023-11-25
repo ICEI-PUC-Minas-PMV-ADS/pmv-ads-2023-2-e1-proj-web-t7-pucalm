@@ -124,7 +124,6 @@ a{
 .titulo-barra-superior h1 {
   font-size: 1.5rem;
   color: #fff;
-  cursor: pointer;
   font-weight: 600;
 }
 
@@ -280,6 +279,13 @@ a{
   margin-top: 10px;
 }
 
+.progresso{
+  background-color: #a0a0a0;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+}
+
 .progresso-tempo {
   color: #a0a0a0;
   font-size: 11px;
@@ -353,6 +359,7 @@ a{
   vertical-align: top;
   margin-top: 0px;
   text-align: initial;
+  padding: 0px;
 }
 
 .audios {
@@ -770,7 +777,7 @@ a{
 
 .personalizacao-select {
   border-radius: 3rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.8rem 0rem 0.8rem 0rem;
   font-weight: 700;
   font-size: 0.8rem;
 }
@@ -788,6 +795,10 @@ a{
 
 .container-navbar-mobile {
   display: none;
+}
+
+.pdt70{
+  padding-top:70%
 }
 
 
@@ -841,9 +852,7 @@ a{
   .botao-compartilhar {
     display: none;
   }
-  .informacoes-playlist {
-    width: 80%;
-  }
+
   .conteudo {
     height: 72%;
     bottom: 18%;
@@ -896,5 +905,33 @@ a{
     position: fixed;
     z-index: 10;
     left: 0;
+  }
+  .espacamento-section{
+    display: grid;
+  }
+  .pdt70{
+    padding: 0%;
+  }
+  .informacoes-playlist{
+    width: 100%;
+    place-content: space-between;
+    display: flex;
+    padding: 0%;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  #barraFiltro{
+    width: 100%;
+  }
+  .imagem-playlist{
+    width: 50%;
+    justify-self: center;
+  }
+  .secao-filtro{
+    width: 100%;
+    margin-top: 3rem;
+  }
+  #albumSongs{
+    display: none;
   }
 }
