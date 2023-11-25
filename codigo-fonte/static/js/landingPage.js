@@ -11,6 +11,6 @@ const botoesExplorar = document.querySelectorAll(".btnExplorarLP");
 
 botoesExplorar.forEach((botao) => {
   botao.addEventListener("click", function () {
-    redirecionarParaPagina("../../index-test-oop.html");
+    redirecionarParaPagina("../../index.html");
   });
 });

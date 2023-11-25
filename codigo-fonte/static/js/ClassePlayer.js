@@ -118,6 +118,9 @@ class Player {
       this.playlist_index = index;
       this.carregarMusica(this.playlist_index);
     }
+
+    // INCLUIR FUNÇÃO PARA GUARDAR NO LOCAL STORAGE OS DADOS DO AUDIOS //
+
   }
 
   // Método para atualizar as informações do player com base no áudio atual
