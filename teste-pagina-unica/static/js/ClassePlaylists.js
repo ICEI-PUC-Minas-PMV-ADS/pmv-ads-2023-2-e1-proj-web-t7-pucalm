@@ -8,17 +8,18 @@ class Playlists {
     // Inicializar a instância da classe Audios
     this.audios = new Audios();
 
+    // Obter a lista de gêneros disponíveis através da instância da classe Audios
+    this.generos = this.audios.retornarGeneros();
+
     // Lista de playlists (gerada automaticamente a partir dos gêneros disponíveis)
     this.playlists = this.gerarPlaylists();
   }
 
   // Método para gerar automaticamente a lista de playlists com base nos gêneros disponíveis
   gerarPlaylists() {
-    // Obter a lista de gêneros disponíveis através da instância da classe Audios
-    const generos = this.audios.retornarGeneros();
 
     // Criar o objeto de cada Playlist com informações de nome, qtd de áudios e audios dela
-    return generos.map((genero) => {
+    return this.generos.map((genero) => {
       const audiosDaPlaylist = this.audios.retornarAudiosPorGenero(genero);
       return {
         nome: genero,
@@ -50,10 +51,12 @@ class Playlists {
 
 export default Playlists;
 
-// Exemplo de uso da classe Playlists
-const playlists = new Playlists();
-var cardPlaylist = playlists.criarCardPlaylist('Foco')
-console.log(cardPlaylist,'\n\n')
+//Exemplo de uso da classe Playlists
+// const playlists = new Playlists();
+// console.log(playlists.generos,'\n\n')
+
+// var cardPlaylist = playlists.criarCardPlaylist('Foco')
+// console.log(cardPlaylist,'\n\n')
 
 
 // const audiosDaPlaylist = playlists.retornarAudiosDaPlaylist('Foco')

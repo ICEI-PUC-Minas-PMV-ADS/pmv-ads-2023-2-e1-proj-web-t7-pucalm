@@ -1,40 +1,52 @@
-import Audios from './ClasseAudios';
-import Playlists from './ClassePlaylists';
-import Player from './ClassePlayer';
+import Audios from './ClasseAudios.js';
+import Playlists from './ClassePlaylists.js';
+import Player from './ClassePlayer.js';
 
 class Paginas {
   constructor(containerPrincipal) {
     this.containerPrincipal = containerPrincipal;
-    this.audios = new Audios();
-    this.playlists = new Playlists(this.audios);
+    this.tituloPagina =  document.querySelector("#titulo-pagina")
+    this.playlists = new Playlists();
     this.player = new Player();
   }
 
-  // Método para carregar o conteúdo da página a partir de um arquivo HTML
-  carregarConteudoPagina(arquivoHTML) {
-    fetch(arquivoHTML)
-      .then((response) => response.text())
-      .then((html) => {
-        this.containerPrincipal.innerHTML = html;
-      }); 
+   // Método para carregar o conteúdo da página a partir de um arquivo HTML
+   async carregarConteudoPagina(arquivoHTML) {
+    const response = await fetch(arquivoHTML);
+    const html = await response.text();
+    this.containerPrincipal.innerHTML = html;
   }
 
   // Método para gerar o conteúdo da página com base na classe do container
-  gerarPagina(genero) {
+  async gerarPagina(genero) {
+    // Página Início
     if (this.containerPrincipal.classList.contains("t-inicio")) {
-      this.carregarConteudoPagina('./caminho/para/inicio.html');
-      // Restante do código
-    } else if (this.containerPrincipal.classList.contains("t-playlist")) {
-      const playlistAtual = this.playlists.playlists.find((playlist) => playlist.nome === genero);
-      if (playlistAtual) {
-        this.carregarConteudoPagina('./static/html/playlists.html');
-        this.inserirValoresPlaylist(playlistAtual);
-        // Restante do código
-      }
-    } else if (this.containerPrincipal.classList.contains("t-feedback")) {
-      this.carregarConteudoPagina('./caminho/para/feedback.html');
+      await this.carregarConteudoPagina('./static/html/inicio.html');
+      this.tituloPagina.innerHTML = "Início";
+
+      const containerPlaylists = document.querySelector("#container-playlists");
+
+      this.playlists.generos.forEach(
+        (genero) => containerPlaylists.innerHTML += '<br>teste troca do HTML' 
+      );
     }
-    
+
+    // Página Playlist
+    else if (this.containerPrincipal.classList.contains("t-playlist")) {
+      this.tituloPagina.innerHTML = "Playlist";
+      const playlistAtual = this.playlists.playlists.find((playlist) => playlist.nome === genero);
+
+      if (playlistAtual) {
+        await this.carregarConteudoPagina('./static/html/playlists.html');
+        this.inserirValoresPlaylist(playlistAtual);
+      }
+    }
+
+    // Página Feedback
+    else if (this.containerPrincipal.classList.contains("t-feedback")) {
+      await this.carregarConteudoPagina('./static/html/feedback.html');
+      this.tituloPagina.innerHTML = "Feedback";
+    }
   }
 
   inserirValoresPlaylist(playlist) {
