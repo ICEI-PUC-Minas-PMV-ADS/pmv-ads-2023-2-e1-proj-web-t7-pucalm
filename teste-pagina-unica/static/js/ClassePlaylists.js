@@ -31,9 +31,7 @@ class Playlists {
   // Retorna os áudios de uma playlist específica
   retornarAudiosDaPlaylist(genero) {
     return this.audios.retornarAudiosPorGenero(genero);
-  }
-
- 
+  } 
 
 }
 

@@ -124,7 +124,7 @@ class Paginas {
 
       // Adiciona um evento de clique ao elemento da música
       musicaElemento.addEventListener('click', () => {
-       this.player.reproduzirAudio(audio.arquivo);
+       this.player.reproduzirAudio(audio.titulo);
       });
 
       // Adicione o elemento da música ao containerMusica
