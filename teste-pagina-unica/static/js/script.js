@@ -72,12 +72,12 @@ function gerarPagina(genero) {
           " Músicas" +
           '</div><img id="tocar-playlist-toda" src="assets/imgs/play_musicbar.png" alt="Play" onclick="tocarTodaPlaylist(\'' +
           genero +
-          '\')"></div><div class="secao-grid tamanho-20 secao-filtro"><div class="alinhar-direita"><select name="ordenar_por" class="personalizacao-select"><option value="1">Ordenar por</option><option value="2">Nome</option><option value="3">Data</option><option value="4">Favorito</option><option value="5">Mais tocadas</option></select></div><div class="secao-flex centralizar alinhar-direita" style="padding-top:70%"></div></div></div></div><div id="containerMusica"></div>';
+          '\')"></div><div class="secao-grid tamanho-20 secao-filtro"><div class="alinhar-direita"><input onkeyup="filtrar()" placeholder="O que você procura?" id="select-filtro" class="personalizacao-select"></div><div class="secao-flex centralizar alinhar-direita" style="padding-top:70%"></div></div></div></div><ul id="containerMusica"></ul>';
         btnAddSong = document.querySelector("#addSongButton");
         var containerMusica = document.querySelector("#containerMusica");
         audios[1].forEach(function (elem) {
           containerMusica.innerHTML +=
-            '<div class="songCard" onclick="reproduzirAudio(\'' +
+            '<li class="songCard" onclick="reproduzirAudio(\'' +
             elem[3] +
             "')\" oncontextmenu=\"showContext('" +
             elem[3] +
@@ -321,4 +321,45 @@ function copiarTexto() {
     copiarTexto.setSelectionRange(0, 99999); // Versão mobile
     navigator.clipboard.writeText(copiarTexto.value);
     alert("Link copiado com sucesso!")
+}
+
+
+
+
+/* *********************************** */
+/*           Função Filtro             */
+/* *********************************** */
+function filtrar() {
+  var input,
+  filter,
+  ul,
+  li,
+  i,
+  div,
+  txtValue,
+  count = 0
+
+  input = document.getElementById("select-filtro");
+  ul = document.getElementById("containerMusica");
+
+  filter = input.value.toUpperCase();
+
+  li = ul.getElementsByTagName("li");
+
+  for (i = 0; i < li.length; i++) {
+    textoFiltrado = li[i].getElementsByClassName("songTitle")[0];
+    txtValue = textoFiltrado.textContent || textoFiltrado.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+      count++
+      nomeTitulo = li[i].querySelector(".songTitle");
+      if (nomeTitulo) {
+        nomeTitulo.innerHTML = txtValue.replace(new RegExp(filter, "gi"), (match) => {
+          return "<strong>" + match + "</strong>";
+        })
+      }
+    } else {
+        li[i].style.display = "none";
+    }
+  } 
 }

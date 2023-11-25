@@ -24,6 +24,10 @@ body {
   overflow-x: hidden;
 }
 
+li{
+  list-style-type: none;
+}
+
 #logo {
   margin-bottom: 15px;
   margin-left: 15px;

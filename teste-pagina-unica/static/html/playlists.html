@@ -13,17 +13,11 @@
       </div>
       <div class="secao-grid tamanho-20 secao-filtro">
         <div class="alinhar-direita">
-          <select name="ordenar_por" class="personalizacao-select">
-            <option value="1">Ordenar por</option>
-            <option value="2">Nome</option>
-            <option value="3">Data</option>
-            <option value="4">Favorito</option>
-            <option value="5">Mais tocadas</option>
-          </select>
+          <input onkeyup="filtrar()" placeholder="O que você procura?" id="select-filtro" class="personalizacao-select">
         </div>
         <div class="secao-flex centralizar alinhar-direita" style="padding-top:70%"></div>
       </div>
     </div>
   </div>
-  <div id="containerMusica"></div>
+  <ul id="containerMusica"></ul>
   
