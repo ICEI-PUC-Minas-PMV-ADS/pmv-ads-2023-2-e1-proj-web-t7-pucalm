@@ -131,7 +131,26 @@ class Player {
       "assets/albums/album-" + this.song_queue[0][2] + ".jpg";
 
     this.audio.play();
+  };
+
+  // Iniciar audio clicando no botão Play da playlist
+tocarTodaPlaylist(genero) {
+  console.log(`tocarPlaylist: ${genero}`)
+  //   playlist_index = 0;
+    // let audios = retornarAudiosDaPlaylist(genero);
+    // song_queue = [];
+    // audios[1].forEach(function (elem) {
+    //   song_queue.push(elem);
+    // });
+    // audio.pause();
+    // audio.currentTime = 0;
+    // audio = new Audio();
+  
+    // if(song_queue.length > 0){
+    //   reproduzirAudio(song_queue[0][3]);
+    // }
   }
 }
+
 
 export default Player;

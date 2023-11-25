@@ -3,7 +3,6 @@ import Audios from "./ClasseAudios.js";
 
 class Playlists {
   constructor() {
-    this.caminhoCapas = './assets/playlists/'
 
     // Inicializar a instância da classe Audios
     this.audios = new Audios();
@@ -34,18 +33,7 @@ class Playlists {
     return this.audios.retornarAudiosPorGenero(genero);
   }
 
-  // Cria um card de playlist para exibição na interface
-  criarCardPlaylist(genero) {
-    return `<div class='card' onclick='this.acessarPlaylist("${genero}")'>
-  <div class='thumbnail'>
-    <img src='${this.caminhoCapas}genero-${genero}.jpg' alt='' class='img-thumb'>
-  </div>
-  <div>
-    <p class='description'>${genero}</p>
-    <p style="font-size:14px; padding-left: 0.7rem; text-align: left;">Ouvir agora</p>
-  </div>
-</div>`;
-  }
+ 
 
 }
 
@@ -61,7 +49,6 @@ export default Playlists;
 
 // const audiosDaPlaylist = playlists.retornarAudiosDaPlaylist('Foco')
 // console.log(audiosDaPlaylist,'\n\n');
-
 
 // console.log(playlists.playlists,'\n\n');
 // console.log(playlists.playlists[0],'\n\n');

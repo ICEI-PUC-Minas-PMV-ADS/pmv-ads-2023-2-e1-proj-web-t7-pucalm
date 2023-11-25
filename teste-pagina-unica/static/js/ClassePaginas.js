@@ -8,6 +8,7 @@ class Paginas {
     this.tituloPagina =  document.querySelector("#titulo-pagina")
     this.playlists = new Playlists();
     this.player = new Player();
+    this.caminhoCapas = './assets/playlists/'
   }
 
    // Método para carregar o conteúdo da página a partir de um arquivo HTML
@@ -15,6 +16,25 @@ class Paginas {
     const response = await fetch(arquivoHTML);
     const html = await response.text();
     this.containerPrincipal.innerHTML = html;
+  }
+
+   // Método para criar um card de playlist
+  criarCardPlaylist(genero) {
+    const cardPlaylist = document.createElement('div');
+    cardPlaylist.id = `playlist-${genero}`;
+    cardPlaylist.className = 'card';
+
+    cardPlaylist.innerHTML = `
+      <div class='thumbnail'>
+        <img src='${this.caminhoCapas}genero-${genero}.jpg' alt='' class='img-thumb'>
+      </div>
+      <div>
+        <p class='description'>${genero}</p>
+        <p style="font-size:14px; padding-left: 0.7rem; text-align: left;">Ouvir agora</p>
+      </div>
+    `;
+
+    return cardPlaylist;
   }
 
   // Método para gerar o conteúdo da página com base na classe do container
@@ -26,16 +46,25 @@ class Paginas {
 
       const containerPlaylists = document.querySelector("#container-playlists");
 
-      this.playlists.generos.forEach(
-        (genero) => containerPlaylists.innerHTML += '<br>teste troca do HTML' 
-      );
+      this.playlists.generos.forEach((genero) => {
+        // Cria o card de playlist
+        const cardPlaylist = this.criarCardPlaylist(genero);
+    
+        // Adiciona o evento de clique ao card
+        cardPlaylist.addEventListener('click', () => {
+          this.acessarPlaylist(genero);
+        });
+    
+        // Adiciona o card ao container
+        containerPlaylists.appendChild(cardPlaylist);
+      });
     }
 
     // Página Playlist
     else if (this.containerPrincipal.classList.contains("t-playlist")) {
       this.tituloPagina.innerHTML = "Playlist";
       const playlistAtual = this.playlists.playlists.find((playlist) => playlist.nome === genero);
-
+      
       if (playlistAtual) {
         await this.carregarConteudoPagina('./static/html/playlists.html');
         this.inserirValoresPlaylist(playlistAtual);
@@ -50,17 +79,60 @@ class Paginas {
   }
 
   inserirValoresPlaylist(playlist) {
-    const containerCentral = document.getElementById('container-central');
-    const albumTitle = document.getElementById('albumTitle');
+    const albumTitle = document.getElementById('textoAlbumTitle');
     const albumSongs = document.getElementById('albumSongs');
+    const imgAlbumTitle = document.getElementById('imgAlbumTitle');
+    const tocarPlaylistImg = document.getElementById('tocar-playlist-toda');
+    const containerMusica = document.getElementById('containerMusica');
 
-    containerCentral.innerHTML = containerCentral.innerHTML
-      .replace('{Genero}', playlist.nome)
-      .replace('{Quantidade}', playlist.quantidade);
+    // Substitua o caminho da imagem conforme necessário
+    const caminhoImagem = `${this.caminhoCapas}genero-${playlist.nome}.jpg`;
+  
+    albumTitle.innerHTML = `${playlist.nome}`;
 
-    albumTitle.innerHTML = `<h1>${playlist.nome}</h1>`;
-    albumSongs.innerHTML = `${playlist.quantidade} Músicas`;
+    if (playlist.quantidade == 1) {
+      albumSongs.innerHTML = `${playlist.quantidade} Áudio`;
+    } else{
+      albumSongs.innerHTML = `${playlist.quantidade} Áudios`;
+    }
+  
+    // Defina o atributo src do imgAlbumTitle
+    imgAlbumTitle.src = caminhoImagem;
+
+    // Adiciona um evento de clique ao botão de tocar playlist
+    tocarPlaylistImg.addEventListener('click', () => {
+      this.player.tocarTodaPlaylist(playlist.nome);
+  });
+
+    // Limpa o conteúdo atual do containerMusica
+    containerMusica.innerHTML = '';
+
+    // Adicione dinamicamente as músicas ao containerMusica
+    playlist.audios.forEach((audio) => {
+      const musicaElemento = document.createElement('div');
+      musicaElemento.className = 'songCard';
+      musicaElemento.innerHTML = `
+        <div class="songLeft">
+          <img class="icon-sm" src="assets/icons/music-player-grey.png">
+          <div class="songTitle">${audio.titulo}</div>
+          <div class="songDetail">
+            <span class="songArtist">${audio.artista}</span>
+          </div>
+        </div>
+        <div class="songRight">${audio.duracao}</div>
+      `;
+
+      // Adiciona um evento de clique ao elemento da música
+      musicaElemento.addEventListener('click', () => {
+       this.player.reproduzirAudio(audio.arquivo);
+      });
+
+      // Adicione o elemento da música ao containerMusica
+      containerMusica.appendChild(musicaElemento);
+    });
+
   }
+  
 
   // Método para acessar uma página específica
   acessarPagina(classe, nome_playlist) {
