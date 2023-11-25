@@ -16,9 +16,25 @@ function inicializar() {
   document.getElementById('btFeedbackMobile').addEventListener('click', () => paginas.acessarFeedback());
   document.getElementById('btLandingPageMobile').addEventListener('click', () => window.location.href = './static/html/landing-page.html');
 
+  // Adiciona evento do botão Compartilhar
+  document.getElementById('botao-popup').addEventListener('click', () => copiarTexto());
+
+
   // Define a página inicial
   paginas.acessarInicio();
 }
 
 // Aguarda o carregamento do DOM antes de inicializar
 document.addEventListener('DOMContentLoaded', inicializar);
+
+/* ********************************** */
+/*           Função Popup             */
+/* ********************************** */
+
+function copiarTexto() {
+    var copiarTexto = document.getElementById("input-compartilhar");
+    copiarTexto.select();
+    copiarTexto.setSelectionRange(0, 99999); // Versão mobile
+    navigator.clipboard.writeText(copiarTexto.value);
+    alert("Link copiado com sucesso!")
+}
