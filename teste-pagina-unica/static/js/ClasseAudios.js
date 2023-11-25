@@ -6,7 +6,7 @@ class Audios {
     // Array para armazenar os objetos de áudio
     this.listaDeAudios = [];
 
-    // Inicializar os dados dos áudios
+    // Carrega os dados dos áudios para listaDeAudios
     this.carregarListaAudios();
   }
 

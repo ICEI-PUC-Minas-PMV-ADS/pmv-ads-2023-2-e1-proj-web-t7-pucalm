@@ -16,35 +16,38 @@ class Paginas {
       .then((response) => response.text())
       .then((html) => {
         this.containerPrincipal.innerHTML = html;
-      });
-  }
-
-  // Método para gerar playlists com base nos gêneros disponíveis
-  gerarPlaylists() {
-    const generos = this.playlists.gerarPlaylists();
-    return generos.map((genero) => genero.charAt(0).toUpperCase() + genero.slice(1));
+      }); 
   }
 
   // Método para gerar o conteúdo da página com base na classe do container
   gerarPagina(genero) {
     if (this.containerPrincipal.classList.contains("t-inicio")) {
       this.carregarConteudoPagina('./caminho/para/inicio.html');
-      const containerPlaylists = document.querySelector("#container-playlists");
-      const generos = this.gerarPlaylists();
-
-      generos.forEach((genero) => {
-        containerPlaylists.innerHTML += this.playlists.criarCardPlaylist(genero);
-      });
-
-    } else if (this.containerPrincipal.classList.contains("t-playlist")) {
-      this.carregarConteudoPagina('./caminho/para/playlist.html');
       // Restante do código
-
+    } else if (this.containerPrincipal.classList.contains("t-playlist")) {
+      const playlistAtual = this.playlists.playlists.find((playlist) => playlist.nome === genero);
+      if (playlistAtual) {
+        this.carregarConteudoPagina('./static/html/playlists.html');
+        this.inserirValoresPlaylist(playlistAtual);
+        // Restante do código
+      }
     } else if (this.containerPrincipal.classList.contains("t-feedback")) {
       this.carregarConteudoPagina('./caminho/para/feedback.html');
-      // Restante do código
     }
-    // Restante do método
+    
+  }
+
+  inserirValoresPlaylist(playlist) {
+    const containerCentral = document.getElementById('container-central');
+    const albumTitle = document.getElementById('albumTitle');
+    const albumSongs = document.getElementById('albumSongs');
+
+    containerCentral.innerHTML = containerCentral.innerHTML
+      .replace('{Genero}', playlist.nome)
+      .replace('{Quantidade}', playlist.quantidade);
+
+    albumTitle.innerHTML = `<h1>${playlist.nome}</h1>`;
+    albumSongs.innerHTML = `${playlist.quantidade} Músicas`;
   }
 
   // Método para acessar uma página específica
