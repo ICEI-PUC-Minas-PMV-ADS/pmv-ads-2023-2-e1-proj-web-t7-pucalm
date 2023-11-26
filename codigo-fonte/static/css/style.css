@@ -242,11 +242,9 @@ a{
 
 #controles {
   justify-items: center;
-  padding-left: 30%;
-  padding-right: 30%;
   min-width: auto;
-  display: grid;
-  grid-template-columns: 5rem 5rem 5rem;
+  display: flex;
+  place-content: space-evenly;
 }
 
 .controle-item {
@@ -256,6 +254,7 @@ a{
 
 .controle-item-especial {
   width: 25px;
+  height: 25px;
   cursor: pointer;
 }
 
@@ -303,14 +302,12 @@ a{
   position: relative;
 }
 
-#input-seeker,
-#input-volume {
+#input-seeker{
   width: 100%;
   height: 12px;
   display: inline-flex;
   position: absolute;
   cursor: pointer;
-  top: -10;
   left: 0;
   z-index: 10;
   opacity: 0;
@@ -368,6 +365,10 @@ a{
 
 .capa-album {
   width: 100%;
+}
+
+.player2{
+  display: none;
 }
 
 #container-feedback {
@@ -801,7 +802,6 @@ a{
   padding-top:70%
 }
 
-
 /* popup */
 
 .modal-title{
@@ -929,9 +929,52 @@ a{
   }
   .secao-filtro{
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   #albumSongs{
     display: none;
+  }
+  #tocar-playlist-toda {
+    margin-top: 0rem;
+  }
+  .progresso-tempo {
+    display: none;
+  }
+  #controles{
+    display: none;
+  }
+  #player{
+    width: 100%;
+  }
+  #container-player > div{
+    padding: 0px;
+    place-content: space-between;
+  }
+  #artista-atual{
+    display: none;
+  }
+  .secao-player{
+    width: 90%;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .versao-mobile-audio{
+    display: flex;
+    align-items: center;
+  }
+  #detalhe-atual{
+    top: 0;
+  }
+  #titulo-atual{
+    padding-left: 1rem;
+  }
+  .progresso, #progressBarBg-seeker{
+    height: 40px;
+    width: 90%;
+  }
+  #progresso-barra{
+    bottom: 50%;
+    position: fixed;
   }
 }

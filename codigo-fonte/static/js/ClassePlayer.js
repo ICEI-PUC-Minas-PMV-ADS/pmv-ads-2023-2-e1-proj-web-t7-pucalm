@@ -4,7 +4,7 @@ import Playlists from "./ClassePlaylists.js";
 class Player {
   constructor() {
     this.audio = new Audio();
-    this.btnPlay = document.querySelector("#controle-play");
+    this.btnPlay = document.querySelectorAll(".controle-play");
     this.seekSlider = document.querySelector("#progresso-barra");
     this.currentTime = document.querySelector("#current");
     this.durationTime = document.querySelector("#remaining");
@@ -19,7 +19,9 @@ class Player {
     this.song_queue = [];
     this.playlist_index = 0;
 
-    this.btnPlay.addEventListener("click", () => this.togglePlayPause());
+    this.btnPlay.forEach((botaoPlay) => {
+      botaoPlay.addEventListener("click", () => this.togglePlayPause());
+    });
     this.audio.addEventListener("timeupdate", () => this.atualizarTempo());
     this.audio.addEventListener("ended", () => this.mudarMusica());
 
@@ -42,12 +44,16 @@ class Player {
     this.audio.play().catch((error) => {
       console.error("Erro ao iniciar a reprodução:", error);
     });
-    this.btnPlay.src = "assets/icons/pause.png";
+    this.btnPlay.forEach((botaoPlay) => {
+      botaoPlay.src = "assets/icons/pause.png";
+    });
   }
 
   pause() {
     this.audio.pause();
-    this.btnPlay.src = "assets/icons/play.png";
+    this.btnPlay.forEach((botaoPlay) => {
+      botaoPlay.src = "assets/icons/play.png";
+    });
   }
 
   atualizarTempo() {
@@ -85,7 +91,9 @@ class Player {
       this.carregarMusica(this.playlist_index);
     } else {
       this.audio.pause();
-      this.btnPlay.src = "assets/icons/pause.png";
+      this.btnPlay.forEach((botaoPlay) => {
+        botaoPlay.src = "assets/icons/pause.png";
+      });
     }
   }
 
