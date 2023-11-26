@@ -12,7 +12,7 @@ class Paginas {
   }
 
    // Método para carregar o conteúdo da página a partir de um arquivo HTML
-   async carregarConteudoPagina(arquivoHTML) {
+    async carregarConteudoPagina(arquivoHTML) {
     const response = await fetch(arquivoHTML);
     const html = await response.text();
     this.containerPrincipal.innerHTML = html;

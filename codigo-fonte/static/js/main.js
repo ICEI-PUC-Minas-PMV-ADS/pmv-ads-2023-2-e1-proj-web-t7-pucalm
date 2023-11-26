@@ -16,6 +16,7 @@ function inicializar() {
   // Adiciona eventos aos botões do menu Nav do Mobile
   document.getElementById('btInicioMobile').addEventListener('click', () => paginas.acessarInicio());
   document.getElementById('btFeedbackMobile').addEventListener('click', () => paginas.acessarFeedback());
+  document.getElementById('btHistoricoMobile').addEventListener('click', () => paginas.acessarHistorico());
   document.getElementById('btLandingPageMobile').addEventListener('click', () => window.location.href = './static/html/landing-page.html');
 
   // Adiciona evento do botão Compartilhar

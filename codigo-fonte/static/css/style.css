@@ -57,7 +57,7 @@ a{
 
 #container-player {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: 12%;
   bottom: 0;
   left: 0;
@@ -798,6 +798,10 @@ a{
   display: none;
 }
 
+#grafico{
+  border: thin solid white;
+}
+
 .pdt70{
   padding-top:70%
 }
@@ -883,7 +887,7 @@ a{
   }
 
   .botao-navbar-mobile {
-    padding: 5% 10% 5% 10%;
+    padding: 5% 5% 5% 5%;
     width: 80%;
     font-size: 0.9rem;
     font-weight: 600;
@@ -946,6 +950,9 @@ a{
   #player{
     width: 100%;
   }
+  #container-player{
+    padding: 0px;
+  }
   #container-player > div{
     padding: 0px;
     place-content: space-between;
@@ -954,14 +961,13 @@ a{
     display: none;
   }
   .secao-player{
-    width: 90%;
+    width: 100%;
     display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
   }
   .versao-mobile-audio{
     display: flex;
     align-items: center;
+    padding: 0rem 1rem 0rem 1rem;
   }
   #detalhe-atual{
     top: 0;
@@ -971,7 +977,7 @@ a{
   }
   .progresso, #progressBarBg-seeker{
     height: 40px;
-    width: 90%;
+    width: 100%;
   }
   #progresso-barra{
     bottom: 50%;
