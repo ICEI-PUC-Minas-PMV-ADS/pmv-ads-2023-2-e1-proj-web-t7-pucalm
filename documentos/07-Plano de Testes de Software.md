@@ -27,7 +27,7 @@ Foram programados 05 testes no software, o que incluem testes programados nos re
 | Requisitos Associados | RF-02 |
 | Objetivo do Teste | Reproduzir um áudio escolhido fazendo uso do player de áudio |
 | Passos | <p>01. A partir da [Página Inicial](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/index.html), clicar em uma das cinco playlists (**Ansiedade, Estresse, Foco, Meditação ou Relaxamento**.</p> <p>02. A partir da lista de áudios da playlist selecionada, clicar sobre o áudio selecionado.</p> <p></p> <p></p> <p></p> <p></p> |
-| Critérios de êxito | Indicar os critérios de êxito  |
+| Critérios de êxito | O aúdio selecionado inicia a reprodução. |
 | Responsável por elaborar o caso de Teste | Will Lima |
 
 --------------------------------------------------------------------------------
@@ -36,8 +36,8 @@ Foram programados 05 testes no software, o que incluem testes programados nos re
 |:---|:---|
 | Requisitos Associados | RF-02 |
 | Objetivo do Teste | Reproduzir um áudio fazendo uso do player da playlist |
-| Passos | <p>01. A partir da [Página Inicial](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/index.html), clicar em uma das cinco playlists (**Ansiedade, Estresse, Foco, Meditação ou Relaxamento**.</p> <p>02. Clicar no ícone (botão) _Player_, abaixo do nome da playlist selcionada.</p> <p>03. Após início da reprodução do áudio, clicar no botão _Pausa_ do player (barra </p> <p></p> <p></p> <p></p> |
-| Critérios de êxito | Indicar os critérios de êxito  |
+| Passos | <p>01. A partir da [Página Inicial](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/index.html), clicar em uma das cinco playlists (**Ansiedade, Estresse, Foco, Meditação ou Relaxamento**.</p> <p>02. Clicar no ícone (botão) _Player_, abaixo do nome da playlist selcionada.</p> <p>03. Após início da reprodução do áudio, clicar no botão _Pausa_ do player (barra inferior). </p> <p></p> <p></p> <p></p> |
+| Critérios de êxito | O primeiro áudio da playlist selecionada é reproduzido e a reprodução é pausada após o clique no botão de pausa. |
 | Responsável por elaborar o caso de Teste | Will Lima |
 
 --------------------------------------------------------------------------------
