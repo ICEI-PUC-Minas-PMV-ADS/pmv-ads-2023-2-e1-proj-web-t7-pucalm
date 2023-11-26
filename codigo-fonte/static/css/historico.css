@@ -1,0 +1,10 @@
+#areaGrafico {
+    max-width: 850px;
+    margin: 0 auto;
+    height: 250px;
+  }
+  
+  #areaGrafico h3 {
+    margin-top: 2em;
+    margin-bottom: 0;
+  }

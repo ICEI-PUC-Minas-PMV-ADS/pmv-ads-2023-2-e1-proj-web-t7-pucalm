@@ -81,6 +81,12 @@ class Paginas {
       await this.carregarConteudoPagina('./static/html/feedback.html');
       this.tituloPagina.innerHTML = "Feedback";
     }
+
+    // Página Histórico
+    else if (this.containerPrincipal.classList.contains("t-historico")) {
+      await this.carregarConteudoPagina('./static/html/historico.html');
+      this.tituloPagina.innerHTML = "Meu Histórico";
+    }
   }
 
   inserirValoresPlaylist(playlist) {
@@ -130,10 +136,7 @@ class Paginas {
       // Adiciona um evento de clique ao elemento da música
       musicaElemento.addEventListener('click', () => {
         // Aqui, chame a função para reproduzir a música
-        this.player.reproduzirAudio({
-          genero: playlist.nome,
-          titulo: audio.titulo
-        });
+        this.player.reproduzirAudio(audio);
       });
 
       // Adicione o elemento da música ao containerMusica
@@ -142,7 +145,6 @@ class Paginas {
 
   }
   
-
   // Método para acessar uma página específica
   acessarPagina(classe, nome_playlist) {
     this.containerPrincipal.removeAttribute("class");
@@ -165,6 +167,10 @@ class Paginas {
 
   acessarFeedback() {
     this.acessarPagina("t-feedback");
+  }
+
+  acessarHistorico() {
+    this.acessarPagina("t-historico");
   }
 
   /* ********************************** */

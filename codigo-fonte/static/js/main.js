@@ -7,9 +7,11 @@ function inicializar() {
   const paginas = new Paginas(containerPrincipal);
 
   // Adiciona eventos aos botões do menu Lateral
-  document.getElementById('logo').addEventListener('click', () => window.location.href = './static/html/landing-page.html');
+  document.getElementById('menu-lateral-landingpage').addEventListener('click', () => window.location.href = './static/html/landing-page.html');
   document.getElementById('menu-lateral-inicio').addEventListener('click', () => paginas.acessarInicio());
   document.getElementById('menu-lateral-feedback').addEventListener('click', () => paginas.acessarFeedback());
+  document.getElementById('logo').addEventListener('click', () => window.location.href = './static/html/landing-page.html');
+  document.getElementById('menu-lateral-historico').addEventListener('click', () => paginas.acessarHistorico());
 
   // Adiciona eventos aos botões do menu Nav do Mobile
   document.getElementById('btInicioMobile').addEventListener('click', () => paginas.acessarInicio());

@@ -1,4 +1,5 @@
 import Playlists from "./ClassePlaylists.js";
+import CrudHistorico from "./classeCrudHistorico.js";
 
 
 class Player {
@@ -23,11 +24,10 @@ class Player {
     this.audio.addEventListener("timeupdate", () => this.atualizarTempo());
     this.audio.addEventListener("ended", () => this.mudarMusica());
 
-    // Instância da classe Playlists
+    // Instância da classe Playlists e CrudHistorico
     this.playlists = new Playlists();
+    this.crud = new CrudHistorico();
 
-    // Inicializa a fila de músicas com base em uma playlist (por exemplo, a primeira)
-    // this.carregarFilaDeMusicas("Foco");
   }
 
   togglePlayPause() {
@@ -120,6 +120,12 @@ class Player {
     }
 
     // INCLUIR FUNÇÃO PARA GUARDAR NO LOCAL STORAGE OS DADOS DO AUDIOS //
+    
+    audio.dataAdicao = 'data'
+    this.crud.createHistorico(audio)
+    console.log(`reproduzirAudio: ${audio.titulo}`)
+    const dadosGrafico = this.crud.readHistoricos()
+    console.log(dadosGrafico)
 
   }
 
