@@ -26,7 +26,7 @@ Foram programados 05 testes no software, o que incluem testes programados nos re
 |:---|:---|
 | Requisitos Associados | RF-02 |
 | Objetivo do Teste | Reproduzir um áudio escolhido fazendo uso do player de áudio |
-| Passos | <p>01. A partir da [Página Inicial](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/index.html), clicar em uma das cinco playlists (**Ansiedade, Estresse, Foco, Meditação ou Relaxamento**.</p> <p>02. A partir da lista de áudios da playlist selecionada, clicar sobre o áudio selecionado.</p> <p></p> <p></p> <p></p> <p></p> |
+| Passos | <p>01. A partir da [Página Inicial](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/index.html), clicar em uma das cinco playlists (**Ansiedade, Estresse, Foco, Meditação ou Relaxamento**).</p> <p>02. A partir da lista de áudios da playlist selecionada, clicar sobre o áudio selecionado.</p> <p></p> <p></p> <p></p> <p></p> |
 | Critérios de êxito | O aúdio selecionado inicia a reprodução. |
 | Responsável por elaborar o caso de Teste | Will Lima |
 
@@ -36,7 +36,7 @@ Foram programados 05 testes no software, o que incluem testes programados nos re
 |:---|:---|
 | Requisitos Associados | RF-02 |
 | Objetivo do Teste | Reproduzir um áudio fazendo uso do player da playlist |
-| Passos | <p>01. A partir da [Página Inicial](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/index.html), clicar em uma das cinco playlists (**Ansiedade, Estresse, Foco, Meditação ou Relaxamento**.</p> <p>02. Clicar no ícone (botão) _Player_, abaixo do nome da playlist selcionada.</p> <p>03. Após início da reprodução do áudio, clicar no botão _Pausa_ do player (barra inferior). </p> <p></p> <p></p> <p></p> |
+| Passos | <p>01. A partir da [Página Inicial](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/index.html), clicar em uma das cinco playlists (**Ansiedade, Estresse, Foco, Meditação ou Relaxamento**).</p> <p>02. Clicar no ícone (botão) _Player_, abaixo do nome da playlist selcionada.</p> <p>03. Após início da reprodução do áudio, clicar no botão _Pausa_ do player (barra inferior). </p> <p></p> <p></p> <p></p> |
 | Critérios de êxito | O primeiro áudio da playlist selecionada é reproduzido e a reprodução é pausada após o clique no botão de pausa. |
 | Responsável por elaborar o caso de Teste | Will Lima |
 
@@ -47,7 +47,7 @@ Foram programados 05 testes no software, o que incluem testes programados nos re
 | Requisitos Associados | RF-03 |
 | Objetivo do Teste | Fornecer feedback |
 | Passos | <p>01. A partir de qualquer página aberta da aplicação, na barra lateral esquerda.</p> <p>02. Clicar em *Feedback*.</p> <p>03. Clicar no campo preenchível (vou trocar essa palavra) abaixo de _Nome (Obrigatório)_.</p> <p>04. Preencher com o nome que se identifica.</p> <p>05. Opcionalmente, clicar no campo digitável abaixo de _E-mail (Opcional)_.</p> <p>06. Opcional. Preencher com e-mail.</p> <p>07. Clicar no campo digitável abaixo de _Mensagem (Obrigatório)_.</p> <p>08. Escrever mensagem de feedback.</p> <p>09. Clicar no botão _Enviar_, que se encontra no final da página.</p> <p>10. Aguardar a mensagem de agradecimento pela submissão.</p>|
-| Critérios de êxito | Tela de submissão de feedback é exibida com a mensagem:<p>"Thanks! The form was submitted successfully."</p>  |
+| Critérios de êxito | A tela de submissão de feedback é exibida com a mensagem:<p>"Thanks! The form was submitted successfully."</p>  |
 | Responsável por elaborar o caso de Teste | Will Lima |
 
 --------------------------------------------------------------------------------
