@@ -209,7 +209,39 @@
 
 #### Sprint 4
 
+##### Planejamento
 
+&emsp;Durante a Sprint 4, os requisitos do projeto foram atendidos de maneira geral. Isso exigiu uma revisão crítica da estrutura do código existente e modificações nas especificações para garantir uma entrega consistente.
+
+&emsp;Nas reuniões de planejamento, foram considerados os seguintes pontos-chave para a conclusão da entrega do produto:
+
+- Identificação dos requisitos que já foram atendidos
+- Identificação dos requisitos que ainda não foram atendidos, mas que serão atendidos
+- Identificação dos requisitos que ainda não foram atendidos e que não serão atendidos (indicando uma alteração no escopo do projeto)
+
+Além disso, durante as reuniões, as tarefas foram redistribuídas com base no conhecimento técnico dos membros da equipe. Esta abordagem permitiu uma execução mais célere.
+
+##### Execução e alterações
+
+&emsp;Alterações nas especificações do projeto (requisitos funcionais) e escopo geral:
+
+|Requisito    | RF-03 |
+|:---|:---|
+| Requisito original | Os usuários devem ser capazes de fornecer feedback sobre os áudios e meditações guiadas e a plataforma em geral. |
+| Alteração | Redirecionamento da mensagem de feedback |
+| Justificativa | Para o atendimento da LGDP, bem como para homogeneização das aplicações externas utilizadas, foi utilizado um endereço de e-mail para centralização das mensagens de feedback da mesma plataforma da aplicação de coleta dos feedbacks. O endereço de e-mail _pucalm@mail.io_ foi adotado como padrão. |
+
+|Requisito    | RF-04 |
+|:---|:---|
+| Requisito original | Os usuários devem ter a opção de compartilhar as playlists que tenham se interessado. |
+| Requisito atualizado | Os usuários devem ter a opção de compartilhar ~as playlists que tenham se interessado~ o website. |
+| Justificativa | A opção de compartilhamento foi aberta para o compartilhamento da aplicação web a partir de múltiplas páginais da aplicação ao invés do compartilhamento de playlists. A codificação para o compartilhamento de cada playlist individual seria mais laborosa e requeriria mais conhecimentos da linguagem de programação. |
+
+|Requisito    | RF-05 |
+|:---|:---|
+| Requisito original | Os usuários devem ser capazes de reorganizar e filtrar os áudios. |
+| Requisito atualizado | Os usuários devem ser capazes ~de reorganizar e~ filtrar os áudios. |
+| Justificativa | Decidido em votação em reunião, com decisão com peso maior para os desenvolvedores principais, por motivos similares aos da alteração no RF-04, a ordenação e reorganização de áudios deixou de fazer parte do escopo da aplicação para que se desenvolvesse mais producentemente o filtro e design amigável do website. |
 
 ### Ferramentas
 
@@ -228,4 +260,4 @@
 
 ### Estratégia de Organização de Codificação 
 
-Todos os artefatos relacionados a implementação e visualização dos conteúdos do projeto do site deverão ser inseridos na pasta [codigo-fonte](http://https://github.com/ICEI-PUC-Minas-PMV-ADS/WebApplicationProject-Template-v2/tree/main/codigo-fonte). Consulte também a nossa sugestão referente a estratégia de organização de codificação a ser adotada pela equipe de desenvolvimento do projeto.
+
