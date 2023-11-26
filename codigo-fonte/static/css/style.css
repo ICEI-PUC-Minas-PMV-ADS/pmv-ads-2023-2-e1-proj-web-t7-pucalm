@@ -124,7 +124,6 @@ a{
 .titulo-barra-superior h1 {
   font-size: 1.5rem;
   color: #fff;
-  cursor: pointer;
   font-weight: 600;
 }
 
@@ -243,11 +242,9 @@ a{
 
 #controles {
   justify-items: center;
-  padding-left: 30%;
-  padding-right: 30%;
   min-width: auto;
-  display: grid;
-  grid-template-columns: 5rem 5rem 5rem;
+  display: flex;
+  place-content: space-evenly;
 }
 
 .controle-item {
@@ -257,6 +254,7 @@ a{
 
 .controle-item-especial {
   width: 25px;
+  height: 25px;
   cursor: pointer;
 }
 
@@ -280,6 +278,13 @@ a{
   margin-top: 10px;
 }
 
+.progresso{
+  background-color: #a0a0a0;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+}
+
 .progresso-tempo {
   color: #a0a0a0;
   font-size: 11px;
@@ -297,14 +302,12 @@ a{
   position: relative;
 }
 
-#input-seeker,
-#input-volume {
+#input-seeker{
   width: 100%;
   height: 12px;
   display: inline-flex;
   position: absolute;
   cursor: pointer;
-  top: -10;
   left: 0;
   z-index: 10;
   opacity: 0;
@@ -353,6 +356,7 @@ a{
   vertical-align: top;
   margin-top: 0px;
   text-align: initial;
+  padding: 0px;
 }
 
 .audios {
@@ -361,6 +365,10 @@ a{
 
 .capa-album {
   width: 100%;
+}
+
+.player2{
+  display: none;
 }
 
 #container-feedback {
@@ -770,7 +778,7 @@ a{
 
 .personalizacao-select {
   border-radius: 3rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.8rem 0rem 0.8rem 0rem;
   font-weight: 700;
   font-size: 0.8rem;
 }
@@ -790,6 +798,9 @@ a{
   display: none;
 }
 
+.pdt70{
+  padding-top:70%
+}
 
 /* popup */
 
@@ -841,9 +852,7 @@ a{
   .botao-compartilhar {
     display: none;
   }
-  .informacoes-playlist {
-    width: 80%;
-  }
+
   .conteudo {
     height: 72%;
     bottom: 18%;
@@ -896,5 +905,76 @@ a{
     position: fixed;
     z-index: 10;
     left: 0;
+  }
+  .espacamento-section{
+    display: grid;
+  }
+  .pdt70{
+    padding: 0%;
+  }
+  .informacoes-playlist{
+    width: 100%;
+    place-content: space-between;
+    display: flex;
+    padding: 0%;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  #barraFiltro{
+    width: 100%;
+  }
+  .imagem-playlist{
+    width: 50%;
+    justify-self: center;
+  }
+  .secao-filtro{
+    width: 100%;
+    margin-top: 1rem;
+  }
+  #albumSongs{
+    display: none;
+  }
+  #tocar-playlist-toda {
+    margin-top: 0rem;
+  }
+  .progresso-tempo {
+    display: none;
+  }
+  #controles{
+    display: none;
+  }
+  #player{
+    width: 100%;
+  }
+  #container-player > div{
+    padding: 0px;
+    place-content: space-between;
+  }
+  #artista-atual{
+    display: none;
+  }
+  .secao-player{
+    width: 90%;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .versao-mobile-audio{
+    display: flex;
+    align-items: center;
+  }
+  #detalhe-atual{
+    top: 0;
+  }
+  #titulo-atual{
+    padding-left: 1rem;
+  }
+  .progresso, #progressBarBg-seeker{
+    height: 40px;
+    width: 90%;
+  }
+  #progresso-barra{
+    bottom: 50%;
+    position: fixed;
   }
 }
