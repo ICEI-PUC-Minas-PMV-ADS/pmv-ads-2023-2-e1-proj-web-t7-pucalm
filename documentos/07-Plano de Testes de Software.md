@@ -46,20 +46,19 @@ Foram programados 05 testes no software, o que incluem testes programados nos re
 |:---|:---|
 | Requisitos Associados | RF-03 |
 | Objetivo do Teste | Fornecer feedback |
-| Passos | <p>01. A partir de qualquer página aberta da aplicação, na barra lateral esquerda.</p> <p>02. Clicar em *Feedback*.</p> <p>03. Clicar no campo preenchível (vou trocar essa palavra) abaixo de _Nome (Obrigatório)_.</p> <p>04. Preencher com o nome que se identifica.</p> <p>05. Opcionalmente, clicar no campo digitável abaixo de _E-mail (Opcional)_.</p> <p>06. Opcional. Preencher com e-mail.</p> <p>07. Clicar no campo digitável abaixo de _Mensagem (Obrigatório)_.</p> <p>08. Escrever mensagem de feedback.</p> <p>09. Clicar no botão _Enviar_, que se encontra no final da página.</p> <p>10. Aguardar a mensagem de agradecimento pela submissão.</p>|
+| Passos | <p>01. A partir da [Página Inicial](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/index.html).</p> <p>02. Na barra lateral esquerda, clicar em *Feedback*.</p> <p>03. Clicar no campo preenchível abaixo de _Nome (Obrigatório)_.</p> <p>04. Preencher com o nome que se identifica.</p> <p>05. Opcionalmente, clicar no campo digitável abaixo de _E-mail (Opcional)_.</p> <p>06. Opcional. Preencher com e-mail.</p> <p>07. Clicar no campo digitável abaixo de _Mensagem (Obrigatório)_.</p> <p>08. Escrever mensagem de feedback.</p> <p>09. Clicar no botão _Enviar_, que se encontra no final da página.</p> <p>10. Aguardar a mensagem de agradecimento pela submissão.</p>|
 | Critérios de êxito | A tela de submissão de feedback é exibida com a mensagem:<p>"Thanks! The form was submitted successfully."</p>  |
 | Responsável por elaborar o caso de Teste | Will Lima |
 
 --------------------------------------------------------------------------------
 
-
-|Caso de Teste    | CT-X - Título Caso de Teste |
+|Caso de Teste    | CT-04 - Compartilhamento |
 |:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+| Requisitos Associados | RF-04 |
+| Objetivo do Teste | Compartilhamento da página da aplicação web |
+| Passos | <p>01. A partir da [Página Inicial](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/index.html), clicar no botão de compartilhamento no canto superior direito.</p> <p>02. Clicar em _Copiar_ para copiar o link de compartilhamento.</p> |
+| Critérios de êxito | É exibido um pop-up com a indicação: <p>"Link copiado com sucesso!"</p> |
+| Responsável pela elaborar do caso de Teste | Will Lima |
 
 
 |Caso de Teste    | CT-X - Título Caso de Teste |
