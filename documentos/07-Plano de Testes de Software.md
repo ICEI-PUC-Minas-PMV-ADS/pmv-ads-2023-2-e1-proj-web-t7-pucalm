@@ -2,20 +2,20 @@
 
 Foram programados 05 testes no software, o que incluem testes programados nos requisitos funcionais RF-01, RF-02 e RF-03, RF-04 e RF-05.
 
-|Caso de Teste    | CT-01.01 - Explorar e escolher um áudio |
+|Caso de Teste    | CT-01.01 - Explorar e escolher uma playlist |
 |:---|:---|
 | Requisitos Associados | RF-01 |
-| Objetivo do Teste | Explorar múltiplos áudios e poder escolher de um deles. |
+| Objetivo do Teste | Explorar múltiplas playlists e poder escolher de um deles. |
 | Passos | <p>01. Acessar a [Landing Page](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/static/html/landing-page.html) </p><p>02. No topo da página, clicar em _Explorar_.</p> <p>03. Clicar na playlist **Ansiedade**.</p> <p>04. Clicar em _Início_, na barra lateral esquerda.</p> <p>05. Clicar na playlist **Estresse**.</p> <p>06. Clicar em _Início_, na barra lateral esquerda.</p> <p>07. Clicar na playlist **Foco**.</p> <p>08. Clicar em _Início_, na barra lateral esquerda.</p> <p>09. Clicar na playlist **Meditação**.</p> <p>10. Clicar em _Início_, na barra lateral esquerda.</p> <p>11. Clicar na playlist **Relaxamento**.</p> <p></p> |
 | Critérios de êxito | Uma lista de áudios deve ser exibida para cada playlist selecionada. Os áudios devem estar prontos para reprodução.|
 | Responsável por elaborar o caso de Teste | Will Lima |
 
 --------------------------------------------------------------------------------
 
-|Caso de Teste    | CT-01.02 - Explorar e escolher um áudio |
+|Caso de Teste    | CT-01.02 - Explorar e escolher uma playlist |
 |:---|:---|
 | Requisitos Associados | RF-01 |
-| Objetivo do Teste | Explorar múltiplos áudios e poder escolher de um deles. |
+| Objetivo do Teste | Explorar múltiplas playlists e poder escolher de um deles. |
 | Passos | <p>01. Acessar a [Landing Page](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/static/html/landing-page.html) </p><p>02. Na barra inferior da página, clicar em _Explorar_.</p> <p>03. Clicar na playlist **Ansiedade**.</p> <p>04. Clicar em _Início_, na barra lateral esquerda.</p> <p>05. Clicar na playlist **Estresse**.</p> <p>06. Clicar em _Início_, na barra lateral esquerda.</p> <p>07. Clicar na playlist **Foco**.</p> <p>08. Clicar em _Início_, na barra lateral esquerda.</p> <p>09. Clicar na playlist **Meditação**.</p> <p>10. Clicar em _Início_, na barra lateral esquerda.</p> <p>11. Clicar na playlist **Relaxamento**.</p> |
 | Critérios de êxito | Uma lista de áudios deve ser exibida para cada playlist selecionada. Os áudios devem estar prontos para reprodução.|
 | Responsável por elaborar o caso de Teste | Will Lima |
