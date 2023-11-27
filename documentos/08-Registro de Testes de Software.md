@@ -6,7 +6,7 @@
 | Responsável pela execução do caso de Teste | Camyla Soares |
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/0af3cd51-c4f1-4f88-9d05-a2add2882b2a
-
+Teste executado em  ‎26‎ de ‎novembro‎ de ‎2023, ‏‎22:19:22
 
 |Caso de Teste    | CT-01.02 - Explorar e escolher um áudio |
 |:---|:---|
@@ -29,8 +29,11 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/a
 | Resultados obtidos | Seguindo as instruções, ao clicar no botão de play, a primeira música da lista foi executada e após clicar no botão de pause, o áudio foi interrompido.   |
 | Responsável pela execução do caso de Teste | Camyla Soares |
 
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/f14b743d-00d2-479c-b23b-8ad24655a9dc
+
 
 |Caso de Teste    | CT-03 - Feedback |
+
 |:---|:---|
 | Resultados obtidos | Após preencher os dados obrigatórios, apareceu uma mensagem confirmando o envio   |
 | Responsável pela execução do caso de Teste | Camyla Soares |
@@ -52,4 +55,14 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/a
 | Responsável pela execução do caso de Teste | Camyla Soares |
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/eb3b9db5-9c8a-4213-8e5e-14c5a9628074
+
+
+|Caso de Teste    | CT-05 - Histórico de áudios |
+|:---|:---|
+| Resultados obtidos | Ao clicar na aba de nome Meu Histórico, foi aberta uma página lateral com um quadrado vazado branco, sem nenhuma informação, somente título.   |
+| Responsável pela execução do caso de Teste | Camyla Soares |
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/edfc3af7-7433-4375-9211-9aea2c479585
+
+
 
