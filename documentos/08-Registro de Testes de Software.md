@@ -35,7 +35,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/a
 | Resultados obtidos | Após preencher os dados obrigatórios, apareceu uma mensagem confirmando o envio   |
 | Responsável pela execução do caso de Teste | Camyla Soares |
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/efb4b140-d109-4233-a7a4-bfe994f51a2a
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/a4e97b2a-129f-4992-aedd-92eca524cdf9
 
 
 |Caso de Teste    | CT-04 - Compartilhamento |
@@ -43,5 +43,13 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/a
 | Resultados obtidos | ao clicar no ícone de compartilhamento, um link é gerado, dando a opção de copia-lo, ao submeter um pop-up indica sucesso na tarefa, confirmando que foi copiado   |
 | Responsável pela execução do caso de Teste | Camyla Soares |
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/5250a7a9-b462-4e1f-933c-521d0e7aea95
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/ea014ab0-1753-451f-8fde-3df43650d7b7
+
+
+|Caso de Teste    | CT-05 - Filtragem de áudios |
+|:---|:---|
+| Resultados obtidos | Ao clicar na aba de pesquisas dentro da playlist, é possível digitar letras que filtra as opções de títulos dos áudios.   |
+| Responsável pela execução do caso de Teste | Camyla Soares |
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/eb3b9db5-9c8a-4213-8e5e-14c5a9628074
 
