@@ -65,7 +65,14 @@ Foram programados 05 testes no software, o que incluem testes programados nos re
 |:---|:---|
 | Requisitos Associados | RF-05 |
 | Objetivo do Teste | Filtrar os áudios dentro de uma playlist |
-| Passos | <p>01. A partir da [Página Inicial](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/index.html), clicar em uma playlist.</p/> <p>02. No canto superior direito, abaixo da barra do topo, clicar na caixa de testo preenchível _O que você procura?_.</p> <p>03. Digitar um caractere alfabético ou trecho de palavra para busca.</p> |
+| Passos | <p>01. A partir da [Página Inicial](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/index.html), clicar em uma playlist.</p/> <p>02. No canto superior direito, abaixo da barra do topo, clicar na caixa de texto preenchível _O que você procura?_.</p> <p>03. Digitar um caractere alfabético ou trecho de palavra para busca.</p> |
 | Critérios de êxito | Áudio (ou áudios) exibidos contém em seu nome o caractere, ou fragmento de palavra, digitado na busca. |
 | Responsável pela elaborar do caso de Teste | Will Lima |
 
+|Caso de Teste    | CT-06 - Histórico de áudios |
+|:---|:---|
+| Requisitos Associados | RF-06 |
+| Objetivo do Teste | Listar os áudios submetidos pelo usuário |
+| Passos | <p>01. A partir da [Página Inicial](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/index.html), </p/> <p>02. No canto esquerdo, clicar na opção Meu histórico.</p> |
+| Critérios de êxito | Deverá aparecer uma lista das últimas músicas executadas pelo usuário. |
+| Responsável pela elaborar do caso de Teste | Will Lima |
