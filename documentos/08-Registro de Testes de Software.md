@@ -1,12 +1,9 @@
 # Registro de Testes de Software
 
-Relatório com as evidências dos testes de software realizados na aplicação pela equipe, baseado no plano de testes pré-definido.
-
-Os resultados dos testes funcionais realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste executado]
-
-|Caso de Teste    | CT-X - Título Caso de Teste |
+|Caso de Teste    | CT-01.01 - Explorar e escolher um áudio |
 |:---|:---|
-| Resultados obtidos | Descrever resultados do teste  |
-| Responsável pela execução do caso de Teste | Nome do integrante da equipe |
+| Resultados obtidos | Foram seguidas as devidas instruções, resultando como previsto pelo plano de testes  |
+| Responsável pela execução do caso de Teste | Camyla Gomes Soares Oliveira |
 
-[Inserir aqui as evidências de teste que podem ser apresentadas por print de telas ou por .gif de execução de teste]
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/0af3cd51-c4f1-4f88-9d05-a2add2882b2a
+
