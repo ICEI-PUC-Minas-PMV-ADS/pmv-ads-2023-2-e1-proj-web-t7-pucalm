@@ -23,3 +23,8 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/a
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/3f019f59-cf67-4219-9635-be41a1a6ef2c
 
+
+|Caso de Teste    | CT-02.02 - Reprodução de áudio com player |
+|:---|:---|
+| Resultados obtidos | Seguindo as instruções, ao clicar no botão de play, a música foi executada corretamente   |
+| Responsável pela execução do caso de Teste | Camyla Soares |
