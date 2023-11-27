@@ -2,7 +2,7 @@
 
 |Caso de Teste    | CT-01.01 - Explorar e escolher uma playlist |
 |:---|:---|
-| Resultados obtidos | Foram seguidas as devidas instruções, as funcionalidades de explorar do início da página e a escolha dos áudios funcionaram conforme previsto pelo plano de testes  |
+| Resultados obtidos | Foram seguidas as devidas instruções, O botão Explorar superior à página levou à tela com a lista de playlists e cada uma respondeu quando submetido, mostrando a lista de músicas. |
 | Responsável pela execução do caso de Teste | Camyla Soares |
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/0af3cd51-c4f1-4f88-9d05-a2add2882b2a
@@ -13,7 +13,7 @@ Teste executado em 26‎ de ‎novembro‎ de ‎2023, 20:21
 
 |Caso de Teste    | CT-01.02 - Explorar e escolher uma playlist |
 |:---|:---|
-| Resultados obtidos | A funcionalidade de áudio ao final da página funciona corretamente, direcionando às escolhas dos áudios, que também seguiu conforme esperado  |
+| Resultados obtidos | Foram seguidas as devidas instruções, O botão Explorar inferior à página levou à tela com a lista de playlists e cada uma respondeu quando submetido, mostrando a lista de músicas.  |
 | Responsável pela execução do caso de Teste | Camyla Soares |
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/b77c2a8c-ca12-44f5-a2d4-0e58bc5f01c5
@@ -24,7 +24,7 @@ Teste executado em ‎26‎ de ‎novembro‎ de ‎2023, ‏‎20:23
 
 |Caso de Teste    | CT-02.01 - Reprodução de áudio com player |
 |:---|:---|
-| Resultados obtidos | Ao clicar no áudio desejado, a música selecionada é executada corretamente   |
+| Resultados obtidos | Ao clicar no áudio desejado, a música selecionada foi executada corretamente.   |
 | Responsável pela execução do caso de Teste | Camyla Soares |
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/3f019f59-cf67-4219-9635-be41a1a6ef2c
@@ -57,7 +57,7 @@ Teste executado em ‎26‎ de ‎novembro‎ de ‎2023, ‏‎20:59
  
 |Caso de Teste    | CT-04 - Compartilhamento |
 |:---|:---|
-| Resultados obtidos | ao clicar no ícone de compartilhamento, um link é gerado, dando a opção de copia-lo, ao submeter um pop-up indica sucesso na tarefa, confirmando que foi copiado   |
+| Resultados obtidos | ao clicar no ícone de compartilhamento, um link é gerado, dando a opção de copia-lo, ao submeter um pop-up indica sucesso na tarefa, confirmando que foi copiado.   |
 | Responsável pela execução do caso de Teste | Camyla Soares |
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/ea014ab0-1753-451f-8fde-3df43650d7b7
