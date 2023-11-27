@@ -77,7 +77,7 @@ Teste executado em ‎26‎ de ‎novembro‎ de ‎2023, ‏‎21:07
 
 
 
-|Caso de Teste    | CT-05.01 - Histórico de áudios |
+|Caso de Teste    | CT-06 - Histórico de áudios |
 |:---|:---|
 | Resultados obtidos | Ao clicar na aba de nome Meu Histórico, foi aberta uma página lateral com um quadrado vazado branco, sem nenhuma informação, somente título.   |
 | Responsável pela execução do caso de Teste | Camyla Soares |
