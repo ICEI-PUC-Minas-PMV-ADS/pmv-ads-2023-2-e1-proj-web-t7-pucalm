@@ -1,6 +1,6 @@
 # Registro de Testes de Software
 
-|Caso de Teste    | CT-01.01 - Explorar e escolher um áudio |
+|Caso de Teste    | CT-01.01 - Explorar e escolher uma playlist |
 |:---|:---|
 | Resultados obtidos | Foram seguidas as devidas instruções, as funcionalidades de explorar do início da página e a escolha dos áudios funcionaram conforme previsto pelo plano de testes  |
 | Responsável pela execução do caso de Teste | Camyla Soares |
@@ -11,7 +11,7 @@ Teste executado em 26‎ de ‎novembro‎ de ‎2023, 20:21
 
 
 
-|Caso de Teste    | CT-01.02 - Explorar e escolher um áudio |
+|Caso de Teste    | CT-01.02 - Explorar e escolher uma playlist |
 |:---|:---|
 | Resultados obtidos | A funcionalidade de áudio ao final da página funciona corretamente, direcionando às escolhas dos áudios, que também seguiu conforme esperado  |
 | Responsável pela execução do caso de Teste | Camyla Soares |
