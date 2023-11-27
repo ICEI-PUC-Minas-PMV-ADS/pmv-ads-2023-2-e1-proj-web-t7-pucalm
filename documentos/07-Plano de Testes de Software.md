@@ -69,7 +69,7 @@ Foram programados 05 testes no software, o que incluem testes programados nos re
 | Critérios de êxito | Áudio (ou áudios) exibidos contém em seu nome o caractere, ou fragmento de palavra, digitado na busca. |
 | Responsável pela elaborar do caso de Teste | Will Lima |
 
-|Caso de Teste    | CT-06 - Histórico de áudios |
+|Caso de Teste    | CT-05.1 - Histórico de áudios |
 |:---|:---|
 | Requisitos Associados | Requisito não-listado |
 | Objetivo do Teste | Listar os áudios submetidos pelo usuário |
