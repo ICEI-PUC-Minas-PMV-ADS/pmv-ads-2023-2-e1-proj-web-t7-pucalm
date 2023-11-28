@@ -42,12 +42,12 @@ li{
 
 #container-menu-lateral {
   position: fixed;
-  width: 20vw;
+  width: 20%;
   height: 88%;
-  background-color: var(--azul-escuro);
   top: 0;
   left: 0;
   color: hsla(0, 0%, 100%, 0.6);
+  background-color: var(--azul-escuro);
 }
 
 a{
@@ -57,13 +57,13 @@ a{
 
 #container-player {
   position: fixed;
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 12%;
   bottom: 0;
-  left: 0;
-  background-color: #282828;
+  right: 0;
   color: hsla(0, 0%, 100%, 0.6);
-  z-index: 50;
   background-color: var(--azul-claro);
 }
 
@@ -107,10 +107,11 @@ a{
 }
 
 .container-barra-superior {
+  position: fixed;
   left: 20%;
   height: 10%;
-  position: fixed;
   right: 0;
+  top: 0;
   display: flex;
   background-color: var(--azul-claro);
   align-items: center;
@@ -149,11 +150,11 @@ a{
 }
 
 #containerPrincipal {
-  position: relative;
+  position: fixed;
   top: 10%;
   left: 20%;
   width: 80%;
-  height: 78%;
+  height: 70%;
   color: white;
   text-align: center;
   margin-bottom: 100px;
@@ -199,23 +200,17 @@ a{
   font-weight: 600;
 }
 
-#container-player > div {
-  padding: 1% 1%;
-}
-
 #capa-atual {
   width: 100%;
-  /* float: left; */
   position: relative;
-  padding-top: 8px;
 }
 
 #detalhe-atual {
   max-width: 45%;
-  padding: 1% 1%;
   display: inline-block;
   position: relative;
-  top: -12px;
+  padding-left: 0.5rem;
+  align-self: center;
 }
 
 .container-capa {
@@ -261,7 +256,7 @@ a{
 #player {
   /* flex-grow: 2; */
   display: inline-block;
-  width: 76%;
+  width: 80%;
 }
 
 .secao-player {
@@ -269,8 +264,8 @@ a{
   position: relative;
   display: inline-block;
   width: 19%;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 0;
+  padding: 1rem;
 }
 
 #seeker {
@@ -296,7 +291,7 @@ a{
 
 #progresso-barra {
   width: 100%;
-  height: 12px;
+  height: 0.5rem;
   display: inline-flex;
   cursor: pointer;
   position: relative;
@@ -824,18 +819,16 @@ a{
     font-size: 1rem !important;
 }
 
+.div-audio{
+  display: flex;
+  align-self: center;
+}
+
 @media (max-width: 900px) {
   #containerPrincipal {
-    position: relative;
-    top: 10%;
+    position: fixed;
     left: 0%;
     width: 100%;
-    height: 70%;
-    color: white;
-    text-align: center;
-    margin-bottom: 100px;
-    overflow: scroll;
-    overflow-x: hidden;
   }
   #container-menu-lateral {
     display: none;
@@ -883,7 +876,7 @@ a{
   }
 
   .botao-navbar-mobile {
-    padding: 5% 5% 5% 5%;
+    height: 100%;
     width: 80%;
     font-size: 0.9rem;
     font-weight: 600;
@@ -946,37 +939,35 @@ a{
   #player{
     width: 100%;
   }
-  #container-player{
-    padding: 0px;
-  }
-  #container-player > div{
-    padding: 0px;
-    place-content: space-between;
-  }
   #artista-atual{
     display: none;
   }
   .secao-player{
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    padding: 0;
   }
   .versao-mobile-audio{
     display: flex;
     align-items: center;
     padding: 0rem 1rem 0rem 1rem;
   }
-  #detalhe-atual{
-    top: 0;
-  }
   #titulo-atual{
     padding-left: 1rem;
   }
   .progresso, #progressBarBg-seeker{
-    height: 40px;
+    height: 0.5rem;
     width: 100%;
+    bottom: 0;
+    position: fixed;
   }
   #progresso-barra{
-    bottom: 50%;
+    bottom: 0;
     position: fixed;
+  }
+  #container-player{
+    display: grid;
+    align-content: center;
   }
 }
