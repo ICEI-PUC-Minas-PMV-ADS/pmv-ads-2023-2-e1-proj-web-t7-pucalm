@@ -127,13 +127,11 @@ class Player {
       this.carregarMusica(this.playlist_index);
     }
 
-    // INCLUIR FUNÇÃO PARA GUARDAR NO LOCAL STORAGE OS DADOS DO AUDIOS //
-    
-    audio.dataAdicao = 'data'
-    this.crud.createHistorico(audio)
-    console.log(`reproduzirAudio: ${audio.titulo}`)
-    const dadosGrafico = this.crud.readHistoricos()
-    console.log(dadosGrafico)
+    // Salvar dados do áudio reproduzido no LocalStorage para o Histórico
+    this.crud.createHistorico(audio);
+    console.log(`reproduzirAudio: ${audio.titulo}`);
+    const dadosGrafico = this.crud.readHistoricos();
+    console.log(dadosGrafico);
 
   }
 

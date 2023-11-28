@@ -1,7 +1,18 @@
-  <div id="areaGrafico">
-    <h1 id="titulo-pagina">Meu Histórico</h1>
-    <canvas id="grafico"></canvas>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script type="text/javascript" src="../js/historico.js"></script>
+<div id="areaGrafico">
+  <h1 id="titulo-pagina">Meu Histórico</h1>
+  <button id="mostrarGraficoBtn">Mostrar Gráfico</button>
+  <canvas id="grafico"></canvas>
+</div>
+<div id="areaTabela">
+  <h3>Histórico de Áudios</h3>
+  <table id="tabelaHistorico">
+    <thead>
+      <tr>
+        <th>Áudio</th>
+        <th>Data</th>
+        <th>Hora</th>
+      </tr>
+    </thead>
+    <tbody id="corpoTabela"></tbody>
+  </table>
+</div>

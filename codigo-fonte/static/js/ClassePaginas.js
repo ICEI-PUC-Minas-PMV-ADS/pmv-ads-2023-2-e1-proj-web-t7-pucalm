@@ -1,14 +1,16 @@
 import Audios from './ClasseAudios.js';
 import Playlists from './ClassePlaylists.js';
 import Player from './ClassePlayer.js';
+import CrudHistorico from './classeCrudHistorico.js';
 
 class Paginas {
   constructor(containerPrincipal) {
     this.containerPrincipal = containerPrincipal;
-    this.tituloPagina =  document.querySelector("#titulo-pagina")
+    this.tituloPagina =  document.querySelector("#titulo-pagina");
     this.playlists = new Playlists();
     this.player = new Player();
-    this.caminhoCapas = './assets/playlists/'
+    this.crud = new CrudHistorico();
+    this.caminhoCapas = './assets/playlists/';
   }
 
    // Método para carregar o conteúdo da página a partir de um arquivo HTML
@@ -82,10 +84,18 @@ class Paginas {
       this.tituloPagina.innerHTML = "Feedback";
     }
 
-    // Página Histórico
+      // Página Histórico
     else if (this.containerPrincipal.classList.contains("t-historico")) {
       await this.carregarConteudoPagina('./static/html/historico.html');
       this.tituloPagina.innerHTML = "Meu Histórico";
+
+      // Preenche a tabela com os dados do histórico
+      const historico = this.crud.readHistoricos();
+      this.preencherTabelaHistorico(historico);
+
+      // Adicione um botão para exibir o gráfico
+      const mostrarGraficoBtn = document.getElementById('mostrarGraficoBtn');
+      mostrarGraficoBtn.addEventListener('click', () => this.mostrarGrafico());
     }
   }
 
@@ -211,6 +221,95 @@ filtrar() {
     }
   } 
 }
+
+  /* ********************************** */
+/*    Funções do Histórico de Áudios    */
+/* ********************************** */
+preencherTabelaHistorico(historico) {
+  const corpoTabela = document.getElementById('corpoTabela');
+
+  historico.forEach((audio) => {
+    const linha = document.createElement('tr');
+    linha.innerHTML = `
+      <td>${audio.titulo}</td>
+      <td>${audio.dataAdicao}</td>
+      <td>${audio.horaAdicao}</td>
+    `;
+    corpoTabela.appendChild(linha);
+  });
+}
+
+mostrarGrafico() {
+  const dadosGrafico = this.crud.readHistoricos(); // Obtém os dados do histórico
+  const dadosPorMes = this.processarDadosPorMes(dadosGrafico); // Processa dados por mês
+
+  // Criar um gráfico usando Chart.js
+  const ctx = document.getElementById('grafico').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: dadosPorMes.labels,
+      datasets: [{
+        label: 'Quantidade de Áudios',
+        data: dadosPorMes.data,
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+}
+
+processarDadosPorMes(dados) {
+  const dadosPorMes = {};
+
+  dados.forEach((audio) => {
+    // Split da data para obter o dia, mês e ano
+    const partesData = audio.dataAdicao.split('/');
+    const dia = parseInt(partesData[0], 10);
+    const mes = parseInt(partesData[1], 10);
+    const ano = parseInt(partesData[2], 10);
+
+    // Verifica se as partes da data são válidas
+    if (!isNaN(dia) && !isNaN(mes) && !isNaN(ano)) {
+      const dataAdicao = new Date(ano, mes - 1, dia);
+
+      // Verifique se a data é válida antes de prosseguir
+      if (!isNaN(dataAdicao.getTime())) {
+        const mesAno = `${dataAdicao.getMonth() + 1}/${dataAdicao.getFullYear()}`;
+
+        if (!dadosPorMes[mesAno]) {
+          dadosPorMes[mesAno] = 0;
+        }
+
+        dadosPorMes[mesAno]++;
+      } else {
+        console.warn(`Data inválida para audio: ${audio.titulo}, data: ${audio.dataAdicao}`);
+      }
+    } else {
+      console.warn(`Formato de data inválido para audio: ${audio.titulo}, data: ${audio.dataAdicao}`);
+    }
+  });
+
+  const labels = Object.keys(dadosPorMes);
+  const data = labels.map((mesAno) => dadosPorMes[mesAno]);
+
+  console.log('Labels:', labels);
+  console.log('Data:', data);
+
+  return { labels, data };
+}
+
+
+
+
 
 }
 

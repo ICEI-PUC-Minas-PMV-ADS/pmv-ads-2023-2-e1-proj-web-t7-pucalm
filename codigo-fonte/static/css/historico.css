@@ -1,10 +1,45 @@
 #areaGrafico {
-    max-width: 850px;
+    width: 100%;
     margin: 0 auto;
     height: 250px;
+    margin-bottom: 5em;
+    justify-self: center;
+    align-items: center;
+    /* border: thin solid white; */
+
   }
   
   #areaGrafico h3 {
     margin-top: 2em;
-    margin-bottom: 0;
+    margin-bottom: 2em;
   }
+
+
+  #areaTabela {
+    max-width: 850px;
+    margin: 20px auto; /* Adicionei margem para separar do gráfico */
+    /* border: thin solid white; */
+    padding: 20px;
+  }
+  
+  #areaTabela h3 {
+    margin-top: 0;
+  }
+  
+  #tabelaHistorico {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  #tabelaHistorico th, #tabelaHistorico td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #tabelaHistorico th {
+    /* background-color: #0c2847; */
+    color: white;
+  }
+  
