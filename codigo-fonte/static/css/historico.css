@@ -7,25 +7,28 @@
     margin-top: 5em;
   }
 
-  #mostrarGraficoBtn {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-  }
-  
   #areaGrafico h3 {
     margin-top: 2em;
     margin-bottom: 2em;
   }
 
 
+  #grafico {
+    width: 100%;
+    height: 100%;
+  }
+
   #areaTabela {
-    max-width: 850px;
+    max-width: 100%;
     padding: 20px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center
   }
   
   #areaTabela h3 {
     margin-top: 0;
+
   }
   
   #tabelaHistorico {

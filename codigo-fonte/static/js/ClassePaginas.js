@@ -93,9 +93,8 @@ class Paginas {
       const historico = this.crud.readHistoricos();
       this.preencherTabelaHistorico(historico);
 
-      // Adicione um botão para exibir o gráfico
-      const mostrarGraficoBtn = document.getElementById('mostrarGraficoBtn');
-      mostrarGraficoBtn.addEventListener('click', () => this.mostrarGrafico());
+      this.mostrarGrafico();
+
     }
   }
 
@@ -250,7 +249,7 @@ mostrarGrafico() {
     data: {
       labels: dadosPorMes.labels,
       datasets: [{
-        label: 'Quantidade de Áudios',
+        label: 'Quantidade de Áudios Explorados',
         data: dadosPorMes.data,
         backgroundColor: 'rgba(75, 192, 192, 0.2)',
         borderColor: 'rgba(75, 192, 192, 1)',
