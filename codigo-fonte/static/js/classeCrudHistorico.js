@@ -1,12 +1,7 @@
 class CrudHistorico {
   createHistorico(audio) {
+    audio.dataAdicao = new Date().toLocaleDateString(); // Adiciona a data de hoje ao áudio
     let audios = this.readHistoricos();
-    
-    // Adiciona a data e hora atual
-    const dataAtual = new Date();
-    audio.dataAdicao = dataAtual.toLocaleDateString();
-    audio.horaAdicao = dataAtual.toLocaleTimeString();
-
     audios.push(audio);
     this.updateHistoricos(audios);
   }

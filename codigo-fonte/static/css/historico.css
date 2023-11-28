@@ -1,12 +1,16 @@
 #areaGrafico {
     width: 100%;
-    margin: 0 auto;
+    display: flex;
     height: 250px;
-    margin-bottom: 5em;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
-    /* border: thin solid white; */
+    margin-top: 5em;
+  }
 
+  #mostrarGraficoBtn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
   }
   
   #areaGrafico h3 {
@@ -17,8 +21,6 @@
 
   #areaTabela {
     max-width: 850px;
-    margin: 20px auto; /* Adicionei margem para separar do gráfico */
-    /* border: thin solid white; */
     padding: 20px;
   }
   
