@@ -82,7 +82,10 @@ Teste executado em ‎26‎ de ‎novembro‎ de ‎2023, ‏‎21:07
 | Resultados obtidos | Ao clicar na aba de nome Meu Histórico, foi aberta uma página lateral com um quadrado vazado branco, sem nenhuma informação, somente título.   |
 | Responsável pela execução do caso de Teste | Camyla Soares |
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/edfc3af7-7433-4375-9211-9aea2c479585
 
-Teste executado em ‎26‎ de ‎novembro‎ de ‎2023, ‏‎22:11
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/5a170796-e8da-4bcb-a45c-a68b3ad7e6b2
+
+
+1º Teste executado em ‎26‎ de ‎novembro‎ de ‎2023, ‏‎22:11
+2º Teste executado em 28‎ de ‎novembro‎ de ‎2023, ‏‎23:40
 
