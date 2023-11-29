@@ -24,7 +24,7 @@ Teste executado em ‎26‎ de ‎novembro‎ de ‎2023, ‏‎20:23
 
 |Caso de Teste    | CT-02.01 - Reprodução de áudio com player |
 |:---|:---|
-| Resultados obtidos | Ao clicar no áudio desejado, a música selecionada foi executada corretamente.   |
+| Resultados obtidos | Ao clicar no áudio desejado, a música selecionada foi executada corretamente e adicionada à lista do histórico de usuário.  |
 | Responsável pela execução do caso de Teste | Camyla Soares |
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/3f019f59-cf67-4219-9635-be41a1a6ef2c
@@ -35,7 +35,7 @@ Teste executado em ‎26‎ de ‎novembro‎ de ‎2023, ‏‎20:32
 
 |Caso de Teste    | CT-02.02 - Reprodução de áudio com player |
 |:---|:---|
-| Resultados obtidos | Seguindo as instruções, ao clicar no botão de play, a primeira música da lista foi executada e após clicar no botão de pause, o áudio foi interrompido.   |
+| Resultados obtidos | Seguindo as instruções, ao clicar no botão de play, a primeira música da lista foi executada e após clicar no botão de pause, o áudio foi interrompido.  O áudio foi adicionado à lista do histórico de usuário.  |
 | Responsável pela execução do caso de Teste | Camyla Soares |
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/f14b743d-00d2-479c-b23b-8ad24655a9dc
