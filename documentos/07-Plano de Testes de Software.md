@@ -17,7 +17,7 @@ Foram programados 05 testes no software, o que incluem testes programados nos re
 | Requisitos Associados | RF-01 |
 | Objetivo do Teste | Explorar múltiplas playlists e poder escolher de um deles. |
 | Passos | <p>01. Acessar a [Landing Page](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/static/html/landing-page.html) </p><p>02. Na barra inferior da página, clicar em _Explorar_.</p> <p>03. Clicar na playlist **Ansiedade**.</p> <p>04. Clicar em _Início_, na barra lateral esquerda.</p> <p>05. Clicar na playlist **Estresse**.</p> <p>06. Clicar em _Início_, na barra lateral esquerda.</p> <p>07. Clicar na playlist **Foco**.</p> <p>08. Clicar em _Início_, na barra lateral esquerda.</p> <p>09. Clicar na playlist **Meditação**.</p> <p>10. Clicar em _Início_, na barra lateral esquerda.</p> <p>11. Clicar na playlist **Relaxamento**.</p> |
-| Critérios de êxito | Uma lista de áudios deve ser exibida para cada playlist selecionada. Os áudios devem estar prontos para reprodução.|
+| Critérios de êxito | Uma lista de áudios deve ser exibida para cada playlist selecionada. Os áudios devem estar prontos para reprodução e serem adicionador ao histórico|
 | Responsável por elaborar o caso de Teste | Will Lima |
 
 --------------------------------------------------------------------------------
@@ -37,7 +37,7 @@ Foram programados 05 testes no software, o que incluem testes programados nos re
 | Requisitos Associados | RF-02 |
 | Objetivo do Teste | Reproduzir um áudio fazendo uso do player da playlist |
 | Passos | <p>01. A partir da [Página Inicial](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/index.html), clicar em uma das cinco playlists (**Ansiedade, Estresse, Foco, Meditação ou Relaxamento**).</p> <p>02. Clicar no ícone (botão) _Player_, abaixo do nome da playlist selcionada.</p> <p>03. Após início da reprodução do áudio, clicar no botão _Pausa_ do player (barra inferior).</p> |
-| Critérios de êxito | O primeiro áudio da playlist selecionada é reproduzido e a reprodução é pausada após o clique no botão de pausa. |
+| Critérios de êxito | O primeiro áudio da playlist selecionada é reproduzido e a reprodução é pausada após o clique no botão de pausa. Adicionar o áudio à lista de histórico do usuário.|
 | Responsável por elaborar o caso de Teste | Will Lima |
 
 --------------------------------------------------------------------------------
