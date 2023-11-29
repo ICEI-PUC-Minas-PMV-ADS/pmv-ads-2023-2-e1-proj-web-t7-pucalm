@@ -86,6 +86,5 @@ Teste executado em ‎26‎ de ‎novembro‎ de ‎2023, ‏‎21:07
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/assets/145385547/5a170796-e8da-4bcb-a45c-a68b3ad7e6b2
 
 
-1º Teste executado em ‎26‎ de ‎novembro‎ de ‎2023, ‏‎22:11
-2º Teste executado em 28‎ de ‎novembro‎ de ‎2023, ‏‎23:40
+1º Teste executado em ‎26‎ de ‎novembro‎ de ‎2023, ‏‎22:11 <p> 2º Teste executado em 28‎ de ‎novembro‎ de ‎2023, ‏‎23:40 </p>
 
