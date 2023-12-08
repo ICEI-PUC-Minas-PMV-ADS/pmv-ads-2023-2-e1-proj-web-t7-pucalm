@@ -1,7 +1,7 @@
 # Template padrão da Aplicação
 
 
-&emsp;O acesso pode ser feito por: [<https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/landing-page>](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/landing-page/landing-page.html).
+&emsp;O acesso pode ser feito por: [Aplicação PUCalm](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/landing-page/landing-page.html).
 
 <figure>
   <figcaption>Landing page versão desktop</figcaption>
