@@ -72,7 +72,7 @@ Foram programados 05 testes no software, o que incluem testes programados nos re
 |Caso de Teste    | CT-06 - Histórico de áudios |
 |:---|:---|
 | Requisitos Associados | Requisito não-listado |
-| Objetivo do Teste | Listar os áudios submetidos pelo usuário |
+| Objetivo do Teste | Listar os áudios escutados pelo usuário |
 | Passos | <p>01. A partir da [Página Inicial](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t7-pucalm/codigo-fonte/index.html).</p/> <p>02. No canto esquerdo, clicar na opção _Meu histórico_.</p> |
 | Critérios de êxito | Deverá aparecer uma lista das últimas músicas executadas pelo usuário. |
 | Responsável pela elaborar do caso de Teste | Will Lima |
