@@ -3,7 +3,7 @@
 ## Conjunto de Slides
 Etapa 5 
 
-[Apresentação - Etapa 5 - PUCalm.pdf](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/files/13626102/Apresentacao.-.Etapa.5.-.PUCalm.pdf)
+[PUCalm](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t7-pucalm/files/13626102/Apresentacao.-.Etapa.5.-.PUCalm.pdf)
 
 ## Vídeo de apresentação
 
