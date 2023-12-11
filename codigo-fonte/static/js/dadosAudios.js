@@ -19,6 +19,12 @@ const dadosAudios = [
     { id: 18, genero: "Relaxamento", artista: "LiborioConti", titulo: "Deeper Meaning", duracao: "07:09" },
     { id: 19, genero: "Relaxamento", artista: "beetpro", titulo: "Human Code Unity", duracao: "02:11" },
     { id: 20, genero: "Relaxamento", artista: "LiborioConti", titulo: "Noisescape", duracao: "07:00" },
+    { id: 21, genero: "Ansiedade", artista: "TrygveLarsen", titulo: "Classical Love Piano Solo in Chopin Style", duracao: "03:40" },
+    { id: 22, genero: "Ansiedade", artista: "Desconhecido", titulo: "Waterfall and Relaxing Birds Singing", duracao: "03:22" },
+    { id: 23, genero: "Ansiedade", artista: "Dream Protocol", titulo: "Hollow Man Ambient 432hz", duracao: "03:53" },
+    { id: 24, genero: "Ansiedade", artista: "NoneNothingNowhere", titulo: "174hz Pain Release", duracao: "03:33" },
+    { id: 25, genero: "Ansiedade", artista: "Lesfm", titulo: "Please Calm My Mind", duracao: "02:55" },
+
 
   ];
 
