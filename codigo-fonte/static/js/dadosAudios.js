@@ -24,7 +24,26 @@ const dadosAudios = [
     { id: 23, genero: "Ansiedade", artista: "Dream Protocol", titulo: "Hollow Man Ambient 432hz", duracao: "03:53" },
     { id: 24, genero: "Ansiedade", artista: "NoneNothingNowhere", titulo: "174hz Pain Release", duracao: "03:33" },
     { id: 25, genero: "Ansiedade", artista: "Lesfm", titulo: "Please Calm My Mind", duracao: "02:55" },
-
+    { id: 26, genero: "Estresse", artista: "Desconhecido", titulo: "Rain and Nostalgia", duracao: "01:10" },
+    { id: 27, genero: "Estresse", artista: "Ernst Gottlieb Baron", titulo: "Music Box", duracao: "12:15" },
+    { id: 28, genero: "Estresse", artista: "Desconhecido", titulo: "Rain Sound", duracao: "03:00" },
+    { id: 29, genero: "Estresse", artista: "Lesfm", titulo: "Forest Lullaby", duracao: "02:18" },
+    { id: 30, genero: "Estresse", artista: "BjoKib", titulo: "Eternal Focus", duracao: "12:54" },
+    { id: 31, genero: "Foco", artista: "Desconhecido", titulo: "Close Study Relax Chillhop", duracao: "02:14"},
+    { id: 32, genero: "Foco", artista: "DreamProtocol", titulo: "Positive Energy Ambient 432hz", duracao: "04:00"},
+    { id: 33, genero: "Foco", artista: "Trygve Larsen", titulo: "Sporadically Awkward Jazz Piano", duracao: "02:14"},
+    { id: 34, genero: "Foco", artista: "Chinese Flute", titulo: "Farewell I Will Stay", duracao: "01:16"},
+    { id: 35, genero: "Foco", artista: "DailyJoourney2023", titulo: "Lofi Ambiental Music For Study", duracao: "02:45"},
+    { id: 36, genero: "Meditacao", artista: "NoneNothingNowhere", titulo: "Heart Chakra", duracao: "03:33" },
+    { id: 37, genero: "Meditacao", artista: "NoneNothingNowhere", titulo: "Tune in with Nature", duracao: "03:33" },
+    { id: 38, genero: "Meditacao", artista: "REDproductions", titulo: "Zen Spiritual Meditation", duracao: "03:12" },
+    { id: 39, genero: "Meditacao", artista: "JohnKensyMusic", titulo: "Mindfulness Relaxation", duracao: "04:00" },
+    { id: 40, genero: "Meditacao", artista: "HigherUniversalMan", titulo: "Breath Meditation", duracao: "04:50" },
+    { id: 41, genero: "Relaxamento", artista: "Desconhecido", titulo: "The Sounds of Soothing Water", duracao: "03:08" },
+    { id: 42, genero: "Relaxamento", artista: "Chillmore", titulo: "Sleeping Signal Chill", duracao: "03:07" },
+    { id: 43, genero: "Relaxamento", artista: "Ashot Danielyan", titulo: "Relaxed Vlog Night Street", duracao: "02:20" },
+    { id: 44, genero: "Relaxamento", artista: "Lesfm", titulo: "Sedative", duracao: "03:01" },
+    { id: 45, genero: "Relaxamento", artista: "THE4MHZ", titulo: "Ok", duracao: "03:08" },
 
   ];
 
